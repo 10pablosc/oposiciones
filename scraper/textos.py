@@ -443,10 +443,13 @@ EXCLUIR = re.compile(
     r"designacion del tribunal|tribunal (?:que ha de juzgar|calificador)|puntuacion|impugnacion|"
     r"plantillas? (?:de respuestas|correctoras?)|respuestas|orden de actuacion|celebracion del sorteo|"
     r"se aplaza|aplazamiento|lugar,? fecha|relacion de seleccionad|propuesta de nombramiento|bases reguladoras|"
-    r"bases generales (?:que regiran|para) (?:las|los) (?:convocatorias|procesos)|se ofertan vacantes|ofertar vacantes|"
+    r"bases generales (?:por las que|que regiran|que han de regir|para) (?:habran de regirse )?(?:las|los) (?:convocatorias|procesos)|se ofertan vacantes|ofertar vacantes|"
     r"oferta de vacantes|personas? seleccionad|personal seleccionad|documentacion complementaria|interposicion de recurso|"
     r"recurso contencioso|abstencion|recusacion|seleccion de aspirantes|preseleccionad|jueces? de paz|"
-    r"rectificacion de la relacion|relacion complementaria|acreditacion de requisitos|presentacion de documentacion"
+    r"rectificacion de la relacion|relacion complementaria|acreditacion de requisitos|presentacion de documentacion|"
+    r"toma de conocimiento|adquisicion de|disenos? de|motivos navidenos|al turno libre de la convocatoria|"
+    r"con (?:los|las) (?:personas )?aspirantes|itinerarios formativos|participantes en (?:los|el)|"
+    r"pruebas de certificacion|curso de formacion|ensenanzas de|apertura del plazo para la presentacion de solicitudes respecto"
 )
 RE_CONVOCA_ESTRICTO = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b")
 RE_CONVOCA_BOJA = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b|\bse convocan?\b|bases de la convocatoria|\bbolsas?\b|concurso publico")
@@ -520,11 +523,13 @@ def _denominacion(titulo, preferir_cuerpo=False):
     """Saca el nombre de la plaza de un título tipo '... de una plaza de X, vacante ...'."""
     t = limpia(titulo)
     cuerpo = re.search(r"(?i)\b(?:en\s+el|en\s+la|en\s+los|en\s+las|al|a\s+la|a\s+las|a\s+los|de\s+la|del)\s+"
-                       r"((?:Cuerpos?|Escalas?|Subescalas?|Categor[íi]as?|grupo profesional|especialidad)\b[^;]{3,160}?)"
-                       r"(?:,\s*(?:por|mediante|en\s+el|del\s+Ministerio|convocad|correspondiente)|\s+por\s+el\s+sistema|\.$|$)", t)
+                       r"((?:Cuerpos?|Escalas?|Subescalas?|Categor[íi]as?|grupo profesional|especialidad)\b[^;]{3,230}?)"
+                       r"(?:,\s*(?:y\s+)?(?:por|para|mediante|en\s+el|del\s+Ministerio|convocad|correspondiente)|\s+y\s+(?:por|para)\s|\s+por\s+el\s+sistema|\.$|$)", t)
+    if not cuerpo:
+        cuerpo = re.search(r"(?i)\b(?:en\s+el|en\s+la|en\s+los|en\s+las)\s+((?:Cuerpos?|Escalas?)\b[^,;]{3,120})", t)
     if preferir_cuerpo and cuerpo:
         return cuerpo.group(1).strip(" ,.")
-    m = re.search(r"(?i)\b(?:plazas?|puestos?)\s+de\s+(.+?)(?:,\s*(?:vacantes?|incluid|perteneciente|en\s+r[ée]gimen|por\s+el\s+sistema|mediante|del?\s+la\s+plantilla|de\s+personal)|\s+\(OEP|\s+vacantes?\s+en|\s+de\s+la\s+plantilla|\s+por\s+(?:el\s+sistema|turno|promoci)|\s+mediante|\s+en\s+turno|\s+para\s+(?:la|el|los|las)\s|,\s*correspondiente|\.$|$)", t)
+    m = re.search(r"(?i)\b(?:plazas?|puestos?)(?:\s+vinculadas?)?\s+de\s+(.+?)(?:,\s*(?:vacantes?|incluid|perteneciente|en\s+r[ée]gimen|por\s+el\s+sistema|mediante|del?\s+la\s+plantilla|de\s+personal)|\s+\(OEP|\s+vacantes?\s+en|\s+de\s+la\s+plantilla|\s+por\s+(?:el\s+sistema|turno|promoci)|\s+mediante|\s+en\s+turno|\s+para\s+(?:la|el|los|las)\s|,\s*correspondiente|\.$|$)", t)
     if m:
         d = m.group(1).strip(" ,.")
         if 3 < len(d) < 160 and not re.match(r"(?i)trabajo\b", d):
@@ -540,6 +545,17 @@ def _denominacion(titulo, preferir_cuerpo=False):
     m = re.search(r"(?i)convoca(?:n)?\s+a?\s*concurso\s+p[úu]blico\s+(.+?)(?:\s+para\s+(?:la|el)|,|\.$|$)", t)
     if m and 3 < len(m.group(1)) < 160:
         return m.group(1).strip(" ,.")
+    otros = [
+        r"(?i)contrataci[óo]n\s+(?:laboral\s+)?de\s+(?:un|una|dos|tres|\d+\s+)?\s*(.+?)(?:\s+para\s+|,|\s+en\s+el\s+marco|\.$|$)",
+        r"(?i)convocatoria\s+(?:p[úu]blica\s+)?de\s+(contratos?\s+.+?)(?:,|\.$|$)",
+        r"(?i)del\s+puesto(?:\s+con\s+car[áa]cter\s+\w+)?,?\s+de\s+(.+?)(?:,|\.$|$)",
+        r"(?i)provisi[óo]n,?\s+(?:(?:en|por)\s+[^,]+,\s+)?de\s+(?:la\s+|el\s+)(.+?)(?:,\s*vacante|\s+vacante|\s+\(|\.$|$)",
+        r"(?i)selecci[óo]n\s+de\s+(?:un|una|dos|tres|cuatro|cinco|\d+)\s+(.+?)(?:\s+para\s+|,|\.$|$)",
+    ]
+    for pat in otros:
+        m = re.search(pat, t)
+        if m and 3 < len(m.group(1)) < 150:
+            return m.group(1).strip(" ,.")
     m = re.search(r"(?i)como\s+personal\s+laboral\s+(?:fijo|temporal)?,?\s*(?:en\s+|con\s+la\s+categor[íi]a\s+de\s+)?([^,.;]{4,140})", t)
     if m:
         return "Personal laboral: " + m.group(1).strip(" ,.")
@@ -585,3 +601,18 @@ def simplifica_organismo(o, seccion=""):
     if re.match(r"(?i)^(direcci[óo]n general|viceconsejer[íi]a|secretar[íi]a general|delegaci[óo]n territorial)", o) and seccion:
         return "Junta de Andalucía · " + seccion
     return o
+
+
+def denominacion_de_texto(texto):
+    m = re.search(r"(?im)^\s*(?:\d+(?:\.\d+)*\.?\s*)?(?:denominaci[óo]n(?:\s+del\s+puesto|\s+de\s+la\s+plaza)?|categor[íi]a\s+profesional|puesto)\s*:\s*([^\n;]{3,120})", (texto or "")[:6000])
+    if m:
+        return limpia(m.group(1)).strip(" .")
+    return None
+
+
+def titulo_sin_preambulo(t):
+    """'Resolución de X, de la Y, por la que se convoca Z' -> 'Convoca Z' (último recurso)."""
+    m = re.search(r"(?i)\bpor\s+(?:la|el)\s+que\s+(?:se\s+)?(.+)$", limpia(t))
+    d = m.group(1) if m else limpia(t)
+    d = d.strip(" .")
+    return (d[0].upper() + d[1:])[:160] if d else t[:160]

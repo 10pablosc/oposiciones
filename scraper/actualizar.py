@@ -17,7 +17,7 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from textos import (EXCLUIR, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
+from textos import (EXCLUIR, denominacion_de_texto, titulo_sin_preambulo, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
                     extrae_grupo, extrae_num_plazas, extrae_personal, extrae_plazo,
                     extrae_requisitos, extrae_sistema, extrae_titulacion,
                     limpia, lugares_no_sevilla, menciona_sevilla, norm,
@@ -46,7 +46,7 @@ def sin_tiempo():
     return (time.time() - INICIO) / 60 > MAX_MINUTOS
 
 
-VERSION = 2   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
+VERSION = 3   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"
@@ -345,7 +345,7 @@ def registro_boe(it, cat):
     if not denom and cat == "local":
         denom = "Varias plazas" if "varias plazas" in norm(it["titulo"]) else "Una plaza (ver bases)"
     if not denom:
-        denom = it["epigrafe"] or it["titulo"][:120]
+        denom = denominacion_de_texto(texto) or it["epigrafe"] or titulo_sin_preambulo(it["titulo"])
     r = {
         "v": VERSION,
         "orig": {k: it.get(k) for k in ("id", "titulo", "departamento", "epigrafe", "url", "fecha")},
@@ -557,7 +557,7 @@ def registro_boja(it, rid):
         "fuente": "BOJA",
         "categoria": "universidad" if univ else ("sas" if sas else "junta"),
         "titulo_oficial": tit,
-        "denominacion": denominacion_de_titulo(tit) or tit[:140],
+        "denominacion": denominacion_de_titulo(tit) or denominacion_de_texto(texto) or titulo_sin_preambulo(tit),
         "organismo": simplifica_organismo(organismo_de_titulo(tit) or "", it.get("organismo_seccion") or "") or it.get("organismo_seccion") or "Junta de Andalucía",
         "fecha_publicacion": it["fecha"],
         "url_bases": it["url"],
@@ -793,7 +793,7 @@ def registro_bop(it):
         "fuente": "BOP",
         "categoria": cat,
         "titulo_oficial": tit,
-        "denominacion": denominacion_de_titulo(tit) or tit[:140],
+        "denominacion": denominacion_de_titulo(tit) or denominacion_de_texto(texto) or titulo_sin_preambulo(tit),
         "organismo": organismo,
         "fecha_publicacion": it["fecha"],
         "bop_num": int(m.group(2)) if m else None,
