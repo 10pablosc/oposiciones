@@ -134,10 +134,26 @@ def _boletin_de(resto):
     return None
 
 
+RE_PLAZO_B = re.compile(
+    r"(?:solicitudes|instancias)[^.]{0,140}?(?:en\s+el|dentro\s+del|un|de\s+un)\s+plazo\s+(?:maximo\s+|improrrogable\s+)?(?:de\s+)?"
+    r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?|mes(?:es)?)\b"
+    r"(?P<resto>.{0,260})",
+    re.S,
+)
+
+
+RE_PLAZO_C = re.compile(
+    r"(?:presentar(?:se|an|lo|la|las|los)?|presentaran|deberan presentarse|podran presentarse)\s+(?:en|dentro\s+de)l?\s+(?:el\s+)?"
+    r"plazo\s+(?:maximo\s+|improrrogable\s+)?(?:de\s+)?(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?"
+    r"(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?|mes(?:es)?)\b(?P<resto>.{0,260})",
+    re.S,
+)
+
+
 def extrae_plazo(texto):
     """Devuelve dict {n, tipo, boletin, frase} o None."""
     t = norm(texto)
-    for m in RE_PLAZO.finditer(t):
+    for m in list(RE_PLAZO.finditer(t)) + list(RE_PLAZO_B.finditer(t)) + list(RE_PLAZO_C.finditer(t)):
         n = a_numero(m.group("num"))
         if not n or n > 90:
             continue
@@ -209,14 +225,21 @@ def extrae_grupo(texto, titulo=""):
         vals = {v.upper() for v in re.findall(p, tn)}
         if len(vals) == 1:
             return vals.pop()
-    # 2) la titulación exigida (cuando es inequívoca)
+    # 2) "el Cuerpo/la Escala ... Subgrupo X" (en singular: el plural suele ser un requisito de promoción interna)
+    m = re.search(pat_esc, t) or re.search(
+        r"\b(?:el|la|del|al)\s+(?:cuerpo|escala|subescala|categoria)\b(?![^.;]{0,40}\b(?:o|y)\s+(?:escalas|cuerpos)\b)[^.;]{0,150}?"
+        r"(?:subgrupo|grupo)\s*(?:[abc]\s*,?\s*subgrupo\s*)?(a1|a2|c1|c2)\b", t[:8000])
+    if m:
+        return m.group(1).upper()
+    # 3) la titulación exigida (cuando es inequívoca)
     g = grupo_por_titulacion(extrae_titulacion(texto))
     if g:
         return g
-    # 3) "Cuerpo/Escala ... Subgrupo X" o "grupo de escala ..."
-    m = re.search(pat_esc, t) or re.search(r"(?:cuerpo|escala|subescala|categoria)[^.;]{0,150}?subgrupo\s*(a1|a2|c1|c2)\b", t[:6000])
-    if m:
-        return m.group(1).upper()
+    # 3b) promoción interna "desde los cuerpos o escalas del subgrupo X": la plaza es del nivel inmediato superior
+    if "promocion interna" in t:
+        m = re.search(r"de\s+los\s+cuerpos\s+o\s+escalas[^.;]{0,140}?(?:del|de\s+los)\s+(?:grupo\s+b\s+y\s+del\s+)?subgrupos?\s*(a2|c1|c2)\b", t)
+        if m:
+            return {"c2": "C1", "c1": "A2", "a2": "A1"}[m.group(1)]
     # 4) zona específica (anexos) o texto completo, si solo aparece un valor
     especifico = None
     for marca in ("bases especificas", "anexo i", "anexo 1", "anexos"):
@@ -242,6 +265,17 @@ def extrae_grupo(texto, titulo=""):
         return "C2"
     if re.search(r"subescala\s+subalterna|ordenanza|conserje|\bpeon", cab):
         return "AP"
+    if re.search(r"\b(?:cuerpo|escala)\b", tn):
+        if re.search(r"ingenieros? tecnicos?|arquitectos? tecnicos?|cuerpo de gestion|escala de gestion|diplomados?|enfermer|"
+                     r"ayudantes? de (?:archivos|investigacion)|tecnicos? de hacienda|gestion procesal", tn):
+            return "A2"
+        if re.search(r"cuerpo (?:superior|facultativo|especial facultativo)|escala superior|ingenieros?\b|arquitectos?\b|letrad|"
+                     r"inspectores?|abogados del estado|carrera (?:judicial|fiscal|diplomatica)|notari|registrador", tn):
+            return "A1"
+        if re.search(r"tramitacion procesal|cuerpo general administrativo|agentes? de la hacienda", tn):
+            return "C1"
+        if re.search(r"auxilio judicial|cuerpo general auxiliar", tn):
+            return "C2"
     return None
 
 
@@ -398,15 +432,33 @@ EXCLUIR = re.compile(
     r"relacion de puestos|valoracion de (?:los )?puestos|manual de puestos|cuenta general|presupuest|"
     r"ordenanza|padron|desistimiento|calendario|se aprueba la relacion|se publica la relacion|"
     r"se hace publica la relacion|personal eventual|personal directivo profesional|"
-    r"medidas excepcionales|carrera profesional|instruccion|delegacion de competencias"
+    r"medidas excepcionales|carrera profesional|instruccion|delegacion de competencias|"
+    r"designacion del tribunal|tribunal (?:que ha de juzgar|calificador)|puntuacion|impugnacion|"
+    r"plantillas? (?:de respuestas|correctoras?)|respuestas|orden de actuacion|celebracion del sorteo|"
+    r"se aplaza|aplazamiento|lugar,? fecha|relacion de seleccionad|propuesta de nombramiento|bases reguladoras|"
+    r"bases generales (?:que regiran|para) (?:las|los) (?:convocatorias|procesos)"
 )
+RE_CONVOCA_ESTRICTO = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b")
+RE_CONVOCA = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b|\bse convocan?\b|\bbases\b|proceso selectivo|pruebas selectivas|\bbolsas?\b")
+
+
+RE_PROVISION = re.compile(
+    r"libre designacion|concurso de traslado|provision de puestos de trabajo|provision del puesto|"
+    r"proveer puestos? de trabajo|concurso (?:general|especifico) de meritos|concurso (?:general|especifico)\b|"
+    r"cargo intermedio|puesto directivo|cubrir puestos? de trabajo|puestos? de trabajo (?:vacantes? )?(?:por|mediante)|"
+    r"movilidad (?:interadministrativa|horizontal|voluntaria)|por movilidad|comision de servicios|concurso unitario|"
+    r"concurso ordinario|personal funcionario\. concursos|reingreso|convoca(?:n)? (?:la |una |las )?vacantes?\b|"
+    r"anuncia(?:n)? (?:la |una )?vacantes?\b|provision de (?:la|una) vacante|concurso (?:de meritos )?para la provision de|"
+    r"provision de puestos? de trabajo|concurso de meritos para la cobertura de (?:un|el|los) puestos?|jefe/a de (?:equipo|seccion|servicio|bloque|grupo)")
+
+
+def es_provision(t):
+    return bool(RE_PROVISION.search(norm(t)))
 
 
 def tipo_proceso(t):
     n = norm(t)
-    if re.search(r"libre designacion|concurso de traslado|provision de puestos de trabajo|provision del puesto|"
-                 r"proveer puestos? de trabajo|concurso (?:general|especifico) de meritos|concurso (?:general|especifico)\b|"
-                 r"cargo intermedio|puesto directivo|movilidad|comision de servicios|puesto de trabajo", n):
+    if RE_PROVISION.search(n):
         return "Provisión de puestos"
     if re.search(r"\bbolsas?\b|lista de reserva|listas? de empleo|contratacion temporal|seleccion de personal temporal|"
                  r"personal funcionario interino|nombramiento interino|interino", n):
@@ -429,6 +481,14 @@ PROVINCIAS_NO_SEVILLA = [
 ]
 
 
+RE_EXTRANJERO = re.compile(r"cooperacion espanola en|en el exterior|en el extranjero|embajada|consulado|oficina tecnica de cooperacion|"
+                           r"instituto cervantes (?:de|en)|representacion permanente|oficina economica y comercial")
+
+
+def en_el_extranjero(t):
+    return bool(RE_EXTRANJERO.search(norm(t)))
+
+
 def lugares_no_sevilla(t):
     n = norm(t)
     return sorted({p for p in PROVINCIAS_NO_SEVILLA if re.search(r"\b" + p + r"\b", n)})
@@ -438,18 +498,77 @@ def menciona_sevilla(t):
     return bool(re.search(r"\bsevilla\b", norm(t)))
 
 
-def denominacion_de_titulo(titulo):
+def denominacion_de_titulo(titulo, preferir_cuerpo=False):
+    d = _denominacion(titulo, preferir_cuerpo)
+    return (d[0].upper() + d[1:]) if d else d
+
+
+def _denominacion(titulo, preferir_cuerpo=False):
     """Saca el nombre de la plaza de un título tipo '... de una plaza de X, vacante ...'."""
     t = limpia(titulo)
-    m = re.search(r"(?i)\b(?:plazas?|puestos?)\s+de\s+(.+?)(?:,\s*(?:vacantes?|incluid|perteneciente|en\s+r[ée]gimen|por\s+el\s+sistema|mediante|del?\s+la\s+plantilla|de\s+personal)|\s+\(OEP|\s+vacantes?\s+en|\s+de\s+la\s+plantilla|\s+por\s+(?:el\s+sistema|turno|promoci)|\s+mediante|\s+en\s+turno|\.$|$)", t)
+    cuerpo = re.search(r"(?i)\b(?:en\s+el|en\s+la|en\s+los|en\s+las|al|a\s+la|a\s+las|a\s+los|de\s+la|del)\s+"
+                       r"((?:Cuerpos?|Escalas?|Subescalas?|Categor[íi]as?|grupo profesional|especialidad)\b[^;]{3,160}?)"
+                       r"(?:,\s*(?:por|mediante|en\s+el|del\s+Ministerio|convocad|correspondiente)|\s+por\s+el\s+sistema|\.$|$)", t)
+    if preferir_cuerpo and cuerpo:
+        return cuerpo.group(1).strip(" ,.")
+    m = re.search(r"(?i)\b(?:plazas?|puestos?)\s+de\s+(.+?)(?:,\s*(?:vacantes?|incluid|perteneciente|en\s+r[ée]gimen|por\s+el\s+sistema|mediante|del?\s+la\s+plantilla|de\s+personal)|\s+\(OEP|\s+vacantes?\s+en|\s+de\s+la\s+plantilla|\s+por\s+(?:el\s+sistema|turno|promoci)|\s+mediante|\s+en\s+turno|\s+para\s+(?:la|el|los|las)\s|,\s*correspondiente|\.$|$)", t)
     if m:
         d = m.group(1).strip(" ,.")
-        if 3 < len(d) < 160:
+        if 3 < len(d) < 160 and not re.match(r"(?i)trabajo\b", d):
             return d[0].upper() + d[1:]
-    m = re.search(r"(?i)\b(?:en\s+el|en\s+la|al|a\s+la|a\s+las|a\s+los)\s+((?:Cuerpo|Escala|Categor[íi]a|Subescala)[^,.;]{3,150})", t)
+    if cuerpo:
+        return cuerpo.group(1).strip(" ,.")
+    m = re.search(r"(?i)cobertura\s+(?:de|del)\s+(?:(?:un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|\d+)\s+)?(?:puestos?|plazas?)\s+(?:de\s+)?(.+?)(?:,|\s+para\s+la|\s+en\s+(?:la|el)\s+|\.$|$)", t)
+    if m and 3 < len(m.group(1)) < 160:
+        return m.group(1).strip(" ,.")
+    m = re.search(r"(?i)acceso\s+a\s+la\s+condici[óo]n\s+de\s+(personal\s+(?:laboral|funcionario|estatutario)\s+fijo[^.;]{0,140}?)(?:,\s*(?:correspondiente|convocad)|\.$|$)", t)
     if m:
         return m.group(1).strip(" ,.")
+    m = re.search(r"(?i)convoca(?:n)?\s+a?\s*concurso\s+p[úu]blico\s+(.+?)(?:\s+para\s+(?:la|el)|,|\.$|$)", t)
+    if m and 3 < len(m.group(1)) < 160:
+        return m.group(1).strip(" ,.")
+    m = re.search(r"(?i)como\s+personal\s+laboral\s+(?:fijo|temporal)?,?\s*(?:en\s+|con\s+la\s+categor[íi]a\s+de\s+)?([^,.;]{4,140})", t)
+    if m:
+        return "Personal laboral: " + m.group(1).strip(" ,.")
     m = re.search(r"(?i)bolsa\s+(?:de\s+(?:empleo|trabajo)\s+)?(?:de|para)\s+(.{3,120}?)(?:,|\.|$)", t)
     if m:
         return "Bolsa de " + m.group(1).strip(" ,.")
     return None
+
+
+MENORES = {"de", "del", "la", "las", "los", "el", "y", "e", "para", "con", "en", "a", "al", "por"}
+
+
+def titulo_bonito(s):
+    palabras = (s or "").lower().split()
+    return " ".join(p if (i and p in MENORES) else p[:1].upper() + p[1:] for i, p in enumerate(palabras))
+
+
+def organismo_estado(org_titulo, departamento):
+    dep = titulo_bonito(departamento)
+    o = org_titulo or ""
+    m = re.match(r"(?i)^(?:presidencia|direcci[óo]n(?:\s+general)?|secretar[íi]a\s+general|gerencia|subdirecci[óo]n general)\s+"
+                 r"(?:de\s+la|del|de\s+los|de)\s+((?:Agencia|Instituto|Consejo|Autoridad|Organismo|Comisi[óo]n|Centro|Entidad|Servicio|"
+                 r"Mutualidad|Fondo|Consorcio|Museo|Biblioteca|Delegaci[óo]n|Parque|Real|Oficina|Tesorer[íi]a|Intervenci[óo]n)\b.*)", o)
+    if m:
+        return m.group(1)
+    if not o or re.match(r"(?i)^(subsecretar[íi]a|secretar[íi]a de estado|direcci[óo]n general|letrado mayor|comisi[óo]n permanente|"
+                         r"presidencia de las cortes|mesa)", o):
+        return dep or o
+    return o
+
+
+RE_ENTIDAD = (r"(?:Servicio Andaluz de Salud|Agencia|Instituto|Fundaci[óo]n|Empresa|Universidad|Consorcio|Ente|Escuela|Patronato|"
+              r"Centro|Parlamento|C[áa]mara|Defensor|Consejo|Sociedad|Organismo)")
+
+
+def simplifica_organismo(o, seccion=""):
+    o = limpia(o)
+    m = re.match(r"(?i)^(?:direcci[óo]n(?:\s+general)?(?:\s+gerencia)?(?:\s+de\s+[^,]+?)?|presidencia|gerencia|viceconsejer[íi]a|"
+                 r"secretar[íi]a\s+general(?:\s+de\s+[^,]+?)?|rectorado|comisi[óo]n ejecutiva|consejo de administraci[óo]n)\s+"
+                 r"(?:de\s+la|del|de\s+los|de)\s+(" + RE_ENTIDAD + r"\b.*)", o)
+    if m:
+        return m.group(1)
+    if re.match(r"(?i)^(direcci[óo]n general|viceconsejer[íi]a|secretar[íi]a general|delegaci[óo]n territorial)", o) and seccion:
+        return "Junta de Andalucía · " + seccion
+    return o

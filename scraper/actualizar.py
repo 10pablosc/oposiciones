@@ -17,8 +17,8 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from textos import (EXCLUIR, denominacion_de_titulo, extrae_grupo,  # noqa: E402
-                    extrae_num_plazas, extrae_personal, extrae_plazo,
+from textos import (EXCLUIR, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
+                    extrae_grupo, extrae_num_plazas, extrae_personal, extrae_plazo,
                     extrae_requisitos, extrae_sistema, extrae_titulacion,
                     limpia, lugares_no_sevilla, menciona_sevilla, norm,
                     suma_plazo, tipo_proceso)
@@ -31,11 +31,20 @@ F_EST = os.path.join(DATA, "estado.json")
 F_OUT = os.path.join(DOCS, "convocatorias.json")
 
 # Ventanas de búsqueda hacia atrás (días)
-VENTANA_LOCAL = 365      # BOP y extractos locales del BOE
-VENTANA_ESTADO = 120     # convocatorias estatales del BOE
-VENTANA_BOJA = 150       # BOJA
-VENTANA_BOLSA = 120      # bolsas del BOP (su plazo cuenta desde el BOP)
+VENTANA_LOCAL = int(os.environ.get("VENTANA_LOCAL", "365"))      # BOP y extractos locales del BOE
+VENTANA_ESTADO = int(os.environ.get("VENTANA_ESTADO", "120"))     # convocatorias estatales del BOE
+VENTANA_BOJA = int(os.environ.get("VENTANA_BOJA", "150"))       # BOJA
+VENTANA_BOLSA = int(os.environ.get("VENTANA_BOLSA", "120"))      # bolsas del BOP (su plazo cuenta desde el BOP)
 REVISION = 4             # días recientes que se revisan en cada ejecución
+
+INICIO = time.time()
+MAX_MINUTOS = float(os.environ.get("MAX_MINUTOS", "95"))
+
+
+def sin_tiempo():
+    """Para no pasarse del tiempo máximo de la tarea: lo pendiente se hace en la siguiente ejecución."""
+    return (time.time() - INICIO) / 60 > MAX_MINUTOS
+
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"
@@ -50,7 +59,30 @@ def log(*a):
 # Red y conversión de documentos
 # ---------------------------------------------------------------------------
 
+CACHE = os.environ.get("CACHE_DIR")
+
+
 def descarga(url, binario=False, intentos=5, aceptar=None):
+    if CACHE:
+        import hashlib
+        ruta = os.path.join(CACHE, hashlib.sha1(url.encode()).hexdigest())
+        if os.path.exists(ruta):
+            with open(ruta, "rb") as f:
+                datos = f.read()
+            if datos == b"__404__":
+                return None
+            return datos if binario else datos.decode("utf-8", errors="replace")
+        datos = _descarga(url, True, intentos, aceptar)
+        os.makedirs(CACHE, exist_ok=True)
+        with open(ruta, "wb") as f:
+            f.write(b"__404__" if datos is None else datos)
+        if datos is None:
+            return None
+        return datos if binario else datos.decode("utf-8", errors="replace")
+    return _descarga(url, binario, intentos, aceptar)
+
+
+def _descarga(url, binario=False, intentos=5, aceptar=None):
     ultimo = None
     for i in range(intentos):
         try:
@@ -123,14 +155,16 @@ def guarda(ruta, obj):
     os.replace(tmp, ruta)
 
 
-def pendientes(procesados, desde, hasta):
+def pendientes(procesados, desde, hasta, recientes_primero=False):
     """Días de la ventana que hay que visitar (los no hechos y los más recientes)."""
     hechos = set(procesados)
+    todos = []
     d = desde
     while d <= hasta:
         if d.isoformat() not in hechos or d > hasta - timedelta(days=REVISION):
-            yield d
+            todos.append(d)
         d += timedelta(days=1)
+    return list(reversed(todos)) if recientes_primero else todos
 
 
 def poda_vistos(vistos, hoy):
@@ -206,19 +240,21 @@ def refs_bop(texto):
 def clasifica_boe(it):
     dep = norm(it["departamento"])
     tit = norm(it["titulo"])
-    if EXCLUIR.search(tit):
+    if EXCLUIR.search(tit) or es_provision(it["titulo"] + " " + it["epigrafe"]) or en_el_extranjero(it["titulo"]):
         return None
     if dep == "administracion local":
         if re.search(r"\(sevilla\)|ayuntamiento de sevilla\b|diputacion provincial de sevilla", tit):
             return "local"
         return None
     if dep == "universidades":
-        if UNIV_SEVILLA.search(tit) and re.search(r"convoca|convocatoria", tit):
+        if UNIV_SEVILLA.search(tit) and RE_CONVOCA_ESTRICTO.search(tit):
             return "universidad"
         return None
     if "andalucia" in dep or CCAA_NO_ANDALUCIA.search(dep):
         return None  # la Junta se toma del BOJA; otras comunidades no interesan
-    if re.search(r"convoca|convocatoria", tit):
+    if re.search(r"instituto nacional de gestion sanitaria|\bingesa\b", tit):
+        return None  # sus plazas están en Ceuta y Melilla
+    if RE_CONVOCA_ESTRICTO.search(tit):
         if lugares_no_sevilla(it["titulo"]) and not menciona_sevilla(it["titulo"]):
             return None
         return "estado"
@@ -231,6 +267,11 @@ def procesa_boe(estado, registros, hoy):
     desde = hoy - timedelta(days=VENTANA_LOCAL)
     nuevos = errores = 0
     for d in pendientes(est["procesados"], desde, hoy):
+        if sin_tiempo():
+            log("  BOE: tiempo agotado, se continúa en la próxima ejecución")
+            break
+        if d.day == 1:
+            log(f"  BOE: revisando {d:%m/%Y}…")
         if d.weekday() == 6:
             est["procesados"].append(d.isoformat())
             continue
@@ -276,20 +317,33 @@ def registro_boe(it, cat):
     completo = it["titulo"] + "\n" + "\n".join(notas) + "\n" + texto
     if cat == "estado":
         lugares = lugares_no_sevilla(texto[:20000])
-        if not menciona_sevilla(texto) and len(lugares) >= 3:
+        if not menciona_sevilla(texto) and (len(lugares) >= 2 or {"ceuta", "melilla"} & set(lugares)):
             return None
-    org = organismo_de_titulo(it["titulo"]) or it["departamento"].title()
-    denoms = []
+    org = organismo_de_titulo(it["titulo"])
+    if cat == "estado":
+        org = organismo_estado(org, it["departamento"])
+    org = org or titulo_bonito(it["departamento"])
+    denoms, suma = [], 0
     for n in notas:
         m = re.match(r"(?i)(?:turno libre|promoci[óo]n interna|acceso libre|discapacidad|estabilizaci[óo]n|concurso|oposici[óo]n)[^:]{0,60}:\s*(.+)", n)
         if m:
-            denoms.append(m.group(1).strip(" ."))
+            for trozo in re.split(r"\.\s+|;\s*", m.group(1).strip(" .")):
+                k = re.search(r"\s*\b(\d+)\s+plazas?\b", trozo)
+                if k:
+                    suma += int(k.group(1))
+                nombre = re.sub(r"\s*\b\d+\s+plazas?\b", "", trozo).strip(" .,")
+                if nombre:
+                    denoms.append(nombre)
     denom = "; ".join(dict.fromkeys(denoms)) if denoms else None
     if not denom:
         primeras = [l for l in texto.split("\n") if re.match(r"(?i)^[-–•]?\s*(una?|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|\d+)\s+plazas?\b", l)]
         denom = "; ".join(filter(None, (denominacion_de_titulo(l) for l in primeras[:4]))) or None
     if not denom:
-        denom = denominacion_de_titulo(it["titulo"]) or it["epigrafe"] or it["titulo"][:120]
+        denom = denominacion_de_titulo(it["titulo"], preferir_cuerpo=(cat != "local"))
+    if not denom and cat == "local":
+        denom = "Varias plazas" if "varias plazas" in norm(it["titulo"]) else "Una plaza (ver bases)"
+    if not denom:
+        denom = it["epigrafe"] or it["titulo"][:120]
     r = {
         "id": it["id"],
         "fuente": "BOE",
@@ -303,11 +357,11 @@ def registro_boe(it, cat):
         "url_boe": it["url"],
         "plazo": extrae_plazo(texto),
         "refs_bop": refs_bop(completo) if cat == "local" else [],
-        "plazas": extrae_num_plazas(" ".join(notas), texto[:3000], it["titulo"]),
+        "plazas": suma or extrae_num_plazas(texto[:3000], it["titulo"]),
         "grupo": extrae_grupo(texto, it["titulo"] + " " + " ".join(notas)),
-        "personal": extrae_personal(it["titulo"] + " " + it["epigrafe"] + " " + texto[:3000]),
+        "personal": extrae_personal(it["titulo"]) or extrae_personal(texto[:1200]) or extrae_personal(it["epigrafe"]),
         "sistema": extrae_sistema(it["titulo"] + " " + texto[:4000]),
-        "tipo": tipo_proceso(it["titulo"] + " " + " ".join(notas) + " " + texto[:1500]),
+        "tipo": tipo_proceso(it["titulo"] + " " + " ".join(notas)),
         "requisitos": extrae_requisitos(texto) if cat != "local" else None,
         "titulacion": extrae_titulacion(texto) if cat != "local" else None,
         "sevilla_en_texto": menciona_sevilla(texto),
@@ -321,7 +375,7 @@ def organismo_de_titulo(t):
     m = re.search(r"(?i),\s*(?:de la|del|de)\s+((?:Ayuntamiento|Diputaci[óo]n|Consorcio|Mancomunidad|Universidad|Agencia|Instituto|"
                   r"Presidencia|Subsecretar[íi]a|Secretar[íi]a|Direcci[óo]n|Delegaci[óo]n|Servicio|Organismo|Patronato|Gerencia|"
                   r"Fundaci[óo]n|Empresa|Consejer[íi]a|Viceconsejer[íi]a|Parlamento|C[áa]mara|Tribunal|Consejo|Mutualidad|Ente)"
-                  r"[^,]*?)(?:,\s*(?:por la que|referente|de corrección|sobre)|\s+por la que|\s+referente|$)", t)
+                  r"[^,]*?)(?:,\s*(?:de\s+Sevilla,\s*)?(?:por la que|por el que|referente|de corrección|sobre)|\s+por la que|\s+por el que|\s+referente|$)", t)
     return limpia(m.group(1)) if m else None
 
 
@@ -362,6 +416,36 @@ def boja_seccion(anio, num):
     return fecha, items
 
 
+def primer_numero_boja(anio, desde, est):
+    """Primer número del BOJA del año con fecha >= desde (búsqueda binaria; se guarda para no repetirla)."""
+    if anio < desde.year:
+        return 1
+    clave = f"inicio_{anio}_{desde.isoformat()[:7]}"
+    if clave in est:
+        return est[clave]
+    cache = {}
+
+    def fecha_de(n):
+        if n not in cache:
+            try:
+                cache[n] = boja_seccion(anio, n)[0]
+            except Exception:  # noqa: BLE001
+                cache[n] = None
+        return cache[n]
+
+    lo, hi = 1, 400
+    while lo < hi:
+        mid = (lo + hi) // 2
+        f = fecha_de(mid)
+        if f is None or f >= desde.isoformat():
+            hi = mid
+        else:
+            lo = mid + 1
+    inicio = max(1, lo - 3)
+    est[clave] = inicio
+    return inicio
+
+
 def boja_rss():
     x = descarga("https://www.juntadeandalucia.es/boja/distribucion/s53.xml") or ""
     items = []
@@ -379,9 +463,9 @@ def boja_rss():
 
 def clasifica_boja(it):
     t = norm(it["titulo"])
-    if EXCLUIR.search(t):
+    if EXCLUIR.search(t) or es_provision(it["titulo"]):
         return False
-    if not re.search(r"convoca|convocatoria|bases|proceso selectivo|pruebas selectivas|bolsa", t):
+    if not RE_CONVOCA.search(t):
         return False
     if re.search(r"universidad", t) and not UNIV_SEVILLA.search(t):
         return False
@@ -398,8 +482,8 @@ def procesa_boja(estado, registros, hoy):
     candidatos = []
     for anio in sorted({desde.year, hoy.year}):
         hechos = set(est["numeros"].setdefault(str(anio), []))
-        num, fallos = 1, 0
-        while num < 400 and fallos < 4:
+        num, fallos = primer_numero_boja(anio, desde, est), 0
+        while num < 400 and fallos < 4 and not sin_tiempo():
             if num in hechos:
                 num += 1
                 fallos = 0
@@ -468,15 +552,15 @@ def registro_boja(it, rid):
         "categoria": "universidad" if univ else ("sas" if sas else "junta"),
         "titulo_oficial": tit,
         "denominacion": denominacion_de_titulo(tit) or tit[:140],
-        "organismo": organismo_de_titulo(tit) or it.get("organismo_seccion") or "Junta de Andalucía",
+        "organismo": simplifica_organismo(organismo_de_titulo(tit) or "", it.get("organismo_seccion") or "") or it.get("organismo_seccion") or "Junta de Andalucía",
         "fecha_publicacion": it["fecha"],
         "url_bases": it["url"],
         "plazo": extrae_plazo(texto),
         "plazas": extrae_num_plazas(tit, texto[:4000]),
         "grupo": extrae_grupo(texto, tit),
-        "personal": extrae_personal(tit + " " + texto[:3000]),
+        "personal": extrae_personal(tit) or extrae_personal(texto[:2000]),
         "sistema": extrae_sistema(tit + " " + texto[:4000]),
-        "tipo": tipo_proceso(tit + " " + texto[:1500]),
+        "tipo": tipo_proceso(tit),
         "requisitos": extrae_requisitos(texto),
         "titulacion": extrae_titulacion(texto),
         "localidad": localidad,
@@ -526,7 +610,7 @@ def bop_listado(d):
 
 def bop_candidato(it):
     t = norm(it["titulo"])
-    if EXCLUIR.search(t) or RE_BOP_NO.search(t):
+    if EXCLUIR.search(t) or RE_BOP_NO.search(t) or es_provision(it["titulo"]):
         return False
     return bool(RE_BOP_CAND.search(t) and RE_BOP_PLAZA.search(t))
 
@@ -545,9 +629,17 @@ def bop_detalle(it):
     return meta
 
 
+def anunciante_norm(a):
+    a = norm(a)
+    if "recursos humanos" in a or "gerencia de urbanismo" in a or a.startswith("servicio de"):
+        return "sevilla"
+    if "empleado publico" in a or "diputacion" in a or a.startswith("area de"):
+        return "diputacion"
+    return a
+
+
 def merece_detalle(it, registros, hoy):
-    """Evita descargar bases que ya sabemos cerradas o demasiado antiguas."""
-    t = norm(it["titulo"])
+    """Evita descargar bases cuyo plazo ya sabemos cerrado (por su extracto en el BOE) o demasiado antiguas."""
     edad = (hoy - date.fromisoformat(it["fecha"])).days
     if tipo_proceso(it["titulo"]) == "Bolsa de empleo" and edad > VENTANA_BOLSA:
         return False
@@ -555,20 +647,20 @@ def merece_detalle(it, registros, hoy):
     if not m:
         return True
     num = int(m.group(1))
-    anun = norm(it["anunciante"])
+    anun = anunciante_norm(it["anunciante"])
+    estados = []
     for b in registros.values():
         if b["fuente"] != "BOE" or b["categoria"] != "local":
             continue
         if not any(ref["num"] == num and ref["fecha"] == it["fecha"] for ref in b.get("refs_bop", [])):
             continue
-        if anun and anun not in norm(b.get("localidad") or b["organismo"]):
+        destino = norm(b.get("localidad") or ("diputacion" if "diputacion" in norm(b["organismo"]) else b["organismo"]))
+        if anun and anun != destino and anun not in destino and destino not in anun:
             continue
-        est, _, _ = calcula_estado(b, hoy)
-        if est == "abierto":
-            return True
-        if "varias" not in norm(b["titulo_oficial"]) and len(b.get("refs_bop", [])) == 1:
-            return False  # su extracto del BOE ya está cerrado
-    return True
+        estados.append(calcula_estado(b, hoy)[0])
+    if not estados:
+        return True               # aún sin extracto en el BOE: plazo pendiente de apertura
+    return any(e in ("abierto", "sin_determinar") for e in estados)
 
 
 def procesa_bop(estado, registros, hoy):
@@ -576,7 +668,12 @@ def procesa_bop(estado, registros, hoy):
     vistos = estado.setdefault("bop_vistos", {})
     desde = hoy - timedelta(days=VENTANA_LOCAL)
     nuevos = errores = 0
-    for d in pendientes(est["procesados"], desde, hoy):
+    for d in pendientes(est["procesados"], desde, hoy, recientes_primero=True):
+        if sin_tiempo():
+            log("  BOP: tiempo agotado, se continúa en la próxima ejecución")
+            break
+        if d.day == 1:
+            log(f"  BOP: revisando {d:%m/%Y}…")
         if d.weekday() >= 5:
             est["procesados"].append(d.isoformat())
             continue
@@ -639,7 +736,7 @@ def completa_desde_boe(registros, hoy):
             except Exception as e:  # noqa: BLE001
                 log("  BOP (desde BOE) error", ref, e)
                 continue
-            loc = norm(b.get("localidad") or "")
+            loc = norm(b.get("localidad") or ("diputacion" if "diputacion" in norm(b["organismo"]) else ""))
             for it in items:
                 clave = it["cve"] or it["url"]
                 if clave in registros:
@@ -647,9 +744,9 @@ def completa_desde_boe(registros, hoy):
                 t = norm(it["titulo"])
                 if EXCLUIR.search(t) or not re.search(r"bases|convocatoria", t):
                     continue
-                if loc and loc not in norm(it["anunciante"]) and norm(it["anunciante"]) not in loc:
-                    if not (loc == "sevilla" and "recursos humanos" in norm(it["anunciante"])):
-                        continue
+                anun = anunciante_norm(it["anunciante"])
+                if loc and loc != anun and loc not in anun and anun not in loc:
+                    continue
                 try:
                     r = registro_bop(it)
                 except Exception as e:  # noqa: BLE001
@@ -857,6 +954,8 @@ def genera_salida(registros, hoy, estado):
         if r["fuente"] == "BOE" and (r.get("unido_a") or r.get("duplicado_de")):
             continue  # ya se muestra junto a sus bases
         f = ficha(r, hoy)
+        if f["tipo"] == "Provisión de puestos":
+            continue
         if f["estado"] in VIGENTES:
             fichas.append(f)
     fichas.sort(key=lambda f: (f["fecha_publicacion"], f["id"]), reverse=True)
@@ -898,7 +997,7 @@ def main():
     registros = carga(F_REG, {})
     estado.setdefault("fuentes", {})
     if not a.solo_salida:
-        for nombre, fn in (("BOE", procesa_boe), ("BOP", procesa_bop), ("BOJA", procesa_boja)):
+        for nombre, fn in (("BOE", procesa_boe), ("BOJA", procesa_boja), ("BOP", procesa_bop)):
             if nombre.lower() not in a.fuentes:
                 continue
             ini = time.time()
