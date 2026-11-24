@@ -18,7 +18,7 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from textos import (EXCLUIR, grupo_laboral, titulacion_valida, denominacion_de_texto, titulo_sin_preambulo, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
+from textos import (EXCLUIR, quita_firmas, grupo_laboral, titulacion_valida, denominacion_de_texto, titulo_sin_preambulo, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
                     extrae_grupo, extrae_num_plazas, extrae_personal, extrae_plazo,
                     extrae_requisitos, extrae_sistema, extrae_titulacion,
                     limpia, lugares_no_sevilla, menciona_sevilla, norm,
@@ -1090,10 +1090,11 @@ def ficha(r, hoy):
         "fin_plazo": fin,
         "fin_estimado": estimada,
         "plazo_texto": (boe.get("plazo") or r.get("plazo") or {}).get("frase"),
-        "requisitos": r.get("requisitos"),
+        "requisitos": quita_firmas(r.get("requisitos")),
         "titulacion": r.get("titulacion") if titulacion_valida(r.get("titulacion")) else None,
         "ocr": bool(r.get("ocr")),
-        "requisitos_generales": r.get("requisitos_generales"),
+        "requisitos_generales": ({**r["requisitos_generales"], "texto": quita_firmas(r["requisitos_generales"].get("texto"))}
+                                 if r.get("requisitos_generales") else None),
     }
 
 

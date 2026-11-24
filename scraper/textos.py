@@ -731,3 +731,17 @@ def grupo_laboral(texto, titulo=""):
     if m:
         return f"Laboral (grupo {m.group(1).upper()})"
     return None
+
+
+RE_FIRMA = re.compile(
+    r"(?i)c[óo]digo seguro de verificaci[óo]n\s+\S+(?:\s+estado)?(?:\s+fecha y hora)?[^\n]*?\d{2}/\d{2}/\d{4}\s+\d{1,2}:\d{2}(?::\d{2})?\s*|"
+    r"observaciones\s+p[áa]gina\s+\d+/\d+\s*|url de verificaci[óo]n\s*(?:https?://\S+)?\s*|"
+    r"c[óo]digo seguro de verificaci[óo]n[^\n]{0,120}|firmado (?:digitalmente|electr[óo]nicamente) por[^\n]{0,120}")
+
+
+def quita_firmas(texto):
+    """Elimina restos de las bandas de firma electrónica que se cuelan al extraer el texto del PDF."""
+    if not texto:
+        return texto
+    t = RE_FIRMA.sub(" ", texto)
+    return re.sub(r"[ \t]{2,}", " ", t).strip()
