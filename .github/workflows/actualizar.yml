@@ -39,5 +39,6 @@ jobs:
             echo "Sin cambios"
           else
             git commit -m "Actualización diaria $(date -u +%Y-%m-%d)"
+            git pull --rebase
             git push
           fi

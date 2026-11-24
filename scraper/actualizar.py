@@ -48,7 +48,8 @@ def sin_tiempo():
 
 
 SCAN_VERSION = 3   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
-VERSION = 6   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
+BOE_SCAN_VERSION = 2   # súbelo para volver a recorrer los días recientes del BOE (recupera lo que se perdió por un fallo)
+VERSION = 7   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"
@@ -1164,6 +1165,9 @@ def reprocesa(registros, hoy):
         except Exception as e:  # noqa: BLE001
             log("  reproceso error", k, e)
             continue
+        pa, pn = r.get("plazo") or {}, (nuevo or {}).get("plazo") or {}
+        if nuevo and (pa.get("n"), pa.get("tipo")) != (pn.get("n"), pn.get("tipo")):
+            log("  plazo cambiado", k, "|", (pa.get("frase") or "-")[:100], "=>", (pn.get("frase") or "-")[:100])
         if nuevo:
             registros[k] = nuevo
         else:
@@ -1227,10 +1231,12 @@ def main():
     BG_CACHE.update(estado.get("bases_generales", {}))
     limite = (hoy - timedelta(days=VENTANA_ESTADO)).isoformat()
     DESCARTES.update({k: v for k, v in estado.get("descartes", {}).items() if v["fecha"] >= limite})
-    if not a.solo_salida and estado.get("descartes_version", 0) < 1:
-        # una vez: se repasan los días del BOE de la ventana estatal para registrar los descartes
+    if not a.solo_salida and estado.get("boe_scan", 0) < BOE_SCAN_VERSION:
+        log(f"Nueva revisión de los días del BOE de los últimos {VENTANA_ESTADO} días (versión {BOE_SCAN_VERSION})")
         estado.setdefault("boe", {"procesados": []})["procesados"] = [d for d in estado["boe"].get("procesados", []) if d < limite]
-        estado["descartes_version"] = 1
+        estado["boe_vistos"] = {k: v for k, v in estado.get("boe_vistos", {}).items() if v < limite}
+        estado["boe_scan"] = BOE_SCAN_VERSION
+        estado.pop("descartes_version", None)
     if not a.solo_salida and estado.get("scan_version", 1) < SCAN_VERSION:
         log(f"Nueva revisión completa del BOP y del BOJA (versión {SCAN_VERSION})")
         estado.setdefault("bop", {})["procesados"] = []
@@ -1260,7 +1266,8 @@ def main():
     salida = genera_salida(registros, hoy, estado)
     if not a.solo_salida and "pag" in a.fuentes:
         import comprobacion
-        comp, revisadas = comprobacion.comprobacion(salida["convocatorias"], list(DESCARTES.values()))
+        comp, revisadas, estado["pag_detalles"] = comprobacion.comprobacion(
+            salida["convocatorias"], DESCARTES, estado.get("pag_detalles"))
         estado["comprobacion"] = comp
         if revisadas:
             guarda(os.path.join(DATA, "buscador_oficial.json"), revisadas)   # para auditar la comparación

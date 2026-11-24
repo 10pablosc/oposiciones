@@ -158,10 +158,33 @@ RE_PLAZO_D = re.compile(
 )
 
 
+# "plazo (de presentación) de veinte días hábiles contados a partir del día siguiente al de la publicación de esta convocatoria"
+RE_PLAZO_P = re.compile(
+    r"plazo\s+(?:de\s+presentacion\s+)?(?:maximo\s+|improrrogable\s+)?(?:de\s+)?"
+    r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|mes(?:es)?)\b,?\s*"
+    r"(?:(?:que\s+se\s+)?(?:contados?|contara|computados?|computara|a\s+contar)\s+)?(?:a\s+partir|desde)\s+(?:del?\s+)?(?:dia\s+)?siguiente\s+"
+    r"(?=(?P<resto>.{0,260}))",
+    re.S,
+)
+RE_PUBLICA_CONV = re.compile(r"^.{0,60}publicacion\s+(?:de\s+)?(?:esta|la\s+presente|el\s+presente|la|el|su|dicha|dicho|este)?\s*"
+                             r"(?:convocatoria|extracto|anuncio|bases|resolucion|orden|edicto)")
+# "deberán presentar su solicitud en los quince días siguientes a la publicación de la presente convocatoria"
+RE_PLAZO_E = re.compile(
+    r"presentar\s+(?:su|sus|la|las)?\s*solicitud(?:es)?(?:[^.]|\.(?!\s)){0,80}?\b(?:en|dentro\s+de)\s+los\s+"
+    r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?)\s+siguientes\b"
+    r"(?=(?P<resto>.{0,260}))",
+    re.S,
+)
+RE_NO_SOLICITUD = re.compile(r"subsan|alegaci|reclamaci|recurso|plantilla|documentacion acreditativa|toma de posesion|calificaci")
+
+
 def extrae_plazo(texto):
     """Devuelve dict {n, tipo, boletin, frase} o None."""
     t = _sin_abrev(norm(texto))
-    candidatos = list(RE_PLAZO.finditer(t)) + list(RE_PLAZO_B.finditer(t)) + list(RE_PLAZO_C.finditer(t))
+    fuertes = [m for m in RE_PLAZO_P.finditer(t)
+               if RE_PUBLICA_CONV.search(m.group("resto")) and not re.search(r"^.{0,80}(?:lista|relacion|listado|nombramiento)", m.group("resto"))]
+    candidatos = list(RE_PLAZO.finditer(t)) + fuertes + list(RE_PLAZO_B.finditer(t)) + list(RE_PLAZO_C.finditer(t))
+    candidatos += [m for m in RE_PLAZO_E.finditer(t) if RE_PUBLICA_CONV.search(m.group("resto"))]
     candidatos += [m for m in RE_PLAZO_D.finditer(t) if re.search(r"solicitud|instancia", m.group("resto")[:250])]
     for m in candidatos:
         n = a_numero(m.group("num"))
@@ -172,6 +195,9 @@ def extrae_plazo(texto):
                      r"dictara|declarando|lista provisional|admitid|excluid|resolucion en el plazo|resolvera|finalizado el plazo|"
                      r"terminado el plazo|expirado el plazo|concluido el plazo|transcurrido el plazo", cerca):
             continue
+        inicio_frase = max(t.rfind(". ", 0, m.start()), t.rfind("\n", 0, m.start()), m.start() - 300)
+        if RE_NO_SOLICITUD.search(t[inicio_frase: m.start()]):
+            continue   # p. ej. "Las alegaciones ... deberán presentarse dentro del plazo de cinco días"
         tipo_txt = m.group("tipo")
         if tipo_txt.startswith("mes"):
             tipo = "meses"

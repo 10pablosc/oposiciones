@@ -277,6 +277,8 @@
       return '<li><a href="' + url(x.url) + '" target="_blank" rel="noopener">' + esc(x.denominacion) + "</a>" +
         '<div class="det">' + esc(x.organo) + " · " + esc(x.ubicacion) + (x.fin ? " · Fin de plazo: " + esc(x.fin) : "") +
         (x.plazas ? " · " + esc(x.plazas) : "") + "</div>" +
+        (!conMotivo && x.publicada ? '<div class="det"><strong>Publicada en:</strong> ' +
+          (url(x.publicada.url) ? '<a href="' + url(x.publicada.url) + '" target="_blank" rel="noopener">' + esc(x.publicada.texto) + "</a>" : esc(x.publicada.texto)) + "</div>" : "") +
         (conMotivo && x.motivo ? '<div class="det"><strong>Motivo:</strong> ' + esc(x.motivo) +
           (url(x.boe) ? ' (<a href="' + url(x.boe) + '" target="_blank" rel="noopener">convocatoria en el BOE</a>)' : "") + "</div>" : "") +
         "</li>";

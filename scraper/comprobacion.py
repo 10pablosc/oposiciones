@@ -71,8 +71,9 @@ def _tarjetas(h):
 def consulta_pag():
     op = _abridor()
     _get(op, PORTADA)   # la búsqueda necesita la cookie de sesión de la portada
-    todas = {}
+    todas, por_ambito = {}, {}
     for nombre, params, prefijo in AMBITOS:
+        por_ambito[nombre] = 0
         p = 1
         while p <= 30:
             h = _get(op, f"{BASE}?{params}&pag_fecha=fechaExacta&pag_sort=desc&p={p}&numRegistrosMostrar=100")
@@ -81,13 +82,17 @@ def consulta_pag():
             buenos = [it for it in items if norm(it["ubicacion"]).startswith(norm(prefijo))]
             if total > 5000 or (items and len(buenos) < 0.8 * len(items)):
                 raise RuntimeError(f"El buscador oficial no ha aplicado los filtros ({nombre})")
+            if p == 1:
+                print(f"  buscador oficial · {nombre}: total {total}, tarjetas {len(items)}, "
+                      f"ubicaciones {sorted({it['ubicacion'] for it in items})[:4]}", flush=True)
             for it in buenos:
                 it["ambito"] = nombre
                 todas[it["ref"]] = it
+                por_ambito[nombre] += 1
             if not items or p * 100 >= total:
                 break
             p += 1
-    return list(todas.values())
+    return list(todas.values()), por_ambito, op
 
 
 STOP = {"de", "del", "la", "las", "los", "el", "y", "e", "en", "a", "para", "por", "con", "personal", "plaza", "plazas",
@@ -114,30 +119,90 @@ def _fecha(s):
     return date(int(m.group(3)), int(m.group(2)), int(m.group(1))) if m else None
 
 
-def coincide(item, ficha):
-    """¿La convocatoria del buscador oficial es esta ficha? Exige coincidir en la plaza o en el organismo concreto,
-    y además en la fecha de fin de plazo o en varias palabras del nombre de la plaza."""
+def detalle(op, ref):
+    """Datos de la ficha del buscador: dónde se publicó (BOE, BOJA, BOP o solo la web del organismo)."""
+    h = _get(op, DETALLE.format(ref=ref))
+    i = h.find('class="pag-elastic-response-detail"')
+    seg = h[i: h.find("<footer", i)] if i >= 0 else ""
+    campos = {_limpia(a): _limpia(b) for a, b in re.findall(
+        r'pag-detail__subtitle"[^>]*>(.*?)</[^>]+>\s*<[^>]*pag-detail__text"[^>]*>(.*?)</(?:p|div|span)>', seg, re.S)}
+    enlaces = [html.unescape(u) for u in re.findall(r'href="([^"]+)"', seg) if "gestionsuscripciones" not in u]
+    todo = " ".join(enlaces)
+    return {
+        "campos": campos,
+        "boe": sorted(set(re.findall(r"BOE-[AB]-\d{4}-\d+", todo))),
+        "boja": sorted({(a, str(int(b))) for a, b in re.findall(r"boja/(\d{4})/(\d{1,3})/", todo)}),
+        "bop": any("bopsevilla" in u or "dipusevilla" in u for u in enlaces),
+        "web": next((u for u in enlaces if u.startswith("http") and not re.search(r"boe\.es|juntadeandalucia\.es/(?:e)?boja|sede\.|registro", u)), None),
+    }
+
+
+COMPATIBLE = {   # qué tipos de organismo de la lista corresponden a cada ámbito del buscador oficial
+    "Estado (ámbito nacional)": {"Administración del Estado"},
+    "Junta de Andalucía (ámbito autonómico)": {"Junta de Andalucía", "Servicio Andaluz de Salud", "Universidad", "Otros"},
+    "Provincia de Sevilla (ámbito local)": {"Ayuntamiento", "Diputación de Sevilla", "Otros entes locales", "Universidad", "Otros"},
+}
+
+
+def puntua(item, ficha):
+    """0 si la convocatoria del buscador oficial no puede ser esta ficha; si puede, cuanto más alto, más parecida."""
     tp = _tok(item["denominacion"])
     tf = _tok(" ".join([ficha["denominacion"], ficha["titulo_oficial"]]))
     comunes = tp & tf
-    org = _org(item["organo"]) & _org(" ".join([ficha["organismo"], ficha["titulo_oficial"], ficha.get("departamento") or ""]))
+    frac = len(comunes) / len(tp) if tp else 0
+    org = bool(_org(item["organo"]) & _org(" ".join([ficha["organismo"], ficha.get("departamento") or ""])))
+    compatible = ficha.get("tipo_organismo") in COMPATIBLE.get(item.get("ambito"), set())
+    if not compatible and not org:
+        return 0
     fp = _fecha(item["fin"])
     ff = date.fromisoformat(ficha["fin_plazo"]) if ficha.get("fin_plazo") else None
-    misma_fecha = bool(fp and ff and abs((fp - ff).days) <= 3)
-    junta = item.get("ambito", "").startswith("Junta") and ficha.get("tipo_organismo") in ("Junta de Andalucía", "Servicio Andaluz de Salud")
-    if misma_fecha and (comunes or org or junta):
-        return True
-    if len(comunes) >= 2 and (org or len(comunes) >= max(2, round(len(tp) * 0.7))):
-        return True
-    return False
+    dias = abs((fp - ff).days) if fp and ff else None
+    misma = dias is not None and dias <= 3
+    cerca = dias is not None and dias <= 10
+    sin_fecha = ff is None
+    if (misma and (frac >= 0.34 or org)) \
+            or (len(comunes) >= 2 and frac >= 0.5 and (org or cerca or sin_fecha)) \
+            or (comunes and frac >= 0.5 and org and (cerca or sin_fecha)):
+        td = _tok(ficha["denominacion"])
+        cubre = len(comunes & td) / len(td) if td else 0   # cuánto del nombre de la ficha está en la del buscador
+        return 3 * frac + 1.5 * cubre + 2 * org + 2 * misma + cerca + (0.1 * (10 - dias) if cerca else 0)
+    if dias is not None and dias <= 1 and compatible and item.get("ambito", "").startswith("Junta"):
+        return 0.5   # la Junta agrupa muchas categorías en una sola resolución
+    return 0
+
+
+def mejor(item, fichas):
+    puntos = [(puntua(item, f), f) for f in fichas]
+    puntos = [x for x in puntos if x[0] > 0]
+    return max(puntos, key=lambda x: x[0])[1] if puntos else None
+
+
+def por_boletin(item, fichas, descartes):
+    """Busca por la referencia del boletín que da la ficha del buscador oficial."""
+    d = item.get("detalle") or {}
+    for b in d.get("boe", []):
+        f = next((f for f in fichas if b == f["id"] or b in (f.get("url_boe") or "") or b in (f.get("url_bases") or "")), None)
+        if f:
+            return f, None
+        if b in descartes:
+            return None, descartes[b]
+    for anio, num in d.get("boja", []):
+        cands = [f for f in fichas if f["id"].startswith(f"BOJA-{anio}-{num}-")]
+        if len(cands) == 1:
+            return cands[0], None
+        f = mejor(item, cands)
+        if f:
+            return f, None
+    return None, None
 
 
 def explicado(item, descartes):
-    """¿Es una convocatoria estatal que la lista deja fuera a propósito? (mismo ministerio y plazo compatible)."""
+    """¿Es una convocatoria estatal que la lista deja fuera a propósito? (mismo ministerio, nombre parecido y plazo compatible)."""
     fp = _fecha(item["fin"])
     org_item = _org(item["organo"]) | ({"sanidad"} if "sanidad" in norm(item["organo"]) else set())
-    mejor = None
-    for d in descartes:
+    tp = _tok(item["denominacion"])
+    elegido = None
+    for d in descartes.values():
         org_d = _org(d["departamento"] + " " + d["titulo"])
         if not (org_item & org_d):
             continue
@@ -145,25 +210,44 @@ def explicado(item, descartes):
             dias = (fp - date.fromisoformat(d["fecha"])).days
             if not (10 <= dias <= 70):
                 continue
-        comunes = _tok(item["denominacion"]) & _tok(d["titulo"])
-        puntos = len(comunes) + (1 if org_item & org_d else 0)
-        if mejor is None or puntos > mejor[0]:
-            mejor = (puntos, d)
-    return mejor[1] if mejor else None
+        comunes = tp & _tok(d["titulo"])
+        if not comunes and "ingesa" not in norm(d["motivo"]):
+            continue
+        puntos = len(comunes)
+        if elegido is None or puntos > elegido[0]:
+            elegido = (puntos, d)
+    return elegido[1] if elegido else None
 
 
-def compara(items, fichas, descartes=()):
+def donde(item):
+    d = item.get("detalle")
+    if not d:
+        return None
+    if d["boe"]:
+        return {"texto": d["boe"][0], "url": f"https://www.boe.es/buscar/doc.php?id={d['boe'][0]}"}
+    if d["boja"]:
+        return {"texto": f"BOJA nº {d['boja'][0][1]} de {d['boja'][0][0]}", "url": None}
+    if d["bop"]:
+        return {"texto": "BOP de Sevilla", "url": None}
+    return {"texto": "solo en la web del organismo (no en BOE, BOJA ni BOP)", "url": d.get("web")}
+
+
+def compara(items, fichas, descartes=None):
+    descartes = descartes or {}
     omisiones, excluidas, coinciden = [], [], 0
     for it in items:
-        f = next((f for f in fichas if coincide(it, f)), None)
+        f, desc = por_boletin(it, fichas, descartes)
+        if not f and not desc:
+            f = mejor(it, fichas)
+        if not f and not desc:
+            desc = explicado(it, descartes)
         it["coincide_con"] = f["id"] if f else None
+        it["publicada"] = donde(it)
         if f:
             coinciden += 1
-            continue
-        d = explicado(it, descartes)
-        if d:
-            it["motivo"] = d["motivo"]
-            it["boe"] = d.get("url")
+        elif desc:
+            it["motivo"] = desc["motivo"]
+            it["boe"] = desc.get("url") or f"https://www.boe.es/buscar/doc.php?id={desc['id']}"
             excluidas.append(it)
         else:
             omisiones.append(it)
@@ -171,11 +255,27 @@ def compara(items, fichas, descartes=()):
     return coinciden, sorted(omisiones, key=clave), sorted(excluidas, key=clave)
 
 
-def comprobacion(fichas, descartes=()):
+def comprobacion(fichas, descartes=None, cache_detalles=None):
+    """Devuelve (resumen para la web, convocatorias del buscador oficial con su emparejamiento, caché de detalles)."""
+    cache = dict(cache_detalles or {})
+    ahora = datetime.now(timezone.utc).isoformat(timespec="minutes")
     try:
-        items = consulta_pag()
+        items, por_ambito, op = consulta_pag()
     except Exception as e:  # noqa: BLE001
-        return {"ok": False, "fecha": datetime.now(timezone.utc).isoformat(timespec="minutes"), "error": str(e)[:300]}, []
+        return {"ok": False, "fecha": ahora, "error": str(e)[:300]}, [], cache
+    nuevos = 0
+    for it in items:
+        if it["ref"] not in cache:
+            try:
+                cache[it["ref"]] = detalle(op, it["ref"])
+                nuevos += 1
+            except Exception as e:  # noqa: BLE001
+                print("  detalle no disponible", it["ref"], e, flush=True)
+                continue
+        it["detalle"] = cache[it["ref"]]
+    print(f"  fichas del buscador oficial leídas hoy: {nuevos}", flush=True)
+    cache = {k: v for k, v in cache.items() if any(k == it["ref"] for it in items)}
     coinciden, omisiones, excluidas = compara(items, fichas, descartes)
-    return ({"ok": True, "fecha": datetime.now(timezone.utc).isoformat(timespec="minutes"), "total": len(items),
-             "coinciden": coinciden, "posibles_omisiones": omisiones, "excluidas": excluidas}, items)
+    ligeras = lambda xs: [{k: v for k, v in x.items() if k != "detalle"} for x in xs]  # noqa: E731
+    return ({"ok": True, "fecha": ahora, "total": len(items), "por_ambito": por_ambito, "coinciden": coinciden,
+             "posibles_omisiones": ligeras(omisiones), "excluidas": ligeras(excluidas)}, items, cache)
