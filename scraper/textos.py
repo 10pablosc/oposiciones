@@ -337,6 +337,8 @@ def titulacion_valida(v):
 
 def extrae_titulacion(texto):
     v = _extrae_titulacion(texto)
+    if v:
+        v = re.split(r"(?<=[a-záéíóúñ\)])\.\s+(?=[A-ZÁÉÍÓÚ])", v)[0].strip(" .")
     return v if titulacion_valida(v) else None
 
 
@@ -420,6 +422,14 @@ def extrae_requisitos(texto, maximo=4000):
     bloques = []
     for patron in (RE_CAB_REQ, RE_CAB_REQ_CORTA):
         for m in patron.finditer(texto):
+            if not (m.group("num") or m.group("rom") or m.group("ord")):
+                # sin numeración: solo vale si parece una cabecera (línea corta tras un punto o una línea en blanco)
+                ini_l = texto.rfind("\n", 0, m.start()) + 1
+                fin_l = texto.find("\n", m.start())
+                linea = texto[ini_l: fin_l if fin_l >= 0 else len(texto)].strip()
+                previa = texto[texto.rfind("\n", 0, max(ini_l - 1, 0)) + 1: max(ini_l - 1, 0)].strip()
+                if len(linea) > 100 or linea.endswith(",") or (previa and not previa.endswith((".", ":", ";"))):
+                    continue
             b = _bloque_desde(texto, m, maximo)
             if len(b) >= 300:
                 return b
@@ -531,7 +541,8 @@ EXCLUIR = re.compile(
     r"designacion del tribunal|tribunal (?:que ha de juzgar|calificador)|puntuacion|impugnacion|"
     r"plantillas? (?:de respuestas|correctoras?)|respuestas|orden de actuacion|celebracion del sorteo|"
     r"se aplaza|aplazamiento|lugar,? fecha|relacion de seleccionad|propuesta de nombramiento|bases reguladoras|"
-    r"bases generales (?:por las que|que regiran|que han de regir|para) (?:habran de regirse )?(?:las|los) (?:convocatorias|procesos)|se ofertan vacantes|ofertar vacantes|"
+    r"bases generales (?:por las que|que regiran|que han de regir|para) (?:habran de regirse )?(?:las|los) (?:convocatorias|procesos)|"
+    r"aprobacion de las bases generales|bases generales reguladoras|(?:resolucion|acuerdo|anuncio) del tribunal|se ofertan vacantes|ofertar vacantes|"
     r"oferta de vacantes|personas? seleccionad|personal seleccionad|documentacion complementaria|interposicion de recurso|"
     r"recurso contencioso|abstencion|recusacion|seleccion de aspirantes|preseleccionad|jueces? de paz|"
     r"rectificacion de la relacion|relacion complementaria|acreditacion de requisitos|presentacion de documentacion|"

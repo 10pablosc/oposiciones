@@ -48,7 +48,7 @@ def sin_tiempo():
 
 
 SCAN_VERSION = 2   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
-VERSION = 5   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
+VERSION = 6   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"
@@ -1141,7 +1141,8 @@ def reprocesa(registros, hoy):
                       "organismo_seccion": o.get("organismo_seccion") or r.get("organismo_seccion") or "", "fecha": r["fecha_publicacion"]}
                 nuevo = registro_boja(it, r["id"])
             else:
-                it = {"url": r["url_bases"], "titulo": r["titulo_oficial"], "anunciante": o.get("anunciante") or r.get("localidad") or "",
+                anun = o.get("anunciante") or ("Diputación" if "diputaci" in norm(r["organismo"]) else r.get("localidad") or "")
+                it = {"url": r["url_bases"], "titulo": r["titulo_oficial"], "anunciante": anun,
                       "cve": r["id"], "fecha": r["fecha_publicacion"]}
                 nuevo = registro_bop(it)
         except Exception as e:  # noqa: BLE001
