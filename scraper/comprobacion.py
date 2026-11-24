@@ -92,11 +92,21 @@ def consulta_pag():
 
 STOP = {"de", "del", "la", "las", "los", "el", "y", "e", "en", "a", "para", "por", "con", "personal", "plaza", "plazas",
         "grupo", "profesional", "cuerpo", "escala", "categoria", "especialidad", "nivel", "subgrupo", "acceso", "libre",
-        "promocion", "interna", "general", "sistema", "turno", "laboral", "funcionario", "fijo", "tecnico", "tecnica"}
+        "promocion", "interna", "general", "sistema", "turno", "laboral", "funcionario", "fijo", "tecnico", "tecnica",
+        "tecnicoa", "superior", "medio", "auxiliar", "oficial", "titulado", "especialista"}
+# Palabras de los organismos demasiado genéricas para identificar uno concreto
+ORG_GENERICO = {"ministerio", "consejeria", "universidad", "ayuntamiento", "agencia", "instituto", "direccion", "general",
+                "secretaria", "subsecretaria", "andalucia", "junta", "estado", "servicio", "servicios", "nacional", "estatal",
+                "presidencia", "gobierno", "administracion", "publica", "publico", "desarrollo", "sevilla", "provincial",
+                "diputacion", "organismo", "autonomo", "recursos", "humanos", "empleo", "funcion"}
 
 
 def _tok(s):
     return {w for w in re.findall(r"[a-z0-9]+", norm(s)) if len(w) > 2 and w not in STOP and not w.isdigit()}
+
+
+def _org(s):
+    return {w for w in re.findall(r"[a-z0-9]+", norm(s)) if len(w) > 3 and w not in ORG_GENERICO and w not in STOP}
 
 
 def _fecha(s):
@@ -105,15 +115,19 @@ def _fecha(s):
 
 
 def coincide(item, ficha):
+    """¿La convocatoria del buscador oficial es esta ficha? Exige coincidir en la plaza o en el organismo concreto,
+    y además en la fecha de fin de plazo o en varias palabras del nombre de la plaza."""
     tp = _tok(item["denominacion"])
-    tf = _tok(" ".join([ficha["denominacion"], ficha["titulo_oficial"], ficha.get("titulacion") or ""]))
+    tf = _tok(" ".join([ficha["denominacion"], ficha["titulo_oficial"]]))
     comunes = tp & tf
-    org = _tok(item["organo"]) & _tok(ficha["organismo"] + " " + ficha["titulo_oficial"])
-    fp, ff = _fecha(item["fin"]), (date.fromisoformat(ficha["fin_plazo"]) if ficha.get("fin_plazo") else None)
-    misma_fecha = bool(fp and ff and abs((fp - ff).days) <= 3)
-    if misma_fecha and (comunes or org):
+    org = _org(item["organo"]) & _org(ficha["organismo"] + " " + ficha["titulo_oficial"])
+    fp = _fecha(item["fin"])
+    ff = date.fromisoformat(ficha["fin_plazo"]) if ficha.get("fin_plazo") else None
+    misma_fecha = bool(fp and ff and abs((fp - ff).days) <= (3 if ficha.get("fin_estimado") else 1))
+    junta = item.get("ambito", "").startswith("Junta") and ficha.get("tipo_organismo") in ("Junta de Andalucía", "Servicio Andaluz de Salud")
+    if misma_fecha and (comunes or org or junta):
         return True
-    if comunes and len(comunes) >= max(1, round(len(tp) * 0.6)) and (org or len(comunes) >= 2):
+    if len(comunes) >= 2 and (org or len(comunes) >= max(2, round(len(tp) * 0.7))):
         return True
     return False
 
@@ -121,7 +135,9 @@ def coincide(item, ficha):
 def compara(items, fichas):
     omisiones, coinciden = [], 0
     for it in items:
-        if any(coincide(it, f) for f in fichas):
+        f = next((f for f in fichas if coincide(it, f)), None)
+        it["coincide_con"] = f["id"] if f else None
+        if f:
             coinciden += 1
         else:
             omisiones.append(it)
@@ -133,7 +149,7 @@ def comprobacion(fichas):
     try:
         items = consulta_pag()
     except Exception as e:  # noqa: BLE001
-        return {"ok": False, "fecha": datetime.now(timezone.utc).isoformat(timespec="minutes"), "error": str(e)[:300]}
+        return {"ok": False, "fecha": datetime.now(timezone.utc).isoformat(timespec="minutes"), "error": str(e)[:300]}, []
     coinciden, omisiones = compara(items, fichas)
-    return {"ok": True, "fecha": datetime.now(timezone.utc).isoformat(timespec="minutes"), "total": len(items),
-            "coinciden": coinciden, "posibles_omisiones": omisiones}
+    return ({"ok": True, "fecha": datetime.now(timezone.utc).isoformat(timespec="minutes"), "total": len(items),
+             "coinciden": coinciden, "posibles_omisiones": omisiones}, items)

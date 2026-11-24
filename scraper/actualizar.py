@@ -1238,8 +1238,10 @@ def main():
     salida = genera_salida(registros, hoy, estado)
     if not a.solo_salida and "pag" in a.fuentes:
         import comprobacion
-        comp = comprobacion.comprobacion(salida["convocatorias"])
+        comp, revisadas = comprobacion.comprobacion(salida["convocatorias"])
         estado["comprobacion"] = comp
+        if revisadas:
+            guarda(os.path.join(DATA, "buscador_oficial.json"), revisadas)   # para auditar la comparación
         log(f"Comprobación con el buscador oficial: {comp.get('total')} en plazo, "
             f"{len(comp.get('posibles_omisiones', []))} posibles omisiones" if comp.get("ok") else f"Comprobación con error: {comp.get('error')}")
     if estado.get("comprobacion"):
