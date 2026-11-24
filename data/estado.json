@@ -15,6 +15,7 @@
    "titulo": "Bases generales de los procesos selectivos para la provisión, en turno libre, de plazas vacantes en la plantilla de personal laboral (OEP 2024 y sucesivas)",
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-generales-de-los-procesos-selectivos-para-la-provision-en-turno-libre-de-plazas-vacantes-en-la-plantilla-de-personal-laboral-OEP-2024-y-sucesivas/"
   },
+  "95|2025-05-21|isla mayor": null,
   "res|5284/2025": "147|2025-08-01",
   "res|728/2025": "39|2025-02-26"
  },
@@ -907,22 +908,22 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-24T21:34+00:00",
+   "fecha": "2026-11-24T22:16+00:00",
+   "nuevos": 0,
+   "ok": true,
+   "segundos": 3
+  },
+  "BOJA": {
+   "fecha": "2026-11-24T22:16+00:00",
+   "nuevos": 0,
+   "ok": true,
+   "segundos": 6
+  },
+  "BOP": {
+   "fecha": "2026-11-24T22:16+00:00",
    "nuevos": 0,
    "ok": true,
    "segundos": 4
-  },
-  "BOJA": {
-   "fecha": "2026-11-24T21:37+00:00",
-   "nuevos": 80,
-   "ok": true,
-   "segundos": 194
-  },
-  "BOP": {
-   "fecha": "2026-11-24T22:00+00:00",
-   "nuevos": 97,
-   "ok": true,
-   "segundos": 1356
   }
  },
  "scan_version": 2
