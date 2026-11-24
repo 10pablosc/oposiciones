@@ -886,22 +886,22 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-24T19:22+00:00",
-   "nuevos": 247,
+   "fecha": "2026-11-24T20:04+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 510
+   "segundos": 4
   },
   "BOJA": {
-   "fecha": "2026-11-24T19:26+00:00",
-   "nuevos": 121,
+   "fecha": "2026-11-24T20:04+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 276
+   "segundos": 8
   },
   "BOP": {
-   "fecha": "2026-11-24T19:44+00:00",
-   "nuevos": 249,
+   "fecha": "2026-11-24T20:04+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 1049
+   "segundos": 5
   }
  }
 }
