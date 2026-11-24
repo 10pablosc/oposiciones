@@ -908,19 +908,19 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-24T22:16+00:00",
+   "fecha": "2026-11-24T22:38+00:00",
    "nuevos": 0,
    "ok": true,
    "segundos": 3
   },
   "BOJA": {
-   "fecha": "2026-11-24T22:16+00:00",
+   "fecha": "2026-11-24T22:40+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 6
+   "segundos": 100
   },
   "BOP": {
-   "fecha": "2026-11-24T22:16+00:00",
+   "fecha": "2026-11-24T22:40+00:00",
    "nuevos": 0,
    "ok": true,
    "segundos": 4
