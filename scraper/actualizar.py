@@ -17,7 +17,7 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from textos import (EXCLUIR, denominacion_de_texto, titulo_sin_preambulo, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
+from textos import (EXCLUIR, titulacion_valida, denominacion_de_texto, titulo_sin_preambulo, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
                     extrae_grupo, extrae_num_plazas, extrae_personal, extrae_plazo,
                     extrae_requisitos, extrae_sistema, extrae_titulacion,
                     limpia, lugares_no_sevilla, menciona_sevilla, norm,
@@ -46,7 +46,7 @@ def sin_tiempo():
     return (time.time() - INICIO) / 60 > MAX_MINUTOS
 
 
-VERSION = 3   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
+VERSION = 4   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"
@@ -957,7 +957,7 @@ def ficha(r, hoy):
         "fin_estimado": estimada,
         "plazo_texto": (boe.get("plazo") or r.get("plazo") or {}).get("frase"),
         "requisitos": r.get("requisitos"),
-        "titulacion": r.get("titulacion"),
+        "titulacion": r.get("titulacion") if titulacion_valida(r.get("titulacion")) else None,
     }
 
 

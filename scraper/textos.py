@@ -108,12 +108,12 @@ RE_PLAZO = re.compile(
     r"plazo\s+(?:de\s+)?(?:presentacion\s+de\s+)?(?:las\s+)?(?:solicitudes|instancias)"
     r"(?P<medio>(?:[^.]|\.(?!\s)){0,160}?)"
     r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?|mes(?:es)?)\b"
-    r"(?P<resto>.{0,260})",
+    r"(?=(?P<resto>.{0,260}))",
     re.S,
 )
 RE_PLAZO2 = re.compile(
     r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|mes(?:es)?)\b"
-    r"(?P<resto>.{0,260})",
+    r"(?=(?P<resto>.{0,260}))",
     re.S,
 )
 
@@ -137,7 +137,7 @@ def _boletin_de(resto):
 RE_PLAZO_B = re.compile(
     r"(?:solicitudes|instancias)(?:[^.]|\.(?!\s)){0,220}?(?:en\s+el|dentro\s+del|un|de\s+un)\s+plazo\s+(?:maximo\s+|improrrogable\s+)?(?:de\s+)?"
     r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?|mes(?:es)?)\b"
-    r"(?P<resto>.{0,260})",
+    r"(?=(?P<resto>.{0,260}))",
     re.S,
 )
 
@@ -145,7 +145,7 @@ RE_PLAZO_B = re.compile(
 RE_PLAZO_C = re.compile(
     r"(?:presentar(?:se|an|lo|la|las|los)?|presentaran|deberan presentarse|podran presentarse)\s+(?:en|dentro\s+de)l?\s+(?:el\s+)?"
     r"plazo\s+(?:maximo\s+|improrrogable\s+)?(?:de\s+)?(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?"
-    r"(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?|mes(?:es)?)\b(?P<resto>.{0,260})",
+    r"(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?|mes(?:es)?)\b(?=(?P<resto>.{0,260}))",
     re.S,
 )
 
@@ -157,8 +157,10 @@ def extrae_plazo(texto):
         n = a_numero(m.group("num"))
         if not n or n > 90:
             continue
-        cerca = m.group(0)[: m.end("tipo") - m.start() + 120]
-        if re.search(r"subsan|alegaci|reclamaci|recurso|impugna|toma de posesion|documentacion acreditativa|aprobados|seleccionad", cerca):
+        cerca = t[m.start(): m.end("tipo") + 120]
+        if re.search(r"subsan|alegaci|reclamaci|recurso|impugna|toma de posesion|documentacion acreditativa|aprobados|seleccionad|"
+                     r"dictara|declarando|lista provisional|admitid|excluid|resolucion en el plazo|resolvera|finalizado el plazo|"
+                     r"terminado el plazo|expirado el plazo|concluido el plazo|transcurrido el plazo", cerca):
             continue
         tipo_txt = m.group("tipo")
         if tipo_txt.startswith("mes"):
@@ -170,7 +172,7 @@ def extrae_plazo(texto):
         else:
             tipo = "habiles"  # "x días" sin calificar: en procedimiento administrativo son hábiles
         boletin = _boletin_de(m.group("resto"))
-        frase = limpia(texto_original_aprox(texto, m.group(0)))
+        frase = limpia(texto_original_aprox(texto, t[m.start(): m.end("resto")]))
         corte = re.search(r"(?<=[a-zA-Z»\)])\.\s", frase[40:])
         if corte:
             frase = frase[: 40 + corte.start() + 1]
@@ -290,7 +292,31 @@ def extrae_grupo(texto, titulo=""):
 # Titulación y requisitos
 # ---------------------------------------------------------------------------
 
+RE_TIT_OK = re.compile(r"grado|titulo|titulacion|bachiller|\beso\b|graduado|tecnic|licenciad|diplomad|ingenier|arquitect|"
+                       r"certificado|formacion profesional|ciclo|equivalente|universitari|master|doctor|escolar|secundaria|"
+                       r"medicina|enfermer|derecho|economia|psicolog|trabajo social|magisterio|maestr|fp\b")
+
+
+def titulacion_valida(v):
+    if not v or len(v) < 4:
+        return False
+    n = norm(v)
+    if not RE_TIT_OK.search(n):
+        return False
+    letras = [c for c in v if c.isalpha()]
+    if letras and sum(c.isupper() for c in letras) / len(letras) > 0.6 and len(v) > 25:
+        return False  # cabeceras de tabla en mayúsculas mal leídas del PDF
+    if re.search(r"\b\w{2,}-\s", v):
+        return False  # palabras cortadas por guion (tablas del PDF)
+    return True
+
+
 def extrae_titulacion(texto):
+    v = _extrae_titulacion(texto)
+    return v if titulacion_valida(v) else None
+
+
+def _extrae_titulacion(texto):
     t = texto or ""
     m = re.search(r"TITULACI[ÓO]N\s+(?:EXIGIDA|REQUERIDA|ACAD[ÉE]MICA)\s*[:\s]\s*(.{6,240}?)\s*(?:\n\s*\n|\n[A-ZÁÉÍÓÚ ]{5,}(?:\s|$)|$)", t, re.S)
     if m and not re.match(r"(?i)(que se|exigid|requerid|correspondiente|necesari|de las plazas)", m.group(1)):
