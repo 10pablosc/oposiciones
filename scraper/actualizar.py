@@ -17,7 +17,7 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from textos import (EXCLUIR, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
+from textos import (EXCLUIR, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
                     extrae_grupo, extrae_num_plazas, extrae_personal, extrae_plazo,
                     extrae_requisitos, extrae_sistema, extrae_titulacion,
                     limpia, lugares_no_sevilla, menciona_sevilla, norm,
@@ -45,6 +45,8 @@ def sin_tiempo():
     """Para no pasarse del tiempo máximo de la tarea: lo pendiente se hace en la siguiente ejecución."""
     return (time.time() - INICIO) / 60 > MAX_MINUTOS
 
+
+VERSION = 2   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"
@@ -345,6 +347,8 @@ def registro_boe(it, cat):
     if not denom:
         denom = it["epigrafe"] or it["titulo"][:120]
     r = {
+        "v": VERSION,
+        "orig": {k: it.get(k) for k in ("id", "titulo", "departamento", "epigrafe", "url", "fecha")},
         "id": it["id"],
         "fuente": "BOE",
         "categoria": cat,
@@ -465,7 +469,7 @@ def clasifica_boja(it):
     t = norm(it["titulo"])
     if EXCLUIR.search(t) or es_provision(it["titulo"]):
         return False
-    if not RE_CONVOCA.search(t):
+    if not RE_CONVOCA_BOJA.search(t):
         return False
     if re.search(r"universidad", t) and not UNIV_SEVILLA.search(t):
         return False
@@ -547,6 +551,8 @@ def registro_boja(it, rid):
     else:
         localidad, ambito = "Andalucía", "Andalucía"
     return {
+        "v": VERSION,
+        "orig": {k: it.get(k) for k in ("titulo", "url", "organismo_seccion", "fecha")},
         "id": rid,
         "fuente": "BOJA",
         "categoria": "universidad" if univ else ("sas" if sas else "junta"),
@@ -641,7 +647,7 @@ def anunciante_norm(a):
 def merece_detalle(it, registros, hoy):
     """Evita descargar bases cuyo plazo ya sabemos cerrado (por su extracto en el BOE) o demasiado antiguas."""
     edad = (hoy - date.fromisoformat(it["fecha"])).days
-    if tipo_proceso(it["titulo"]) == "Bolsa de empleo" and edad > VENTANA_BOLSA:
+    if tipo_proceso(it["titulo"]) == "Bolsa o empleo temporal" and edad > VENTANA_BOLSA:
         return False
     m = re.search(r"BOP-SE-\d{4}-(\d{3})", it["cve"])
     if not m:
@@ -781,6 +787,8 @@ def registro_bop(it):
     m = re.search(r"BOP-SE-(\d{4})-(\d{3})", it["cve"])
     tit = it["titulo"]
     return {
+        "v": VERSION,
+        "orig": {k: it.get(k) for k in ("url", "titulo", "anunciante", "cve", "fecha")},
         "id": it["cve"] or it["url"],
         "fuente": "BOP",
         "categoria": cat,
@@ -863,24 +871,34 @@ def une_univ(registros):
                 break
 
 
+DIAS_PENDIENTE_BOE = 300      # bases que dicen que el plazo se abre con el BOE
+DIAS_PENDIENTE_SIN_PLAZO = 180  # bases de oposición sin plazo legible (casi siempre lo abre el BOE)
+DIAS_SIN_PLAZO = 45            # resto de anuncios sin plazo legible
+DIAS_SIN_PLAZO_PI = 90         # promoción interna sin plazo legible
+
+
 def calcula_estado(r, hoy):
     """Devuelve (estado, fin_plazo_iso, estimada)."""
     publicada = date.fromisoformat(r["fecha_publicacion"])
+    edad = (hoy - publicada).days
     boe = r.get("boe")
     p = (boe or {}).get("plazo") or r.get("plazo")
+    tipo = tipo_proceso(r.get("titulo_oficial", ""))
     if r["fuente"] in ("BOP", "BOJA") and boe:
         inicio = date.fromisoformat(boe["fecha"])
     elif r["fuente"] == "BOE":
         inicio = date.fromisoformat(r["fecha_boe"])
     else:
         inicio = publicada
-        if p and p.get("boletin") in ("BOE",) or (r["fuente"] == "BOP" and p and p.get("boletin") == "BOJA"):
-            return ("pendiente", None, False) if (hoy - publicada).days <= VENTANA_LOCAL else ("caducada", None, False)
-        if r["fuente"] == "BOP" and not p and r.get("tipo") in ("Acceso libre", "Promoción interna"):
-            # Bases de oposición sin plazo legible: el plazo se abre con el extracto del BOE
-            return ("pendiente_sin_plazo", None, False) if (hoy - publicada).days <= VENTANA_LOCAL else ("caducada", None, False)
+        if p and (p.get("boletin") == "BOE" or (r["fuente"] == "BOP" and p.get("boletin") == "BOJA")):
+            return ("pendiente", None, False) if edad <= DIAS_PENDIENTE_BOE else ("caducada", None, False)
+        if r["fuente"] == "BOP" and not p:
+            if tipo == "Acceso libre":
+                return ("pendiente_sin_plazo", None, False) if edad <= DIAS_PENDIENTE_SIN_PLAZO else ("caducada", None, False)
+            if tipo == "Promoción interna":
+                return ("sin_determinar", None, False) if edad <= DIAS_SIN_PLAZO_PI else ("caducada", None, False)
     if not p:
-        return ("sin_determinar", None, False) if (hoy - publicada).days <= 45 else ("caducada", None, False)
+        return ("sin_determinar", None, False) if edad <= DIAS_SIN_PLAZO else ("caducada", None, False)
     fin = suma_plazo(inicio, p["n"], p["tipo"])
     estimada = r["fuente"] == "BOP" or r["categoria"] in ("local", "ayuntamiento", "diputacion", "otros_locales")
     return ("abierto" if fin >= hoy else "cerrado"), fin.isoformat(), estimada
@@ -926,7 +944,7 @@ def ficha(r, hoy):
         "plazas": r.get("plazas"),
         "personal": r.get("personal") or "Sin determinar",
         "sistema": r.get("sistema") or "Sin determinar",
-        "tipo": r.get("tipo") or "Acceso libre",
+        "tipo": tipo_proceso(r.get("titulo_oficial", "")),
         "fuente": r["fuente"],
         "fecha_publicacion": r["fecha_publicacion"],
         "fecha_boe": boe.get("fecha") or r.get("fecha_boe"),
@@ -946,6 +964,61 @@ def ficha(r, hoy):
 VIGENTES = {"abierto", "pendiente", "pendiente_sin_plazo", "sin_determinar"}
 
 
+def sigue_valido(r):
+    """Aplica los filtros actuales a registros guardados con versiones anteriores del programa."""
+    t = r.get("titulo_oficial", "")
+    nt = norm(t)
+    if EXCLUIR.search(nt) or es_provision(t) or en_el_extranjero(t):
+        return False
+    if r["fuente"] == "BOJA" and not RE_CONVOCA_BOJA.search(nt):
+        return False
+    if r["fuente"] == "BOP" and RE_BOP_NO.search(nt):
+        return False
+    if r["fuente"] == "BOE" and r["categoria"] == "estado" and re.search(r"instituto nacional de gestion sanitaria", nt):
+        return False
+    return True
+
+
+def reprocesa(registros, hoy):
+    """Vuelve a leer los registros vigentes guardados con una versión anterior del programa."""
+    une_bop_boe(registros)
+    hechos = 0
+    for k in list(registros):
+        r = registros[k]
+        if r.get("v", 1) >= VERSION or sin_tiempo():
+            continue
+        est = calcula_estado(r, hoy)[0]
+        local_boe = r["fuente"] == "BOE" and r["categoria"] == "local"
+        if not sigue_valido(r) or (est not in VIGENTES and not local_boe):
+            continue
+        o = r.get("orig") or {}
+        try:
+            if r["fuente"] == "BOE":
+                it = {"id": r["id"], "titulo": o.get("titulo") or r["titulo_oficial"],
+                      "departamento": o.get("departamento") or {"local": "ADMINISTRACIÓN LOCAL", "universidad": "UNIVERSIDADES"}.get(r["categoria"], ""),
+                      "epigrafe": o.get("epigrafe") or "", "url": r["url_bases"], "fecha": r["fecha_boe"]}
+                nuevo = registro_boe(it, r["categoria"])
+                if nuevo and r["categoria"] == "estado" and not it["departamento"]:
+                    nuevo["organismo"] = r["organismo"]
+            elif r["fuente"] == "BOJA":
+                it = {"titulo": r["titulo_oficial"], "url": r["url_bases"],
+                      "organismo_seccion": o.get("organismo_seccion") or r.get("organismo_seccion") or "", "fecha": r["fecha_publicacion"]}
+                nuevo = registro_boja(it, r["id"])
+            else:
+                it = {"url": r["url_bases"], "titulo": r["titulo_oficial"], "anunciante": o.get("anunciante") or r.get("localidad") or "",
+                      "cve": r["id"], "fecha": r["fecha_publicacion"]}
+                nuevo = registro_bop(it)
+        except Exception as e:  # noqa: BLE001
+            log("  reproceso error", k, e)
+            continue
+        if nuevo:
+            registros[k] = nuevo
+        else:
+            del registros[k]
+        hechos += 1
+    log(f"Registros releídos con la versión {VERSION}: {hechos}")
+
+
 def genera_salida(registros, hoy, estado):
     une_bop_boe(registros)
     une_univ(registros)
@@ -953,6 +1026,8 @@ def genera_salida(registros, hoy, estado):
     for r in registros.values():
         if r["fuente"] == "BOE" and (r.get("unido_a") or r.get("duplicado_de")):
             continue  # ya se muestra junto a sus bases
+        if not sigue_valido(r):
+            continue
         f = ficha(r, hoy)
         if f["tipo"] == "Provisión de puestos":
             continue
@@ -982,7 +1057,7 @@ def purga(registros, hoy):
         if r["fuente"] == "BOE" and r["categoria"] == "local":
             continue  # hacen falta para unirlos con las bases del BOP
         est, _, _ = calcula_estado(r, hoy)
-        if est in ("cerrado", "caducada"):
+        if est in ("cerrado", "caducada") or not sigue_valido(r):
             del registros[k]
 
 
@@ -1011,6 +1086,9 @@ def main():
                                              "error": str(e)[:300]}
             guarda(F_REG, registros)
             guarda(F_EST, estado)
+    if not a.solo_salida:
+        reprocesa(registros, hoy)
+        guarda(F_REG, registros)
     purga(registros, hoy)
     salida = genera_salida(registros, hoy, estado)
     guarda(F_REG, registros)

@@ -106,7 +106,7 @@ def a_numero(palabra):
 
 RE_PLAZO = re.compile(
     r"plazo\s+(?:de\s+)?(?:presentacion\s+de\s+)?(?:las\s+)?(?:solicitudes|instancias)"
-    r"(?P<medio>[^.]{0,160}?)"
+    r"(?P<medio>(?:[^.]|\.(?!\s)){0,160}?)"
     r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?|mes(?:es)?)\b"
     r"(?P<resto>.{0,260})",
     re.S,
@@ -135,7 +135,7 @@ def _boletin_de(resto):
 
 
 RE_PLAZO_B = re.compile(
-    r"(?:solicitudes|instancias)[^.]{0,140}?(?:en\s+el|dentro\s+del|un|de\s+un)\s+plazo\s+(?:maximo\s+|improrrogable\s+)?(?:de\s+)?"
+    r"(?:solicitudes|instancias)(?:[^.]|\.(?!\s)){0,220}?(?:en\s+el|dentro\s+del|un|de\s+un)\s+plazo\s+(?:maximo\s+|improrrogable\s+)?(?:de\s+)?"
     r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?|mes(?:es)?)\b"
     r"(?P<resto>.{0,260})",
     re.S,
@@ -152,10 +152,13 @@ RE_PLAZO_C = re.compile(
 
 def extrae_plazo(texto):
     """Devuelve dict {n, tipo, boletin, frase} o None."""
-    t = norm(texto)
+    t = _sin_abrev(norm(texto))
     for m in list(RE_PLAZO.finditer(t)) + list(RE_PLAZO_B.finditer(t)) + list(RE_PLAZO_C.finditer(t)):
         n = a_numero(m.group("num"))
         if not n or n > 90:
+            continue
+        cerca = m.group(0)[: m.end("tipo") - m.start() + 120]
+        if re.search(r"subsan|alegaci|reclamaci|recurso|impugna|toma de posesion|documentacion acreditativa|aprobados|seleccionad", cerca):
             continue
         tipo_txt = m.group("tipo")
         if tipo_txt.startswith("mes"):
@@ -175,15 +178,19 @@ def extrae_plazo(texto):
     return None
 
 
+def _sin_abrev(t):
+    return re.sub(r"\b(excmos?|excmas?|ilmos?|ilmas?|srs?|sras?|arts?|nums?|dna|d|pags?|apdo|avda|c)\.\s", r"\1 ", t)
+
+
 def texto_original_aprox(texto, fragmento_norm):
     """Recupera el fragmento del texto original (con tildes) correspondiente."""
-    t = norm(texto)
+    t = _sin_abrev(norm(texto))
     i = t.find(fragmento_norm[:60])
     if i < 0:
         return fragmento_norm[:300]
     # norm() conserva longitudes salvo espacios; aproximamos por palabras
     palabras = texto.split()
-    tn = norm(" ".join(palabras))
+    tn = _sin_abrev(norm(" ".join(palabras)))
     j = tn.find(fragmento_norm[:60])
     if j < 0:
         return fragmento_norm[:300]
@@ -436,9 +443,13 @@ EXCLUIR = re.compile(
     r"designacion del tribunal|tribunal (?:que ha de juzgar|calificador)|puntuacion|impugnacion|"
     r"plantillas? (?:de respuestas|correctoras?)|respuestas|orden de actuacion|celebracion del sorteo|"
     r"se aplaza|aplazamiento|lugar,? fecha|relacion de seleccionad|propuesta de nombramiento|bases reguladoras|"
-    r"bases generales (?:que regiran|para) (?:las|los) (?:convocatorias|procesos)"
+    r"bases generales (?:que regiran|para) (?:las|los) (?:convocatorias|procesos)|se ofertan vacantes|ofertar vacantes|"
+    r"oferta de vacantes|personas? seleccionad|personal seleccionad|documentacion complementaria|interposicion de recurso|"
+    r"recurso contencioso|abstencion|recusacion|seleccion de aspirantes|preseleccionad|jueces? de paz|"
+    r"rectificacion de la relacion|relacion complementaria|acreditacion de requisitos|presentacion de documentacion"
 )
 RE_CONVOCA_ESTRICTO = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b")
+RE_CONVOCA_BOJA = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b|\bse convocan?\b|bases de la convocatoria|\bbolsas?\b|concurso publico")
 RE_CONVOCA = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b|\bse convocan?\b|\bbases\b|proceso selectivo|pruebas selectivas|\bbolsas?\b")
 
 
@@ -460,9 +471,11 @@ def tipo_proceso(t):
     n = norm(t)
     if RE_PROVISION.search(n):
         return "Provisión de puestos"
-    if re.search(r"\bbolsas?\b|lista de reserva|listas? de empleo|contratacion temporal|seleccion de personal temporal|"
-                 r"personal funcionario interino|nombramiento interino|interino", n):
-        return "Bolsa de empleo"
+    if re.search(r"\bbolsas?\b|lista de reserva|listas? de empleo|contratacion (?:laboral )?temporal|seleccion de personal temporal|"
+                 r"personal funcionario interino|nombramiento interino|interin|\bprograma\b|plan (?:de empleo|extraordinario)|"
+                 r"proyectos? integrales|activa[\s\-]?t|personal temporal|duracion determinada|contratos? formativos?|"
+                 r"practica profesional|empleo temporal", n):
+        return "Bolsa o empleo temporal"
     if "promocion interna" in n and not re.search(r"turno libre|acceso libre|sistema general de acceso libre", n):
         return "Promoción interna"
     return "Acceso libre"
