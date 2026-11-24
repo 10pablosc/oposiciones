@@ -379,7 +379,7 @@ def organismo_de_titulo(t):
     m = re.search(r"(?i),\s*(?:de la|del|de)\s+((?:Ayuntamiento|Diputaci[óo]n|Consorcio|Mancomunidad|Universidad|Agencia|Instituto|"
                   r"Presidencia|Subsecretar[íi]a|Secretar[íi]a|Direcci[óo]n|Delegaci[óo]n|Servicio|Organismo|Patronato|Gerencia|"
                   r"Fundaci[óo]n|Empresa|Consejer[íi]a|Viceconsejer[íi]a|Parlamento|C[áa]mara|Tribunal|Consejo|Mutualidad|Ente)"
-                  r"[^,]*?)(?:,\s*(?:de\s+Sevilla,\s*)?(?:por la que|por el que|referente|de corrección|sobre)|\s+por la que|\s+por el que|\s+referente|$)", t)
+                  r".*?)(?:,\s*(?:de\s+Sevilla,\s*)?(?:por la que|por el que|referente|de corrección|sobre)|\s+por la que|\s+por el que|\s+referente|$)", t)
     return limpia(m.group(1)) if m else None
 
 
@@ -840,12 +840,17 @@ def une_bop_boe(registros):
                 cands = [r for r in cands if norm(r.get("localidad") or "") == loc or loc in norm(r["organismo"])]
             else:
                 cands = [r for r in cands if tokens(b["organismo"]) & tokens(r["organismo"])]
-            if len(cands) > 1:
-                tb = tokens(b["denominacion"])
+            tb = tokens(b["denominacion"])
+            generico = not tb or norm(b["denominacion"]).startswith(("varias plazas", "una plaza", "personal funcionario"))
+            if cands and not generico:
                 punt = sorted(((len(tb & tokens(r["denominacion"] + " " + r["titulo_oficial"])), r) for r in cands),
                               key=lambda x: -x[0])
-                if punt[0][0] > 0 and "varias" not in norm(b["titulo_oficial"]):
+                if punt[0][0] == 0:
+                    cands = []  # mismo boletín y municipio, pero otra plaza (p. ej., una corrección de otras bases)
+                elif "varias" not in norm(b["titulo_oficial"]):
                     cands = [r for p, r in punt if p == punt[0][0]]
+                else:
+                    cands = [r for p, r in punt if p > 0]
             for r in cands:
                 if r.get("boe") and r["boe"]["fecha"] >= b["fecha_boe"]:
                     continue
