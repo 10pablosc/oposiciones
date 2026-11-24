@@ -1038,10 +1038,7 @@
   "tipo": "Acceso libre",
   "titulacion": null,
   "titulo_oficial": "Resolución de 8 de enero de 2026, del Ayuntamiento de Carmona (Sevilla), referente a la convocatoria para proveer varias plazas.",
-  "unido_a": [
-   "BOP-SE-2025-242005",
-   "BOP-SE-2025-242007"
-  ],
+  "unido_a": [],
   "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1020",
   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1020",
   "v": 4
@@ -5324,8 +5321,7 @@
   "titulacion": null,
   "titulo_oficial": "Resolución de 21 de octubre de 2026, del Ayuntamiento de Montellano (Sevilla), referente a la convocatoria para proveer varias plazas.",
   "unido_a": [
-   "BOP-SE-2026-161007",
-   "BOP-SE-2026-186018"
+   "BOP-SE-2026-161007"
   ],
   "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22380",
   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22380",
@@ -5520,9 +5516,7 @@
   "tipo": "Acceso libre",
   "titulacion": null,
   "titulo_oficial": "Resolución de 28 de octubre de 2026, del Ayuntamiento de Écija (Sevilla), referente a la convocatoria para proveer varias plazas.",
-  "unido_a": [
-   "BOP-SE-2026-142011"
-  ],
+  "unido_a": [],
   "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22947",
   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22947",
   "v": 4
@@ -5570,7 +5564,6 @@
   "titulacion": null,
   "titulo_oficial": "Resolución de 28 de octubre de 2026, del Ayuntamiento de Carmona (Sevilla), referente a la convocatoria para proveer varias plazas.",
   "unido_a": [
-   "BOP-SE-2025-242005",
    "BOP-SE-2025-242007"
   ],
   "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23035",
@@ -5816,8 +5809,8 @@
   "titulacion": null,
   "titulo_oficial": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Almensilla (Sevilla), referente a la convocatoria para proveer varias plazas.",
   "unido_a": [
-   "BOP-SE-2026-217003",
-   "BOP-SE-2026-217004"
+   "BOP-SE-2026-217004",
+   "BOP-SE-2026-217003"
   ],
   "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24081",
   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24081",
@@ -9251,53 +9244,6 @@
   "url_bases": "https://www.juntadeandalucia.es/boja/2026/227/31",
   "v": 4
  },
- "BOP-SE-2025-242005": {
-  "ambito": "Provincia de Sevilla",
-  "boe": {
-   "fecha": "2026-11-03",
-   "id": "BOE-A-2026-23035",
-   "plazo": {
-    "boletin": "BOE",
-    "frase": "plazo de presentación de solicitudes será de veinte días hábiles a contar desde el siguiente al de la publicación de esta resolución en el «Boletín Oficial del Estado».",
-    "n": 20,
-    "tipo": "habiles"
-   },
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23035"
-  },
-  "bop_num": 242,
-  "categoria": "ayuntamiento",
-  "denominacion": "Categoría de Conserje Mantenedor",
-  "fecha_publicacion": "2025-12-17",
-  "fuente": "BOP",
-  "grupo": "AP",
-  "id": "BOP-SE-2025-242005",
-  "localidad": "Carmona",
-  "organismo": "Ayuntamiento de Carmona",
-  "orig": {
-   "anunciante": "Carmona",
-   "cve": "BOP-SE-2025-242005",
-   "fecha": "2025-12-17",
-   "titulo": "Bases de la convocatoria del proceso de selección para la contratación laboral temporal fijo de cinco plazas en la categoría de Conserje Mantenedor",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-la-contratacion-laboral-temporal-fijo-de-cinco-plazas-en-la-categoria-de-Conserje-Mantenedor/"
-  },
-  "personal": "Laboral",
-  "plazas": 5,
-  "plazo": {
-   "boletin": "BOE",
-   "frase": "plazo de presentación de solicitudes así como de la documentación adjunta, será de veinte días hábiles, a contar a partir del siguiente a la publicación del extracto de esta convocatoria en el Boletín Oficial del Estado, una vez publicadas íntegras las bases en el Boletín Oficial de la Provincia.",
-   "n": 20,
-   "tipo": "habiles"
-  },
-  "requisitos": "TERCERA.- REQUISITOS DE LOS ASPIRANTES.\n3.1.1. Tener nacionalidad española o ser nacional de algún Estado miembro de la Unión Europea. También podrán acceder, como personal laboral, en igualdad de condiciones que los españoles a los empleos públicos, con excepción de aquellos que directa o indirectamente impliquen una participación en el ejercicio del poder público o en las funciones que tienen por objeto la salvaguardia de los intereses del Estado o de las Administraciones Públicas:\nA) El cónyuge de los españoles y de los nacionales de otros Estados miembros de la Unión Europea, cualquiera que sea su nacionalidad siempre que no estén separados de derecho. Asimismo, con las mismas condiciones, podrán participar los descendientes menores de veintiún años o mayores de dicha edad que sean dependientes.\nB) Las personas incluidas en el ámbito de aplicación de los Tratados Internacionales celebrados por la Unión Europea y ratificados por España en los que sea de aplicación la libre circulación de trabajadores.\nC) Los extranjeros con residencia legal en España.\nLos aspirantes que sean nacionales de Estados no pertenecientes a la Unión Europea o al Acuerdo del Espacio Económico Europeo deberán aportar fotocopia del Permiso de Residencia Permanente o, en su caso, del permiso de trabajo y residencia.\n3.1.2. Haber cumplido dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa el día en que termine el plazo de presentación de solicitudes.\n3.1.3. Poseer el Título de certificado de escolaridad o equivalente o el título que habilite para el ejercicio de esta profesión regulada, según establecen las directivas comunitarias, o encontrarse en condiciones de obtenerlo en la fecha en que termina el plazo de presentación de instancias.\n3.1.4. Poseer la capacidad funcional para el desempeño de las tareas.\n3.1.5. No haber sido separado mediante expediente disciplinario del servicio de CSV: 07E9002A881B00W7O0J4E5H9K8 cualquiera de las Administraciones Públicas o de los Órganos Constitucionales o Estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para ejercer funciones similares a las que desempeñaba, en el que hubiese sido separado o inhabilitado.\nEXCMO. AYUNTAMIENTO DE CARMONA C/ EL SALVADOR, 2 - 41410. CARMONA (SEVILLA). TFNO: 954.19.12.47 - FAX: 954.14.39.17. WEB: http://ww.carmona.org La autenticidad de este documento   FIRMANTE - FECHA   EXPEDIENTE ::\nJUAN MANUEL AVILA GUTIERREZ(-AYUNTAMIENTO DE CARMONA)- ALCALDE - 12/12/2025   2024023300000034 se puede comprobar con el código    CN=tsa.izenpe.com, ORGANIZATIONIDENTIFIER=VATES-A01337260, O=ZIURTAPEN ETA ZERBITZU    Fecha: 13/12/2024 07E9002A881B00W7O0J4E5H9K8   ENPRESA-EMPRESA DE CERTIFICACION Y SERVICIOS IZENPE S.A., C=ES - 12/12/2025 15:03:55 Hora: 00:00 en https://sede.carmona.org Und. reg: REGISTRO GENERAL EXCMO. AYUNTAMIENTO DE CARMONA DEPARTAMENTO DE RR.HH.\nEn caso de ser nacional de otro Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al empleo público.\n3.2. Los requisitos establecidos en las normas anteriores deberán poseerse en el momento de finalizar el plazo de presentación de instancias y mantenerse durante todo el proceso, así como, en su caso, en el momento de formalización de los contratos. La acreditación de dichos requisitos se efectuará ante el Departamento de RR.HH. del Excmo. Ayuntamiento de Carmona (Sevilla) en el momento de formalizar el nombramiento de funcionario que haya sido ofertado al candidato.\nLos requisitos establecidos en estas bases deberán cumplirse el último día del plazo de presentación de solicitudes.",
-  "sin_texto": false,
-  "sistema": "Oposición",
-  "tipo": "Bolsa o empleo temporal",
-  "titulacion": "certificado de escolaridad o equivalente o el título que",
-  "titulo_oficial": "Bases de la convocatoria del proceso de selección para la contratación laboral temporal fijo de cinco plazas en la categoría de Conserje Mantenedor",
-  "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-la-contratacion-laboral-temporal-fijo-de-cinco-plazas-en-la-categoria-de-Conserje-Mantenedor/",
-  "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1765929623928-final-51b340ed-1.pdf",
-  "v": 4
- },
  "BOP-SE-2025-242007": {
   "ambito": "Provincia de Sevilla",
   "boe": {
@@ -10079,17 +10025,6 @@
  },
  "BOP-SE-2026-142011": {
   "ambito": "Provincia de Sevilla",
-  "boe": {
-   "fecha": "2026-11-02",
-   "id": "BOE-A-2026-22947",
-   "plazo": {
-    "boletin": "BOE",
-    "frase": "plazo de presentación de solicitudes será de veinte días hábiles a contar desde el siguiente al de la publicación de esta resolución en el «Boletín Oficial del Estado».",
-    "n": 20,
-    "tipo": "habiles"
-   },
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22947"
-  },
   "bop_num": 142,
   "categoria": "ayuntamiento",
   "denominacion": "Personal de Oficios",
@@ -10526,48 +10461,6 @@
   "titulo_oficial": "Bases de la convocatoria para la provisión, en turno libre, de una plaza de Técnico de Administración General, vacante en la plantilla de personal funcionario (OEP 2025)",
   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-provision-en-turno-libre-de-una-plaza-de-Tecnico-de-Administracion-General-vacante-en-la-plantilla-de-personal-funcionario-OEP-2025-00002/",
   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1790031656267-final-27097e8d.pdf",
-  "v": 4
- },
- "BOP-SE-2026-186018": {
-  "ambito": "Provincia de Sevilla",
-  "boe": {
-   "fecha": "2026-10-26",
-   "id": "BOE-A-2026-22380",
-   "plazo": {
-    "boletin": "BOE",
-    "frase": "plazo de presentación de solicitudes será de veinte días hábiles a contar desde el siguiente al de la publicación de esta resolución en el «Boletín Oficial del Estado».",
-    "n": 20,
-    "tipo": "habiles"
-   },
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22380"
-  },
-  "bop_num": 186,
-  "categoria": "ayuntamiento",
-  "denominacion": "Categoría de Monitor de Cultura",
-  "fecha_publicacion": "2026-09-24",
-  "fuente": "BOP",
-  "grupo": null,
-  "id": "BOP-SE-2026-186018",
-  "localidad": "Montellano",
-  "organismo": "Ayuntamiento de Montellano",
-  "orig": {
-   "anunciante": "Montellano",
-   "cve": "BOP-SE-2026-186018",
-   "fecha": "2026-09-24",
-   "titulo": "Bases de la convocatoria para la creación de una bolsa de trabajo temporal en la categoría de Monitor de Cultura",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-temporal-en-la-categoria-de-Monitor-de-Cultura/"
-  },
-  "personal": null,
-  "plazas": null,
-  "plazo": null,
-  "requisitos": null,
-  "sin_texto": true,
-  "sistema": null,
-  "tipo": "Bolsa o empleo temporal",
-  "titulacion": null,
-  "titulo_oficial": "Bases de la convocatoria para la creación de una bolsa de trabajo temporal en la categoría de Monitor de Cultura",
-  "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-temporal-en-la-categoria-de-Monitor-de-Cultura/",
-  "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1790204446553-final-59347b5d.pdf",
   "v": 4
  },
  "BOP-SE-2026-187003": {

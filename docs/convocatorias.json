@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24T20:32+00:00",
+ "actualizado": "2026-11-24T20:36+00:00",
  "convocatorias": [
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
@@ -1083,6 +1083,33 @@
   },
   {
    "ambito": "Provincia de Sevilla",
+   "denominacion": "varias categorías varias plazas",
+   "en_boe": true,
+   "estado": "abierto",
+   "fecha_boe": "2026-11-02",
+   "fecha_publicacion": "2026-11-02",
+   "fin_estimado": true,
+   "fin_plazo": "2026-11-30",
+   "fuente": "BOE",
+   "grupo": "Sin determinar",
+   "id": "BOE-A-2026-22947",
+   "localidad": "Écija",
+   "organismo": "Ayuntamiento de Écija (Sevilla)",
+   "personal": "Sin determinar",
+   "plazas": 3,
+   "plazo_texto": "plazo de presentación de solicitudes será de veinte días hábiles a contar desde el siguiente al de la publicación de esta resolución en el «Boletín Oficial del Estado».",
+   "requisitos": null,
+   "sistema": "Oposición",
+   "tipo": "Acceso libre",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": null,
+   "titulo_oficial": "Resolución de 28 de octubre de 2026, del Ayuntamiento de Écija (Sevilla), referente a la convocatoria para proveer varias plazas.",
+   "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22947",
+   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22947",
+   "url_pdf": null
+  },
+  {
+   "ambito": "Provincia de Sevilla",
    "denominacion": "Responsable del Servicio Local",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
@@ -1704,33 +1731,6 @@
   },
   {
    "ambito": "Provincia de Sevilla",
-   "denominacion": "Categoría de Monitor de Cultura",
-   "en_boe": true,
-   "estado": "abierto",
-   "fecha_boe": "2026-10-26",
-   "fecha_publicacion": "2026-09-24",
-   "fin_estimado": true,
-   "fin_plazo": "2026-11-24",
-   "fuente": "BOP",
-   "grupo": "Sin determinar",
-   "id": "BOP-SE-2026-186018",
-   "localidad": "Montellano",
-   "organismo": "Ayuntamiento de Montellano",
-   "personal": "Sin determinar",
-   "plazas": null,
-   "plazo_texto": "plazo de presentación de solicitudes será de veinte días hábiles a contar desde el siguiente al de la publicación de esta resolución en el «Boletín Oficial del Estado».",
-   "requisitos": null,
-   "sistema": "Sin determinar",
-   "tipo": "Bolsa o empleo temporal",
-   "tipo_organismo": "Ayuntamiento",
-   "titulacion": null,
-   "titulo_oficial": "Bases de la convocatoria para la creación de una bolsa de trabajo temporal en la categoría de Monitor de Cultura",
-   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-temporal-en-la-categoria-de-Monitor-de-Cultura/",
-   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22380",
-   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1790204446553-final-59347b5d.pdf"
-  },
-  {
-   "ambito": "Provincia de Sevilla",
    "denominacion": "Técnico de Administración General",
    "en_boe": false,
    "estado": "pendiente",
@@ -2083,12 +2083,12 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Personal de Oficios",
-   "en_boe": true,
-   "estado": "abierto",
-   "fecha_boe": "2026-11-02",
+   "en_boe": false,
+   "estado": "pendiente_sin_plazo",
+   "fecha_boe": null,
    "fecha_publicacion": "2026-07-24",
-   "fin_estimado": true,
-   "fin_plazo": "2026-11-30",
+   "fin_estimado": false,
+   "fin_plazo": null,
    "fuente": "BOP",
    "grupo": "Sin determinar",
    "id": "BOP-SE-2026-142011",
@@ -2096,7 +2096,7 @@
    "organismo": "Ayuntamiento de Ecija",
    "personal": "Funcionario",
    "plazas": null,
-   "plazo_texto": "plazo de presentación de solicitudes será de veinte días hábiles a contar desde el siguiente al de la publicación de esta resolución en el «Boletín Oficial del Estado».",
+   "plazo_texto": null,
    "requisitos": "TERCERA.- REQUISITOS DE LAS PERSONAS ASPIRANTES.\nPara ser admitidos en el proceso de selección los/las aspirantes deberán reunir los siguientes requisitos:\nSer español/a o nacional de uno de los Estados Miembros de la Unión Europea, en los términos establecidos en el artículo 57 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Estatuto Básico del Empleado Público.\nTener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación ordinaria.\nPoseer la capacidad funcional para el desempeño de las tareas.\nNo hallarse incurso/a en causas de incapacidad o incompatibilidad específica previstas en la legislación vigente.\nNo haber sido separado/a mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de funcionario, o para ejercer funciones similares a las que desempeñaban en caso del personal laboral, en el que hubiese sido separado/a o inhabilitado/a. En el caso de ser nacional de otro Estado, no hallarse inhabilitado/a o en situación equivalente ni haberse sometido a sanción disciplinaria o equivalente que impida, en su estado, en los mismos términos el acceso al empleo público.\nEstar en posesión de los requisitos específicos establecidos para cada vacante convocada en el correspondiente anexo en relación a titulación y experiencia exigida. (Anexo I) Los aspirantes afectados por limitaciones físicas, psíquicas o sensoriales serán admitidos en igualdad de condiciones con los demás aspirantes, sin que puedan ser excluidos por estas causas, siempre que tales limitaciones no sean incompatibles con el desempeño de las tareas o funciones correspondientes.\nPara participar por el turno de plazas reservadas a personas con discapacidad, los/las aspirantes tendrán que tener reconocido un grado de discapacidad igual o superior al 33 por ciento.\nDe conformidad con lo dispuesto en el artículo 20.4 del Decreto 51/2025, de 24 de febrero, por el que se regula la planificación y ordenación del empleo público, y el ingreso, promoción interna y provisión de puestos de trabajo del personal de la Administración General de la Junta de Andalucía, para participar por el turno de plazas reservadas a personas con discapacidad, éstas deberán indicarlo expresamente en la solicitud de participación y habrán de tener reconocida dicha discapacidad con anterioridad a la finalización del plazo de presentación de solicitudes.\nDe conformidad con lo dispuesto en el artículo 21 del Decreto 51/2025, de 24 de febrero, por el que se regula la planificación y ordenación del empleo público, y el ingreso, promoción interna y provisión de puestos de trabajo del personal de la Administración General de la Junta de Andalucía, los/as aspirantes tendrán que alegar de forma expresa, al tiempo de presentar la correspondiente solicitud, qué tipo de discapacidad padecen y qué adaptaciones necesitan para la realización de los ejercicios, y los ajustes razonables necesarios de tiempo y medios para su realización, para asegurar que las personas con discapacidad participan en condiciones de igualdad. Se acompañará con la solicitud de participación, Informe técnico emitido por órgano competente, que permita constatar la relación entre la discapacidad alegada y la adaptación solicitada para la prueba a realizar.\nDicho informe incluirá solo los datos estrictamente necesarios para la constatación de la referida relación, sin perjuicio de que se pueda requerir a la persona candidata la información adicional que se estime estrictamente necesaria.\nLa adaptación no se otorgará de forma automática, sino únicamente en aquellos casos en que la discapacidad guarde relación directa con la prueba a realizar.\nDe conformidad con lo dispuesto en el artículo 22 del Decreto 51/2025, de 24 de febrero, […]",
    "sistema": "Oposición",
    "tipo": "Acceso libre",
@@ -2104,7 +2104,7 @@
    "titulacion": null,
    "titulo_oficial": "Bases de la convocatoria para la provisión, en turno libre y una en reserva a discapacidad, de diversas plazas de Personal de Oficios, vacantes en la plantilla de personal funcionario (OEP 2024)",
    "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-provision-en-turno-libre-y-una-en-reserva-a-discapacidad-de-diversas-plazas-de-Personal-de-Oficios-vacantes-en-la-plantilla-de-personal-funcionario-OEP-2024/",
-   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22947",
+   "url_boe": null,
    "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1784847629573-final-197d5cc5.pdf"
   },
   {
@@ -2781,55 +2781,28 @@
    "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Rectificacion-de-las-bases-que-rigen-el-proceso-selectivo-para-cubrir-tres-puestos-como-personal-laboral-fijo-en-la-categoria-de-Limpiadora-Lavandera-en-la-residencia-municipal-asistida-San-Pedro/",
    "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23035",
    "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1765929629619-final-1d446601-1.pdf"
-  },
-  {
-   "ambito": "Provincia de Sevilla",
-   "denominacion": "Categoría de Conserje Mantenedor",
-   "en_boe": true,
-   "estado": "abierto",
-   "fecha_boe": "2026-11-03",
-   "fecha_publicacion": "2025-12-17",
-   "fin_estimado": true,
-   "fin_plazo": "2026-12-01",
-   "fuente": "BOP",
-   "grupo": "AP",
-   "id": "BOP-SE-2025-242005",
-   "localidad": "Carmona",
-   "organismo": "Ayuntamiento de Carmona",
-   "personal": "Laboral",
-   "plazas": 5,
-   "plazo_texto": "plazo de presentación de solicitudes será de veinte días hábiles a contar desde el siguiente al de la publicación de esta resolución en el «Boletín Oficial del Estado».",
-   "requisitos": "TERCERA.- REQUISITOS DE LOS ASPIRANTES.\n3.1.1. Tener nacionalidad española o ser nacional de algún Estado miembro de la Unión Europea. También podrán acceder, como personal laboral, en igualdad de condiciones que los españoles a los empleos públicos, con excepción de aquellos que directa o indirectamente impliquen una participación en el ejercicio del poder público o en las funciones que tienen por objeto la salvaguardia de los intereses del Estado o de las Administraciones Públicas:\nA) El cónyuge de los españoles y de los nacionales de otros Estados miembros de la Unión Europea, cualquiera que sea su nacionalidad siempre que no estén separados de derecho. Asimismo, con las mismas condiciones, podrán participar los descendientes menores de veintiún años o mayores de dicha edad que sean dependientes.\nB) Las personas incluidas en el ámbito de aplicación de los Tratados Internacionales celebrados por la Unión Europea y ratificados por España en los que sea de aplicación la libre circulación de trabajadores.\nC) Los extranjeros con residencia legal en España.\nLos aspirantes que sean nacionales de Estados no pertenecientes a la Unión Europea o al Acuerdo del Espacio Económico Europeo deberán aportar fotocopia del Permiso de Residencia Permanente o, en su caso, del permiso de trabajo y residencia.\n3.1.2. Haber cumplido dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa el día en que termine el plazo de presentación de solicitudes.\n3.1.3. Poseer el Título de certificado de escolaridad o equivalente o el título que habilite para el ejercicio de esta profesión regulada, según establecen las directivas comunitarias, o encontrarse en condiciones de obtenerlo en la fecha en que termina el plazo de presentación de instancias.\n3.1.4. Poseer la capacidad funcional para el desempeño de las tareas.\n3.1.5. No haber sido separado mediante expediente disciplinario del servicio de CSV: 07E9002A881B00W7O0J4E5H9K8 cualquiera de las Administraciones Públicas o de los Órganos Constitucionales o Estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para ejercer funciones similares a las que desempeñaba, en el que hubiese sido separado o inhabilitado.\nEXCMO. AYUNTAMIENTO DE CARMONA C/ EL SALVADOR, 2 - 41410. CARMONA (SEVILLA). TFNO: 954.19.12.47 - FAX: 954.14.39.17. WEB: http://ww.carmona.org La autenticidad de este documento   FIRMANTE - FECHA   EXPEDIENTE ::\nJUAN MANUEL AVILA GUTIERREZ(-AYUNTAMIENTO DE CARMONA)- ALCALDE - 12/12/2025   2024023300000034 se puede comprobar con el código    CN=tsa.izenpe.com, ORGANIZATIONIDENTIFIER=VATES-A01337260, O=ZIURTAPEN ETA ZERBITZU    Fecha: 13/12/2024 07E9002A881B00W7O0J4E5H9K8   ENPRESA-EMPRESA DE CERTIFICACION Y SERVICIOS IZENPE S.A., C=ES - 12/12/2025 15:03:55 Hora: 00:00 en https://sede.carmona.org Und. reg: REGISTRO GENERAL EXCMO. AYUNTAMIENTO DE CARMONA DEPARTAMENTO DE RR.HH.\nEn caso de ser nacional de otro Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al empleo público.\n3.2. Los requisitos establecidos en las normas anteriores deberán poseerse en el momento de finalizar el plazo de presentación de instancias y mantenerse durante todo el proceso, así como, en su caso, en el momento de formalización de los contratos. La acreditación de dichos requisitos se efectuará ante el Departamento de RR.HH. del Excmo. Ayuntamiento de Carmona (Sevilla) en el momento de formalizar el nombramiento de funcionario que haya sido ofertado al candidato.\nLos requisitos establecidos en estas bases deberán cumplirse el último día del plazo de presentación de solicitudes.",
-   "sistema": "Oposición",
-   "tipo": "Bolsa o empleo temporal",
-   "tipo_organismo": "Ayuntamiento",
-   "titulacion": "certificado de escolaridad o equivalente o el título que",
-   "titulo_oficial": "Bases de la convocatoria del proceso de selección para la contratación laboral temporal fijo de cinco plazas en la categoría de Conserje Mantenedor",
-   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-la-contratacion-laboral-temporal-fijo-de-cinco-plazas-en-la-categoria-de-Conserje-Mantenedor/",
-   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23035",
-   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1765929623928-final-51b340ed-1.pdf"
   }
  ],
  "fecha_referencia": "2026-11-24",
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-24T20:25+00:00",
+   "fecha": "2026-11-24T20:35+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 4
+   "segundos": 3
   },
   "BOJA": {
-   "fecha": "2026-11-24T20:26+00:00",
+   "fecha": "2026-11-24T20:36+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 12
+   "segundos": 6
   },
   "BOP": {
-   "fecha": "2026-11-24T20:26+00:00",
+   "fecha": "2026-11-24T20:36+00:00",
    "nuevos": 0,
    "ok": true,
    "segundos": 6
   }
  },
- "total": 104
+ "total": 103
 }
