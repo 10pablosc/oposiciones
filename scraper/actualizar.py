@@ -47,7 +47,7 @@ def sin_tiempo():
     return (time.time() - INICIO) / 60 > MAX_MINUTOS
 
 
-SCAN_VERSION = 2   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
+SCAN_VERSION = 3   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
 VERSION = 6   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
@@ -270,11 +270,25 @@ def refs_bop(texto):
     return list(unicos.values())
 
 
+DESCARTES = {}   # convocatorias estatales que se dejan fuera a propósito (para explicar la comparación con el buscador oficial)
+
+
+def descarta(it, motivo):
+    DESCARTES[it["id"]] = {"id": it["id"], "titulo": it["titulo"], "departamento": it.get("departamento", ""),
+                           "fecha": it["fecha"], "motivo": motivo, "url": it.get("url")}
+    return None
+
+
 def clasifica_boe(it):
     dep = norm(it["departamento"])
     tit = norm(it["titulo"])
-    if EXCLUIR.search(tit) or es_provision(it["titulo"] + " " + it["epigrafe"]) or en_el_extranjero(it["titulo"]):
+    estatal = dep not in ("administracion local", "universidades") and "andalucia" not in dep and not CCAA_NO_ANDALUCIA.search(dep)
+    if EXCLUIR.search(tit):
         return None
+    if es_provision(it["titulo"] + " " + it["epigrafe"]):
+        return descarta(it, "Provisión de puestos (solo para quien ya es funcionario)") if estatal and RE_CONVOCA_ESTRICTO.search(tit) else None
+    if en_el_extranjero(it["titulo"]):
+        return descarta(it, "Plazas en el extranjero") if estatal else None
     if dep == "administracion local":
         if re.search(r"\(sevilla\)|ayuntamiento de sevilla\b|diputacion provincial de sevilla", tit):
             return "local"
@@ -286,10 +300,10 @@ def clasifica_boe(it):
     if "andalucia" in dep or CCAA_NO_ANDALUCIA.search(dep):
         return None  # la Junta se toma del BOJA; otras comunidades no interesan
     if re.search(r"instituto nacional de gestion sanitaria|\bingesa\b", tit):
-        return None  # sus plazas están en Ceuta y Melilla
+        return descarta(it, "Plazas en Ceuta y Melilla (INGESA)") if RE_CONVOCA_ESTRICTO.search(tit) else None
     if RE_CONVOCA_ESTRICTO.search(tit):
         if lugares_no_sevilla(it["titulo"]) and not menciona_sevilla(it["titulo"]):
-            return None
+            return descarta(it, "Plazas en " + ", ".join(lugares_no_sevilla(it["titulo"])).title())
         return "estado"
     return None
 
@@ -351,7 +365,7 @@ def registro_boe(it, cat):
     if cat == "estado":
         lugares = lugares_no_sevilla(texto[:20000])
         if not menciona_sevilla(texto) and (len(lugares) >= 2 or {"ceuta", "melilla"} & set(lugares)):
-            return None
+            return descarta(it, "Plazas en otras provincias (" + ", ".join(lugares[:4]).title() + "), ninguna en Sevilla")
     org = organismo_de_titulo(it["titulo"])
     if cat == "estado":
         org = organismo_estado(org, it["departamento"])
@@ -1071,6 +1085,7 @@ def ficha(r, hoy):
         "denominacion": r["denominacion"],
         "titulo_oficial": r["titulo_oficial"],
         "organismo": r["organismo"],
+        "departamento": titulo_bonito((r.get("orig") or {}).get("departamento") or "") if r["fuente"] == "BOE" else "",
         "tipo_organismo": TIPO_ORG.get(cat, "Otros"),
         "localidad": localidad,
         "ambito": ambito,
@@ -1210,6 +1225,12 @@ def main():
     registros = carga(F_REG, {})
     estado.setdefault("fuentes", {})
     BG_CACHE.update(estado.get("bases_generales", {}))
+    limite = (hoy - timedelta(days=VENTANA_ESTADO)).isoformat()
+    DESCARTES.update({k: v for k, v in estado.get("descartes", {}).items() if v["fecha"] >= limite})
+    if not a.solo_salida and estado.get("descartes_version", 0) < 1:
+        # una vez: se repasan los días del BOE de la ventana estatal para registrar los descartes
+        estado.setdefault("boe", {"procesados": []})["procesados"] = [d for d in estado["boe"].get("procesados", []) if d < limite]
+        estado["descartes_version"] = 1
     if not a.solo_salida and estado.get("scan_version", 1) < SCAN_VERSION:
         log(f"Nueva revisión completa del BOP y del BOJA (versión {SCAN_VERSION})")
         estado.setdefault("bop", {})["procesados"] = []
@@ -1234,11 +1255,12 @@ def main():
         reprocesa(registros, hoy)
         guarda(F_REG, registros)
     estado["bases_generales"] = BG_CACHE
+    estado["descartes"] = DESCARTES
     purga(registros, hoy)
     salida = genera_salida(registros, hoy, estado)
     if not a.solo_salida and "pag" in a.fuentes:
         import comprobacion
-        comp, revisadas = comprobacion.comprobacion(salida["convocatorias"])
+        comp, revisadas = comprobacion.comprobacion(salida["convocatorias"], list(DESCARTES.values()))
         estado["comprobacion"] = comp
         if revisadas:
             guarda(os.path.join(DATA, "buscador_oficial.json"), revisadas)   # para auditar la comparación

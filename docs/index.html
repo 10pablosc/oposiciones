@@ -272,23 +272,23 @@
       caja.innerHTML = '<div class="comprobacion">Hoy no se ha podido hacer la comparación con ' + fuente + '. Se volverá a intentar mañana.</div>';
       return;
     }
-    var om = c.posibles_omisiones || [];
-    if (!om.length) {
-      caja.innerHTML = '<div class="comprobacion bien"><strong>Comprobado el ' + esc(cuando) + ':</strong> las ' + (c.total || 0) +
-        " convocatorias en plazo que recoge " + fuente + " para el Estado, la Junta de Andalucía y la provincia de Sevilla están en esta lista." +
-        ' <span class="det">(Ese buscador no incluye los ayuntamientos pequeños.)</span></div>';
-      return;
-    }
-    var lis = om.map(function (x) {
+    var om = c.posibles_omisiones || [], ex = c.excluidas || [];
+    function linea(x, conMotivo) {
       return '<li><a href="' + url(x.url) + '" target="_blank" rel="noopener">' + esc(x.denominacion) + "</a>" +
         '<div class="det">' + esc(x.organo) + " · " + esc(x.ubicacion) + (x.fin ? " · Fin de plazo: " + esc(x.fin) : "") +
-        (x.plazas ? " · " + esc(x.plazas) : "") + "</div></li>";
-    }).join("");
-    caja.innerHTML = '<div class="comprobacion aviso"><strong>Comprobado el ' + esc(cuando) + ":</strong> " + fuente + " tiene " + om.length +
-      (om.length === 1 ? " convocatoria en plazo que no aparece" : " convocatorias en plazo que no aparecen") +
-      " en esta lista (de " + (c.total || 0) + " revisadas)." +
-      '<details><summary>Ver cuáles</summary><ul>' + lis + "</ul>" +
-      '<p class="det">Puede ser una convocatoria que esta lista deja fuera a propósito (por ejemplo, una plaza estatal con destino fijo en otra provincia) o un fallo de lectura. Ese buscador no incluye los ayuntamientos pequeños.</p></details></div>';
+        (x.plazas ? " · " + esc(x.plazas) : "") + "</div>" +
+        (conMotivo && x.motivo ? '<div class="det"><strong>Motivo:</strong> ' + esc(x.motivo) +
+          (url(x.boe) ? ' (<a href="' + url(x.boe) + '" target="_blank" rel="noopener">convocatoria en el BOE</a>)' : "") + "</div>" : "") +
+        "</li>";
+    }
+    var html = "<strong>Comprobado el " + esc(cuando) + ":</strong> " + fuente + " tiene " + (c.total || 0) +
+      " convocatorias en plazo del Estado, la Junta de Andalucía y la provincia de Sevilla. " + (c.coinciden || 0) + " están en esta lista";
+    if (ex.length) html += ", " + ex.length + " se dejan fuera a propósito";
+    html += om.length ? " y <strong>" + om.length + (om.length === 1 ? " podría faltar" : " podrían faltar") + "</strong>." : " y no falta ninguna.";
+    if (om.length) html += '<details open><summary>Ver las que podrían faltar</summary><ul>' + om.map(function (x) { return linea(x, false); }).join("") + "</ul></details>";
+    if (ex.length) html += '<details><summary>Ver las que se dejan fuera a propósito y por qué</summary><ul>' + ex.map(function (x) { return linea(x, true); }).join("") + "</ul></details>";
+    html += '<p class="det">Ese buscador no incluye los ayuntamientos pequeños.</p>';
+    caja.innerHTML = '<div class="comprobacion ' + (om.length ? "aviso" : "bien") + '">' + html + "</div>";
   }
 
   function carga() {

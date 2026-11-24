@@ -540,7 +540,7 @@ EXCLUIR = re.compile(
     r"medidas excepcionales|carrera profesional|instruccion|delegacion de competencias|"
     r"designacion del tribunal|tribunal (?:que ha de juzgar|calificador)|puntuacion|impugnacion|"
     r"plantillas? (?:de respuestas|correctoras?)|respuestas|orden de actuacion|celebracion del sorteo|"
-    r"se aplaza|aplazamiento|lugar,? fecha|relacion de seleccionad|propuesta de nombramiento|bases reguladoras|"
+    r"se aplaza|aplazamiento|lugar,? fecha|relacion de seleccionad|propuesta de nombramiento|bases reguladoras (?:de|para) (?:la concesion|las subvenciones|las ayudas|los premios)|"
     r"bases generales (?:por las que|que regiran|que han de regir|para) (?:habran de regirse )?(?:las|los) (?:convocatorias|procesos)|"
     r"aprobacion de las bases generales|bases generales reguladoras|(?:resolucion|acuerdo|anuncio) del tribunal|se ofertan vacantes|ofertar vacantes|"
     r"oferta de vacantes|personas? seleccionad|personal seleccionad|documentacion complementaria|interposicion de recurso|"

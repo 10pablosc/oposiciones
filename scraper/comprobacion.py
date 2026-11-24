@@ -120,10 +120,10 @@ def coincide(item, ficha):
     tp = _tok(item["denominacion"])
     tf = _tok(" ".join([ficha["denominacion"], ficha["titulo_oficial"]]))
     comunes = tp & tf
-    org = _org(item["organo"]) & _org(ficha["organismo"] + " " + ficha["titulo_oficial"])
+    org = _org(item["organo"]) & _org(" ".join([ficha["organismo"], ficha["titulo_oficial"], ficha.get("departamento") or ""]))
     fp = _fecha(item["fin"])
     ff = date.fromisoformat(ficha["fin_plazo"]) if ficha.get("fin_plazo") else None
-    misma_fecha = bool(fp and ff and abs((fp - ff).days) <= (3 if ficha.get("fin_estimado") else 1))
+    misma_fecha = bool(fp and ff and abs((fp - ff).days) <= 3)
     junta = item.get("ambito", "").startswith("Junta") and ficha.get("tipo_organismo") in ("Junta de Andalucía", "Servicio Andaluz de Salud")
     if misma_fecha and (comunes or org or junta):
         return True
@@ -132,24 +132,50 @@ def coincide(item, ficha):
     return False
 
 
-def compara(items, fichas):
-    omisiones, coinciden = [], 0
+def explicado(item, descartes):
+    """¿Es una convocatoria estatal que la lista deja fuera a propósito? (mismo ministerio y plazo compatible)."""
+    fp = _fecha(item["fin"])
+    org_item = _org(item["organo"]) | ({"sanidad"} if "sanidad" in norm(item["organo"]) else set())
+    mejor = None
+    for d in descartes:
+        org_d = _org(d["departamento"] + " " + d["titulo"])
+        if not (org_item & org_d):
+            continue
+        if fp:
+            dias = (fp - date.fromisoformat(d["fecha"])).days
+            if not (10 <= dias <= 70):
+                continue
+        comunes = _tok(item["denominacion"]) & _tok(d["titulo"])
+        puntos = len(comunes) + (1 if org_item & org_d else 0)
+        if mejor is None or puntos > mejor[0]:
+            mejor = (puntos, d)
+    return mejor[1] if mejor else None
+
+
+def compara(items, fichas, descartes=()):
+    omisiones, excluidas, coinciden = [], [], 0
     for it in items:
         f = next((f for f in fichas if coincide(it, f)), None)
         it["coincide_con"] = f["id"] if f else None
         if f:
             coinciden += 1
+            continue
+        d = explicado(it, descartes)
+        if d:
+            it["motivo"] = d["motivo"]
+            it["boe"] = d.get("url")
+            excluidas.append(it)
         else:
             omisiones.append(it)
-    omisiones.sort(key=lambda x: (_fecha(x["fin"]) or date.max, x["organo"], x["denominacion"]))
-    return coinciden, omisiones
+    clave = lambda x: (_fecha(x["fin"]) or date.max, x["organo"], x["denominacion"])  # noqa: E731
+    return coinciden, sorted(omisiones, key=clave), sorted(excluidas, key=clave)
 
 
-def comprobacion(fichas):
+def comprobacion(fichas, descartes=()):
     try:
         items = consulta_pag()
     except Exception as e:  # noqa: BLE001
         return {"ok": False, "fecha": datetime.now(timezone.utc).isoformat(timespec="minutes"), "error": str(e)[:300]}, []
-    coinciden, omisiones = compara(items, fichas)
+    coinciden, omisiones, excluidas = compara(items, fichas, descartes)
     return ({"ok": True, "fecha": datetime.now(timezone.utc).isoformat(timespec="minutes"), "total": len(items),
-             "coinciden": coinciden, "posibles_omisiones": omisiones}, items)
+             "coinciden": coinciden, "posibles_omisiones": omisiones, "excluidas": excluidas}, items)
