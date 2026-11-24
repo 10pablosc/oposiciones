@@ -906,24 +906,87 @@
   "BOP-SE-2026-226010": "2026-11-23",
   "BOP-SE-2026-226011": "2026-11-23"
  },
+ "comprobacion": {
+  "coinciden": 71,
+  "fecha": "2026-11-24T22:59+00:00",
+  "ok": true,
+  "posibles_omisiones": [
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "denominacion": "CELADOR",
+    "fin": "30/11/2026",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:41 Libres:36 Internas:0 Discapacidad General:5 Discapacidad Intelectual:0",
+    "ref": "223002",
+    "titulacion": "Certificado de escolaridad o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223002&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior en Higiene Bucodental",
+    "fin": "30/11/2026",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "ref": "223001",
+    "titulacion": "Formación Profesional de Técnico Superior en Higiene Bucodental o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223001&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "denominacion": "ENFERMERO ESPECIALISTA - Enfermería Obstétrico-Ginecológico (Matrona)",
+    "fin": "03/12/2026",
+    "organo": "Ministerio de Defensa",
+    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "ref": "223399",
+    "titulacion": "Diplomado universitario o grado en Enfermería o equivalente junto al título de especialización en Enfermería Obstétrico-Ginecológica (Matrona)",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223399&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - PEDIATRÍA Y ÁREAS ESPECÍFICAS",
+    "fin": "03/12/2026",
+    "organo": "Ministerio de Defensa",
+    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "ref": "223397",
+    "titulacion": "FACULTATIVO ESPECIALISTA EN PEDIATRÍA Y ÁREAS ESPECÍFICAS O EQUIVALENTE",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223397&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "denominacion": "OFICIAL - Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General. (cocina/comedor)",
+    "fin": "03/12/2026",
+    "organo": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "ref": "223096",
+    "titulacion": "Graduado en Educación Secundaria, Educación General Básica o Formación Profesional de Técnico o Técnico Auxiliar, o equivalentes",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223096&selectorServicio=bolsa_empleo"
+   }
+  ],
+  "total": 76
+ },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-24T22:38+00:00",
-   "nuevos": 0,
-   "ok": true,
-   "segundos": 3
-  },
-  "BOJA": {
-   "fecha": "2026-11-24T22:40+00:00",
-   "nuevos": 0,
-   "ok": true,
-   "segundos": 100
-  },
-  "BOP": {
-   "fecha": "2026-11-24T22:40+00:00",
+   "fecha": "2026-11-24T22:58+00:00",
    "nuevos": 0,
    "ok": true,
    "segundos": 4
+  },
+  "BOJA": {
+   "fecha": "2026-11-24T22:59+00:00",
+   "nuevos": 0,
+   "ok": true,
+   "segundos": 12
+  },
+  "BOP": {
+   "fecha": "2026-11-24T22:59+00:00",
+   "nuevos": 0,
+   "ok": true,
+   "segundos": 5
   }
  },
  "scan_version": 2
