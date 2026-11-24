@@ -51,6 +51,12 @@
   .req { white-space: pre-wrap; font-size: .88rem; line-height: 1.5; background: #faf9f6; border: 1px solid var(--linea); border-radius: 7px; padding: 10px; margin-top: 8px; max-height: 420px; overflow: auto; }
   .nota { font-size: .85rem; color: var(--suave); margin-top: 6px; }
   .vacio { text-align: center; padding: 40px 10px; color: var(--suave); }
+  .comprobacion { border-radius: 10px; padding: 12px 14px; margin-bottom: 14px; font-size: .92rem; border: 1px solid var(--linea); background: var(--tarjeta); }
+  .comprobacion.bien { background: var(--verde-suave); border-color: #cfe8d9; color: #174f30; }
+  .comprobacion.aviso { background: var(--ambar-suave); border-color: #efdcae; color: #5c3d00; }
+  .comprobacion ul { margin: 8px 0 0; padding-left: 18px; }
+  .comprobacion li { margin: 6px 0; }
+  .comprobacion .det { color: var(--suave); font-size: .85rem; }
   footer { max-width: 1100px; margin: 10px auto 30px; padding: 0 16px; font-size: .85rem; color: var(--suave); }
   .fuentes span { display: inline-block; margin-right: 12px; }
   .ok { color: var(--verde); } .ko { color: var(--rojo); font-weight: 600; }
@@ -99,6 +105,7 @@
     </div>
   </section>
 
+  <section id="comprobacion" aria-live="polite"></section>
   <section class="lista" id="lista" aria-live="polite"></section>
 </main>
 
@@ -256,6 +263,34 @@
       '<p class="vacio">No hay convocatorias con estos filtros.</p>';
   }
 
+  function pintaComprobacion(c) {
+    var caja = $("comprobacion");
+    if (!c) { caja.innerHTML = ""; return; }
+    var cuando = c.fecha ? new Date(c.fecha).toLocaleDateString("es-ES") : "";
+    var fuente = 'el <a href="https://administracion.gob.es/empleopublico/resultados-empleo" target="_blank" rel="noopener">buscador oficial de empleo público del Estado</a>';
+    if (!c.ok) {
+      caja.innerHTML = '<div class="comprobacion">Hoy no se ha podido hacer la comparación con ' + fuente + '. Se volverá a intentar mañana.</div>';
+      return;
+    }
+    var om = c.posibles_omisiones || [];
+    if (!om.length) {
+      caja.innerHTML = '<div class="comprobacion bien"><strong>Comprobado el ' + esc(cuando) + ':</strong> las ' + (c.total || 0) +
+        " convocatorias en plazo que recoge " + fuente + " para el Estado, la Junta de Andalucía y la provincia de Sevilla están en esta lista." +
+        ' <span class="det">(Ese buscador no incluye los ayuntamientos pequeños.)</span></div>';
+      return;
+    }
+    var lis = om.map(function (x) {
+      return '<li><a href="' + url(x.url) + '" target="_blank" rel="noopener">' + esc(x.denominacion) + "</a>" +
+        '<div class="det">' + esc(x.organo) + " · " + esc(x.ubicacion) + (x.fin ? " · Fin de plazo: " + esc(x.fin) : "") +
+        (x.plazas ? " · " + esc(x.plazas) : "") + "</div></li>";
+    }).join("");
+    caja.innerHTML = '<div class="comprobacion aviso"><strong>Comprobado el ' + esc(cuando) + ":</strong> " + fuente + " tiene " + om.length +
+      (om.length === 1 ? " convocatoria en plazo que no aparece" : " convocatorias en plazo que no aparecen") +
+      " en esta lista (de " + (c.total || 0) + " revisadas)." +
+      '<details><summary>Ver cuáles</summary><ul>' + lis + "</ul>" +
+      '<p class="det">Puede ser una convocatoria que esta lista deja fuera a propósito (por ejemplo, una plaza estatal con destino fijo en otra provincia) o un fallo de lectura. Ese buscador no incluye los ayuntamientos pequeños.</p></details></div>';
+  }
+
   function carga() {
     fetch("convocatorias.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (j) {
       DATOS = j.convocatorias || [];
@@ -268,6 +303,7 @@
         if (!f) return "<span>" + k + ": —</span>";
         return "<span>" + k + ": " + (f.ok ? '<span class="ok">correcto</span>' : '<span class="ko">error, datos de días anteriores</span>') + "</span>";
       }).join("");
+      pintaComprobacion(j.comprobacion);
       preparaFiltros();
       pinta();
     }).catch(function () {

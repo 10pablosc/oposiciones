@@ -1203,7 +1203,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hoy", help="fecha de referencia AAAA-MM-DD")
     ap.add_argument("--solo-salida", action="store_true", help="no descarga nada; solo recalcula la página")
-    ap.add_argument("--fuentes", default="boe,bop,boja")
+    ap.add_argument("--fuentes", default="boe,bop,boja,pag")
     a = ap.parse_args()
     hoy = date.fromisoformat(a.hoy) if a.hoy else (datetime.now(timezone.utc) + timedelta(hours=1)).date()
     estado = carga(F_EST, {})
@@ -1236,6 +1236,15 @@ def main():
     estado["bases_generales"] = BG_CACHE
     purga(registros, hoy)
     salida = genera_salida(registros, hoy, estado)
+    if not a.solo_salida and "pag" in a.fuentes:
+        import comprobacion
+        comp = comprobacion.comprobacion(salida["convocatorias"])
+        estado["comprobacion"] = comp
+        log(f"Comprobación con el buscador oficial: {comp.get('total')} en plazo, "
+            f"{len(comp.get('posibles_omisiones', []))} posibles omisiones" if comp.get("ok") else f"Comprobación con error: {comp.get('error')}")
+    if estado.get("comprobacion"):
+        salida["comprobacion"] = estado["comprobacion"]
+        guarda(F_OUT, salida)
     guarda(F_REG, registros)
     guarda(F_EST, estado)
     log(f"Convocatorias vigentes: {salida['total']}")
