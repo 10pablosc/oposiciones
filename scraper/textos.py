@@ -150,10 +150,20 @@ RE_PLAZO_C = re.compile(
 )
 
 
+RE_PLAZO_D = re.compile(
+    r"(?:^|\n|\.\s)[^\n]{0,60}?(?:en|dentro\s+de)l?\s+(?:el\s+)?plazo\s+(?:maximo\s+|improrrogable\s+)?(?:de\s+)?"
+    r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|mes(?:es)?)\b"
+    r"(?=(?P<resto>.{0,300}))",
+    re.S,
+)
+
+
 def extrae_plazo(texto):
     """Devuelve dict {n, tipo, boletin, frase} o None."""
     t = _sin_abrev(norm(texto))
-    for m in list(RE_PLAZO.finditer(t)) + list(RE_PLAZO_B.finditer(t)) + list(RE_PLAZO_C.finditer(t)):
+    candidatos = list(RE_PLAZO.finditer(t)) + list(RE_PLAZO_B.finditer(t)) + list(RE_PLAZO_C.finditer(t))
+    candidatos += [m for m in RE_PLAZO_D.finditer(t) if re.search(r"solicitud|instancia", m.group("resto")[:250])]
+    for m in candidatos:
         n = a_numero(m.group("num"))
         if not n or n > 90:
             continue
@@ -210,7 +220,11 @@ def grupo_por_titulacion(tit):
     nt = norm(tit or "")
     if not nt:
         return None
-    if re.search(r"certificado de escolaridad|sin titulacion|no se exige (?:ninguna )?titulacion", nt):
+    nt = re.sub(r"(?:formacion profesional|ciclo formativo|fp) de grado superior", "tecnico superior", nt)
+    nt = re.sub(r"(?:formacion profesional|ciclo formativo|fp) de grado medio", "tecnico en", nt)
+    if re.search(r"bachiller", nt) and not re.search(r"grado en |licenciad|diplomad|ingenier|arquitect", nt):
+        return "C1"
+    if re.search(r"certificado de escolaridad|sin titulacion|no se exige (?:ninguna )?titulacion|no se exige estar en posesion de ninguna", nt):
         return "AP"
     if re.search(r"tecnico superior|tecnico especialista", nt) and not re.search(r"grado|licenciad|diplomad|bachiller", nt):
         return "B"
@@ -229,6 +243,11 @@ def extrae_grupo(texto, titulo=""):
     pat_sub = r"subgrupo\s*(?:de\s+clasificacion\s*)?(?:profesional\s*)?[:\-]?\s*(a1|a2|c1|c2)\b"
     pat_gr = r"grupo\s*(?:de\s+clasificacion\s*)?(?:profesional\s*)?[:\-]?\s*(?:[abc]\s*[,\-]?\s*(?:subgrupo\s*)?)?(a1|a2|c1|c2)\b"
     pat_esc = r"grupo\s+de\s+escala\s+de\s+clasificacion\s+profesional\s*:\s*(a1|a2|c1|c2)\b"
+    m = re.search(r"grupo\s*/\s*subgrupo\s*:?\s*[abc]?\s*/\s*(a1|a2|c1|c2)\b", t)
+    if m:
+        return m.group(1).upper()
+    if re.search(r"policia local", tn) and not re.search(r"inspector|comisario|intendente", tn):
+        return "C1"   # Escala Básica de la Policía Local de Andalucía
     # 1) el título
     for p in (pat_sub, pat_gr):
         vals = {v.upper() for v in re.findall(p, tn)}
@@ -262,7 +281,7 @@ def extrae_grupo(texto, titulo=""):
             if len(vals) == 1:
                 return vals.pop()
     cab = tn + " " + t[:3000]
-    if re.search(r"agrupacion(?:es)? profesional", cab):
+    if re.search(r"agrupacion(?:es)? profesional|asimilad[oa] (?:a |al )?(?:grupo|subgrupo) e\b|\bgrupo e\b", cab + " " + t[-15000:]):
         return "AP"
     if re.search(r"subescala\s+tecnica|cuerpo superior|escala superior|tecnico de administracion general|\btag\b", cab):
         return "A1"
@@ -303,10 +322,15 @@ def titulacion_valida(v):
     n = norm(v)
     if not RE_TIT_OK.search(n):
         return False
+    if re.search(r"exigid|requerid|correspondiente|necesari|indicad|que se (?:establezca|determine|cita)", n) and not re.search(
+            r"bachiller|\beso\b|graduado|grado en|licenciad|diplomad|tecnico superior|tecnico en|ingenier|certificado de escolaridad|"
+            r"secundaria|arquitect|titulo de (?!grado\b)", n):
+        return False
     letras = [c for c in v if c.isalpha()]
-    if letras and sum(c.isupper() for c in letras) / len(letras) > 0.6 and len(v) > 25:
+    fuerte = re.search(r"\beso\b|bachiller|graduado|grado en|licenciad|diplomad|tecnico|certificado|ingenier", n)
+    if letras and not fuerte and sum(c.isupper() for c in letras) / len(letras) > 0.6 and len(v) > 25:
         return False  # cabeceras de tabla en mayúsculas mal leídas del PDF
-    if re.search(r"\b\w{2,}-\s", v):
+    if len(re.findall(r"\b\w{2,}-\s", v + " ")) >= 2:
         return False  # palabras cortadas por guion (tablas del PDF)
     return True
 
@@ -318,10 +342,10 @@ def extrae_titulacion(texto):
 
 def _extrae_titulacion(texto):
     t = texto or ""
-    m = re.search(r"TITULACI[ÓO]N\s+(?:EXIGIDA|REQUERIDA|ACAD[ÉE]MICA)\s*[:\s]\s*(.{6,240}?)\s*(?:\n\s*\n|\n[A-ZÁÉÍÓÚ ]{5,}(?:\s|$)|$)", t, re.S)
+    m = re.search(r"(?i)TITULACI[ÓO]N\s+(?:EXIGIDA|EXIGIBLE|REQUERIDA|ACAD[ÉE]MICA|M[ÍI]NIMA)\s*[:\s]\s*(.{6,240}?)\s*(?:\n\s*\n|\n[A-ZÁÉÍÓÚ ]{5,}(?:\s|$)|$)", t, re.S)
     if m and not re.match(r"(?i)(que se|exigid|requerid|correspondiente|necesari|de las plazas)", m.group(1)):
         return limpia(m.group(1))
-    m = re.search(r"(?i)titulaci[óo]n\s*(?:exigida|requerida|acad[ée]mica)?\s*:\s*([^\n]{6,220})", t)
+    m = re.search(r"(?i)titulaci[óo]n\s*(?:exigida|exigible|requerida|acad[ée]mica|m[íi]nima)?\s*:\s*([^\n]{6,220})", t)
     if m and not re.match(r"(?i)(que se|exigid|requerid|correspondiente|necesari|la exigida|las exigidas|ver )", m.group(1).strip()):
         return limpia(m.group(1))
     m = re.search(r"(?i)(?:estar\s+en\s+posesi[óo]n|poseer)\s+(?:o\s+en\s+condiciones\s+de\s+obtener\s+)?(?:el\s+|la\s+|del?\s+|los\s+)?"
@@ -337,12 +361,20 @@ def _extrae_titulacion(texto):
 ORDINALES = ["primera", "segunda", "tercera", "cuarta", "quinta", "sexta", "septima", "octava", "novena",
              "decima", "undecima", "duodecima", "decimotercera", "decimocuarta", "decimoquinta"]
 RE_CAB_REQ = re.compile(
-    r"(?im)^[ \t]*(?P<pref>(?:base\s+)?(?P<num>\d{1,2})(?:[\.\)]|\.-|\s*[\-–—])?\s*|(?P<rom>[IVX]{1,5})[\.\)\-–—]+\s*|"
-    r"(?:base\s+)?(?P<ord>primera|segunda|tercera|cuarta|quinta|sexta|s[ée]ptima|octava|novena)\s*[\.\-–—:]+\s*)?"
-    r"requisitos\s+(?:generales\s+)?(?:de\s+(?:los|las)\s+(?:personas\s+)?(?:aspirantes|candidat[oa]s|participantes|solicitantes)|"
+    r"(?im)^[ \t]*(?P<pref>(?:base\s+)?(?P<num>\d{1,2})(?:[\.\)]|\.-|\s*[\-–—])?(?:\s*[\-–—])?\s*|(?P<rom>[IVX]{1,5})(?:[\.\)\-–—]\s*)+|"
+    r"(?:base\s+)?(?P<ord>primera|segunda|tercera|cuarta|quinta|sexta|s[ée]ptima|octava|novena)(?:\s*[\.\-–—:]\s*)+)?"
+    r"requisitos\s+(?:generales\s+)?(?:de\s+(?:admisi[óo]n\s+de\s+)?(?:los|las|l[oa]s/[oa]s|el/la)\s+(?:personas\s+)?(?:aspirantes|candidat[oa]s(?:/[oa]s)?|participantes|solicitantes|opositor(?:es|as)(?:/[oa]s)?)|"
     r"que\s+(?:deben|han\s+de|deber[áa]n)\s+reunir|de\s+participaci[óo]n|de\s+admisi[óo]n|exigidos|para\s+(?:participar|ser\s+admitid)|"
-    r"de\s+acceso|generales)"
+    r"de\s+acceso|generales|espec[íi]ficos|de\s+preselecci[óo]n|profesionales|m[íi]nimos)"
 )
+# Cabecera mínima: "QUINTA.- Requisitos." / "3. Requisitos" (línea corta)
+RE_CAB_REQ_CORTA = re.compile(
+    r"(?im)^[ \t]*(?P<pref>(?:base\s+)?(?P<num>\d{1,2})(?:[\.\)]|\.-|\s*[\-–—])?(?:\s*[\-–—])?\s*|(?P<rom>[IVX]{1,5})(?:[\.\)\-–—]\s*)+|"
+    r"(?:base\s+)?(?P<ord>primera|segunda|tercera|cuarta|quinta|sexta|s[ée]ptima|octava|novena)(?:\s*[\.\-–—:]\s*)+)"
+    r"requisitos\b[^\n]{0,60}$"
+)
+# Sin cabecera: "... deberán reunir los siguientes requisitos:"
+RE_REQ_FRASE = re.compile(r"(?is)(?:reunir|re[úu]nan|cumplir|cumplan|poseer|reuni?r[áa]n)\b[^.]{0,140}?(?:siguientes\s+requisitos|requisitos\s*:)")
 ROMANOS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"]
 
 
@@ -370,17 +402,45 @@ def norm_mayus(t):
     return "".join(c for c in unicodedata.normalize("NFC", t)).translate(str.maketrans("áéíóúÁÉÍÓÚ", "aeiouAEIOU"))
 
 
-def extrae_requisitos(texto, maximo=4000):
-    """Copia literal del apartado de requisitos de las bases (si se localiza)."""
-    if not texto:
-        return None
-    m = RE_CAB_REQ.search(texto)
-    if not m:
-        return None
+def _bloque_desde(texto, m, maximo):
     resto = texto[m.end():]
     fin = _fin_apartado(m, resto)
     largo = fin if fin is not None else maximo + 500
     bloque = limpia_bloque(texto[m.start(): m.end() + min(largo, maximo + 500)])
+    if len(bloque) > maximo:
+        bloque = bloque[:maximo].rsplit(" ", 1)[0] + " […]"
+    return bloque
+
+
+def extrae_requisitos(texto, maximo=4000):
+    """Copia literal del apartado de requisitos de las bases (si se localiza).
+    Se salta las apariciones en el índice del documento (bloques muy cortos)."""
+    if not texto:
+        return None
+    bloques = []
+    for patron in (RE_CAB_REQ, RE_CAB_REQ_CORTA):
+        for m in patron.finditer(texto):
+            b = _bloque_desde(texto, m, maximo)
+            if len(b) >= 300:
+                return b
+            bloques.append(b)
+        if bloques and max(len(b) for b in bloques) > 120:
+            break
+    if bloques:
+        mejor = max(bloques, key=len)
+        if len(mejor) > 120:
+            return mejor
+    f = RE_REQ_FRASE.search(texto)
+    if not f:
+        return None
+    ini = texto.rfind("\n", 0, f.start()) + 1
+    resto = texto[f.end():]
+    fin = None
+    for s2 in re.finditer(r"(?m)^[ \t]*(?:\d{1,2}\.\s+[A-ZÁÉÍÓÚ][^\n]{2,80}$|[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ ,]{6,}$|(?:" + "|".join(ORDINALES) + r")\b)", resto, re.I):
+        if s2.start() > 200:
+            fin = s2.start()
+            break
+    bloque = limpia_bloque(texto[ini: f.end() + min(fin if fin is not None else maximo, maximo + 500)])
     if len(bloque) > maximo:
         bloque = bloque[:maximo].rsplit(" ", 1)[0] + " […]"
     return bloque if len(bloque) > 60 else None
@@ -458,12 +518,14 @@ EXCLUIR = re.compile(
     r"prorroga|resolucion definitiva|se resuelve|adjudica|sorteo|"
     r"relacion de (?:personas|aspirantes|plazas)|plazas correspondientes|se ofrecen|\blistas? (?:provisional|definitiva|de)|\blistado|"
     r"calificacion|fecha de (?:celebracion|realizacion|comienzo)|\bcese\b|toma de posesion|han superado|"
-    r"desiert|deja sin efecto|se anula|composicion|subvencion|\bbecas?\b|\bayudas?\b|premio|"
+    r"desiert|deja sin efecto|se anula|composicion|subvencion|\bbecas?\b|\bayudas?\b(?! a domicilio)|premio|"
     r"mercadillo|agrupaciones carnavalescas|certificado de aptitud|licitacion|"
     r"^(?:aprobacion de la )?oferta de empleo publico|(?:aprueba|publica) la oferta de empleo publico|"
     r"(?:aprobacion|modificacion)\s+(?:inicial\s+|definitiva\s+)?(?:de\s+)?(?:la\s+)?(?:modificacion\s+de\s+)?(?:la\s+)?plantilla|"
-    r"relacion de puestos|valoracion de (?:los )?puestos|manual de puestos|cuenta general|presupuest|"
-    r"ordenanza|padron|desistimiento|calendario|se aprueba la relacion|se publica la relacion|"
+    r"relacion de puestos|valoracion de (?:los )?puestos|manual de puestos|cuenta general|presupuesto general|"
+    r"(?:aprobacion|modificacion) (?:inicial |definitiva )?del presupuesto|modificacion presupuestaria|"
+    r"ordenanzas? (?:fiscal|fiscales|reguladora|municipal|general)|(?:aprobacion|modificacion) (?:inicial |definitiva )?de (?:la|las) ordenanza|"
+    r"padron|desistimiento|calendario|se aprueba la relacion|se publica la relacion|"
     r"se hace publica la relacion|personal eventual|personal directivo profesional|"
     r"medidas excepcionales|carrera profesional|instruccion|delegacion de competencias|"
     r"designacion del tribunal|tribunal (?:que ha de juzgar|calificador)|puntuacion|impugnacion|"
@@ -475,7 +537,12 @@ EXCLUIR = re.compile(
     r"rectificacion de la relacion|relacion complementaria|acreditacion de requisitos|presentacion de documentacion|"
     r"toma de conocimiento|adquisicion de|disenos? de|motivos navidenos|al turno libre de la convocatoria|"
     r"con (?:los|las) (?:personas )?aspirantes|itinerarios formativos|participantes en (?:los|el)|"
-    r"pruebas de certificacion|curso de formacion|ensenanzas de|apertura del plazo para la presentacion de solicitudes respecto"
+    r"pruebas de certificacion|curso de formacion|pruebas de certificacion en las ensenanzas|apertura del plazo para la presentacion de solicitudes respecto|"
+    r"dejando (?:parcialmente )?sin efecto|participantes del proyecto|participantes de los|subsanacion|"
+    r"fecha (?:del?|de la) (?:primer|segund|tercer|cuart|realizacion|celebracion)|ejercicio de la convocatoria|"
+    r"criterios de correccion|supuesto practico|hoja de (?:criterios|respuestas)|^anulacion|anulacion de la|"
+    r"ordenacion de la bolsa|determinacion definitiva|seleccionad|nombramiento de funcionari|"
+    r"lista (?:provisional|definitiva)|calificaciones|resultados? (?:del|de la|de las|de los)|puntuaciones|plantilla de correccion"
 )
 RE_CONVOCA_ESTRICTO = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b")
 RE_CONVOCA_BOJA = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b|\bse convocan?\b|bases de la convocatoria|\bbolsas?\b|concurso publico")
@@ -642,3 +709,14 @@ def titulo_sin_preambulo(t):
     d = m.group(1) if m else limpia(t)
     d = d.strip(" .")
     return (d[0].upper() + d[1:])[:160] if d else t[:160]
+
+
+def grupo_laboral(texto, titulo=""):
+    """Grupo de convenio del personal laboral (p. ej. 'Laboral (grupo V)') cuando no hay equivalencia A1–C2."""
+    zona = norm(titulo) + " " + norm(texto)[:6000]
+    if "laboral" not in zona:
+        return None
+    m = re.search(r"grupo\s+(?:profesional\s+|economico\s+|de\s+clasificacion\s+)?:?\s*\b(i{1,3}|iv|v|vi|[a-z]?[0-9]|m[1-3])\b", zona)
+    if m:
+        return f"Laboral (grupo {m.group(1).upper()})"
+    return None

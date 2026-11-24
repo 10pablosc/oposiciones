@@ -224,9 +224,16 @@
     if (url(c.url_boe) && c.url_boe !== c.url_bases) enlaces.push('<a href="' + url(c.url_boe) + '" target="_blank" rel="noopener">Anuncio en el BOE</a>');
 
     var req = "";
+    var rg = c.requisitos_generales;
     if (c.titulacion) req += '<p><strong>Titulación:</strong> ' + esc(c.titulacion) + "</p>";
     if (c.requisitos) req += '<div class="req">' + esc(c.requisitos) + "</div>";
-    else req += '<p class="nota">No se ha podido extraer el apartado de requisitos de forma automática. Consúltalo en las bases.</p>';
+    if (rg && rg.texto) {
+      req += '<p class="nota" style="margin-top:10px"><strong>Requisitos comunes</strong> de las bases generales publicadas en el BOP el ' +
+        fecha(rg.fecha) + (url(rg.url) ? ' (<a href="' + url(rg.url) + '" target="_blank" rel="noopener">ver bases generales</a>)' : "") + ":</p>" +
+        '<div class="req">' + esc(rg.texto) + "</div>";
+    }
+    if (!c.requisitos && !(rg && rg.texto)) req += '<p class="nota">No se ha podido extraer el apartado de requisitos de forma automática. Consúltalo en las bases.</p>';
+    if (c.ocr) req += '<p class="nota">Las bases de esta convocatoria son un PDF escaneado: los datos se han leído con reconocimiento de texto y pueden contener errores.</p>';
     if (c.plazo_texto) req += '<p class="nota"><strong>Plazo según el texto oficial:</strong> ' + esc(c.plazo_texto) + "</p>";
 
     return '<article class="conv">' +

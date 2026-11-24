@@ -18,7 +18,7 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from textos import (EXCLUIR, titulacion_valida, denominacion_de_texto, titulo_sin_preambulo, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
+from textos import (EXCLUIR, grupo_laboral, titulacion_valida, denominacion_de_texto, titulo_sin_preambulo, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
                     extrae_grupo, extrae_num_plazas, extrae_personal, extrae_plazo,
                     extrae_requisitos, extrae_sistema, extrae_titulacion,
                     limpia, lugares_no_sevilla, menciona_sevilla, norm,
@@ -47,7 +47,8 @@ def sin_tiempo():
     return (time.time() - INICIO) / 60 > MAX_MINUTOS
 
 
-VERSION = 4   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
+SCAN_VERSION = 2   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
+VERSION = 5   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"
@@ -392,7 +393,7 @@ def registro_boe(it, cat):
         "plazo": extrae_plazo(texto),
         "refs_bop": refs_bop(completo) if cat == "local" else [],
         "plazas": suma or extrae_num_plazas(texto[:3000], it["titulo"]),
-        "grupo": extrae_grupo(texto, it["titulo"] + " " + " ".join(notas)),
+        "grupo": extrae_grupo(texto, it["titulo"] + " " + " ".join(notas)) or grupo_laboral(texto, it["titulo"]),
         "personal": extrae_personal(it["titulo"]) or extrae_personal(texto[:1200]) or extrae_personal(it["epigrafe"]),
         "sistema": extrae_sistema(it["titulo"] + " " + texto[:4000]),
         "tipo": tipo_proceso(it["titulo"] + " " + " ".join(notas)),
@@ -593,7 +594,7 @@ def registro_boja(it, rid):
         "url_bases": it["url"],
         "plazo": extrae_plazo(texto),
         "plazas": extrae_num_plazas(tit, texto[:4000]),
-        "grupo": extrae_grupo(texto, tit),
+        "grupo": extrae_grupo(texto, tit) or grupo_laboral(texto, tit),
         "personal": extrae_personal(tit) or extrae_personal(texto[:2000]),
         "sistema": extrae_sistema(tit + " " + texto[:4000]),
         "tipo": tipo_proceso(tit),
@@ -620,7 +621,7 @@ def localidad_de_texto(t):
 
 RE_BOP_CAND = re.compile(r"bases|convocatoria|proceso selectivo|procesos selectivos|seleccion|bolsa")
 RE_BOP_PLAZA = re.compile(r"plazas?|puestos?|bolsa|personal|seleccion|proceso selectivo|cuerpo|escala|categoria")
-RE_BOP_NO = re.compile(r"subvenci|beca|ayuda|premio|concurso de (?:agrupaciones|carteles|fotografia|pintura|relatos|ideas)|"
+RE_BOP_NO = re.compile(r"subvenci|\bbecas?\b|\bayudas?\b(?! a domicilio)|premio|concurso de (?:agrupaciones|carteles|fotografia|pintura|relatos|ideas)|"
                        r"mercadillo|puestos? (?:del|de|en el) mercado|licencia|taxi|vivienda|concesion|enajenacion|"
                        r"alumn|monitores? deportiv|voluntari|cabalgata|carnaval|feria|concurso literario")
 
@@ -794,6 +795,94 @@ def completa_desde_boe(registros, hoy):
     return nuevos
 
 
+BG_CACHE = {}   # bases generales ya leídas: se guarda en estado.json
+
+
+def ref_bases_generales(texto, fecha_pub):
+    """Número y fecha del BOP donde se publicaron las bases generales que cita unas bases específicas."""
+    t = re.sub(r"\s+", " ", texto or "")
+    pub = date.fromisoformat(fecha_pub)
+    resoluciones = []
+    for m in re.finditer(r"(?i)bases\s+generales", t):
+        ventana = t[m.start(): m.start() + 700]
+        alrededor = t[max(0, m.start() - 300): m.start() + 700]
+        res = re.search(r"(?i)resoluci[óo]n\s+(?:n[.º°o]*\s*|n[uú]m\.?\s*)?(\d{2,6}/20\d\d)", alrededor)
+        if res:
+            resoluciones.append(res.group(1))
+        r = re.search(r"(?i)(?:\bB\.?\s?O\.?\s?P\.?(?=[\s,]|$)|Bolet[íi]n\s+Oficial\s+de\s+la\s+Provincia(?:\s+de\s+Sevilla)?)[^0-9]{0,25}?"
+                      r"(?:n\.?\s?[º°o]\.?\s*|n[uú]m(?:ero)?\.?\s*)(\d{1,3}),?\s*(?:de\s+(?:fecha\s+)?)?(\d{1,2})"
+                      r"(?:\s+de\s+([a-záéíóú]+)(?:\s+(?:de\s+)?(\d{4}))?|[/\-.](\d{1,2})[/\-.](\d{2,4}))", ventana)
+        if not r:
+            continue
+        num, dia = int(r.group(1)), int(r.group(2))
+        if r.group(3):
+            mes = MESES.get(norm(r.group(3)))
+            anio = int(r.group(4)) if r.group(4) else None
+        else:
+            mes = int(r.group(5))
+            anio = int(r.group(6)) if r.group(6) else None
+            if anio and anio < 100:
+                anio += 2000
+        if not mes:
+            continue
+        if not anio:
+            previo = t[max(0, m.start() - 500): m.start() + r.start()]
+            por_resolucion = re.findall(r"\d+/(20\d\d)", previo)
+            antes = por_resolucion or re.findall(r"(20\d\d)", previo)
+            anio = int(antes[-1]) if antes else pub.year
+        try:
+            f = date(anio, mes, dia)
+        except ValueError:
+            continue
+        if f > pub:
+            try:
+                f = date(anio - 1, mes, dia)
+            except ValueError:
+                continue
+        if res:
+            BG_CACHE[f"res|{res.group(1)}"] = f"{num}|{f.isoformat()}"
+        return num, f
+    for res in resoluciones:   # solo cita la resolución: se usa la referencia aprendida de otras bases
+        conocido = BG_CACHE.get(f"res|{res}")
+        if conocido:
+            n, fi = conocido.split("|")
+            return int(n), date.fromisoformat(fi)
+    return None
+
+
+def requisitos_bases_generales(texto, fecha_pub, anunciante):
+    ref = ref_bases_generales(texto, fecha_pub)
+    if not ref:
+        return None
+    num, f = ref
+    anun = anunciante_norm(anunciante)
+    clave = f"{num}|{f.isoformat()}|{anun}"
+    if clave in BG_CACHE:
+        return BG_CACHE[clave]
+    resultado = None
+    try:
+        items = bop_listado(f) or []
+        cands = [it for it in items if "bases generales" in norm(it["titulo"])]
+        propios = [it for it in cands if anunciante_norm(it["anunciante"]) == anun]
+        for it in (propios or cands)[:2]:
+            meta = bop_detalle(it)
+            if not meta.get("pdf"):
+                continue
+            datos = descarga(meta["pdf"], binario=True)
+            txt = pdf_a_texto(datos) if datos else ""
+            if letras_utiles(txt) < 400 and datos:
+                txt = pdf_ocr(datos)
+            req = extrae_requisitos(txt)
+            if req:
+                resultado = {"texto": req, "url": it["url"], "fecha": f.isoformat(), "titulo": it["titulo"]}
+                break
+    except Exception as e:  # noqa: BLE001
+        log("  bases generales error", clave, e)
+        return None
+    BG_CACHE[clave] = resultado
+    return resultado
+
+
 def registro_bop(it):
     meta = bop_detalle(it)
     md = norm(meta.get("Metadato", ""))
@@ -820,6 +909,10 @@ def registro_bop(it):
         cat = "otros_locales"
     m = re.search(r"BOP-SE-(\d{4})-(\d{3})", it["cve"])
     tit = it["titulo"]
+    requisitos = extrae_requisitos(texto)
+    generales = None
+    if (not requisitos or len(requisitos) < 900) and re.search(r"(?i)bases\s+generales", texto):
+        generales = requisitos_bases_generales(texto, it["fecha"], it.get("anunciante") or sub)
     return {
         "v": VERSION,
         "orig": {k: it.get(k) for k in ("url", "titulo", "anunciante", "cve", "fecha")},
@@ -835,11 +928,12 @@ def registro_bop(it):
         "url_pdf": meta.get("pdf"),
         "plazo": extrae_plazo(texto),
         "plazas": extrae_num_plazas(tit, texto[:6000]),
-        "grupo": extrae_grupo(texto, tit),
+        "grupo": extrae_grupo(texto, tit) or grupo_laboral(texto, tit),
         "personal": extrae_personal(tit) or extrae_personal(texto[:4000]),
         "sistema": extrae_sistema(tit) or extrae_sistema(texto[-15000:]) or extrae_sistema(texto[:8000]),
         "tipo": tipo_proceso(tit),
-        "requisitos": extrae_requisitos(texto),
+        "requisitos": requisitos,
+        "requisitos_generales": generales,
         "titulacion": extrae_titulacion(texto),
         "localidad": localidad,
         "ambito": "Provincia de Sevilla",
@@ -999,6 +1093,7 @@ def ficha(r, hoy):
         "requisitos": r.get("requisitos"),
         "titulacion": r.get("titulacion") if titulacion_valida(r.get("titulacion")) else None,
         "ocr": bool(r.get("ocr")),
+        "requisitos_generales": r.get("requisitos_generales"),
     }
 
 
@@ -1112,6 +1207,12 @@ def main():
     estado = carga(F_EST, {})
     registros = carga(F_REG, {})
     estado.setdefault("fuentes", {})
+    BG_CACHE.update(estado.get("bases_generales", {}))
+    if not a.solo_salida and estado.get("scan_version", 1) < SCAN_VERSION:
+        log(f"Nueva revisión completa del BOP y del BOJA (versión {SCAN_VERSION})")
+        estado.setdefault("bop", {})["procesados"] = []
+        estado.setdefault("boja", {})["numeros"] = {}
+        estado["scan_version"] = SCAN_VERSION
     if not a.solo_salida:
         for nombre, fn in (("BOE", procesa_boe), ("BOJA", procesa_boja), ("BOP", procesa_bop)):
             if nombre.lower() not in a.fuentes:
@@ -1130,6 +1231,7 @@ def main():
     if not a.solo_salida:
         reprocesa(registros, hoy)
         guarda(F_REG, registros)
+    estado["bases_generales"] = BG_CACHE
     purga(registros, hoy)
     salida = genera_salida(registros, hoy, estado)
     guarda(F_REG, registros)
