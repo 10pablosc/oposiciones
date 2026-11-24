@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oposiciones con plazas en la provincia de Sevilla</title>
+<meta name="description" content="Convocatorias de empleo público en plazo con plazas en la provincia de Sevilla. Se actualiza cada día con el BOE, el BOJA y el BOP de Sevilla.">
+<style>
+  :root {
+    --fondo: #f6f5f2; --tarjeta: #ffffff; --texto: #1f2328; --suave: #5b636e; --linea: #e2e0da;
+    --acento: #1d5c8f; --acento-suave: #e8f0f7; --verde: #1f7a45; --verde-suave: #e6f4ec;
+    --ambar: #8a5a00; --ambar-suave: #fbf1dc; --rojo: #a3302a; --rojo-suave: #fbe9e7; --gris-suave: #efeee9;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--fondo); color: var(--texto); }
+  a { color: var(--acento); }
+  header { background: #12324f; color: #fff; padding: 22px 16px 18px; }
+  header .cont { max-width: 1100px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 1.45rem; line-height: 1.25; }
+  header p { margin: 0; color: #c9d7e4; font-size: .95rem; }
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  .filtros { background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+  .filtros .fila { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px 12px; }
+  .filtros label { display: block; font-size: .8rem; font-weight: 600; color: var(--suave); margin-bottom: 3px; }
+  .filtros select, .filtros input { width: 100%; padding: 8px 9px; font: inherit; font-size: .95rem; border: 1px solid #c9c6bd; border-radius: 7px; background: #fff; color: var(--texto); }
+  .filtros .busca { grid-column: 1 / -1; }
+  .barra { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin: 12px 0 0; }
+  .barra .cuenta { font-weight: 600; }
+  button { font: inherit; font-size: .9rem; padding: 7px 12px; border-radius: 7px; border: 1px solid #c9c6bd; background: #fff; cursor: pointer; color: var(--texto); }
+  button:hover { background: var(--gris-suave); }
+  #mostrarFiltros { display: none; }
+  .lista { display: grid; gap: 12px; }
+  .conv { background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 10px; padding: 14px 16px; }
+  .conv h2 { margin: 0 0 3px; font-size: 1.08rem; line-height: 1.35; }
+  .conv h2 a { text-decoration: none; }
+  .conv h2 a:hover { text-decoration: underline; }
+  .org { color: var(--suave); font-size: .93rem; margin-bottom: 8px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 8px; }
+  .chip { font-size: .8rem; padding: 2px 8px; border-radius: 999px; background: var(--gris-suave); color: #3b424a; white-space: nowrap; }
+  .chip.grupo { background: var(--acento-suave); color: var(--acento); font-weight: 600; }
+  .plazo { font-size: .93rem; padding: 7px 10px; border-radius: 7px; margin: 6px 0; }
+  .plazo.abierto { background: var(--verde-suave); color: var(--verde); }
+  .plazo.urgente { background: var(--rojo-suave); color: var(--rojo); }
+  .plazo.pendiente { background: var(--ambar-suave); color: var(--ambar); }
+  .plazo.dudoso { background: var(--gris-suave); color: #3b424a; }
+  .fechas { font-size: .85rem; color: var(--suave); }
+  .enlaces { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; font-size: .92rem; }
+  details { margin-top: 8px; border-top: 1px dashed var(--linea); padding-top: 8px; }
+  summary { cursor: pointer; font-weight: 600; font-size: .92rem; color: var(--acento); }
+  .req { white-space: pre-wrap; font-size: .88rem; line-height: 1.5; background: #faf9f6; border: 1px solid var(--linea); border-radius: 7px; padding: 10px; margin-top: 8px; max-height: 420px; overflow: auto; }
+  .nota { font-size: .85rem; color: var(--suave); margin-top: 6px; }
+  .vacio { text-align: center; padding: 40px 10px; color: var(--suave); }
+  footer { max-width: 1100px; margin: 10px auto 30px; padding: 0 16px; font-size: .85rem; color: var(--suave); }
+  .fuentes span { display: inline-block; margin-right: 12px; }
+  .ok { color: var(--verde); } .ko { color: var(--rojo); font-weight: 600; }
+  @media (max-width: 640px) {
+    h1 { font-size: 1.2rem; }
+    #mostrarFiltros { display: inline-block; }
+    .filtros.plegado .fila .extra { display: none; }
+  }
+</style>
+</head>
+<body>
+<header><div class="cont">
+  <h1>Oposiciones con plazas en la provincia de Sevilla</h1>
+  <p id="sub">Cargando convocatorias…</p>
+</div></header>
+
+<main>
+  <section class="filtros plegado" id="panel" aria-label="Filtros">
+    <div class="fila">
+      <div class="busca"><label for="f-texto">Buscar</label>
+        <input id="f-texto" type="search" placeholder="Plaza, organismo, localidad… (ej.: administrativo, Dos Hermanas)"></div>
+      <div><label for="f-grupo">Nivel (grupo)</label><select id="f-grupo"></select></div>
+      <div><label for="f-localidad">Lugar de la plaza</label><select id="f-localidad"></select></div>
+      <div><label for="f-plazo">Plazo</label><select id="f-plazo">
+        <option value="">Todas las vigentes</option>
+        <option value="abierto">Plazo abierto ahora</option>
+        <option value="7">Cierra en 7 días o menos</option>
+        <option value="15">Cierra en 15 días o menos</option>
+        <option value="30">Cierra en 30 días o menos</option>
+        <option value="pendiente">Plazo pendiente de apertura</option>
+        <option value="sin_determinar">Plazo sin determinar</option>
+      </select></div>
+      <div class="extra"><label for="f-org">Organismo</label><select id="f-org"></select></div>
+      <div class="extra"><label for="f-tipo">Tipo de proceso</label><select id="f-tipo"></select></div>
+      <div class="extra"><label for="f-boe">Publicada en el BOE</label><select id="f-boe">
+        <option value="">Indiferente</option><option value="si">Sí</option><option value="no">No (aún no)</option></select></div>
+      <div class="extra"><label for="f-personal">Tipo de personal</label><select id="f-personal"></select></div>
+      <div class="extra"><label for="f-sistema">Sistema de selección</label><select id="f-sistema"></select></div>
+    </div>
+    <div class="barra">
+      <span class="cuenta" id="cuenta"></span>
+      <span>
+        <button id="mostrarFiltros" type="button">Más filtros</button>
+        <button id="limpiar" type="button">Quitar filtros</button>
+      </span>
+    </div>
+  </section>
+
+  <section class="lista" id="lista" aria-live="polite"></section>
+</main>
+
+<footer>
+  <p class="fuentes" id="fuentes"></p>
+  <p>Fuentes: Boletín Oficial del Estado (sección II.B), Boletín Oficial de la Junta de Andalucía (sección 2.2) y Boletín Oficial de la Provincia de Sevilla.
+  Se incluyen las convocatorias de ayuntamientos, Diputación y entes de la provincia, las de la Junta de Andalucía y el SAS, las de las universidades de Sevilla y las del Estado de ámbito nacional.
+  Las fechas de fin de plazo se calculan a partir del texto oficial; las marcadas como «estimada» no tienen en cuenta los festivos locales. <strong>Comprueba siempre las bases oficiales antes de presentar la solicitud.</strong></p>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var DATOS = [];
+  var HOY = new Date();
+  HOY.setHours(0, 0, 0, 0);
+  var $ = function (id) { return document.getElementById(id); };
+  var F = { texto: $("f-texto"), grupo: $("f-grupo"), localidad: $("f-localidad"), plazo: $("f-plazo"), org: $("f-org"),
+            tipo: $("f-tipo"), boe: $("f-boe"), personal: $("f-personal"), sistema: $("f-sistema") };
+  var ORDEN_GRUPO = ["A1", "A2", "B", "C1", "C2", "AP", "Sin determinar"];
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function url(u) { return (typeof u === "string" && /^https:\/\//.test(u)) ? esc(u) : ""; }
+  function fecha(iso) {
+    if (!iso) return "";
+    var p = iso.slice(0, 10).split("-");
+    return p[2] + "/" + p[1] + "/" + p[0];
+  }
+  function diasHasta(iso) {
+    var p = iso.split("-");
+    var d = new Date(+p[0], +p[1] - 1, +p[2]);
+    return Math.round((d - HOY) / 86400000);
+  }
+  function sinTildes(s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
+
+  function opciones(sel, valores, todas, orden) {
+    var vistos = {};
+    valores.forEach(function (v) { if (v) vistos[v] = (vistos[v] || 0) + 1; });
+    var lista = Object.keys(vistos);
+    if (orden) lista.sort(orden); else lista.sort(function (a, b) { return a.localeCompare(b, "es"); });
+    sel.innerHTML = '<option value="">' + esc(todas) + "</option>" + lista.map(function (v) {
+      return '<option value="' + esc(v) + '">' + esc(v) + " (" + vistos[v] + ")</option>";
+    }).join("");
+  }
+
+  function lugarDe(c) {
+    if (c.ambito.indexOf("Toda España") === 0) return "Toda España (posible destino en Sevilla)";
+    if (c.ambito.indexOf("Andalucía") === 0) return "Andalucía (posible destino en Sevilla)";
+    return c.localidad;
+  }
+
+  function preparaFiltros() {
+    opciones(F.grupo, DATOS.map(function (c) { return c.grupo; }), "Todos los niveles", function (a, b) {
+      var ia = ORDEN_GRUPO.indexOf(a), ib = ORDEN_GRUPO.indexOf(b);
+      return (ia < 0 ? 50 : ia) - (ib < 0 ? 50 : ib) || a.localeCompare(b, "es");
+    });
+    opciones(F.localidad, DATOS.map(lugarDe), "Todos los lugares", function (a, b) {
+      var pa = /^(Toda|Andalucía)/.test(a) ? 0 : 1, pb = /^(Toda|Andalucía)/.test(b) ? 0 : 1;
+      return pa - pb || a.localeCompare(b, "es");
+    });
+    opciones(F.org, DATOS.map(function (c) { return c.tipo_organismo; }), "Todos los organismos");
+    opciones(F.tipo, DATOS.map(function (c) { return c.tipo; }), "Todos los tipos");
+    opciones(F.personal, DATOS.map(function (c) { return c.personal; }), "Todos");
+    opciones(F.sistema, DATOS.map(function (c) { return c.sistema; }), "Todos");
+  }
+
+  function pasa(c) {
+    if (F.grupo.value && c.grupo !== F.grupo.value) return false;
+    if (F.localidad.value && lugarDe(c) !== F.localidad.value) return false;
+    if (F.org.value && c.tipo_organismo !== F.org.value) return false;
+    if (F.tipo.value && c.tipo !== F.tipo.value) return false;
+    if (F.personal.value && c.personal !== F.personal.value) return false;
+    if (F.sistema.value && c.sistema !== F.sistema.value) return false;
+    if (F.boe.value === "si" && !c.en_boe) return false;
+    if (F.boe.value === "no" && c.en_boe) return false;
+    var p = F.plazo.value;
+    if (p === "abierto" && c.estado !== "abierto") return false;
+    if (p === "pendiente" && c.estado.indexOf("pendiente") !== 0) return false;
+    if (p === "sin_determinar" && c.estado !== "sin_determinar") return false;
+    if (/^\d+$/.test(p) && !(c.estado === "abierto" && c.fin_plazo && diasHasta(c.fin_plazo) <= +p)) return false;
+    var q = sinTildes(F.texto.value).trim();
+    if (q) {
+      var heno = sinTildes([c.denominacion, c.titulo_oficial, c.organismo, c.localidad, c.grupo, c.titulacion].join(" "));
+      var palabras = q.split(/\s+/);
+      for (var i = 0; i < palabras.length; i++) if (heno.indexOf(palabras[i]) < 0) return false;
+    }
+    return true;
+  }
+
+  function bloquePlazo(c) {
+    if (c.estado === "abierto" && c.fin_plazo) {
+      var d = diasHasta(c.fin_plazo);
+      var cuando = d === 0 ? "termina hoy" : (d === 1 ? "termina mañana" : "quedan " + d + " días");
+      var est = c.fin_estimado ? " (fecha estimada)" : "";
+      return '<div class="plazo ' + (d <= 5 ? "urgente" : "abierto") + '">Plazo abierto hasta el <strong>' + fecha(c.fin_plazo) +
+        "</strong>" + est + " · " + cuando + "</div>";
+    }
+    if (c.estado === "pendiente" || c.estado === "pendiente_sin_plazo") {
+      return '<div class="plazo pendiente">Plazo <strong>pendiente de apertura</strong>: se abrirá cuando se publique el extracto en el BOE.</div>';
+    }
+    return '<div class="plazo dudoso">Plazo <strong>sin determinar</strong>: revisa las bases para conocerlo.</div>';
+  }
+
+  function tarjeta(c) {
+    var chips = [];
+    chips.push('<span class="chip grupo">' + (c.grupo === "Sin determinar" ? "Grupo sin determinar" : "Grupo " + esc(c.grupo)) + "</span>");
+    if (c.plazas) chips.push('<span class="chip">' + c.plazas + (c.plazas === 1 ? " plaza" : " plazas") + "</span>");
+    if (c.sistema !== "Sin determinar") chips.push('<span class="chip">' + esc(c.sistema) + "</span>");
+    if (c.personal !== "Sin determinar") chips.push('<span class="chip">' + esc(c.personal) + "</span>");
+    chips.push('<span class="chip">' + esc(c.tipo) + "</span>");
+    if (c.en_boe) chips.push('<span class="chip">Publicada en BOE</span>');
+
+    var fechas = "Publicada el " + fecha(c.fecha_publicacion) + " en el " + esc(c.fuente);
+    if (c.fecha_boe && c.fuente !== "BOE") fechas += " · Extracto en el BOE el " + fecha(c.fecha_boe);
+
+    var enlaces = [];
+    if (url(c.url_bases)) enlaces.push('<a href="' + url(c.url_bases) + '" target="_blank" rel="noopener">Ver bases (' + esc(c.fuente) + ")</a>");
+    if (url(c.url_pdf)) enlaces.push('<a href="' + url(c.url_pdf) + '" target="_blank" rel="noopener">Bases en PDF</a>');
+    if (url(c.url_boe) && c.url_boe !== c.url_bases) enlaces.push('<a href="' + url(c.url_boe) + '" target="_blank" rel="noopener">Anuncio en el BOE</a>');
+
+    var req = "";
+    if (c.titulacion) req += '<p><strong>Titulación:</strong> ' + esc(c.titulacion) + "</p>";
+    if (c.requisitos) req += '<div class="req">' + esc(c.requisitos) + "</div>";
+    else req += '<p class="nota">No se ha podido extraer el apartado de requisitos de forma automática. Consúltalo en las bases.</p>';
+    if (c.plazo_texto) req += '<p class="nota"><strong>Plazo según el texto oficial:</strong> ' + esc(c.plazo_texto) + "</p>";
+
+    return '<article class="conv">' +
+      '<h2><a href="' + (url(c.url_bases) || "#") + '" target="_blank" rel="noopener">' + esc(c.denominacion) + "</a></h2>" +
+      '<div class="org">' + esc(c.organismo) + " · " + esc(c.ambito === "Provincia de Sevilla" ? c.localidad : c.ambito) + "</div>" +
+      '<div class="chips">' + chips.join("") + "</div>" +
+      bloquePlazo(c) +
+      '<div class="fechas">' + fechas + "</div>" +
+      '<div class="enlaces">' + enlaces.join("") + "</div>" +
+      "<details><summary>Ver requisitos</summary>" + req +
+      '<p class="nota">Título oficial: ' + esc(c.titulo_oficial) + "</p></details>" +
+      "</article>";
+  }
+
+  function pinta() {
+    var visibles = DATOS.filter(pasa);
+    $("cuenta").textContent = visibles.length + (visibles.length === 1 ? " convocatoria" : " convocatorias") +
+      (visibles.length !== DATOS.length ? " de " + DATOS.length : "");
+    $("lista").innerHTML = visibles.length ? visibles.map(tarjeta).join("") :
+      '<p class="vacio">No hay convocatorias con estos filtros.</p>';
+  }
+
+  function carga() {
+    fetch("convocatorias.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (j) {
+      DATOS = j.convocatorias || [];
+      var act = j.actualizado ? new Date(j.actualizado) : null;
+      $("sub").textContent = DATOS.length + " convocatorias vigentes · Actualizado el " +
+        (act ? act.toLocaleDateString("es-ES") + " a las " + act.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" }) : "—");
+      var fu = j.fuentes || {};
+      $("fuentes").innerHTML = "Estado de las fuentes en la última actualización: " + ["BOE", "BOJA", "BOP"].map(function (k) {
+        var f = fu[k];
+        if (!f) return "<span>" + k + ": —</span>";
+        return "<span>" + k + ": " + (f.ok ? '<span class="ok">correcto</span>' : '<span class="ko">error, datos de días anteriores</span>') + "</span>";
+      }).join("");
+      preparaFiltros();
+      pinta();
+    }).catch(function () {
+      $("sub").textContent = "No se han podido cargar las convocatorias. Prueba a recargar la página.";
+    });
+  }
+
+  Object.keys(F).forEach(function (k) { F[k].addEventListener(k === "texto" ? "input" : "change", pinta); });
+  $("limpiar").addEventListener("click", function () {
+    Object.keys(F).forEach(function (k) { F[k].value = ""; });
+    pinta();
+  });
+  $("mostrarFiltros").addEventListener("click", function () {
+    var p = $("panel");
+    p.classList.toggle("plegado");
+    this.textContent = p.classList.contains("plegado") ? "Más filtros" : "Menos filtros";
+  });
+  carga();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+name: Actualizar convocatorias
+
+on:
+  schedule:
+    # Todos los días a las 07:17 UTC (08:17 en invierno y 09:17 en verano, hora de Madrid)
+    - cron: "17 7 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar pdftotext
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      - name: Descargar boletines y generar el listado
+        run: python scraper/actualizar.py
+
+      - name: Guardar los cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Actualización diaria $(date -u +%Y-%m-%d)"
+            git push
+          fi
