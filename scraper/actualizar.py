@@ -8,6 +8,7 @@ import html
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -117,6 +118,35 @@ def html_a_texto(h):
 RUIDO_SEG = re.compile(r"(?i)^(p[áa]gina \d+|cve:|c[óo]d\. validaci[óo]n|verificaci[óo]n:|documento firmado|hash:|fecha firma|"
                        r"n[ºo°] \d+ ?- ?(lunes|martes|mi[ée]rcoles|jueves|viernes)|\d{1,3}$|https?://|el secretario|"
                        r"[A-ZÁÉÍÓÚÑ ]+\(\d+ de \d+\)$|firmado)")
+
+
+def letras_utiles(texto):
+    return len(re.sub(r"[^A-Za-zÁÉÍÓÚáéíóúÑñ]", "", texto or ""))
+
+
+OCR_MAX_PAGINAS = int(os.environ.get("OCR_MAX_PAGINAS", "30"))
+
+
+def pdf_ocr(datos):
+    """Lee un PDF escaneado con Tesseract (español). Devuelve '' si no está disponible."""
+    if not (shutil.which("tesseract") and shutil.which("pdftoppm")):
+        return ""
+    with tempfile.TemporaryDirectory() as tmp:
+        ruta = os.path.join(tmp, "doc.pdf")
+        with open(ruta, "wb") as f:
+            f.write(datos)
+        subprocess.run(["pdftoppm", "-r", "300", "-gray", "-png", "-l", str(OCR_MAX_PAGINAS), ruta, os.path.join(tmp, "p")],
+                       capture_output=True, timeout=900)
+        paginas = sorted(x for x in os.listdir(tmp) if x.endswith(".png"))
+        partes = []
+        for pag in paginas:
+            r = subprocess.run(["tesseract", os.path.join(tmp, pag), "-", "-l", "spa"], capture_output=True, timeout=300)
+            partes.append(r.stdout.decode("utf-8", errors="replace"))
+    texto = "\n".join(partes)
+    # confusiones típicas del OCR en los grupos: "Subgrupo Cl" -> "Subgrupo C1"
+    texto = re.sub(r"(?i)\b(subgrupo|grupo)(\s*:?\s*)([ac])\s?[lI|]\b", lambda m: m.group(1) + m.group(2) + m.group(3).upper() + "1", texto)
+    lineas = [l for l in texto.split("\n") if not RUIDO_SEG.search(l.strip())]
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(lineas))
 
 
 def pdf_a_texto(datos):
@@ -769,11 +799,15 @@ def registro_bop(it):
     md = norm(meta.get("Metadato", ""))
     if md and "selectiv" not in md and "empleo" not in md and "personal" not in md:
         return None
-    texto = ""
+    texto, ocr = "", False
     if meta.get("pdf"):
         datos = descarga(meta["pdf"], binario=True)
         if datos:
             texto = pdf_a_texto(datos)
+            if letras_utiles(texto) < 400:      # PDF escaneado: solo tiene los sellos del BOP
+                leido = pdf_ocr(datos)
+                if letras_utiles(leido) > letras_utiles(texto):
+                    texto, ocr = leido, True
     seccion = norm(meta.get("Sección", ""))
     sub = meta.get("Subsección") or it["anunciante"]
     if seccion == "ayuntamientos":
@@ -809,7 +843,8 @@ def registro_bop(it):
         "titulacion": extrae_titulacion(texto),
         "localidad": localidad,
         "ambito": "Provincia de Sevilla",
-        "sin_texto": not bool(texto.strip()),
+        "sin_texto": letras_utiles(texto) < 400,
+        "ocr": ocr,
     }
 
 
@@ -963,6 +998,7 @@ def ficha(r, hoy):
         "plazo_texto": (boe.get("plazo") or r.get("plazo") or {}).get("frase"),
         "requisitos": r.get("requisitos"),
         "titulacion": r.get("titulacion") if titulacion_valida(r.get("titulacion")) else None,
+        "ocr": bool(r.get("ocr")),
     }
 
 

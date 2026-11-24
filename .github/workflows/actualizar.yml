@@ -24,8 +24,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Instalar pdftotext
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Instalar pdftotext y OCR
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-spa
 
       - name: Descargar boletines y generar el listado
         run: python scraper/actualizar.py
