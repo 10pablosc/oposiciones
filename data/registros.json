@@ -4722,6 +4722,37 @@
   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21013",
   "v": 6
  },
+ "BOE-A-2026-21183": {
+  "categoria": "estado",
+  "denominacion": "Personal laboral: fuera de convenio",
+  "fecha_boe": "2026-10-12",
+  "fecha_publicacion": "2026-10-12",
+  "fuente": "BOE",
+  "grupo": null,
+  "id": "BOE-A-2026-21183",
+  "organismo": "Ministerio de Cultura",
+  "orig": {
+   "departamento": "MINISTERIO DE CULTURA",
+   "epigrafe": "Personal laboral",
+   "fecha": "2026-10-12",
+   "id": "BOE-A-2026-21183",
+   "titulo": "Resolución de 2 de octubre de 2026, de la Subdirección de Gerencia del Museo Nacional Centro de Arte Reina Sofía, por la que se convoca proceso selectivo para ingreso, por el sistema de acceso libre, como personal laboral fijo, fuera de convenio.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21183"
+  },
+  "personal": "Laboral",
+  "plazas": null,
+  "plazo": null,
+  "refs_bop": [],
+  "requisitos": "2. Requisitos de las personas aspirantes Para ser admitidas a la realización del proceso selectivo las personas aspirantes deberán poseer en el día de finalización del plazo de presentación de solicitudes y mantener hasta el momento de la formalización del contrato de trabajo los siguientes requisitos de participación:\n2.1 Nacionalidad:\na) Tener la nacionalidad española.\nb) Ser nacional de los Estados miembros de la Unión Europea.\nc) Cualquiera que sea su nacionalidad, podrá tomar parte el cónyuge de los españoles y de los nacionales de otros Estados miembros de la Unión Europea, siempre que no estén separados de derecho. Asimismo, con las mismas condiciones, podrán participar sus descendientes y los de su cónyuge, que vivan a su cargo, menores de veintiún años o mayores de dicha edad dependientes.\nd) Las personas incluidas en el ámbito de aplicación de los Tratados Internacionales celebrados por la Unión Europea y ratificados por España en los que sea de aplicación la libre circulación de trabajadores.\ne) Los extranjeros que, no estando incluidos en los párrafos anteriores, se encuentren con residencia legal en España.\n2.2 Capacidad: Poseer la capacidad funcional para el desempeño de las tareas descritas en el anexo II.\n2.3 Edad: Tener cumplidos dieciséis años.\n2.4 Habilitación: No haber sido separado/a mediante expediente disciplinario del servicio de cualquiera de las Administraciones públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, o para ejercer funciones similares a las que desempeñaban en el caso del personal laboral, en el que hubiese sido separado o inhabilitado.\nEn el caso de ser nacional de otro Estado, no hallarse inhabilitado/a o en situación equivalente ni haber sido sometido/a a sanción disciplinaria o equivalente que impida en su Estado, en los mismos términos, el acceso al empleo público.\n2.5 Titulación: Estar en posesión de o en condiciones de obtener el día de finalización del plazo de presentación de solicitudes alguna de las titulaciones que se señalan en el anexo II.\nLas personas aspirantes con titulaciones obtenidas en el extranjero deberán acreditar que están en posesión de la correspondiente credencial de homologación, o en su caso, del correspondiente certificado de equivalencia. Este requisito no se aplicará a las personas aspirantes que hubieran obtenido el reconocimiento de su cualificación profesional, en el ámbito de las profesiones reguladas, al amparo de las disposiciones de derecho comunitario.",
+  "sevilla_en_texto": false,
+  "sistema": null,
+  "tipo": "Acceso libre",
+  "titulacion": "Estar en posesión de o en condiciones de obtener el día de finalización del plazo de presentación de solicitudes alguna de las titulaciones que se señalan en el anexo II",
+  "titulo_oficial": "Resolución de 2 de octubre de 2026, de la Subdirección de Gerencia del Museo Nacional Centro de Arte Reina Sofía, por la que se convoca proceso selectivo para ingreso, por el sistema de acceso libre, como personal laboral fijo, fuera de convenio.",
+  "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21183",
+  "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21183",
+  "v": 6
+ },
  "BOE-A-2026-21273": {
   "categoria": "local",
   "denominacion": "Administrativo/a",
@@ -8698,38 +8729,6 @@
   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9929",
   "v": 6
  },
- "BOJA-2026-127-35": {
-  "ambito": "Provincia de Sevilla",
-  "categoria": "universidad",
-  "denominacion": "Cuerpos docentes universitarios",
-  "fecha_publicacion": "2026-07-03",
-  "fuente": "BOJA",
-  "grupo": null,
-  "id": "BOJA-2026-127-35",
-  "localidad": "Sevilla",
-  "organismo": "Universidad de Sevilla",
-  "orig": {
-   "fecha": "2026-07-03",
-   "organismo_seccion": "Universidades",
-   "titulo": "Resolución de 24 de junio de 2026, de la Universidad de Sevilla, por la que se convoca concurso de acceso para la provisión de plazas de cuerpos docentes universitarios.",
-   "url": "https://www.juntadeandalucia.es/boja/2026/127/35"
-  },
-  "personal": null,
-  "plazas": null,
-  "plazo": {
-   "boletin": "BOE",
-   "frase": "plazo de presentación de instancias se establece en 15 días hábiles a contar desde el día siguiente al de la publicación de la presente convocatoria en el BOE.",
-   "n": 15,
-   "tipo": "habiles"
-  },
-  "requisitos": "2. Requisitos de los candidatos.\nPara ser admitido a estas pruebas selectivas deberán reunirse los siguientes requisitos:\n2.1. Requisitos generales.\na) Tener la nacionalidad española, sin perjuicio de lo dispuesto en el artículo 57 del Estatuto Básico del Empleado Público.\nb) Poseer la capacidad funcional para el desempeño de las tareas.\nc) Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa. Sólo por Ley podrá establecerse otra edad máxima, distinta de la edad de jubilación forzosa, para el acceso al empleo público.\nd) No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de funcionario, o para ejercer funciones similares a las que desempeñaban en el caso del personal laboral, en el que hubiese sido separado o inhabilitado. En el caso de ser nacional de otro Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al empleo público. Asimismo, el desempeño de las plazas convocadas quedará sometido a la Ley 53/84, de 26 de diciembre, y demás normas de desarrollo en materia de incompatibilidades.\ne) Los aspirantes que no sean de nacionalidad española deberán poseer un conocimiento del castellano adecuado para el desarrollo de sus funciones.\nf) Los nacionales de Estados distintos a la Unión Europea deberán estar en posesión del permiso de residencia.\n2.2. Requisitos específicos.\nAdemás de los requisitos generales, se deberá poseer el título de Doctor y estar acreditado al cuerpo de Profesores Titulares de Universidad.\nLos requisitos establecidos en la presente base deberán cumplirse en el momento de finalizar el plazo de presentación de solicitudes.",
-  "sistema": "Concurso",
-  "tipo": "Acceso libre",
-  "titulacion": "Doctor y estar acreditado al cuerpo de Profesores Titulares de Universidad",
-  "titulo_oficial": "Resolución de 24 de junio de 2026, de la Universidad de Sevilla, por la que se convoca concurso de acceso para la provisión de plazas de cuerpos docentes universitarios.",
-  "url_bases": "https://www.juntadeandalucia.es/boja/2026/127/35",
-  "v": 6
- },
  "BOJA-2026-131-24": {
   "ambito": "Provincia de Sevilla",
   "categoria": "universidad",
@@ -8856,6 +8855,60 @@
   "titulacion": "doctor y estar acreditado al cuerpo de Profesores Titulares de Universidad",
   "titulo_oficial": "Resolución de 18 de septiembre de 2026, de la Universidad de Sevilla, por la que se convoca concurso de acceso para la provisión de plaza de cuerpos docentes universitarios.",
   "url_bases": "https://www.juntadeandalucia.es/boja/2026/192/42",
+  "v": 6
+ },
+ "BOJA-2026-201-29": {
+  "ambito": "Provincia de Sevilla",
+  "categoria": "universidad",
+  "denominacion": "Un contrato de actividades científico-técnicas",
+  "fecha_publicacion": "2026-10-16",
+  "fuente": "BOJA",
+  "grupo": null,
+  "id": "BOJA-2026-201-29",
+  "localidad": "Sevilla",
+  "organismo": "Universidad Pablo de Olavide",
+  "orig": {
+   "fecha": "2026-10-16",
+   "organismo_seccion": "Universidades",
+   "titulo": "Resolución de 8 de octubre de 2026, de la Universidad Pablo de Olavide, por la que se establecen las bases reguladoras para la contratación laboral prevista en la Ley 14/2011, de 1 de junio, de la Ciencia, la Tecnología y la Innovación, y se convoca a concurso público un contrato de actividades científico-técnicas.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/201/29"
+  },
+  "personal": "Laboral",
+  "plazas": null,
+  "plazo": null,
+  "requisitos": "Podrán solicitar tomar parte en la presente convocatoria las personas solicitantes que reúnan los siguientes requisitos:\n2.1. a) Ser de nacionalidad española o nacional de un Estado miembro de la Unión Europea o nacional de aquellos Estados a los que, en virtud de Tratados Internacionales celebrados por la Unión Europea y ratificados por España, sea de aplicación la libre circulación de personas trabajadoras en los términos en que ésta se halle definida en el Tratado constitutivo de la Unión Europea.\nb) También podrán participar el/la cónyuge, los/las descendientes del o de la cónyuge, de los/las españoles/las y también de los/las nacionales de otros Estados miembros de la Unión Europea, siempre que no se estén separados/as de derecho, menores de veintiún años o mayores de dicha edad que vivan a sus expensas.\nEste último beneficio será igualmente de aplicación a familiares de nacionales de otros Estados cuando así se prevea en los Tratados Internacionales celebrados por la Comunidad Europea y ratificados por España.\nc) Quienes no estando incluidos/as en los apartados anteriores se encuentren residiendo en España en situación de legalidad, siendo titulares de un documento que les habilite a residir y a poder acceder sin limitaciones al mercado laboral. En consecuencia, podrán participar quienes se encuentren en situación de residencia temporal, quienes se encuentren en situación de residencia permanente y quienes se encuentren en situación de autorización para residir y trabajar, así como los que tengan la condición de personas refugiadas.\nd) Las personas que no se encuentren en situaciones descritas en los apartados a), b) y c), podrán participar en los procesos selectivos, siempre y cuando reúnan y acrediten los requisitos mínimos establecidos en la convocatoria. No obstante, su incorporación efectiva, en el supuesto de ser seleccionadas, sólo se podrá realizar cuando obtengan la correspondiente autorización administrativa que les permita residir y trabajar en España, dentro de los plazos y términos establecidos en la base 4.\n2.2. Tener cumplidos los dieciocho años y no haber cumplido la edad de jubilación. Estas dos circunstancias deberán estar acreditadas durante todo el periodo de contratación.\n2.3. Estar en posesión de las condiciones académicas o de titulación requeridas en el Anexo II de esta resolución. La documentación deberá estar traducida al español. Los títulos conseguidos en el extranjero o en centros españoles no estatales, deberán estar homologados o reconocidos. Los títulos de Grado expedidos por universidades en los Estados miembros de la Unión Europea serán equivalentes, a todos los efectos, a aquellos expedidos por universidades españolas.\n2.4. No padecer enfermedad ni estar afectado/a por limitación física o psíquica que sea incompatible con el desempeño de las correspondientes funciones.\n2.5. No haber sido separado/a, mediante expediente disciplinario, del servicio de cualquiera de las Administraciones Públicas, ni hallarse inhabilitado/a para el desempeño de las correspondientes funciones. Las personas aspirantes cuya nacionalidad no sea la española deberán igualmente no estar sometidas a sanción disciplinaria o condena penal que impida, en su Estado, el acceso a la función pública.\n2.6. Las personas aspirantes que no posean la nacionalidad española deberán acreditar un conocimiento adecuado del castellano.\n2.7. Todos los requisitos anteriores deberán poseerse en el día de finalización del plazo de presentación de solicitudes y mantenerse hasta el momento de la adjudicación de los correspondientes contratos.",
+  "sistema": "Concurso",
+  "tipo": "Acceso libre",
+  "titulacion": null,
+  "titulo_oficial": "Resolución de 8 de octubre de 2026, de la Universidad Pablo de Olavide, por la que se establecen las bases reguladoras para la contratación laboral prevista en la Ley 14/2011, de 1 de junio, de la Ciencia, la Tecnología y la Innovación, y se convoca a concurso público un contrato de actividades científico-técnicas.",
+  "url_bases": "https://www.juntadeandalucia.es/boja/2026/201/29",
+  "v": 6
+ },
+ "BOJA-2026-212-24": {
+  "ambito": "Provincia de Sevilla",
+  "categoria": "universidad",
+  "denominacion": "Convocan plazas de Asistentes/as Personales Universitarios/as para prestar apoyo a estudiantes con alguna discapacidad matriculados/as en la Universidad Pablo d",
+  "fecha_publicacion": "2026-11-03",
+  "fuente": "BOJA",
+  "grupo": null,
+  "id": "BOJA-2026-212-24",
+  "localidad": "Sevilla",
+  "organismo": "Universidad Pablo de Olavide de Sevilla, Vicerrectorado de Estudiantes",
+  "orig": {
+   "fecha": "2026-11-03",
+   "organismo_seccion": "Universidades",
+   "titulo": "Resolución de 23 de octubre de 2026, de la Universidad Pablo de Olavide de Sevilla, Vicerrectorado de Estudiantes, por la que se convocan plazas de Asistentes/as Personales Universitarios/as para prestar apoyo a estudiantes con alguna discapacidad matriculados/as en la Universidad Pablo de Olavide de Sevilla, en titulaciones oficiales de grado en el curso académico 2026/27, y se establecen las bases reguladoras.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/212/24"
+  },
+  "personal": null,
+  "plazas": null,
+  "plazo": null,
+  "requisitos": null,
+  "sistema": null,
+  "tipo": "Acceso libre",
+  "titulacion": null,
+  "titulo_oficial": "Resolución de 23 de octubre de 2026, de la Universidad Pablo de Olavide de Sevilla, Vicerrectorado de Estudiantes, por la que se convocan plazas de Asistentes/as Personales Universitarios/as para prestar apoyo a estudiantes con alguna discapacidad matriculados/as en la Universidad Pablo de Olavide de Sevilla, en titulaciones oficiales de grado en el curso académico 2026/27, y se establecen las bases reguladoras.",
+  "url_bases": "https://www.juntadeandalucia.es/boja/2026/212/24",
   "v": 6
  },
  "BOJA-2026-213-32": {
@@ -9247,6 +9300,33 @@
   "titulacion": "Formación Profesional de Grado Superior o Bachiller o titulación equivalente, reconocido u homologado por la Administración Educativa competente o certificado de profesionalidad de nivel 3 que acredit",
   "titulo_oficial": "Resolución de 18 de noviembre de 2026, de la Dirección Gerencia de la Agencia de Servicios Sociales y Dependencia de Andalucía, por la que se anuncia convocatoria externa definitiva para la cobertura de nueve puestos de Monitora o Monitor Sociosanitario fijos discontinuos para la Jefatura de Atención Social y Sanitaria de la Agencia de Servicios Sociales y Dependencia de Andalucía.",
   "url_bases": "https://www.juntadeandalucia.es/boja/2026/227/31",
+  "v": 6
+ },
+ "BOJA-2026-227-37": {
+  "ambito": "Provincia de Sevilla",
+  "categoria": "universidad",
+  "denominacion": "Un contrato de actividades científico-técnicas",
+  "fecha_publicacion": "2026-11-24",
+  "fuente": "BOJA",
+  "grupo": null,
+  "id": "BOJA-2026-227-37",
+  "localidad": "Sevilla",
+  "organismo": "Universidad Pablo de Olavide",
+  "orig": {
+   "fecha": "2026-11-24",
+   "organismo_seccion": "Universidades",
+   "titulo": "Resolución de 4 de noviembre de 2026, de la Universidad Pablo de Olavide, de Sevilla, por la que se establecen las bases reguladoras para la contratación laboral prevista en la Ley 14/2011, de 1 de junio, de la Ciencia, la Tecnología y la Innovación, y se convoca a concurso público un contrato de actividades científico-técnicas.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/227/37"
+  },
+  "personal": "Laboral",
+  "plazas": null,
+  "plazo": null,
+  "requisitos": "Podrán solicitar tomar parte en la presente convocatoria las personas solicitantes que reúnan los siguientes requisitos:\n2.1.\na) Ser de nacionalidad española o nacional de un Estado miembro de la Unión Europea o nacional de aquellos Estados a los que, en virtud de Tratados Internacionales celebrados por la Unión Europea y ratificados por España, sea de aplicación la libre circulación de personas trabajadoras en los términos en que esta se halle definida en el Tratado constitutivo de la Unión Europea.\nb) También podrán participar el/la cónyuge, los/las descendientes del o de la cónyuge, de los/las españoles/las y también de los/las nacionales de otros Estados miembros de la Unión Europea, siempre que no se estén separados/as de derecho, menores de veintiún años o mayores de dicha edad que vivan a sus expensas.\nEste último beneficio será igualmente de aplicación a familiares de nacionales de otros Estados cuando así se prevea en los Tratados Internacionales celebrados por la Comunidad Europea y ratificados por España.\nc) Quienes no estando incluidos/as en los apartados anteriores se encuentren residiendo en España en situación de legalidad, siendo titulares de un documento que les habilite a residir y a poder acceder sin limitaciones al mercado laboral. En consecuencia, podrán participar quienes se encuentren en situación de residencia temporal, quienes se encuentren en situación de residencia permanente y quienes se encuentren en situación de autorización para residir y trabajar, así como los que tengan la condición de personas refugiadas.\nd) Las personas que no se encuentren en situaciones descritas en los apartados a), b) y c), podrán participar en los procesos selectivos, siempre y cuando reúnan y acrediten los requisitos mínimos establecidos en la convocatoria. No obstante, su incorporación efectiva, en el supuesto de ser seleccionadas, sólo se podrá realizar cuando obtengan la correspondiente autorización administrativa que les permita residir y trabajar en España, dentro de los plazos y términos establecidos en la base 4.\n2.2. Tener cumplidos los dieciocho años y no haber cumplido la edad de jubilación. Estas dos circunstancias deberán estar acreditadas durante todo el periodo de contratación.\n2.3. Estar en posesión de las condiciones académicas o de titulación requeridas en el Anexo II de esta resolución. La documentación deberá estar traducida al español. Los títulos conseguidos en el extranjero o en Centros Españoles no estatales, deberán estar homologados o reconocidos. Los títulos de Grado expedidos por universidades en los Estados miembros de la Unión Europea serán equivalentes, a todos los efectos, a aquellos expedidos por universidades españolas.\n2.4. No padecer enfermedad ni estar afectado/a por limitación física o psíquica que sea incompatible con el desempeño de las correspondientes funciones.\n2.5. No haber sido separado/a, mediante expediente disciplinario, del servicio de cualquiera de las Administraciones Públicas, ni hallarse inhabilitado/a para el desempeño de las correspondientes funciones. Las personas aspirantes cuya nacionalidad no sea la española deberán igualmente no estar sometidas a sanción disciplinaria o condena penal que impida, en su Estado, el acceso a la función pública.\n2.6. Las personas aspirantes que no posean la nacionalidad española deberán acreditar un conocimiento adecuado del castellano.\n2.7. Todos los requisitos anteriores deberán poseerse en el día de finalización del plazo de presentación de solicitudes y mantenerse hasta el momento de la adjudicación de los correspondientes contratos.",
+  "sistema": "Concurso",
+  "tipo": "Acceso libre",
+  "titulacion": null,
+  "titulo_oficial": "Resolución de 4 de noviembre de 2026, de la Universidad Pablo de Olavide, de Sevilla, por la que se establecen las bases reguladoras para la contratación laboral prevista en la Ley 14/2011, de 1 de junio, de la Ciencia, la Tecnología y la Innovación, y se convoca a concurso público un contrato de actividades científico-técnicas.",
+  "url_bases": "https://www.juntadeandalucia.es/boja/2026/227/37",
   "v": 6
  },
  "BOP-SE-2025-242007": {

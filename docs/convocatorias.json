@@ -1,15 +1,15 @@
 {
- "actualizado": "2026-11-24T23:03+00:00",
+ "actualizado": "2026-11-24T23:40+00:00",
  "comprobacion": {
-  "coinciden": 22,
-  "fecha": "2026-11-24T23:03+00:00",
-  "ok": true,
-  "posibles_omisiones": [
+  "coinciden": 25,
+  "excluidas": [
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19557",
     "coincide_con": null,
     "denominacion": "AYUDANTE - Tareas de Apoyo (Grupo T5)",
     "fin": "26/11/2026",
+    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
     "organo": "Ministerio de Hacienda",
     "plazas": "Convocadas:17 Libres:12 Internas:0 Discapacidad General:5 Discapacidad Intelectual:0",
     "ref": "222988",
@@ -19,9 +19,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19557",
     "coincide_con": null,
     "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior. Esp. Imagen y sonido(T3)",
     "fin": "26/11/2026",
+    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
     "organo": "Ministerio de Hacienda",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "222989",
@@ -31,45 +33,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "coincide_con": null,
-    "denominacion": "DIETISTA Y NUTRICIONISTA",
-    "fin": "27/11/2026",
-    "organo": "Ministerio de Sanidad",
-    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "222993",
-    "titulacion": "Grado en Nutrición Humana y Dietética o titulación equivalente",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222993&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "coincide_con": null,
-    "denominacion": "TITULADO SANITARIO - Titulado Sanitario: Odontólogo/a.",
-    "fin": "27/11/2026",
-    "organo": "Ministerio de Sanidad",
-    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "222991",
-    "titulacion": "Título de Grado en Odontología o Licenciado/a en Odontología o Médico/a Especialista en Estomatología o equivalente",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222991&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "coincide_con": null,
-    "denominacion": "TRABAJADOR SOCIAL",
-    "fin": "27/11/2026",
-    "organo": "Ministerio de Sanidad",
-    "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "222994",
-    "titulacion": "Grado en Trabajo Social, Diplomado en Trabajo Social o equivalente,",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222994&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22741",
     "coincide_con": null,
     "denominacion": "CELADOR",
     "fin": "30/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:41 Libres:36 Internas:0 Discapacidad General:5 Discapacidad Intelectual:0",
     "ref": "223002",
@@ -79,9 +47,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22740",
     "coincide_con": null,
     "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior en Higiene Bucodental",
     "fin": "30/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223001",
@@ -91,9 +61,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20025",
     "coincide_con": null,
     "denominacion": "ENFERMERO ESPECIALISTA - Enfermería Obstétrico-Ginecológico (Matrona)",
     "fin": "03/12/2026",
+    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
     "organo": "Ministerio de Defensa",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223399",
@@ -103,9 +75,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20025",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - PEDIATRÍA Y ÁREAS ESPECÍFICAS",
     "fin": "03/12/2026",
+    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
     "organo": "Ministerio de Defensa",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223397",
@@ -115,9 +89,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22909",
     "coincide_con": null,
     "denominacion": "OFICIAL - Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General. (cocina/comedor)",
     "fin": "03/12/2026",
+    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
     "organo": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223096",
@@ -127,9 +103,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23545",
     "coincide_con": null,
     "denominacion": "INGENIERO SUPERIOR",
     "fin": "09/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223179",
@@ -139,9 +117,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23546",
     "coincide_con": null,
     "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior Oficios, Jefe/a de Taller y Encargado/a.",
     "fin": "09/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:0 Internas:3 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223181",
@@ -151,9 +131,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23546",
     "coincide_con": null,
     "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior Oficios, Jefe/a de Taller y Encargado/a.",
     "fin": "09/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223180",
@@ -163,9 +145,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21477",
     "coincide_con": null,
     "denominacion": "TITULADO SUPERIOR - Asesor/a en técnicas de evaluación de políticas públicas.",
     "fin": "11/12/2026",
+    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
     "organo": "Ministerio de Hacienda",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223201",
@@ -175,9 +159,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23922",
     "coincide_con": null,
     "denominacion": "ENFERMERIA - Obstétrico-Ginecológico (Matrón/a).",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223263",
@@ -187,9 +173,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Alergología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223227",
@@ -199,9 +187,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Anatomía Patológica",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223228",
@@ -211,9 +201,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Anestesiología y Reanimación",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223229",
@@ -223,9 +215,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Aparato Digestivo",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223230",
@@ -235,9 +229,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cardiología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:5 Libres:5 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223231",
@@ -247,9 +243,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cirugía General y del Aparato Digestivo",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223232",
@@ -259,9 +257,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cirugía Ortopédica y Traumatología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223233",
@@ -271,9 +271,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Dermatología Médico-Quirúrgica y Venereología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223235",
@@ -283,9 +285,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Endocrinología y Nutrición",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223236",
@@ -295,9 +299,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21822",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Farmacia Hospitalaria",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223237",
@@ -307,9 +313,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Familiar y Comunitaria",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:13 Libres:12 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
     "ref": "223239",
@@ -319,9 +327,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Física y Rehabilitación",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223240",
@@ -331,9 +341,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Interna",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223241",
@@ -343,9 +355,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Preventiva y Salud Pública",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223242",
@@ -355,9 +369,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Microbiología y Parasitología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223243",
@@ -367,9 +383,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Nefrología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223244",
@@ -379,9 +397,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neumología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223245",
@@ -391,9 +411,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neurofisiología Clínica",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223246",
@@ -403,9 +425,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neurología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223247",
@@ -415,9 +439,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Obstetricia y Ginecología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223248",
@@ -427,9 +453,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Oftalmología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223249",
@@ -439,9 +467,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Oncología Médica",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223250",
@@ -451,9 +481,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Pediatría de Atención Primaria",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:9 Libres:8 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
     "ref": "223251",
@@ -463,9 +495,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Psicología Clínica",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:7 Libres:7 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223253",
@@ -475,9 +509,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Psiquiatría",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:6 Libres:6 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223254",
@@ -487,9 +523,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Radiodiagnóstico",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223255",
@@ -499,9 +537,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Radiofísica Hospitalaria",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:8 Libres:7 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
     "ref": "223256",
@@ -511,9 +551,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Reumatología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223257",
@@ -523,9 +565,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Urología",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223258",
@@ -535,9 +579,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
     "coincide_con": null,
     "denominacion": "TITULADO SANITARIO - Médico/a de Admisión y Documentación Clínica",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223260",
@@ -547,9 +593,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
     "coincide_con": null,
     "denominacion": "TITULADO SANITARIO - Médico/a de Emergencias",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223261",
@@ -559,9 +607,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
     "coincide_con": null,
     "denominacion": "TITULADO SANITARIO - Médico/a de Urgencia Hospitalaria",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:7 Libres:7 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223259",
@@ -571,9 +621,11 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
     "coincide_con": null,
     "denominacion": "TITULADO SANITARIO - Médico/a de Urgencias Atención Primaria",
     "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:7 Libres:7 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
     "ref": "223262",
@@ -581,6 +633,66 @@
     "ubicacion": "NACIONAL",
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223262&selectorServicio=bolsa_empleo"
    },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24218",
+    "coincide_con": null,
+    "denominacion": "PERSONAL TÉCNICO DE GRADO MEDIO - Técnico/a Titulado/a Medio en Informática",
+    "fin": "18/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:5 Libres:5 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "ref": "223333",
+    "titulacion": "Título universitario oficial de Graduado/a o Ingeniero/a Técnico en Informática o Telecomunicación o titulación de contenido equivalente.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223333&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24335",
+    "coincide_con": null,
+    "denominacion": "TÉCNICO - Técnico/a Especialista de Sistemas y Tecnología de la Información.",
+    "fin": "21/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "ref": "223355",
+    "titulacion": "Título de Formación Profesional de grado superior en Informática o Telecomunicación o equivalente.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223355&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21635",
+    "coincide_con": null,
+    "denominacion": "OFICIALES DE ARSENALES DE LA ARMADA",
+    "fin": "22/12/2026",
+    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+    "organo": "Ministerio de Defensa",
+    "plazas": "Convocadas:116 Libres:102 Internas:0 Discapacidad General:14 Discapacidad Intelectual:0",
+    "ref": "223390",
+    "titulacion": "Graduado en Educación Secundaria Obligatoria",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21477",
+    "coincide_con": null,
+    "denominacion": "INFORMACIÓN Y ASISTENCIA (GRUPO PROFESIONAL I1)",
+    "fin": "23/12/2026",
+    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+    "organo": "Ministerio de Hacienda",
+    "plazas": "Convocadas:181 Libres:0 Internas:147 Discapacidad General:34 Discapacidad Intelectual:0",
+    "ref": "223408",
+    "titulacion": "Bachillerato o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223408&selectorServicio=bolsa_empleo"
+   }
+  ],
+  "fecha": "2026-11-24T23:40+00:00",
+  "ok": true,
+  "posibles_omisiones": [
    {
     "ambito": "Junta de Andalucía (ámbito autonómico)",
     "coincide_con": null,
@@ -592,62 +704,45 @@
     "titulacion": "Graduado/a en Ciencias Ambientales, o equivalente según el sistema educativo. Certificación Académica Oficial.",
     "ubicacion": "AUTONÓMICO - ANDALUCÍA",
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223415&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "coincide_con": null,
-    "denominacion": "PERSONAL TÉCNICO DE GRADO MEDIO - Técnico/a Titulado/a Medio en Informática",
-    "fin": "18/12/2026",
-    "organo": "Ministerio de Sanidad",
-    "plazas": "Convocadas:5 Libres:5 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "223333",
-    "titulacion": "Título universitario oficial de Graduado/a o Ingeniero/a Técnico en Informática o Telecomunicación o titulación de contenido equivalente.",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223333&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "coincide_con": null,
-    "denominacion": "TÉCNICO - Técnico/a Especialista de Sistemas y Tecnología de la Información.",
-    "fin": "21/12/2026",
-    "organo": "Ministerio de Sanidad",
-    "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "223355",
-    "titulacion": "Título de Formación Profesional de grado superior en Informática o Telecomunicación o equivalente.",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223355&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "coincide_con": null,
-    "denominacion": "OFICIALES DE ARSENALES DE LA ARMADA",
-    "fin": "22/12/2026",
-    "organo": "Ministerio de Defensa",
-    "plazas": "Convocadas:116 Libres:102 Internas:0 Discapacidad General:14 Discapacidad Intelectual:0",
-    "ref": "223390",
-    "titulacion": "Graduado en Educación Secundaria Obligatoria",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "coincide_con": null,
-    "denominacion": "INFORMACIÓN Y ASISTENCIA (GRUPO PROFESIONAL I1)",
-    "fin": "23/12/2026",
-    "organo": "Ministerio de Hacienda",
-    "plazas": "Convocadas:181 Libres:0 Internas:147 Discapacidad General:34 Discapacidad Intelectual:0",
-    "ref": "223408",
-    "titulacion": "Bachillerato o equivalente",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223408&selectorServicio=bolsa_empleo"
    }
   ],
   "total": 75
  },
  "convocatorias": [
   {
+   "ambito": "Provincia de Sevilla",
+   "denominacion": "Un contrato de actividades científico-técnicas",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "sin_determinar",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-11-24",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fuente": "BOJA",
+   "grupo": "Sin determinar",
+   "id": "BOJA-2026-227-37",
+   "localidad": "Sevilla",
+   "ocr": false,
+   "organismo": "Universidad Pablo de Olavide",
+   "personal": "Laboral",
+   "plazas": null,
+   "plazo_texto": null,
+   "requisitos": "Podrán solicitar tomar parte en la presente convocatoria las personas solicitantes que reúnan los siguientes requisitos:\n2.1.\na) Ser de nacionalidad española o nacional de un Estado miembro de la Unión Europea o nacional de aquellos Estados a los que, en virtud de Tratados Internacionales celebrados por la Unión Europea y ratificados por España, sea de aplicación la libre circulación de personas trabajadoras en los términos en que esta se halle definida en el Tratado constitutivo de la Unión Europea.\nb) También podrán participar el/la cónyuge, los/las descendientes del o de la cónyuge, de los/las españoles/las y también de los/las nacionales de otros Estados miembros de la Unión Europea, siempre que no se estén separados/as de derecho, menores de veintiún años o mayores de dicha edad que vivan a sus expensas.\nEste último beneficio será igualmente de aplicación a familiares de nacionales de otros Estados cuando así se prevea en los Tratados Internacionales celebrados por la Comunidad Europea y ratificados por España.\nc) Quienes no estando incluidos/as en los apartados anteriores se encuentren residiendo en España en situación de legalidad, siendo titulares de un documento que les habilite a residir y a poder acceder sin limitaciones al mercado laboral. En consecuencia, podrán participar quienes se encuentren en situación de residencia temporal, quienes se encuentren en situación de residencia permanente y quienes se encuentren en situación de autorización para residir y trabajar, así como los que tengan la condición de personas refugiadas.\nd) Las personas que no se encuentren en situaciones descritas en los apartados a), b) y c), podrán participar en los procesos selectivos, siempre y cuando reúnan y acrediten los requisitos mínimos establecidos en la convocatoria. No obstante, su incorporación efectiva, en el supuesto de ser seleccionadas, sólo se podrá realizar cuando obtengan la correspondiente autorización administrativa que les permita residir y trabajar en España, dentro de los plazos y términos establecidos en la base 4.\n2.2. Tener cumplidos los dieciocho años y no haber cumplido la edad de jubilación. Estas dos circunstancias deberán estar acreditadas durante todo el periodo de contratación.\n2.3. Estar en posesión de las condiciones académicas o de titulación requeridas en el Anexo II de esta resolución. La documentación deberá estar traducida al español. Los títulos conseguidos en el extranjero o en Centros Españoles no estatales, deberán estar homologados o reconocidos. Los títulos de Grado expedidos por universidades en los Estados miembros de la Unión Europea serán equivalentes, a todos los efectos, a aquellos expedidos por universidades españolas.\n2.4. No padecer enfermedad ni estar afectado/a por limitación física o psíquica que sea incompatible con el desempeño de las correspondientes funciones.\n2.5. No haber sido separado/a, mediante expediente disciplinario, del servicio de cualquiera de las Administraciones Públicas, ni hallarse inhabilitado/a para el desempeño de las correspondientes funciones. Las personas aspirantes cuya nacionalidad no sea la española deberán igualmente no estar sometidas a sanción disciplinaria o condena penal que impida, en su Estado, el acceso a la función pública.\n2.6. Las personas aspirantes que no posean la nacionalidad española deberán acreditar un conocimiento adecuado del castellano.\n2.7. Todos los requisitos anteriores deberán poseerse en el día de finalización del plazo de presentación de solicitudes y mantenerse hasta el momento de la adjudicación de los correspondientes contratos.",
+   "requisitos_generales": null,
+   "sistema": "Concurso",
+   "tipo": "Acceso libre",
+   "tipo_organismo": "Universidad",
+   "titulacion": null,
+   "titulo_oficial": "Resolución de 4 de noviembre de 2026, de la Universidad Pablo de Olavide, de Sevilla, por la que se establecen las bases reguladoras para la contratación laboral prevista en la Ley 14/2011, de 1 de junio, de la Ciencia, la Tecnología y la Innovación, y se convoca a concurso público un contrato de actividades científico-técnicas.",
+   "url_bases": "https://www.juntadeandalucia.es/boja/2026/227/37",
+   "url_boe": null,
+   "url_pdf": null
+  },
+  {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Monitora o Monitor Sociosanitario fijos discontinuos",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -677,6 +772,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Efectúa convocatoria para la cobertura por promoción interna",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -706,6 +802,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Efectúa convocatoria para cobertura por promoción interna",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -735,6 +832,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Peón de Limpieza",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -764,6 +862,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Auxiliar de Ayuda a Domicilio",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -793,6 +892,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Oficial 1.ª Conductor Maquinista",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -822,6 +922,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Encargado de Obras y Servicios",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -851,6 +952,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Encargado de Biblioteca",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -880,6 +982,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Auxiliar Administrativo",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -909,6 +1012,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Contratos formativos",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -938,6 +1042,7 @@
   {
    "ambito": "Toda España (posible destino en Sevilla)",
    "denominacion": "Escala Auxiliar de Archivos, Bibliotecas y Museos de Organismos Autónomos del Ministerio de Cultura",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-23",
@@ -967,6 +1072,7 @@
   {
    "ambito": "Toda España (posible destino en Sevilla)",
    "denominacion": "Grupo profesional I1, sujeto al V Convenio Colectivo del personal laboral de la Agencia Estatal de Administración Tributaria",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-23",
@@ -996,6 +1102,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Auxiliar Administrativo (Intervención)",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -1025,6 +1132,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Categorías profesionales del Grupo V",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1054,6 +1162,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Monitora Sociosanitaria o Monitor Sociosanitario",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1083,6 +1192,7 @@
   {
    "ambito": "Toda España (posible destino en Sevilla)",
    "denominacion": "Escala Superior de Especialistas en Transporte",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-20",
@@ -1112,6 +1222,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Auxiliar del Servicio de Ayuda a Domicilio",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -1141,6 +1252,7 @@
   {
    "ambito": "Toda España (posible destino en Sevilla)",
    "denominacion": "Cuerpo de Ingenieros Técnicos en Especialidades Agrícolas",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-19",
@@ -1170,6 +1282,7 @@
   {
    "ambito": "Toda España (posible destino en Sevilla)",
    "denominacion": "Cuerpo de Ingenieros Técnicos en Topografía",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-18",
@@ -1199,6 +1312,7 @@
   {
    "ambito": "Toda España (posible destino en Sevilla)",
    "denominacion": "Cuerpo de Ingenieros Geógrafos",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-17",
@@ -1228,6 +1342,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Auxiliar Técnico Informático",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1257,6 +1372,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Peón de Mantenimiento",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -1286,6 +1402,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Cuerpo de Catedráticos de Música y Artes Escénicas",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1315,6 +1432,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Contratos laborales en el marco de proyectos específicos de I+D+F",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1344,6 +1462,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Contratos laborales en el marco de proyectos específicos de I+D+F",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1373,6 +1492,7 @@
   {
    "ambito": "Toda España (posible destino en Sevilla)",
    "denominacion": "Personal laboral fijo, fuera de convenio, con la categoría de Titulado Superior",
+   "departamento": "",
    "en_boe": true,
    "estado": "sin_determinar",
    "fecha_boe": "2026-11-12",
@@ -1402,6 +1522,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Arquitecto",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-18",
@@ -1431,6 +1552,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Auxiliar Administrativo",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -1460,6 +1582,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Contratos laborales en el marco de proyectos específicos de I+D+F",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1489,6 +1612,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Profesor de Música, especialidad Guitarra",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -1518,6 +1642,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Auxiliar de Biblioteca",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-17",
@@ -1547,6 +1672,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Arquitecto",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-17",
@@ -1576,6 +1702,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Encargado de Obra",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -1605,6 +1732,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Bases y convocatoria del programa municipal para la autonomía personal y el desarrollo de habilidades prelaborales de personas con discapacidad intelectual",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -1634,6 +1762,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Peón de Limpieza Viaria",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -1663,6 +1792,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Técnico/a en el Departamento de Consultoría",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1692,6 +1822,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Técnico/a Superior I",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -1721,6 +1852,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Coordinador/a del Área de Compensación Educativa de Sevilla próximo a quedar vacante",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -1750,6 +1882,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Logopeda",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -1779,6 +1912,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Policía Local",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -1808,6 +1942,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Categorías que se citan",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -1836,7 +1971,38 @@
   },
   {
    "ambito": "Provincia de Sevilla",
+   "denominacion": "Convocan plazas de Asistentes/as Personales Universitarios/as para prestar apoyo a estudiantes con alguna discapacidad matriculados/as en la Universidad Pablo d",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "sin_determinar",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-11-03",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fuente": "BOJA",
+   "grupo": "Sin determinar",
+   "id": "BOJA-2026-212-24",
+   "localidad": "Sevilla",
+   "ocr": false,
+   "organismo": "Universidad Pablo de Olavide de Sevilla, Vicerrectorado de Estudiantes",
+   "personal": "Sin determinar",
+   "plazas": null,
+   "plazo_texto": null,
+   "requisitos": null,
+   "requisitos_generales": null,
+   "sistema": "Sin determinar",
+   "tipo": "Acceso libre",
+   "tipo_organismo": "Universidad",
+   "titulacion": null,
+   "titulo_oficial": "Resolución de 23 de octubre de 2026, de la Universidad Pablo de Olavide de Sevilla, Vicerrectorado de Estudiantes, por la que se convocan plazas de Asistentes/as Personales Universitarios/as para prestar apoyo a estudiantes con alguna discapacidad matriculados/as en la Universidad Pablo de Olavide de Sevilla, en titulaciones oficiales de grado en el curso académico 2026/27, y se establecen las bases reguladoras.",
+   "url_bases": "https://www.juntadeandalucia.es/boja/2026/212/24",
+   "url_boe": null,
+   "url_pdf": null
+  },
+  {
+   "ambito": "Provincia de Sevilla",
    "denominacion": "varias categorías varias plazas",
+   "departamento": "Administración Local",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-02",
@@ -1866,6 +2032,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Responsable del Servicio Local",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -1895,6 +2062,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Administrativo",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-11",
@@ -1924,6 +2092,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Auxiliar de Ayuda a Domicilio",
+   "departamento": "",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1953,6 +2122,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Oficial de 2.ª Albañilería",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -1982,6 +2152,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Personal de Guarda, Vigilancia y Portería",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -2016,6 +2187,7 @@
   {
    "ambito": "Toda España (posible destino en Sevilla)",
    "denominacion": "Escala Superior del Cuerpo de Seguridad Nuclear y Protección Radiológica",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-10-27",
@@ -2045,6 +2217,7 @@
   {
    "ambito": "Toda España (con plazas en Sevilla)",
    "denominacion": "Cuerpo Facultativo de Sanidad Penitenciaria",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-10-27",
@@ -2074,6 +2247,7 @@
   {
    "ambito": "Toda España (posible destino en Sevilla)",
    "denominacion": "Cuerpo de Enfermeros de Instituciones Penitenciarias",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-10-27",
@@ -2103,6 +2277,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Monitor, como funcionario interino",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -2132,6 +2307,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Monitor de Teatro",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -2161,6 +2337,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Oficial 1.ª de Mantenimiento",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-24",
@@ -2190,6 +2367,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Asesor Jurídico del Centro Municipal de Información a la Mujer",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2219,6 +2397,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Operario de Recogida de Residuos",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2248,6 +2427,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Conductor de Recogida de Residuos",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2277,6 +2457,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Personal de Mantenimiento",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -2306,6 +2487,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Auxiliar Administrativo",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2335,6 +2517,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Orientador",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -2363,7 +2546,38 @@
   },
   {
    "ambito": "Provincia de Sevilla",
+   "denominacion": "Un contrato de actividades científico-técnicas",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "sin_determinar",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-10-16",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fuente": "BOJA",
+   "grupo": "Sin determinar",
+   "id": "BOJA-2026-201-29",
+   "localidad": "Sevilla",
+   "ocr": false,
+   "organismo": "Universidad Pablo de Olavide",
+   "personal": "Laboral",
+   "plazas": null,
+   "plazo_texto": null,
+   "requisitos": "Podrán solicitar tomar parte en la presente convocatoria las personas solicitantes que reúnan los siguientes requisitos:\n2.1. a) Ser de nacionalidad española o nacional de un Estado miembro de la Unión Europea o nacional de aquellos Estados a los que, en virtud de Tratados Internacionales celebrados por la Unión Europea y ratificados por España, sea de aplicación la libre circulación de personas trabajadoras en los términos en que ésta se halle definida en el Tratado constitutivo de la Unión Europea.\nb) También podrán participar el/la cónyuge, los/las descendientes del o de la cónyuge, de los/las españoles/las y también de los/las nacionales de otros Estados miembros de la Unión Europea, siempre que no se estén separados/as de derecho, menores de veintiún años o mayores de dicha edad que vivan a sus expensas.\nEste último beneficio será igualmente de aplicación a familiares de nacionales de otros Estados cuando así se prevea en los Tratados Internacionales celebrados por la Comunidad Europea y ratificados por España.\nc) Quienes no estando incluidos/as en los apartados anteriores se encuentren residiendo en España en situación de legalidad, siendo titulares de un documento que les habilite a residir y a poder acceder sin limitaciones al mercado laboral. En consecuencia, podrán participar quienes se encuentren en situación de residencia temporal, quienes se encuentren en situación de residencia permanente y quienes se encuentren en situación de autorización para residir y trabajar, así como los que tengan la condición de personas refugiadas.\nd) Las personas que no se encuentren en situaciones descritas en los apartados a), b) y c), podrán participar en los procesos selectivos, siempre y cuando reúnan y acrediten los requisitos mínimos establecidos en la convocatoria. No obstante, su incorporación efectiva, en el supuesto de ser seleccionadas, sólo se podrá realizar cuando obtengan la correspondiente autorización administrativa que les permita residir y trabajar en España, dentro de los plazos y términos establecidos en la base 4.\n2.2. Tener cumplidos los dieciocho años y no haber cumplido la edad de jubilación. Estas dos circunstancias deberán estar acreditadas durante todo el periodo de contratación.\n2.3. Estar en posesión de las condiciones académicas o de titulación requeridas en el Anexo II de esta resolución. La documentación deberá estar traducida al español. Los títulos conseguidos en el extranjero o en centros españoles no estatales, deberán estar homologados o reconocidos. Los títulos de Grado expedidos por universidades en los Estados miembros de la Unión Europea serán equivalentes, a todos los efectos, a aquellos expedidos por universidades españolas.\n2.4. No padecer enfermedad ni estar afectado/a por limitación física o psíquica que sea incompatible con el desempeño de las correspondientes funciones.\n2.5. No haber sido separado/a, mediante expediente disciplinario, del servicio de cualquiera de las Administraciones Públicas, ni hallarse inhabilitado/a para el desempeño de las correspondientes funciones. Las personas aspirantes cuya nacionalidad no sea la española deberán igualmente no estar sometidas a sanción disciplinaria o condena penal que impida, en su Estado, el acceso a la función pública.\n2.6. Las personas aspirantes que no posean la nacionalidad española deberán acreditar un conocimiento adecuado del castellano.\n2.7. Todos los requisitos anteriores deberán poseerse en el día de finalización del plazo de presentación de solicitudes y mantenerse hasta el momento de la adjudicación de los correspondientes contratos.",
+   "requisitos_generales": null,
+   "sistema": "Concurso",
+   "tipo": "Acceso libre",
+   "tipo_organismo": "Universidad",
+   "titulacion": null,
+   "titulo_oficial": "Resolución de 8 de octubre de 2026, de la Universidad Pablo de Olavide, por la que se establecen las bases reguladoras para la contratación laboral prevista en la Ley 14/2011, de 1 de junio, de la Ciencia, la Tecnología y la Innovación, y se convoca a concurso público un contrato de actividades científico-técnicas.",
+   "url_bases": "https://www.juntadeandalucia.es/boja/2026/201/29",
+   "url_boe": null,
+   "url_pdf": null
+  },
+  {
+   "ambito": "Provincia de Sevilla",
    "denominacion": "Administrativo",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-12",
@@ -2391,8 +2605,39 @@
    "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1791846021508-final-362c3b65.pdf"
   },
   {
+   "ambito": "Toda España (posible destino en Sevilla)",
+   "denominacion": "Personal laboral: fuera de convenio",
+   "departamento": "Ministerio de Cultura",
+   "en_boe": true,
+   "estado": "sin_determinar",
+   "fecha_boe": "2026-10-12",
+   "fecha_publicacion": "2026-10-12",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fuente": "BOE",
+   "grupo": "Sin determinar",
+   "id": "BOE-A-2026-21183",
+   "localidad": "Toda España",
+   "ocr": false,
+   "organismo": "Ministerio de Cultura",
+   "personal": "Laboral",
+   "plazas": null,
+   "plazo_texto": null,
+   "requisitos": "2. Requisitos de las personas aspirantes Para ser admitidas a la realización del proceso selectivo las personas aspirantes deberán poseer en el día de finalización del plazo de presentación de solicitudes y mantener hasta el momento de la formalización del contrato de trabajo los siguientes requisitos de participación:\n2.1 Nacionalidad:\na) Tener la nacionalidad española.\nb) Ser nacional de los Estados miembros de la Unión Europea.\nc) Cualquiera que sea su nacionalidad, podrá tomar parte el cónyuge de los españoles y de los nacionales de otros Estados miembros de la Unión Europea, siempre que no estén separados de derecho. Asimismo, con las mismas condiciones, podrán participar sus descendientes y los de su cónyuge, que vivan a su cargo, menores de veintiún años o mayores de dicha edad dependientes.\nd) Las personas incluidas en el ámbito de aplicación de los Tratados Internacionales celebrados por la Unión Europea y ratificados por España en los que sea de aplicación la libre circulación de trabajadores.\ne) Los extranjeros que, no estando incluidos en los párrafos anteriores, se encuentren con residencia legal en España.\n2.2 Capacidad: Poseer la capacidad funcional para el desempeño de las tareas descritas en el anexo II.\n2.3 Edad: Tener cumplidos dieciséis años.\n2.4 Habilitación: No haber sido separado/a mediante expediente disciplinario del servicio de cualquiera de las Administraciones públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, o para ejercer funciones similares a las que desempeñaban en el caso del personal laboral, en el que hubiese sido separado o inhabilitado.\nEn el caso de ser nacional de otro Estado, no hallarse inhabilitado/a o en situación equivalente ni haber sido sometido/a a sanción disciplinaria o equivalente que impida en su Estado, en los mismos términos, el acceso al empleo público.\n2.5 Titulación: Estar en posesión de o en condiciones de obtener el día de finalización del plazo de presentación de solicitudes alguna de las titulaciones que se señalan en el anexo II.\nLas personas aspirantes con titulaciones obtenidas en el extranjero deberán acreditar que están en posesión de la correspondiente credencial de homologación, o en su caso, del correspondiente certificado de equivalencia. Este requisito no se aplicará a las personas aspirantes que hubieran obtenido el reconocimiento de su cualificación profesional, en el ámbito de las profesiones reguladas, al amparo de las disposiciones de derecho comunitario.",
+   "requisitos_generales": null,
+   "sistema": "Sin determinar",
+   "tipo": "Acceso libre",
+   "tipo_organismo": "Administración del Estado",
+   "titulacion": "Estar en posesión de o en condiciones de obtener el día de finalización del plazo de presentación de solicitudes alguna de las titulaciones que se señalan en el anexo II",
+   "titulo_oficial": "Resolución de 2 de octubre de 2026, de la Subdirección de Gerencia del Museo Nacional Centro de Arte Reina Sofía, por la que se convoca proceso selectivo para ingreso, por el sistema de acceso libre, como personal laboral fijo, fuera de convenio.",
+   "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21183",
+   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21183",
+   "url_pdf": null
+  },
+  {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Conductor-Mantenimiento de los servicios de recogida de residuos",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2422,6 +2667,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Cuerpos docentes universitarios",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2451,6 +2697,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Técnico de Juventud",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -2480,6 +2727,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Técnico de Administración General",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2509,6 +2757,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Oficial de Jardinería",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2538,6 +2787,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Oficial de Albañilería",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2567,6 +2817,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Policía Local",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-17",
@@ -2596,6 +2847,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Jefatura de Sección de Proyectos Urbanos y Medio Ambiente",
+   "departamento": "",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -2625,6 +2877,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "«Oficial de 1ª Maquinista Offset»",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -2659,6 +2912,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Personal de Actividades Domésticas",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -2693,6 +2947,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Cuerpos docentes universitarios",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2722,6 +2977,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Personal de Oficios",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -2751,6 +3007,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Policía Local",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2780,6 +3037,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Policía Local",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -2809,6 +3067,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Escala Auxiliar Administrativa de esta Universidad",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2838,6 +3097,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Policía local",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2867,6 +3127,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Cocinero",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -2901,6 +3162,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Capataz",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -2935,6 +3197,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Graduado Social",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2964,6 +3227,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Escala Auxiliar Administrativa de esta Universidad",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -2993,6 +3257,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Técnico Superior en Educación, a tiempo parcial",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -3022,6 +3287,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Oficial 2ª Mecánico",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente_sin_plazo",
    "fecha_boe": null,
@@ -3056,6 +3322,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Gestor Sanitario",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -3085,6 +3352,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Oficial de Mantenimiento",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -3113,36 +3381,8 @@
   },
   {
    "ambito": "Provincia de Sevilla",
-   "denominacion": "Cuerpos docentes universitarios",
-   "en_boe": false,
-   "estado": "pendiente",
-   "fecha_boe": null,
-   "fecha_publicacion": "2026-07-03",
-   "fin_estimado": false,
-   "fin_plazo": null,
-   "fuente": "BOJA",
-   "grupo": "Sin determinar",
-   "id": "BOJA-2026-127-35",
-   "localidad": "Sevilla",
-   "ocr": false,
-   "organismo": "Universidad de Sevilla",
-   "personal": "Sin determinar",
-   "plazas": null,
-   "plazo_texto": "plazo de presentación de instancias se establece en 15 días hábiles a contar desde el día siguiente al de la publicación de la presente convocatoria en el BOE.",
-   "requisitos": "2. Requisitos de los candidatos.\nPara ser admitido a estas pruebas selectivas deberán reunirse los siguientes requisitos:\n2.1. Requisitos generales.\na) Tener la nacionalidad española, sin perjuicio de lo dispuesto en el artículo 57 del Estatuto Básico del Empleado Público.\nb) Poseer la capacidad funcional para el desempeño de las tareas.\nc) Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa. Sólo por Ley podrá establecerse otra edad máxima, distinta de la edad de jubilación forzosa, para el acceso al empleo público.\nd) No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de funcionario, o para ejercer funciones similares a las que desempeñaban en el caso del personal laboral, en el que hubiese sido separado o inhabilitado. En el caso de ser nacional de otro Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al empleo público. Asimismo, el desempeño de las plazas convocadas quedará sometido a la Ley 53/84, de 26 de diciembre, y demás normas de desarrollo en materia de incompatibilidades.\ne) Los aspirantes que no sean de nacionalidad española deberán poseer un conocimiento del castellano adecuado para el desarrollo de sus funciones.\nf) Los nacionales de Estados distintos a la Unión Europea deberán estar en posesión del permiso de residencia.\n2.2. Requisitos específicos.\nAdemás de los requisitos generales, se deberá poseer el título de Doctor y estar acreditado al cuerpo de Profesores Titulares de Universidad.\nLos requisitos establecidos en la presente base deberán cumplirse en el momento de finalizar el plazo de presentación de solicitudes.",
-   "requisitos_generales": null,
-   "sistema": "Concurso",
-   "tipo": "Acceso libre",
-   "tipo_organismo": "Universidad",
-   "titulacion": "Doctor y estar acreditado al cuerpo de Profesores Titulares de Universidad",
-   "titulo_oficial": "Resolución de 24 de junio de 2026, de la Universidad de Sevilla, por la que se convoca concurso de acceso para la provisión de plazas de cuerpos docentes universitarios.",
-   "url_bases": "https://www.juntadeandalucia.es/boja/2026/127/35",
-   "url_boe": null,
-   "url_pdf": null
-  },
-  {
-   "ambito": "Provincia de Sevilla",
    "denominacion": "Técnico de Administración General",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -3172,6 +3412,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Bombero",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -3201,6 +3442,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Oficial de Albañilería",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -3230,6 +3472,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Auxiliar de Ayuda a Domicilio a jornada parcial",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-20",
@@ -3259,6 +3502,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Peón",
+   "departamento": "",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -3288,6 +3532,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Limpiadora-Lavandera en la residencia municipal asistida San Pedro",
+   "departamento": "",
    "en_boe": true,
    "estado": "abierto",
    "fecha_boe": "2026-11-03",
@@ -3318,23 +3563,23 @@
  "fecha_referencia": "2026-11-25",
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-24T23:03+00:00",
-   "nuevos": 0,
+   "fecha": "2026-11-24T23:11+00:00",
+   "nuevos": 25,
    "ok": true,
-   "segundos": 3
+   "segundos": 131
   },
   "BOJA": {
-   "fecha": "2026-11-24T23:03+00:00",
-   "nuevos": 0,
+   "fecha": "2026-11-24T23:16+00:00",
+   "nuevos": 91,
    "ok": true,
-   "segundos": 9
+   "segundos": 275
   },
   "BOP": {
-   "fecha": "2026-11-24T23:03+00:00",
-   "nuevos": 0,
+   "fecha": "2026-11-24T23:40+00:00",
+   "nuevos": 96,
    "ok": true,
-   "segundos": 6
+   "segundos": 1436
   }
  },
- "total": 91
+ "total": 94
 }
