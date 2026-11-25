@@ -34,7 +34,7 @@
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-generales-de-los-procesos-selectivos-para-la-provision-en-turno-libre-de-plazas-vacantes-en-la-plantilla-de-personal-laboral-OEP-2024-y-sucesivas/"
   },
   "95|2025-05-21|isla mayor": null,
-  "res|5284/2025": "163|2025-08-26",
+  "res|5284/2025": "147|2025-08-01",
   "res|728/2025": "39|2025-02-26"
  },
  "boe": {
@@ -2265,7 +2265,7 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
    }
   ],
-  "fecha": "2026-11-25T11:25+00:00",
+  "fecha": "2026-11-25T12:09+00:00",
   "ok": true,
   "por_ambito": {
    "Estado (ámbito nacional)": 67,
@@ -5720,22 +5720,22 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-25T10:36+00:00",
+   "fecha": "2026-11-25T11:55+00:00",
+   "nuevos": 0,
+   "ok": true,
+   "segundos": 3
+  },
+  "BOJA": {
+   "fecha": "2026-11-25T11:55+00:00",
    "nuevos": 0,
    "ok": true,
    "segundos": 5
   },
-  "BOJA": {
-   "fecha": "2026-11-25T10:43+00:00",
-   "nuevos": 55,
-   "ok": true,
-   "segundos": 439
-  },
   "BOP": {
-   "fecha": "2026-11-25T11:25+00:00",
-   "nuevos": 146,
+   "fecha": "2026-11-25T11:55+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 2502
+   "segundos": 6
   }
  },
  "pag_detalles": {
