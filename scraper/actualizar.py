@@ -24,6 +24,7 @@ from textos import (EXCLUIR, quita_firmas, grupo_laboral, titulacion_valida, den
                     limpia, lugares_no_sevilla, menciona_sevilla, norm,
                     suma_plazo, tipo_proceso)
 from lugares import SEDE_SOLO_MADRID, extrae_lugares, resume  # noqa: E402
+from textos import lugares_bonitos  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(RAIZ, "data")
@@ -48,7 +49,7 @@ def sin_tiempo():
     return (time.time() - INICIO) / 60 > MAX_MINUTOS
 
 
-SCAN_VERSION = 3   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
+SCAN_VERSION = 4   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
 FESTIVOS_ANDALUCES_EN_ESTADO = False  # False: las convocatorias del Estado se calculan solo con festivos nacionales
 BOE_SCAN_VERSION = 2   # súbelo para volver a recorrer los días recientes del BOE (recupera lo que se perdió por un fallo)
 VERSION = 8   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
@@ -703,10 +704,14 @@ def localidad_de_texto(t):
 # ---------------------------------------------------------------------------
 
 RE_BOP_CAND = re.compile(r"bases|convocatoria|proceso selectivo|procesos selectivos|seleccion|bolsa")
-RE_BOP_PLAZA = re.compile(r"plazas?|puestos?|bolsa|personal|seleccion|proceso selectivo|cuerpo|escala|categoria")
+RE_BOP_PLAZA = re.compile(r"plazas?|puestos?|bolsa|personal|seleccion|proceso selectivo|cuerpo|escala|categoria|contratacion")
 RE_BOP_NO = re.compile(r"subvenci|\bbecas?\b|\bayudas?\b(?! a domicilio)|premio|concurso de (?:agrupaciones|carteles|fotografia|pintura|relatos|ideas)|"
                        r"mercadillo|puestos? (?:del|de|en el) mercado|licencia|taxi|vivienda|concesion|enajenacion|"
-                       r"alumn|monitores? deportiv|voluntari|cabalgata|carnaval|feria|concurso literario")
+                       r"alumn|voluntari|concurso literario")
+# Estas palabras suelen ser de fiestas o actividades, pero no si el anuncio es para contratar a alguien
+RE_BOP_NO_SALVO_EMPLEO = re.compile(r"monitores? deportiv|cabalgata|carnaval|feria")
+RE_BOP_EMPLEO = re.compile(r"contratacion|proceso de seleccion|seleccion de personal|categoria de|\bplazas?\b|"
+                           r"bolsa de (?:empleo|trabajo)|personal laboral|funcionari|interin")
 
 
 def bop_listado(d):
@@ -731,6 +736,8 @@ def bop_listado(d):
 def bop_candidato(it):
     t = norm(it["titulo"])
     if EXCLUIR.search(t) or RE_BOP_NO.search(t) or es_provision(it["titulo"]):
+        return False
+    if RE_BOP_NO_SALVO_EMPLEO.search(t) and not RE_BOP_EMPLEO.search(t):
         return False
     return bool(RE_BOP_CAND.search(t) and RE_BOP_PLAZA.search(t))
 
@@ -783,6 +790,7 @@ def merece_detalle(it, registros, hoy):
     return any(e in ("abierto", "sin_determinar") for e in estados)
 
 
+BOP_DESCARTES_V = 2   # súbelo para volver a anotar los anuncios descartados de los últimos 30 días
 DIAS_DESCARTES_BOP = 30   # días de anuncios descartados del BOP que se enseñan en la pestaña de comprobación
 BOP_DESCARTES = {}
 RE_BOP_SELEC = re.compile(r"proceso selectivo|procesos selectivos|\bplazas?\b|\bbolsas?\b|convocatoria|oposicion|concurso|"
@@ -790,20 +798,23 @@ RE_BOP_SELEC = re.compile(r"proceso selectivo|procesos selectivos|\bplazas?\b|\b
                           r"nombramiento|seleccion|interin")
 RE_BOP_RUIDO = re.compile(r"subvenci|\bbecas?\b|\bayudas?\b(?! a domicilio)|premio|ordenanza|presupuest|padron|licitacion|"
                           r"cuenta general|mercadillo|carnaval|contrato de (?:obra|servicio|suministro)|plantilla|"
-                          r"relacion de puestos|valoracion de (?:los )?puestos|jueces? de paz|escolariza|alumn|deportiv|cultural")
+                          r"relacion de puestos|valoracion de (?:los )?puestos|juez(?:es)? de paz|escolariza|alumn|deportiv|cultural|"
+                          r"\bbdns\b|concurso (?:de|del) (?!meritos|oposicion|traslados)|certamen|campana|bonos?\b|comercio|consumo|"
+                          r"junta general|reunion|\bpleno\b|junta de compensacion|expropiacion|concesion|cesion de bienes|"
+                          r"reglamento|licencia|itinerarios|participantes|desfile|halloween|navidad")
 MOTIVOS_BOP = [
     (r"correccion de error|corrigen error|rectificacion", "Corrección de errores"),
     (r"se modifica|modificacion de (?:las )?bases|se amplia|ampliacion del plazo|prorroga", "Modificación de las bases o del plazo"),
-    (r"provision|libre designacion|concurso de meritos|concurso especifico|movilidad|comision de servicios|habilitacion",
-     "Provisión de puestos (solo para quien ya es funcionario)"),
-    (r"oferta de empleo", "Oferta de empleo público (todavía no es la convocatoria)"),
-    (r"bases generales", "Bases generales (sin plazas concretas)"),
+    (r"desiert|sin efecto|anula|desistimiento|renuncia", "Anulación, renuncia o plaza desierta"),
     (r"admitid|excluid|\blistas?\b|listado|relacion", "Lista de admitidos, excluidos o aprobados"),
     (r"tribunal|abstencion|recusacion", "Tribunal"),
-    (r"nombra|toma de posesion|\bcese\b|adjudica", "Nombramiento o adjudicación"),
+    (r"nombra|toma de posesion|\bcese\b|adjudica|^contratacion como|personas que se citan", "Nombramiento o contratación de las personas aprobadas"),
     (r"calificaci|puntuaci|resultado|aprobad|superado|seleccionad", "Resultados o calificaciones"),
     (r"fecha|ejercicio|examen|prueba|sorteo|aplaza|lugar|respuestas|criterios de correccion|supuesto", "Fechas o desarrollo de las pruebas"),
-    (r"desiert|sin efecto|anula|desistimiento|renuncia", "Anulación, renuncia o plaza desierta"),
+    (r"oferta de empleo", "Oferta de empleo público (todavía no es la convocatoria)"),
+    (r"bases generales", "Bases generales (sin plazas concretas)"),
+    (r"provision|libre designacion|concurso de meritos|concurso especifico|movilidad|comision de servicios|habilitacion|traslado",
+     "Provisión de puestos (solo para quien ya es funcionario)"),
 ]
 
 
@@ -1336,9 +1347,10 @@ def descartes_lugar(hoy):
         if d.get("tipo") not in ("lugar", "madrid") or not (d["fecha"] >= desde or d.get("visto", "") >= desde):
             continue
         t = d["titulo"]
-        xs.append({"id": d["id"], "fecha": d["fecha"], "motivo": d["motivo"], "url": d.get("url"),
+        xs.append({"id": d["id"], "fecha": d["fecha"], "motivo": lugares_bonitos(d["motivo"]), "url": d.get("url"),
                    "nombre": denominacion_de_titulo(t) or titulo_sin_preambulo(t),
-                   "organismo": organismo_de_titulo(t) or titulo_bonito(d.get("departamento") or "")})
+                   "organismo": org if (org := organismo_de_titulo(t)) and not re.match(r"(?i)subsecretar|secretar[íi]a (?:general|de estado)", org)
+                   else titulo_bonito(d.get("departamento") or "") or org or ""})
     return sorted(xs, key=lambda x: x["fecha"], reverse=True)
 
 
@@ -1372,12 +1384,13 @@ def main():
     limite = (hoy - timedelta(days=VENTANA_ESTADO)).isoformat()
     hace_30 = (hoy - timedelta(days=DIAS_DESCARTES_BOP)).isoformat()
     BOP_DESCARTES.update({k: v for k, v in estado.get("bop_descartes", {}).items() if v["fecha"] >= hace_30})
-    if not a.solo_salida and estado.get("bop_descartes_v", 0) < 1:
+    if not a.solo_salida and estado.get("bop_descartes_v", 0) < BOP_DESCARTES_V:
+        BOP_DESCARTES.clear()
         log(f"Se repasan los últimos {DIAS_DESCARTES_BOP} días del BOP para anotar los anuncios descartados")
         est_bop = estado.setdefault("bop", {"procesados": []})
         est_bop["procesados"] = [d for d in est_bop.get("procesados", []) if d < hace_30]
         estado["bop_vistos"] = {k: v for k, v in estado.get("bop_vistos", {}).items() if v < hace_30}
-        estado["bop_descartes_v"] = 1
+        estado["bop_descartes_v"] = BOP_DESCARTES_V
     hace_60 = (hoy - timedelta(days=60)).isoformat()
     DESCARTES.update({k: v for k, v in estado.get("descartes", {}).items()
                       if v["fecha"] >= limite or v.get("visto", "") >= hace_60})
