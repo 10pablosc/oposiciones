@@ -779,3 +779,17 @@ def quita_firmas(texto):
         return texto
     t = RE_FIRMA.sub(" ", texto)
     return re.sub(r"[ \t]{2,}", " ", t).strip()
+
+
+LUGARES_CON_TILDE = {"caceres": "Cáceres", "cadiz": "Cádiz", "la coruna": "A Coruña", "a coruna": "A Coruña", "malaga": "Málaga",
+                     "almeria": "Almería", "jaen": "Jaén", "cordoba": "Córdoba", "leon": "León", "avila": "Ávila",
+                     "castellon": "Castellón", "alava": "Álava", "araba": "Álava", "guipuzcoa": "Gipuzkoa", "vizcaya": "Bizkaia",
+                     "gerona": "Girona", "lerida": "Lleida", "orense": "Ourense", "santa cruz de tenerife": "Santa Cruz de Tenerife"}
+
+
+def lugares_bonitos(texto):
+    """'Plazas en otras provincias (Caceres, La Coruna)' -> 'Plazas en otras provincias (Cáceres, A Coruña)'."""
+    def cambia(m):
+        return LUGARES_CON_TILDE.get(norm(m.group(0)), m.group(0))
+    return re.sub(r"\b(?:" + "|".join(sorted((re.escape(k.title()) for k in LUGARES_CON_TILDE), key=len, reverse=True)) + r")\b",
+                  cambia, texto)

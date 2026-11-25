@@ -11,7 +11,7 @@ import time
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
-from textos import norm
+from textos import lugares_bonitos, norm
 
 BASE = ("https://administracion.gob.es/content/pag-home/es/empleopublico/resultados-empleo/jcr:content/root/"
         "container/containerSpace/pag_front_formulario.list.html")
@@ -61,9 +61,13 @@ def _tarjetas(h):
             m = re.search(nombre + r"\s*</span>\s*<span>(.*?)</span>", card, re.S)
             return _limpia(m.group(1)) if m else ""
         pl = re.search(r"Plazas:\s*</span>(.*?)</div>", card, re.S)
+        plazas = _limpia(pl.group(1)) if pl else ""
+        n = re.search(r"Convocadas:\s*(\d+)", plazas)
+        if n:
+            plazas = n.group(1) + (" plaza" if n.group(1) == "1" else " plazas")
         out.append({"ref": a.group(1), "denominacion": _limpia(a.group(2)), "fin": campo("Fin de plazo:"),
                     "titulacion": campo("Titulación:"), "ubicacion": campo("Ubicación:"),
-                    "organo": campo("Órgano convocante:"), "plazas": _limpia(pl.group(1)) if pl else "",
+                    "organo": campo("Órgano convocante:"), "plazas": plazas,
                     "url": DETALLE.format(ref=a.group(1))})
     return out
 
@@ -246,7 +250,7 @@ def compara(items, fichas, descartes=None):
         if f:
             coinciden += 1
         elif desc:
-            it["motivo"] = desc["motivo"]
+            it["motivo"] = lugares_bonitos(desc["motivo"])
             it["boe"] = desc.get("url") or f"https://www.boe.es/buscar/doc.php?id={desc['id']}"
             excluidas.append(it)
         else:
