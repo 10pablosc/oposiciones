@@ -25,6 +25,23 @@
   .filtros label { display: block; font-size: .8rem; font-weight: 600; color: var(--suave); margin-bottom: 3px; }
   .filtros select, .filtros input { width: 100%; padding: 8px 9px; font: inherit; font-size: .95rem; border: 1px solid #c9c6bd; border-radius: 7px; background: #fff; color: var(--texto); }
   .filtros .busca { grid-column: 1 / -1; }
+  .filtros .etiqueta { display: block; font-size: .8rem; font-weight: 600; color: var(--suave); margin-bottom: 3px; }
+  .multi { position: relative; }
+  .multi-boton { width: 100%; text-align: left; padding: 8px 28px 8px 9px; font-size: .95rem; border: 1px solid #c9c6bd; border-radius: 7px;
+    background: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .multi::after { content: ""; position: absolute; right: 12px; top: 15px; width: 7px; height: 7px; border-right: 1.6px solid #5b636e;
+    border-bottom: 1.6px solid #5b636e; transform: rotate(45deg); pointer-events: none; }
+  .multi-boton.activo { border-color: var(--acento); background-color: var(--acento-suave); }
+  .multi-panel { position: absolute; z-index: 20; left: 0; right: 0; min-width: 230px; margin-top: 4px; background: #fff; border: 1px solid #c9c6bd;
+    border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,.12); padding: 8px; }
+  .multi-acciones { display: flex; gap: 6px; padding-bottom: 6px; margin-bottom: 4px; border-bottom: 1px solid var(--linea); }
+  .multi-acciones button { padding: 4px 10px; font-size: .82rem; }
+  .multi-opciones { max-height: 260px; overflow-y: auto; }
+  .multi-opciones label { display: flex; align-items: flex-start; gap: 8px; font-size: .9rem; font-weight: 400; color: var(--texto); padding: 5px 4px;
+    margin: 0; border-radius: 5px; cursor: pointer; }
+  .multi-opciones label:hover { background: var(--gris-suave); }
+  .multi-opciones input { width: auto; margin: 3px 0 0; }
+  .multi-opciones .n { color: var(--suave); }
   .barra { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin: 12px 0 0; }
   .barra .cuenta { font-weight: 600; }
   button { font: inherit; font-size: .9rem; padding: 7px 12px; border-radius: 7px; border: 1px solid #c9c6bd; background: #fff; cursor: pointer; color: var(--texto); }
@@ -101,23 +118,21 @@
     <div class="fila">
       <div class="busca"><label for="f-texto">Buscar</label>
         <input id="f-texto" type="search" placeholder="Plaza, organismo, localidad… (ej.: administrativo, Dos Hermanas)"></div>
-      <div><label for="f-grupo">Nivel (grupo)</label><select id="f-grupo"></select></div>
-      <div><label for="f-localidad">Lugar de la plaza</label><select id="f-localidad"></select></div>
-      <div><label for="f-plazo">Plazo</label><select id="f-plazo">
-        <option value="">Todas las vigentes</option>
-        <option value="abierto">Plazo abierto ahora</option>
-        <option value="7">Cierra en 7 días o menos</option>
-        <option value="15">Cierra en 15 días o menos</option>
-        <option value="30">Cierra en 30 días o menos</option>
-        <option value="pendiente">Plazo pendiente de apertura</option>
-        <option value="sin_determinar">Plazo sin determinar</option>
+      <div><span class="etiqueta" id="l-grupo">Nivel (grupo)</span><div id="f-grupo"></div></div>
+      <div><span class="etiqueta" id="l-localidad">Lugar de la plaza</span><div id="f-localidad"></div></div>
+      <div><span class="etiqueta" id="l-estado">Estado del plazo</span><div id="f-estado"></div></div>
+      <div><label for="f-cierra">Cierra en</label><select id="f-cierra">
+        <option value="">Indiferente</option>
+        <option value="7">7 días o menos</option>
+        <option value="15">15 días o menos</option>
+        <option value="30">30 días o menos</option>
       </select></div>
-      <div class="extra"><label for="f-org">Organismo</label><select id="f-org"></select></div>
-      <div class="extra"><label for="f-tipo">Tipo de proceso</label><select id="f-tipo"></select></div>
+      <div class="extra"><span class="etiqueta" id="l-org">Organismo</span><div id="f-org"></div></div>
+      <div class="extra"><span class="etiqueta" id="l-tipo">Tipo de proceso</span><div id="f-tipo"></div></div>
       <div class="extra"><label for="f-boe">Publicada en el BOE</label><select id="f-boe">
         <option value="">Indiferente</option><option value="si">Sí</option><option value="no">No (aún no)</option></select></div>
-      <div class="extra"><label for="f-personal">Tipo de personal</label><select id="f-personal"></select></div>
-      <div class="extra"><label for="f-sistema">Sistema de selección</label><select id="f-sistema"></select></div>
+      <div class="extra"><span class="etiqueta" id="l-personal">Tipo de personal</span><div id="f-personal"></div></div>
+      <div class="extra"><span class="etiqueta" id="l-sistema">Sistema de selección</span><div id="f-sistema"></div></div>
     </div>
     <div class="barra">
       <span class="cuenta" id="cuenta"></span>
@@ -177,8 +192,10 @@
       </ul>
 
       <h2>Cómo buscar</h2>
-      <p>Escribe en «Buscar» cualquier palabra (plaza, organismo, municipio…) y combina los filtros de nivel, lugar, plazo, organismo, tipo de proceso, publicación en el BOE,
-      tipo de personal y sistema de selección. «Quitar filtros» vuelve a mostrar todo.</p>
+      <p>Escribe en «Buscar» cualquier palabra (plaza, organismo, municipio…) y combina los filtros. En nivel, lugar, estado del plazo, organismo, tipo de proceso,
+      tipo de personal y sistema de selección puedes marcar varias opciones a la vez: por ejemplo, pulsa «Todos» en el nivel y desmarca C2 para ver todos los niveles menos ese.
+      Dentro de un mismo filtro las opciones se suman y entre filtros distintos se cruzan. «Cierra en» muestra las que tienen el plazo abierto y terminan en esos días.
+      «Quitar filtros» vuelve a mostrar todo.</p>
 
       <h2>La pestaña Comprobación</h2>
       <ul>
@@ -210,8 +227,8 @@
   var HOY = new Date();
   HOY.setHours(0, 0, 0, 0);
   var $ = function (id) { return document.getElementById(id); };
-  var F = { texto: $("f-texto"), grupo: $("f-grupo"), localidad: $("f-localidad"), plazo: $("f-plazo"), org: $("f-org"),
-            tipo: $("f-tipo"), boe: $("f-boe"), personal: $("f-personal"), sistema: $("f-sistema") };
+  var F = { texto: $("f-texto"), cierra: $("f-cierra"), boe: $("f-boe") };
+  var M = {};   // filtros de varias opciones
   var ORDEN_GRUPO = ["A1", "A2", "B", "C1", "C2", "AP", "Sin determinar"];
 
   function esc(s) {
@@ -232,14 +249,71 @@
   }
   function sinTildes(s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
 
-  function opciones(sel, valores, todas, orden) {
-    var vistos = {};
-    valores.forEach(function (v) { if (v) vistos[v] = (vistos[v] || 0) + 1; });
-    var lista = Object.keys(vistos);
-    if (orden) lista.sort(orden); else lista.sort(function (a, b) { return a.localeCompare(b, "es"); });
-    sel.innerHTML = '<option value="">' + esc(todas) + "</option>" + lista.map(function (v) {
-      return '<option value="' + esc(v) + '">' + esc(v) + " (" + vistos[v] + ")</option>";
-    }).join("");
+  // Filtro desplegable con casillas: se pueden marcar varias opciones. Sin ninguna marcada (o con todas) no filtra.
+  function crearMulti(id, todas, unidad) {
+    var raiz = $(id), sel = {}, valores = [], etiquetas = {};
+    raiz.className = "multi";
+    raiz.innerHTML = '<button type="button" class="multi-boton" aria-expanded="false" aria-labelledby="l-' + id.slice(2) + ' ' + id + '-txt">' +
+      '<span id="' + id + '-txt"></span></button>' +
+      '<div class="multi-panel" hidden><div class="multi-acciones"><button type="button" data-acc="todos">Todos</button>' +
+      '<button type="button" data-acc="ninguno">Ninguno</button></div><div class="multi-opciones" role="group"></div></div>';
+    var boton = raiz.querySelector(".multi-boton"), texto = raiz.querySelector("#" + id + "-txt");
+    var panel = raiz.querySelector(".multi-panel"), caja = raiz.querySelector(".multi-opciones");
+    var obj = {
+      alCambiar: function () {},
+      marcados: function () { return valores.filter(function (v) { return sel[v]; }); },
+      activo: function () { var m = obj.marcados().length; return m > 0 && m < valores.length; },
+      pasa: function (v) { return !obj.activo() || !!sel[v]; },
+      limpiar: function () { sel = {}; sincroniza(); },
+      cerrar: function () { panel.hidden = true; boton.setAttribute("aria-expanded", "false"); },
+      poner: function (cuentas, orden, nombres) {
+        valores = Object.keys(cuentas);
+        if (orden) valores.sort(orden); else valores.sort(function (a, b) { return a.localeCompare(b, "es"); });
+        etiquetas = nombres || {};
+        var nuevo = {};
+        valores.forEach(function (v) { if (sel[v]) nuevo[v] = true; });
+        sel = nuevo;
+        caja.innerHTML = valores.map(function (v, i) {
+          return '<label><input type="checkbox" data-i="' + i + '"><span>' + esc(etiquetas[v] || v) + ' <span class="n">(' + cuentas[v] + ")</span></span></label>";
+        }).join("");
+        sincroniza();
+      }
+    };
+    function sincroniza() {
+      Array.prototype.forEach.call(caja.querySelectorAll("input"), function (c) { c.checked = !!sel[valores[+c.getAttribute("data-i")]]; });
+      var m = obj.marcados();
+      var nom = function (v) { return etiquetas[v] || v; };
+      texto.textContent = !obj.activo() ? todas : (m.length <= 2 ? m.map(nom).join(", ") : m.length + " de " + valores.length + " " + unidad);
+      boton.classList.toggle("activo", obj.activo());
+      boton.title = obj.activo() ? m.map(nom).join(", ") : "";
+    }
+    boton.addEventListener("click", function () {
+      var abrir = panel.hidden;
+      Object.keys(M).forEach(function (k) { M[k].cerrar(); });
+      panel.hidden = !abrir;
+      boton.setAttribute("aria-expanded", String(abrir));
+    });
+    caja.addEventListener("change", function (ev) {
+      var v = valores[+ev.target.getAttribute("data-i")];
+      if (ev.target.checked) sel[v] = true; else delete sel[v];
+      sincroniza();
+      obj.alCambiar();
+    });
+    panel.querySelector(".multi-acciones").addEventListener("click", function (ev) {
+      var acc = ev.target.getAttribute("data-acc");
+      if (!acc) return;
+      sel = {};
+      if (acc === "todos") valores.forEach(function (v) { sel[v] = true; });
+      sincroniza();
+      obj.alCambiar();
+    });
+    return obj;
+  }
+
+  function cuenta(valores) {
+    var c = {};
+    valores.forEach(function (v) { if (v) c[v] = (c[v] || 0) + 1; });
+    return c;
   }
 
   function lugarDe(c) {
@@ -248,35 +322,38 @@
     return c.localidad;
   }
 
+  function estadoDe(c) { return c.estado.indexOf("pendiente") === 0 ? "pendiente" : c.estado; }
+
   function preparaFiltros() {
-    opciones(F.grupo, DATOS.map(function (c) { return c.grupo; }), "Todos los niveles", function (a, b) {
+    M.grupo.poner(cuenta(DATOS.map(function (c) { return c.grupo; })), function (a, b) {
       var ia = ORDEN_GRUPO.indexOf(a), ib = ORDEN_GRUPO.indexOf(b);
       return (ia < 0 ? 50 : ia) - (ib < 0 ? 50 : ib) || a.localeCompare(b, "es");
     });
-    opciones(F.localidad, DATOS.map(lugarDe), "Todos los lugares", function (a, b) {
+    M.localidad.poner(cuenta(DATOS.map(lugarDe)), function (a, b) {
       var pa = /^(Toda|Andalucía)/.test(a) ? 0 : 1, pb = /^(Toda|Andalucía)/.test(b) ? 0 : 1;
       return pa - pb || a.localeCompare(b, "es");
     });
-    opciones(F.org, DATOS.map(function (c) { return c.tipo_organismo; }), "Todos los organismos");
-    opciones(F.tipo, DATOS.map(function (c) { return c.tipo; }), "Todos los tipos");
-    opciones(F.personal, DATOS.map(function (c) { return c.personal; }), "Todos");
-    opciones(F.sistema, DATOS.map(function (c) { return c.sistema; }), "Todos");
+    var ORDEN_ESTADO = ["abierto", "pendiente", "sin_determinar"];
+    M.estado.poner(cuenta(DATOS.map(estadoDe)), function (a, b) { return ORDEN_ESTADO.indexOf(a) - ORDEN_ESTADO.indexOf(b); },
+      { abierto: "Plazo abierto ahora", pendiente: "Pendiente de apertura", sin_determinar: "Sin determinar" });
+    M.org.poner(cuenta(DATOS.map(function (c) { return c.tipo_organismo; })));
+    M.tipo.poner(cuenta(DATOS.map(function (c) { return c.tipo; })));
+    M.personal.poner(cuenta(DATOS.map(function (c) { return c.personal; })));
+    M.sistema.poner(cuenta(DATOS.map(function (c) { return c.sistema; })));
   }
 
   function pasa(c) {
-    if (F.grupo.value && c.grupo !== F.grupo.value) return false;
-    if (F.localidad.value && lugarDe(c) !== F.localidad.value) return false;
-    if (F.org.value && c.tipo_organismo !== F.org.value) return false;
-    if (F.tipo.value && c.tipo !== F.tipo.value) return false;
-    if (F.personal.value && c.personal !== F.personal.value) return false;
-    if (F.sistema.value && c.sistema !== F.sistema.value) return false;
+    if (!M.grupo.pasa(c.grupo) || !M.localidad.pasa(lugarDe(c)) || !M.estado.pasa(estadoDe(c)) || !M.org.pasa(c.tipo_organismo) ||
+        !M.tipo.pasa(c.tipo) || !M.personal.pasa(c.personal) || !M.sistema.pasa(c.sistema)) return false;
     if (F.boe.value === "si" && !c.en_boe) return false;
     if (F.boe.value === "no" && c.en_boe) return false;
-    var p = F.plazo.value;
-    if (p === "abierto" && c.estado !== "abierto") return false;
-    if (p === "pendiente" && c.estado.indexOf("pendiente") !== 0) return false;
-    if (p === "sin_determinar" && c.estado !== "sin_determinar") return false;
-    if (/^\d+$/.test(p) && !(c.estado === "abierto" && c.fin_plazo && diasHasta(c.fin_plazo) <= +p)) return false;
+    var d = F.cierra.value;
+    if (d) {
+      if (c.estado !== "abierto" || !c.fin_plazo) return false;
+      var quedan = diasHasta(c.fin_plazo);
+      if (quedan < 0 && c.fin_plazo_max) quedan = diasHasta(c.fin_plazo_max);
+      if (quedan < 0 || quedan > +d) return false;
+    }
     var q = sinTildes(F.texto.value).trim();
     if (q) {
       var heno = sinTildes([c.denominacion, c.titulo_oficial, c.organismo, c.localidad, c.lugares_texto, c.grupo, c.titulacion].join(" "));
@@ -447,9 +524,24 @@
     });
   }
 
+  M.grupo = crearMulti("f-grupo", "Todos los niveles", "niveles");
+  M.localidad = crearMulti("f-localidad", "Todos los lugares", "lugares");
+  M.estado = crearMulti("f-estado", "Todos los estados", "estados");
+  M.org = crearMulti("f-org", "Todos los organismos", "organismos");
+  M.tipo = crearMulti("f-tipo", "Todos los tipos", "tipos");
+  M.personal = crearMulti("f-personal", "Todos", "tipos");
+  M.sistema = crearMulti("f-sistema", "Todos", "sistemas");
+  Object.keys(M).forEach(function (k) { M[k].alCambiar = pinta; });
+  document.addEventListener("click", function (ev) {
+    if (!ev.target.closest || !ev.target.closest(".multi")) Object.keys(M).forEach(function (k) { M[k].cerrar(); });
+  });
+  document.addEventListener("keydown", function (ev) {
+    if (ev.key === "Escape") Object.keys(M).forEach(function (k) { M[k].cerrar(); });
+  });
   Object.keys(F).forEach(function (k) { F[k].addEventListener(k === "texto" ? "input" : "change", pinta); });
   $("limpiar").addEventListener("click", function () {
     Object.keys(F).forEach(function (k) { F[k].value = ""; });
+    Object.keys(M).forEach(function (k) { M[k].limpiar(); });
     pinta();
   });
   $("mostrarFiltros").addEventListener("click", function () {
