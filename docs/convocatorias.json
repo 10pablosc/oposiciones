@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T00:02+00:00",
+ "actualizado": "2026-11-25T00:10+00:00",
  "comprobacion": {
   "coinciden": 22,
   "excluidas": [
@@ -922,7 +922,7 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
    }
   ],
-  "fecha": "2026-11-25T00:02+00:00",
+  "fecha": "2026-11-25T00:10+00:00",
   "ok": true,
   "por_ambito": {
    "Estado (ámbito nacional)": 67,
@@ -969,7 +969,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Un contrato de actividades científico-técnicas",
-   "departamento": "",
+   "departamento": "Universidades",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -999,7 +999,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Monitora o Monitor Sociosanitario fijos discontinuos",
-   "departamento": "",
+   "departamento": "Consejería de Servicios Sociales, Familias e Igualdad",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1029,7 +1029,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Efectúa convocatoria para la cobertura por promoción interna",
-   "departamento": "",
+   "departamento": "Consejería de Presidencia, Sanidad y Emergencias",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -1059,7 +1059,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Efectúa convocatoria para cobertura por promoción interna",
-   "departamento": "",
+   "departamento": "Consejería de Presidencia, Sanidad y Emergencias",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -1269,7 +1269,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Contratos formativos",
-   "departamento": "",
+   "departamento": "Universidades",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1389,7 +1389,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Categorías profesionales del Grupo V",
-   "departamento": "",
+   "departamento": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1419,7 +1419,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Monitora Sociosanitaria o Monitor Sociosanitario",
-   "departamento": "",
+   "departamento": "Consejería de Servicios Sociales, Familias e Igualdad",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1659,7 +1659,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Cuerpo de Catedráticos de Música y Artes Escénicas",
-   "departamento": "",
+   "departamento": "Consejería de Educación",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1689,7 +1689,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Contratos laborales en el marco de proyectos específicos de I+D+F",
-   "departamento": "",
+   "departamento": "Consejería de Agricultura, Pesca, Agua y Desarrollo Rural",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1719,7 +1719,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Contratos laborales en el marco de proyectos específicos de I+D+F",
-   "departamento": "",
+   "departamento": "Consejería de Agricultura, Pesca, Agua y Desarrollo Rural",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -1839,7 +1839,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Contratos laborales en el marco de proyectos específicos de I+D+F",
-   "departamento": "",
+   "departamento": "Consejería de Agricultura, Pesca, Agua y Desarrollo Rural",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -2049,7 +2049,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Técnico/a en el Departamento de Consultoría",
-   "departamento": "",
+   "departamento": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública",
    "en_boe": false,
    "estado": "abierto",
    "fecha_boe": null,
@@ -2079,7 +2079,7 @@
   {
    "ambito": "Andalucía (posible destino en Sevilla)",
    "denominacion": "Técnico/a Superior I",
-   "departamento": "",
+   "departamento": "Consejería de Turismo, Justicia, Desregulación y Administración Local",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -2139,7 +2139,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Coordinador/a del Área de Compensación Educativa de Sevilla próximo a quedar vacante",
-   "departamento": "",
+   "departamento": "Consejería de Educación",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -2259,7 +2259,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Convocan plazas de Asistentes/as Personales Universitarios/as para prestar apoyo a estudiantes con alguna discapacidad matriculados/as en la Universidad Pablo d",
-   "departamento": "",
+   "departamento": "Universidades",
    "en_boe": false,
    "estado": "sin_determinar",
    "fecha_boe": null,
@@ -2894,7 +2894,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Cuerpos docentes universitarios",
-   "departamento": "",
+   "departamento": "Universidades",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -3264,7 +3264,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Escala Auxiliar Administrativa de esta Universidad",
-   "departamento": "",
+   "departamento": "Universidades",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -3424,7 +3424,7 @@
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Escala Auxiliar Administrativa de esta Universidad",
-   "departamento": "",
+   "departamento": "Universidades",
    "en_boe": false,
    "estado": "pendiente",
    "fecha_boe": null,
@@ -3755,19 +3755,19 @@
  "fecha_referencia": "2026-11-25",
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-24T23:49+00:00",
-   "nuevos": 24,
-   "ok": true,
-   "segundos": 132
-  },
-  "BOJA": {
-   "fecha": "2026-11-24T23:49+00:00",
+   "fecha": "2026-11-25T00:09+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 8
+   "segundos": 3
+  },
+  "BOJA": {
+   "fecha": "2026-11-25T00:10+00:00",
+   "nuevos": 0,
+   "ok": true,
+   "segundos": 7
   },
   "BOP": {
-   "fecha": "2026-11-24T23:50+00:00",
+   "fecha": "2026-11-25T00:10+00:00",
    "nuevos": 0,
    "ok": true,
    "segundos": 6

@@ -894,7 +894,8 @@
    "2026-11-21",
    "2026-11-22",
    "2026-11-23",
-   "2026-11-24"
+   "2026-11-24",
+   "2026-11-25"
   ]
  },
  "bop_vistos": {
@@ -1830,7 +1831,7 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
    }
   ],
-  "fecha": "2026-11-25T00:02+00:00",
+  "fecha": "2026-11-25T00:10+00:00",
   "ok": true,
   "por_ambito": {
    "Estado (ámbito nacional)": 67,
@@ -4781,19 +4782,19 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-24T23:49+00:00",
-   "nuevos": 24,
-   "ok": true,
-   "segundos": 132
-  },
-  "BOJA": {
-   "fecha": "2026-11-24T23:49+00:00",
+   "fecha": "2026-11-25T00:09+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 8
+   "segundos": 3
+  },
+  "BOJA": {
+   "fecha": "2026-11-25T00:10+00:00",
+   "nuevos": 0,
+   "ok": true,
+   "segundos": 7
   },
   "BOP": {
-   "fecha": "2026-11-24T23:50+00:00",
+   "fecha": "2026-11-25T00:10+00:00",
    "nuevos": 0,
    "ok": true,
    "segundos": 6
