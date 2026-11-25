@@ -113,7 +113,7 @@ def a_numero(palabra):
 # ---------------------------------------------------------------------------
 
 RE_PLAZO = re.compile(
-    r"plazo\s+(?:de\s+)?(?:presentacion\s+de\s+)?(?:las\s+)?(?:solicitudes|instancias)"
+    r"plazo\s+(?:de\s+|para\s+(?:la\s+)?)?(?:presentacion\s+de\s+)?(?:las\s+)?(?:solicitudes|instancias)"
     r"(?P<medio>(?:[^.]|\.(?!\s)){0,160}?)"
     r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|dias?|mes(?:es)?)\b"
     r"(?=(?P<resto>.{0,260}))",
@@ -168,14 +168,14 @@ RE_PLAZO_D = re.compile(
 
 # "plazo (de presentación) de veinte días hábiles contados a partir del día siguiente al de la publicación de esta convocatoria"
 RE_PLAZO_P = re.compile(
-    r"plazo\s+(?:de\s+presentacion\s+)?(?:maximo\s+|improrrogable\s+)?(?:de\s+)?"
+    r"plazo\s+(?:de\s+presentacion\s*:?\s*)?(?:maximo\s+|improrrogable\s+)?(?:de\s+)?"
     r"(?P<num>\b[a-z]+\b|\d+)\s*(?:\(\d+\)\s*)?(?P<tipo>dias?\s+habiles|dias?\s+naturales|mes(?:es)?)\b,?\s*"
     r"(?:(?:que\s+se\s+)?(?:contados?|contara|computados?|computara|a\s+contar)\s+)?(?:a\s+partir|desde)\s+(?:del?\s+)?(?:dia\s+)?siguiente\s+"
     r"(?=(?P<resto>.{0,260}))",
     re.S,
 )
-RE_PUBLICA_CONV = re.compile(r"^.{0,60}publicacion\s+(?:de\s+)?(?:esta|la\s+presente|el\s+presente|la|el|su|dicha|dicho|este)?\s*"
-                             r"(?:convocatoria|extracto|anuncio|bases|resolucion|orden|edicto)")
+RE_PUBLICA_CONV = re.compile(r"^.{0,60}publicacion\s+(?:del?\s+)?(?:esta|estas|la\s+presente|las\s+presentes|el\s+presente|la|las|el|su|"
+                             r"sus|dicha|dicho|este|un|una)?\s*(?:convocatoria|extracto|anuncio|bases|resolucion|orden|edicto)")
 # "deberán presentar su solicitud en los quince días siguientes a la publicación de la presente convocatoria"
 RE_PLAZO_E = re.compile(
     r"presentar\s+(?:su|sus|la|las)?\s*solicitud(?:es)?(?:[^.]|\.(?!\s)){0,80}?\b(?:en|dentro\s+de)\s+los\s+"
@@ -183,7 +183,8 @@ RE_PLAZO_E = re.compile(
     r"(?=(?P<resto>.{0,260}))",
     re.S,
 )
-RE_NO_SOLICITUD = re.compile(r"subsan|alegaci|reclamaci|recurso|plantilla|documentacion acreditativa|toma de posesion|calificaci")
+RE_NO_SOLICITUD = re.compile(r"subsan|alegaci|reclamaci|recurso|plantilla|toma de posesion|calificaci|relacion provisional|"
+                             r"lista provisional|listado provisional|orden de puntuacion")
 
 
 def extrae_plazo(texto):
@@ -203,9 +204,13 @@ def extrae_plazo(texto):
                      r"dictara|declarando|lista provisional|admitid|excluid|resolucion en el plazo|resolvera|finalizado el plazo|"
                      r"terminado el plazo|expirado el plazo|concluido el plazo|transcurrido el plazo", cerca):
             continue
-        inicio_frase = max(t.rfind(". ", 0, m.start()), t.rfind("\n", 0, m.start()), m.start() - 300)
+        inicio_frase = max(t.rfind(". ", 0, m.start()), t.rfind("\n", 0, m.start()), m.start() - 160)
         if RE_NO_SOLICITUD.search(t[inicio_frase: m.start()]):
             continue   # p. ej. "Las alegaciones ... deberán presentarse dentro del plazo de cinco días"
+        if "medio" in m.groupdict() and m.group("medio") and re.search(r"(?:ultim[oa]s|anteriores|durante|antiguedad)\s*$", m.group("medio")):
+            continue   # "solicitudes: … nóminas de los últimos doce meses"
+        if m.group("tipo").startswith("mes") and n > 2:
+            continue   # ningún plazo de solicitud dura más de dos meses
         tipo_txt = m.group("tipo")
         if tipo_txt.startswith("mes"):
             tipo = "meses"

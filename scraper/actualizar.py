@@ -52,7 +52,7 @@ def sin_tiempo():
 SCAN_VERSION = 4   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
 FESTIVOS_ANDALUCES_EN_ESTADO = False  # False: las convocatorias del Estado se calculan solo con festivos nacionales
 BOE_SCAN_VERSION = 2   # súbelo para volver a recorrer los días recientes del BOE (recupera lo que se perdió por un fallo)
-VERSION = 8   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
+VERSION = 9   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"
@@ -1333,7 +1333,9 @@ def genera_salida(registros, hoy, estado):
         "total": len(fichas),
         "convocatorias": fichas,
         "descartes_lugar": descartes_lugar(hoy),
-        "descartes_bop": sorted(BOP_DESCARTES.values(), key=lambda d: (d["fecha"], d["anunciante"]), reverse=True),
+        "descartes_bop": sorted((d for d in BOP_DESCARTES.values()
+                                 if d["fecha"] >= (hoy - timedelta(days=DIAS_DESCARTES_BOP)).isoformat()),
+                                key=lambda d: (d["fecha"], d["anunciante"]), reverse=True),
     }
     guarda(F_OUT, salida)
     return salida
