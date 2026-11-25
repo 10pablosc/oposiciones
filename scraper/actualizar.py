@@ -18,7 +18,7 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from textos import (EXCLUIR, quita_firmas, grupo_laboral, titulacion_valida, denominacion_de_texto, titulo_sin_preambulo, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
+from textos import (EXCLUIR, es_excluido, quita_firmas, grupo_laboral, titulacion_valida, denominacion_de_texto, titulo_sin_preambulo, RE_CONVOCA_BOJA, simplifica_organismo, organismo_estado, titulo_bonito, RE_CONVOCA, RE_CONVOCA_ESTRICTO, denominacion_de_titulo, en_el_extranjero, es_provision,  # noqa: E402
                     extrae_grupo, extrae_num_plazas, extrae_personal, extrae_plazo,
                     extrae_requisitos, extrae_sistema, extrae_titulacion,
                     limpia, lugares_no_sevilla, menciona_sevilla, norm,
@@ -49,7 +49,7 @@ def sin_tiempo():
     return (time.time() - INICIO) / 60 > MAX_MINUTOS
 
 
-SCAN_VERSION = 4   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
+SCAN_VERSION = 5   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
 FESTIVOS_ANDALUCES_EN_ESTADO = False  # False: las convocatorias del Estado se calculan solo con festivos nacionales
 BOE_SCAN_VERSION = 2   # súbelo para volver a recorrer los días recientes del BOE (recupera lo que se perdió por un fallo)
 VERSION = 9   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
@@ -289,7 +289,7 @@ def clasifica_boe(it):
     dep = norm(it["departamento"])
     tit = norm(it["titulo"])
     estatal = dep not in ("administracion local", "universidades") and "andalucia" not in dep and not CCAA_NO_ANDALUCIA.search(dep)
-    if EXCLUIR.search(tit):
+    if es_excluido(tit):
         return None
     if es_provision(it["titulo"] + " " + it["epigrafe"]):
         return descarta(it, "Provisión de puestos (solo para quien ya es funcionario)", "provision") if estatal and RE_CONVOCA_ESTRICTO.search(tit) else None
@@ -548,7 +548,7 @@ def boja_rss():
 
 def clasifica_boja(it):
     t = norm(it["titulo"])
-    if EXCLUIR.search(t) or es_provision(it["titulo"]):
+    if es_excluido(t) or es_provision(it["titulo"]):
         return False
     if not RE_CONVOCA_BOJA.search(t):
         return False
@@ -735,7 +735,7 @@ def bop_listado(d):
 
 def bop_candidato(it):
     t = norm(it["titulo"])
-    if EXCLUIR.search(t) or RE_BOP_NO.search(t) or es_provision(it["titulo"]):
+    if es_excluido(t) or RE_BOP_NO.search(t) or es_provision(it["titulo"]):
         return False
     if RE_BOP_NO_SALVO_EMPLEO.search(t) and not RE_BOP_EMPLEO.search(t):
         return False
@@ -790,7 +790,7 @@ def merece_detalle(it, registros, hoy):
     return any(e in ("abierto", "sin_determinar") for e in estados)
 
 
-BOP_DESCARTES_V = 2   # súbelo para volver a anotar los anuncios descartados de los últimos 30 días
+BOP_DESCARTES_V = 3   # súbelo para volver a anotar los anuncios descartados de los últimos 30 días
 DIAS_DESCARTES_BOP = 30   # días de anuncios descartados del BOP que se enseñan en la pestaña de comprobación
 BOP_DESCARTES = {}
 RE_BOP_SELEC = re.compile(r"proceso selectivo|procesos selectivos|\bplazas?\b|\bbolsas?\b|convocatoria|oposicion|concurso|"
@@ -879,6 +879,7 @@ def procesa_bop(estado, registros, hoy):
             vistos[clave] = it["fecha"]
             if r:
                 registros[r["id"]] = r
+                BOP_DESCARTES.pop(clave, None)
                 nuevos += 1
             else:
                 apunta_bop(it, "El BOP no lo clasifica como proceso selectivo")
@@ -919,7 +920,7 @@ def completa_desde_boe(registros, hoy):
                 if clave in registros:
                     continue
                 t = norm(it["titulo"])
-                if EXCLUIR.search(t) or not re.search(r"bases|convocatoria", t):
+                if es_excluido(t) or not re.search(r"bases|convocatoria", t):
                     continue
                 anun = anunciante_norm(it["anunciante"])
                 if loc and loc != anun and loc not in anun and anun not in loc:
@@ -1256,7 +1257,7 @@ def sigue_valido(r):
     """Aplica los filtros actuales a registros guardados con versiones anteriores del programa."""
     t = r.get("titulo_oficial", "")
     nt = norm(t)
-    if EXCLUIR.search(nt) or es_provision(t) or en_el_extranjero(t):
+    if es_excluido(nt) or es_provision(t) or en_el_extranjero(t):
         return False
     if r["fuente"] == "BOJA" and not RE_CONVOCA_BOJA.search(nt):
         return False

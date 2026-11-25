@@ -594,6 +594,26 @@ EXCLUIR = re.compile(
     r"ordenacion de la bolsa|determinacion definitiva|seleccionad|nombramiento de funcionari|"
     r"lista (?:provisional|definitiva)|calificaciones|resultados? (?:del|de la|de las|de los)|puntuaciones|plantilla de correccion"
 )
+_RE_BASES_CONV = re.compile(r"\bbases\b|\bconvocatoria\b|proceso de seleccion|proceso selectivo|\bbolsa")
+_RE_PARA_NOMBRAR = re.compile(r"para (?:el|su) nombramiento|para nombrar")
+_RE_REABRE = re.compile(r"abrir (?:el |un )?(?:nuevo )?plazo|nuevas bases|nuevo plazo")
+
+
+def es_excluido(t):
+    """¿El título (normalizado) es de un anuncio que no es convocatoria (listas, nombramientos, tribunales…)?
+    Las bases "para el nombramiento como funcionario interino" sí son convocatorias, y también las que dejan
+    sin efecto unas bases anteriores para abrir un plazo nuevo."""
+    convoca = _RE_BASES_CONV.search(t)
+    for m in EXCLUIR.finditer(t):
+        g = m.group(0)
+        if convoca and _RE_PARA_NOMBRAR.search(t) and re.match(r"nombra|propuesta de nombramiento", g):
+            continue
+        if convoca and _RE_REABRE.search(t) and re.search(r"sin efecto|anula|desistimiento", g):
+            continue
+        return True
+    return False
+
+
 RE_CONVOCA_ESTRICTO = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b")
 RE_CONVOCA_BOJA = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b|\bse convocan?\b|bases de la convocatoria|\bbolsas?\b|concurso publico")
 RE_CONVOCA = re.compile(r"\bconvoca(?:n)?\b|\bconvocatorias?\b|\bse convocan?\b|\bbases\b|proceso selectivo|pruebas selectivas|\bbolsas?\b")
