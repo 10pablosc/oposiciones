@@ -48,6 +48,7 @@ def sin_tiempo():
 
 
 SCAN_VERSION = 3   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
+FESTIVOS_ANDALUCES_EN_ESTADO = True   # False: las convocatorias del Estado se calculan solo con festivos nacionales
 BOE_SCAN_VERSION = 2   # súbelo para volver a recorrer los días recientes del BOE (recupera lo que se perdió por un fallo)
 VERSION = 7   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
@@ -466,6 +467,24 @@ def boja_seccion(anio, num):
     return fecha, items
 
 
+def completa_seccion_boja(registros):
+    """Apunta la consejería (cabecera de la sección del BOJA) en los registros que llegaron por el RSS sin ella."""
+    faltan = {}
+    for k, r in registros.items():
+        m = re.match(r"BOJA-(\d{4})-(\d+)-(\d+)$", k)
+        if m and r["fuente"] == "BOJA" and not (r.get("orig") or {}).get("organismo_seccion"):
+            faltan.setdefault((int(m.group(1)), int(m.group(2))), []).append(k)
+    for (anio, num), ks in faltan.items():
+        if sin_tiempo():
+            return
+        try:
+            por_url = {it["url"]: it["organismo_seccion"] for it in boja_seccion(anio, num)[1]}
+        except Exception:  # noqa: BLE001
+            continue
+        for k in ks:
+            registros[k].setdefault("orig", {})["organismo_seccion"] = por_url.get(registros[k]["url_bases"]) or "-"
+
+
 def primer_numero_boja(anio, desde, est):
     """Primer número del BOJA del año con fecha >= desde (búsqueda binaria; se guarda para no repetirla)."""
     if anio < desde.year:
@@ -564,6 +583,10 @@ def procesa_boja(estado, registros, hoy):
     for it in candidatos:
         clave = it["url"]
         rid = "BOJA-" + "-".join(clave.rstrip("/").split("/")[-3:])
+        if rid in registros and it.get("organismo_seccion"):   # el RSS no trae la consejería; la sección sí
+            registros[rid].setdefault("orig", {})
+            if not registros[rid]["orig"].get("organismo_seccion"):
+                registros[rid]["orig"]["organismo_seccion"] = it["organismo_seccion"]
         if clave in vistos or rid in registros or not clasifica_boja(it):
             continue
         try:
@@ -1048,7 +1071,7 @@ def calcula_estado(r, hoy):
                 return ("sin_determinar", None, False) if edad <= DIAS_SIN_PLAZO_PI else ("caducada", None, False)
     if not p:
         return ("sin_determinar", None, False) if edad <= DIAS_SIN_PLAZO else ("caducada", None, False)
-    fin = suma_plazo(inicio, p["n"], p["tipo"])
+    fin = suma_plazo(inicio, p["n"], p["tipo"], andalucia=FESTIVOS_ANDALUCES_EN_ESTADO or r["categoria"] != "estado")
     estimada = r["fuente"] == "BOP" or r["categoria"] in ("local", "ayuntamiento", "diputacion", "otros_locales")
     return ("abierto" if fin >= hoy else "cerrado"), fin.isoformat(), estimada
 
@@ -1086,7 +1109,8 @@ def ficha(r, hoy):
         "denominacion": r["denominacion"],
         "titulo_oficial": r["titulo_oficial"],
         "organismo": r["organismo"],
-        "departamento": titulo_bonito((r.get("orig") or {}).get("departamento") or "") if r["fuente"] == "BOE" else "",
+        "departamento": (titulo_bonito((r.get("orig") or {}).get("departamento") or "") if r["fuente"] == "BOE"
+                         else ((r.get("orig") or {}).get("organismo_seccion") or "").strip("-") if r["fuente"] == "BOJA" else ""),
         "tipo_organismo": TIPO_ORG.get(cat, "Otros"),
         "localidad": localidad,
         "ambito": ambito,
@@ -1258,6 +1282,7 @@ def main():
             guarda(F_REG, registros)
             guarda(F_EST, estado)
     if not a.solo_salida:
+        completa_seccion_boja(registros)
         reprocesa(registros, hoy)
         guarda(F_REG, registros)
     estado["bases_generales"] = BG_CACHE

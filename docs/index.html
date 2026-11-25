@@ -289,7 +289,9 @@
     html += om.length ? " y <strong>" + om.length + (om.length === 1 ? " podría faltar" : " podrían faltar") + "</strong>." : " y no falta ninguna.";
     if (om.length) html += '<details open><summary>Ver las que podrían faltar</summary><ul>' + om.map(function (x) { return linea(x, false); }).join("") + "</ul></details>";
     if (ex.length) html += '<details><summary>Ver las que se dejan fuera a propósito y por qué</summary><ul>' + ex.map(function (x) { return linea(x, true); }).join("") + "</ul></details>";
-    html += '<p class="det">Ese buscador no incluye los ayuntamientos pequeños.</p>';
+    var loc = (c.por_ambito || {})["Provincia de Sevilla (ámbito local)"];
+    html += '<p class="det">Ese buscador apenas recoge ayuntamientos' + (loc === 0 ? " (hoy no tiene ninguno de la provincia de Sevilla)" : "") +
+      ": las convocatorias de los ayuntamientos y de la Diputación solo salen del BOP.</p>";
     caja.innerHTML = '<div class="comprobacion ' + (om.length ? "aviso" : "bien") + '">' + html + "</div>";
   }
 

@@ -39,21 +39,29 @@ ANIOS_CALENDARIO = {2025, 2026, 2027}
 FIJOS = {"01-01", "01-06", "05-01", "08-15", "10-12", "11-01", "12-06", "12-08", "12-25", "02-28"}
 
 
-def es_inhabil(d):
+# Festivos que solo son inhábiles en Andalucía (el resto de FESTIVOS lo son en toda España).
+# En las convocatorias del Estado el plazo se calcula sin ellos: así sale la misma fecha que publica el
+# organismo (y que usa su registro electrónico), que es la más temprana y la más segura para el aspirante.
+FESTIVOS_ANDALUCIA = {"2025-02-28", "2025-04-17", "2026-04-02", "2026-11-02", "2026-12-07",
+                      "2027-03-01", "2027-03-25", "2027-08-16"}
+
+
+def es_inhabil(d, andalucia=True):
     if d.weekday() >= 5:
         return True
     if d.year in ANIOS_CALENDARIO:
-        return d.isoformat() in FESTIVOS
-    return d.strftime("%m-%d") in FIJOS
+        k = d.isoformat()
+        return k in FESTIVOS and (andalucia or k not in FESTIVOS_ANDALUCIA)
+    return d.strftime("%m-%d") in FIJOS and (andalucia or d.strftime("%m-%d") != "02-28")
 
 
-def siguiente_habil(d):
-    while es_inhabil(d):
+def siguiente_habil(d, andalucia=True):
+    while es_inhabil(d, andalucia):
         d += timedelta(days=1)
     return d
 
 
-def suma_plazo(publicacion, n, tipo):
+def suma_plazo(publicacion, n, tipo, andalucia=True):
     """Último día de un plazo de n días (hábiles/naturales/meses) que empieza
     a contar el día siguiente a la publicación (art. 30 Ley 39/2015)."""
     if tipo == "meses":
@@ -63,16 +71,16 @@ def suma_plazo(publicacion, n, tipo):
         import calendar
         dia = min(publicacion.day, calendar.monthrange(y, m)[1])
         fin = date(y, m, dia)
-        return siguiente_habil(fin)
+        return siguiente_habil(fin, andalucia)
     if tipo == "naturales":
         fin = publicacion + timedelta(days=n)
-        return siguiente_habil(fin)
+        return siguiente_habil(fin, andalucia)
     # hábiles
     d = publicacion
     contados = 0
     while contados < n:
         d += timedelta(days=1)
-        if not es_inhabil(d):
+        if not es_inhabil(d, andalucia):
             contados += 1
     return d
 
