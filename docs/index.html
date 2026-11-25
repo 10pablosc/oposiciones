@@ -57,6 +57,19 @@
   .comprobacion ul { margin: 8px 0 0; padding-left: 18px; }
   .comprobacion li { margin: 6px 0; }
   .comprobacion .det { color: var(--suave); font-size: .85rem; }
+  .pestanas { display: flex; gap: 6px; margin: 0 0 14px; border-bottom: 1px solid var(--linea); }
+  .pestanas button { border: 1px solid transparent; border-bottom: none; border-radius: 8px 8px 0 0; background: transparent;
+    padding: 9px 14px; font-weight: 600; color: var(--suave); margin-bottom: -1px; }
+  .pestanas button[aria-selected="true"] { background: var(--tarjeta); border-color: var(--linea); color: var(--texto); }
+  .pestanas .num { font-weight: 400; color: var(--suave); }
+  .insignia { display: inline-block; min-width: 20px; padding: 0 6px; margin-left: 4px; border-radius: 999px; background: var(--ambar-suave);
+    color: var(--ambar); font-size: .78rem; line-height: 20px; text-align: center; }
+  .bloque { background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 10px; padding: 12px 16px; margin-bottom: 14px; font-size: .92rem; }
+  .bloque h2 { font-size: 1.02rem; margin: 0 0 6px; }
+  .bloque ul { margin: 8px 0 0; padding-left: 18px; }
+  .bloque li { margin: 6px 0; }
+  .bloque .det { color: var(--suave); font-size: .85rem; }
+  .intro { color: var(--suave); font-size: .92rem; margin: 0 0 12px; }
   footer { max-width: 1100px; margin: 10px auto 30px; padding: 0 16px; font-size: .85rem; color: var(--suave); }
   .fuentes span { display: inline-block; margin-right: 12px; }
   .ok { color: var(--verde); } .ko { color: var(--rojo); font-weight: 600; }
@@ -74,6 +87,11 @@
 </div></header>
 
 <main>
+  <nav class="pestanas" role="tablist" aria-label="Secciones">
+    <button type="button" role="tab" id="tab-lista" aria-controls="vista-lista" aria-selected="true">Convocatorias <span class="num" id="n-lista"></span></button>
+    <button type="button" role="tab" id="tab-comp" aria-controls="vista-comp" aria-selected="false">Comprobación<span class="insignia" id="n-comp" hidden></span></button>
+  </nav>
+  <div id="vista-lista" role="tabpanel" aria-labelledby="tab-lista">
   <section class="filtros plegado" id="panel" aria-label="Filtros">
     <div class="fila">
       <div class="busca"><label for="f-texto">Buscar</label>
@@ -105,15 +123,21 @@
     </div>
   </section>
 
-  <section id="comprobacion" aria-live="polite"></section>
   <section class="lista" id="lista" aria-live="polite"></section>
+  </div>
+  <div id="vista-comp" role="tabpanel" aria-labelledby="tab-comp" hidden>
+    <p class="intro">Qué ha revisado la aplicación y qué ha dejado fuera, para que puedas comprobar que no se pierde ninguna convocatoria.</p>
+    <section id="comprobacion"></section>
+    <section id="desc-lugar"></section>
+    <section id="desc-bop"></section>
+  </div>
 </main>
 
 <footer>
   <p class="fuentes" id="fuentes"></p>
   <p>Fuentes: Boletín Oficial del Estado (sección II.B), Boletín Oficial de la Junta de Andalucía (sección 2.2) y Boletín Oficial de la Provincia de Sevilla.
   Se incluyen las convocatorias de ayuntamientos, Diputación y entes de la provincia, las de la Junta de Andalucía y el SAS, las de las universidades de Sevilla y las del Estado de ámbito nacional.
-  Las fechas de fin de plazo se calculan a partir del texto oficial; las marcadas como «estimada» no tienen en cuenta los festivos locales. <strong>Comprueba siempre las bases oficiales antes de presentar la solicitud.</strong></p>
+  Las fechas de fin de plazo se calculan a partir del texto oficial; las marcadas como «estimada» no tienen en cuenta los festivos locales y, en las del Estado, tampoco los autonómicos (es la fecha más temprana posible). <strong>Comprueba siempre las bases oficiales antes de presentar la solicitud.</strong></p>
 </footer>
 
 <script>
@@ -192,7 +216,7 @@
     if (/^\d+$/.test(p) && !(c.estado === "abierto" && c.fin_plazo && diasHasta(c.fin_plazo) <= +p)) return false;
     var q = sinTildes(F.texto.value).trim();
     if (q) {
-      var heno = sinTildes([c.denominacion, c.titulo_oficial, c.organismo, c.localidad, c.grupo, c.titulacion].join(" "));
+      var heno = sinTildes([c.denominacion, c.titulo_oficial, c.organismo, c.localidad, c.lugares_texto, c.grupo, c.titulacion].join(" "));
       var palabras = q.split(/\s+/);
       for (var i = 0; i < palabras.length; i++) if (heno.indexOf(palabras[i]) < 0) return false;
     }
@@ -202,8 +226,12 @@
   function bloquePlazo(c) {
     if (c.estado === "abierto" && c.fin_plazo) {
       var d = diasHasta(c.fin_plazo);
+      if (d < 0 && c.fin_plazo_max) {
+        return '<div class="plazo urgente">El plazo terminó el <strong>' + fecha(c.fin_plazo) + "</strong> según el calendario nacional; " +
+          "contando los festivos de Andalucía llegaría al <strong>" + fecha(c.fin_plazo_max) + "</strong>. Confírmalo en las bases.</div>";
+      }
       var cuando = d === 0 ? "termina hoy" : (d === 1 ? "termina mañana" : "quedan " + d + " días");
-      var est = c.fin_estimado ? " (fecha estimada)" : "";
+      var est = c.fin_estimado ? " (fecha estimada" + (c.fin_plazo_max ? "; contando los festivos de Andalucía, hasta el " + fecha(c.fin_plazo_max) : "") + ")" : "";
       return '<div class="plazo ' + (d <= 5 ? "urgente" : "abierto") + '">Plazo abierto hasta el <strong>' + fecha(c.fin_plazo) +
         "</strong>" + est + " · " + cuando + "</div>";
     }
@@ -245,7 +273,7 @@
 
     return '<article class="conv">' +
       '<h2><a href="' + (url(c.url_bases) || "#") + '" target="_blank" rel="noopener">' + esc(c.denominacion) + "</a></h2>" +
-      '<div class="org">' + esc(c.organismo) + " · " + esc(c.ambito === "Provincia de Sevilla" ? c.localidad : c.ambito) + "</div>" +
+      '<div class="org">' + esc(c.organismo) + " · " + esc(c.lugares_texto || (c.ambito === "Provincia de Sevilla" ? c.localidad : c.ambito)) + "</div>" +
       '<div class="chips">' + chips.join("") + "</div>" +
       bloquePlazo(c) +
       '<div class="fechas">' + fechas + "</div>" +
@@ -280,7 +308,7 @@
         (!conMotivo && x.publicada ? '<div class="det"><strong>Publicada en:</strong> ' +
           (url(x.publicada.url) ? '<a href="' + url(x.publicada.url) + '" target="_blank" rel="noopener">' + esc(x.publicada.texto) + "</a>" : esc(x.publicada.texto)) + "</div>" : "") +
         (conMotivo && x.motivo ? '<div class="det"><strong>Motivo:</strong> ' + esc(x.motivo) +
-          (url(x.boe) ? ' (<a href="' + url(x.boe) + '" target="_blank" rel="noopener">convocatoria en el BOE</a>)' : "") + "</div>" : "") +
+          (url(x.boe) ? ' (<a href="' + url(x.boe) + '" target="_blank" rel="noopener">ver la convocatoria</a>)' : "") + "</div>" : "") +
         "</li>";
     }
     var html = "<strong>Comprobado el " + esc(cuando) + ":</strong> " + fuente + " tiene " + (c.total || 0) +
@@ -292,7 +320,44 @@
     var loc = (c.por_ambito || {})["Provincia de Sevilla (ámbito local)"];
     html += '<p class="det">Ese buscador apenas recoge ayuntamientos' + (loc === 0 ? " (hoy no tiene ninguno de la provincia de Sevilla)" : "") +
       ": las convocatorias de los ayuntamientos y de la Diputación solo salen del BOP.</p>";
-    caja.innerHTML = '<div class="comprobacion ' + (om.length ? "aviso" : "bien") + '">' + html + "</div>";
+    caja.innerHTML = '<div class="bloque"><h2>Comparación con el buscador oficial del Estado</h2><div class="comprobacion ' +
+      (om.length ? "aviso" : "bien") + '">' + html + "</div></div>";
+    var n = $("n-comp");
+    n.hidden = !om.length;
+    n.textContent = om.length;
+    n.title = om.length + (om.length === 1 ? " convocatoria podría faltar" : " convocatorias podrían faltar");
+  }
+
+  function pintaDescartes(j) {
+    var lug = j.descartes_lugar || [], bop = j.descartes_bop || [];
+    $("desc-lugar").innerHTML = '<div class="bloque"><h2>Quitadas por no tener plazas en la provincia de Sevilla</h2>' +
+      '<p class="det">Convocatorias de los últimos 60 días cuyas bases sitúan todas las plazas fuera de la provincia.</p>' +
+      (lug.length ? "<ul>" + lug.map(function (x) {
+        return '<li><a href="' + (url(x.url) || "#") + '" target="_blank" rel="noopener">' + esc(x.nombre) + "</a>" +
+          '<div class="det">' + esc(x.organismo) + " · Publicada el " + fecha(x.fecha) + "</div>" +
+          '<div class="det"><strong>Motivo:</strong> ' + esc(x.motivo) + "</div></li>";
+      }).join("") + "</ul>" : '<p class="det">Ninguna.</p>') + "</div>";
+    var grupos = {};
+    bop.forEach(function (x) { (grupos[x.motivo] = grupos[x.motivo] || []).push(x); });
+    var motivos = Object.keys(grupos).sort(function (a, b) { return grupos[b].length - grupos[a].length; });
+    $("desc-bop").innerHTML = '<div class="bloque"><h2>Anuncios del BOP de Sevilla sobre procesos selectivos que no se listan</h2>' +
+      '<p class="det">Últimos 30 días. Son anuncios de procesos ya convocados (listas, tribunales, resultados…) o que no abren plazo de solicitud. ' +
+      "Si ves aquí una convocatoria con plazo abierto, es un fallo de la aplicación.</p>" +
+      (motivos.length ? motivos.map(function (m) {
+        return "<details><summary>" + esc(m) + " (" + grupos[m].length + ")</summary><ul>" + grupos[m].map(function (x) {
+          return '<li><a href="' + (url(x.url) || "#") + '" target="_blank" rel="noopener">' + esc(x.titulo) + "</a>" +
+            '<div class="det">' + esc(x.anunciante) + " · BOP del " + fecha(x.fecha) + "</div></li>";
+        }).join("") + "</ul></details>";
+      }).join("") : '<p class="det">Ninguno.</p>') + "</div>";
+  }
+
+  function muestra(cual) {
+    var comp = cual === "comp";
+    $("vista-lista").hidden = comp;
+    $("vista-comp").hidden = !comp;
+    $("tab-lista").setAttribute("aria-selected", String(!comp));
+    $("tab-comp").setAttribute("aria-selected", String(comp));
+    try { history.replaceState(null, "", comp ? "#comprobacion" : location.pathname + location.search); } catch (e) { /* sin historial */ }
   }
 
   function carga() {
@@ -308,6 +373,8 @@
         return "<span>" + k + ": " + (f.ok ? '<span class="ok">correcto</span>' : '<span class="ko">error, datos de días anteriores</span>') + "</span>";
       }).join("");
       pintaComprobacion(j.comprobacion);
+      pintaDescartes(j);
+      $("n-lista").textContent = "(" + DATOS.length + ")";
       preparaFiltros();
       pinta();
     }).catch(function () {
@@ -325,6 +392,9 @@
     p.classList.toggle("plegado");
     this.textContent = p.classList.contains("plegado") ? "Más filtros" : "Menos filtros";
   });
+  $("tab-lista").addEventListener("click", function () { muestra("lista"); });
+  $("tab-comp").addEventListener("click", function () { muestra("comp"); });
+  if (location.hash === "#comprobacion") muestra("comp");
   carga();
 })();
 </script>

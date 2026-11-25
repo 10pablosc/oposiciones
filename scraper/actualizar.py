@@ -23,6 +23,7 @@ from textos import (EXCLUIR, quita_firmas, grupo_laboral, titulacion_valida, den
                     extrae_requisitos, extrae_sistema, extrae_titulacion,
                     limpia, lugares_no_sevilla, menciona_sevilla, norm,
                     suma_plazo, tipo_proceso)
+from lugares import SEDE_SOLO_MADRID, extrae_lugares, resume  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(RAIZ, "data")
@@ -48,9 +49,9 @@ def sin_tiempo():
 
 
 SCAN_VERSION = 3   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
-FESTIVOS_ANDALUCES_EN_ESTADO = True   # False: las convocatorias del Estado se calculan solo con festivos nacionales
+FESTIVOS_ANDALUCES_EN_ESTADO = False  # False: las convocatorias del Estado se calculan solo con festivos nacionales
 BOE_SCAN_VERSION = 2   # súbelo para volver a recorrer los días recientes del BOE (recupera lo que se perdió por un fallo)
-VERSION = 7   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
+VERSION = 8   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"
@@ -152,13 +153,14 @@ def pdf_ocr(datos):
     return re.sub(r"\n{3,}", "\n\n", "\n".join(lineas))
 
 
-def pdf_a_texto(datos):
-    """Texto del PDF respetando el orden visual (-layout) y sin las columnas laterales de firma."""
+def pdf_a_texto(datos, modo="-layout"):
+    """Texto del PDF respetando el orden visual (-layout) y sin las columnas laterales de firma.
+    Con modo="-raw" sale en el orden en que se escribió (mejor para leer las celdas de las tablas)."""
     with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
         f.write(datos)
         ruta = f.name
     try:
-        r = subprocess.run(["pdftotext", "-layout", ruta, "-"], capture_output=True, timeout=180)
+        r = subprocess.run(["pdftotext", modo, ruta, "-"], capture_output=True, timeout=180)
         bruto = r.stdout.decode("utf-8", errors="replace")
     finally:
         os.unlink(ruta)
@@ -275,9 +277,10 @@ def refs_bop(texto):
 DESCARTES = {}   # convocatorias estatales que se dejan fuera a propósito (para explicar la comparación con el buscador oficial)
 
 
-def descarta(it, motivo):
+def descarta(it, motivo, tipo="otro"):
     DESCARTES[it["id"]] = {"id": it["id"], "titulo": it["titulo"], "departamento": it.get("departamento", ""),
-                           "fecha": it["fecha"], "motivo": motivo, "url": it.get("url")}
+                           "fecha": it["fecha"], "motivo": motivo, "url": it.get("url"), "tipo": tipo,
+                           "visto": date.today().isoformat()}
     return None
 
 
@@ -288,9 +291,9 @@ def clasifica_boe(it):
     if EXCLUIR.search(tit):
         return None
     if es_provision(it["titulo"] + " " + it["epigrafe"]):
-        return descarta(it, "Provisión de puestos (solo para quien ya es funcionario)") if estatal and RE_CONVOCA_ESTRICTO.search(tit) else None
+        return descarta(it, "Provisión de puestos (solo para quien ya es funcionario)", "provision") if estatal and RE_CONVOCA_ESTRICTO.search(tit) else None
     if en_el_extranjero(it["titulo"]):
-        return descarta(it, "Plazas en el extranjero") if estatal else None
+        return descarta(it, "Plazas en el extranjero", "extranjero") if estatal else None
     if dep == "administracion local":
         if re.search(r"\(sevilla\)|ayuntamiento de sevilla\b|diputacion provincial de sevilla", tit):
             return "local"
@@ -302,10 +305,10 @@ def clasifica_boe(it):
     if "andalucia" in dep or CCAA_NO_ANDALUCIA.search(dep):
         return None  # la Junta se toma del BOJA; otras comunidades no interesan
     if re.search(r"instituto nacional de gestion sanitaria|\bingesa\b", tit):
-        return descarta(it, "Plazas en Ceuta y Melilla (INGESA)") if RE_CONVOCA_ESTRICTO.search(tit) else None
+        return descarta(it, "Plazas en Ceuta y Melilla (INGESA)", "ingesa") if RE_CONVOCA_ESTRICTO.search(tit) else None
     if RE_CONVOCA_ESTRICTO.search(tit):
         if lugares_no_sevilla(it["titulo"]) and not menciona_sevilla(it["titulo"]):
-            return descarta(it, "Plazas en " + ", ".join(lugares_no_sevilla(it["titulo"])).title())
+            return descarta(it, "Plazas en " + ", ".join(lugares_no_sevilla(it["titulo"])).title(), "lugar")
         return "estado"
     return None
 
@@ -367,7 +370,14 @@ def registro_boe(it, cat):
     if cat == "estado":
         lugares = lugares_no_sevilla(texto[:20000])
         if not menciona_sevilla(texto) and (len(lugares) >= 2 or {"ceuta", "melilla"} & set(lugares)):
-            return descarta(it, "Plazas en otras provincias (" + ", ".join(lugares[:4]).title() + "), ninguna en Sevilla")
+            return descarta(it, "Plazas en otras provincias (" + ", ".join(lugares[:4]).title() + "), ninguna en Sevilla", "lugar")
+    sitio = (None, None, None)
+    if cat in ("estado", "universidad"):
+        sitio = resume(extrae_lugares(texto, it["titulo"]))
+        if sitio[0] == "fuera":
+            return descarta(it, f"Plazas en {sitio[2]}, ninguna en la provincia de Sevilla", "lugar")
+        if cat == "estado" and sitio[0] != "sevilla" and SEDE_SOLO_MADRID.search(norm(it["titulo"])):
+            return descarta(it, "El organismo solo tiene sede en Madrid", "madrid")
     org = organismo_de_titulo(it["titulo"])
     if cat == "estado":
         org = organismo_estado(org, it["departamento"])
@@ -415,10 +425,15 @@ def registro_boe(it, cat):
         "tipo": tipo_proceso(it["titulo"] + " " + " ".join(notas)),
         "requisitos": extrae_requisitos(texto) if cat != "local" else None,
         "titulacion": extrae_titulacion(texto) if cat != "local" else None,
-        "sevilla_en_texto": menciona_sevilla(texto),
+        "sevilla_en_texto": menciona_sevilla(texto) or sitio[0] == "sevilla",
+        "lugares_texto": sitio[2],
     }
     if cat == "local":
         r["localidad"] = localidad_boe(it["titulo"])
+    elif sitio[0] == "sevilla":
+        r["localidad"] = sitio[1]
+    elif cat == "universidad" and "universidad internacional de andalucia" in norm(it["titulo"]):
+        r["localidad"] = "Destino no indicado"
     return r
 
 
@@ -605,15 +620,44 @@ def procesa_boja(estado, registros, hoy):
     return nuevos
 
 
+def boja_pdf_texto(url, h):
+    """Texto del PDF oficial de una disposición del BOJA (incluye los anexos que la página web no trae)."""
+    m = re.search(r'href="(BOJA\d\d-[^"]+\.pdf)"', h)
+    a = re.search(r"/boja/(\d{4})/(\d+)/", url)
+    if not (m and a):
+        return ""
+    datos = descarga(f"https://www.juntadeandalucia.es/eboja/{a.group(1)}/{a.group(2)}/{m.group(1)}", binario=True)
+    if not datos:
+        return ""
+    texto = pdf_a_texto(datos, modo="-raw")
+    if letras_utiles(texto) < 400:
+        texto = pdf_ocr(datos)
+    return texto
+
+
 def registro_boja(it, rid):
-    texto = html_a_texto(descarga(it["url"]) or "")
+    h = descarga(it["url"]) or ""
+    texto = html_a_texto(h)
     i = texto.find("Verificación de autenticidad")
     if i > 0:
         texto = texto[i:]
     tit = it["titulo"]
-    univ = bool(UNIV_SEVILLA.search(norm(tit)))
-    sas = "servicio andaluz de salud" in norm(tit)
-    if univ:
+    nt = norm(tit)
+    univ = bool(UNIV_SEVILLA.search(nt))
+    unia = "universidad internacional de andalucia" in nt
+    sas = "servicio andaluz de salud" in nt
+    lugares = extrae_lugares(texto, tit)
+    if not lugares:   # el anexo con los centros a veces solo está en el PDF
+        lugares = extrae_lugares(boja_pdf_texto(it["url"], h))
+    clase, loc, lugares_texto = resume(lugares)
+    if clase == "fuera":
+        return descarta({"id": rid, "titulo": tit, "departamento": it.get("organismo_seccion") or "", "fecha": it["fecha"],
+                         "url": it["url"]}, f"Plazas en {lugares_texto}, ninguna en la provincia de Sevilla", "lugar")
+    if clase == "sevilla":
+        localidad, ambito = loc, "Provincia de Sevilla"
+    elif unia:
+        localidad, ambito = "Destino no indicado", "Andalucía (destino no indicado en las bases)"
+    elif univ:
         localidad, ambito = "Sevilla", "Provincia de Sevilla"
     elif menciona_sevilla(tit):
         localidad, ambito = localidad_de_texto(tit) or "Sevilla", "Provincia de Sevilla"
@@ -640,6 +684,7 @@ def registro_boja(it, rid):
         "titulacion": extrae_titulacion(texto),
         "localidad": localidad,
         "ambito": ambito,
+        "lugares_texto": lugares_texto,
     }
 
 
@@ -738,6 +783,40 @@ def merece_detalle(it, registros, hoy):
     return any(e in ("abierto", "sin_determinar") for e in estados)
 
 
+DIAS_DESCARTES_BOP = 30   # días de anuncios descartados del BOP que se enseñan en la pestaña de comprobación
+BOP_DESCARTES = {}
+RE_BOP_SELEC = re.compile(r"proceso selectivo|procesos selectivos|\bplazas?\b|\bbolsas?\b|convocatoria|oposicion|concurso|"
+                          r"tribunal|aspirantes|admitid|excluid|funcionari|personal laboral|oferta de empleo|\bbases\b|"
+                          r"nombramiento|seleccion|interin")
+RE_BOP_RUIDO = re.compile(r"subvenci|\bbecas?\b|\bayudas?\b(?! a domicilio)|premio|ordenanza|presupuest|padron|licitacion|"
+                          r"cuenta general|mercadillo|carnaval|contrato de (?:obra|servicio|suministro)|plantilla|"
+                          r"relacion de puestos|valoracion de (?:los )?puestos|jueces? de paz|escolariza|alumn|deportiv|cultural")
+MOTIVOS_BOP = [
+    (r"correccion de error|corrigen error|rectificacion", "Corrección de errores"),
+    (r"se modifica|modificacion de (?:las )?bases|se amplia|ampliacion del plazo|prorroga", "Modificación de las bases o del plazo"),
+    (r"provision|libre designacion|concurso de meritos|concurso especifico|movilidad|comision de servicios|habilitacion",
+     "Provisión de puestos (solo para quien ya es funcionario)"),
+    (r"oferta de empleo", "Oferta de empleo público (todavía no es la convocatoria)"),
+    (r"bases generales", "Bases generales (sin plazas concretas)"),
+    (r"admitid|excluid|\blistas?\b|listado|relacion", "Lista de admitidos, excluidos o aprobados"),
+    (r"tribunal|abstencion|recusacion", "Tribunal"),
+    (r"nombra|toma de posesion|\bcese\b|adjudica", "Nombramiento o adjudicación"),
+    (r"calificaci|puntuaci|resultado|aprobad|superado|seleccionad", "Resultados o calificaciones"),
+    (r"fecha|ejercicio|examen|prueba|sorteo|aplaza|lugar|respuestas|criterios de correccion|supuesto", "Fechas o desarrollo de las pruebas"),
+    (r"desiert|sin efecto|anula|desistimiento|renuncia", "Anulación, renuncia o plaza desierta"),
+]
+
+
+def motivo_bop(titulo):
+    t = norm(titulo)
+    return next((m for patron, m in MOTIVOS_BOP if re.search(patron, t)), "No es una convocatoria con plazo de solicitud")
+
+
+def apunta_bop(it, motivo):
+    BOP_DESCARTES[it["cve"] or it["url"]] = {"fecha": it["fecha"], "titulo": it["titulo"], "anunciante": it["anunciante"],
+                                            "url": it["url"], "motivo": motivo}
+
+
 def procesa_bop(estado, registros, hoy):
     est = estado.setdefault("bop", {"procesados": []})
     vistos = estado.setdefault("bop_vistos", {})
@@ -765,10 +844,20 @@ def procesa_bop(estado, registros, hoy):
         completo = True
         for it in items:
             clave = it["cve"] or it["url"]
-            if clave in vistos or clave in registros or not bop_candidato(it):
+            if clave in registros:
+                continue
+            if not bop_candidato(it):
+                t = norm(it["titulo"])
+                if RE_BOP_SELEC.search(t) and not RE_BOP_RUIDO.search(t):
+                    apunta_bop(it, motivo_bop(it["titulo"]))
+                continue
+            if clave in vistos:
                 continue
             if not merece_detalle(it, registros, hoy):
                 vistos[clave] = it["fecha"]
+                bolsa_vieja = tipo_proceso(it["titulo"]) == "Bolsa o empleo temporal" and \
+                    (hoy - date.fromisoformat(it["fecha"])).days > VENTANA_BOLSA
+                apunta_bop(it, "Bolsa publicada hace más de 4 meses" if bolsa_vieja else "Plazo ya cerrado (según su anuncio en el BOE)")
                 continue
             try:
                 r = registro_bop(it)
@@ -780,6 +869,8 @@ def procesa_bop(estado, registros, hoy):
             if r:
                 registros[r["id"]] = r
                 nuevos += 1
+            else:
+                apunta_bop(it, "El BOP no lo clasifica como proceso selectivo")
         if completo and (items or d < hoy - timedelta(days=REVISION)):
             est["procesados"].append(d.isoformat())
     est["procesados"] = [x for x in sorted(set(est["procesados"])) if x >= desde.isoformat()]
@@ -1049,8 +1140,10 @@ DIAS_SIN_PLAZO = 45            # resto de anuncios sin plazo legible
 DIAS_SIN_PLAZO_PI = 90         # promoción interna sin plazo legible
 
 
-def calcula_estado(r, hoy):
-    """Devuelve (estado, fin_plazo_iso, estimada)."""
+def calcula_estado(r, hoy, con_maximo=False):
+    """Devuelve (estado, fin_plazo_iso, estimada) y, con con_maximo, también la fecha más tardía posible.
+    En las del Estado se muestra la fecha más temprana (solo festivos nacionales), pero la convocatoria sigue en
+    la lista hasta la más tardía (contando los festivos de Andalucía, art. 30.6 de la Ley 39/2015)."""
     publicada = date.fromisoformat(r["fecha_publicacion"])
     edad = (hoy - publicada).days
     boe = r.get("boe")
@@ -1071,9 +1164,12 @@ def calcula_estado(r, hoy):
                 return ("sin_determinar", None, False) if edad <= DIAS_SIN_PLAZO_PI else ("caducada", None, False)
     if not p:
         return ("sin_determinar", None, False) if edad <= DIAS_SIN_PLAZO else ("caducada", None, False)
-    fin = suma_plazo(inicio, p["n"], p["tipo"], andalucia=FESTIVOS_ANDALUCES_EN_ESTADO or r["categoria"] != "estado")
-    estimada = r["fuente"] == "BOP" or r["categoria"] in ("local", "ayuntamiento", "diputacion", "otros_locales")
-    return ("abierto" if fin >= hoy else "cerrado"), fin.isoformat(), estimada
+    andalucia = FESTIVOS_ANDALUCES_EN_ESTADO or r["categoria"] != "estado"
+    fin = suma_plazo(inicio, p["n"], p["tipo"], andalucia=andalucia)
+    ultimo = fin if andalucia else suma_plazo(inicio, p["n"], p["tipo"], andalucia=True)
+    estimada = r["fuente"] == "BOP" or r["categoria"] in ("local", "ayuntamiento", "diputacion", "otros_locales", "estado")
+    res = ("abierto" if ultimo >= hoy else "cerrado"), fin.isoformat(), estimada
+    return res + ((ultimo.isoformat() if ultimo != fin else None),) if con_maximo else res
 
 
 TIPO_ORG = {
@@ -1084,10 +1180,10 @@ TIPO_ORG = {
 
 
 def ficha(r, hoy):
-    est, fin, estimada = calcula_estado(r, hoy)
+    est, fin, estimada, fin_max = (tuple(calcula_estado(r, hoy, con_maximo=True)) + (None,))[:4]
     cat = r["categoria"]
     if cat == "estado":
-        localidad = "Toda España"
+        localidad = r.get("localidad") or "Toda España"
         ambito = "Toda España (con plazas en Sevilla)" if r.get("sevilla_en_texto") else "Toda España (posible destino en Sevilla)"
     elif cat == "local":
         localidad = r.get("localidad") or "Provincia de Sevilla"
@@ -1097,7 +1193,9 @@ def ficha(r, hoy):
         elif not r.get("localidad"):
             cat = "otros_locales"
     elif cat == "universidad":
-        localidad, ambito = "Sevilla", "Provincia de Sevilla"
+        localidad = r.get("localidad") or "Sevilla"
+        ambito = ("Andalucía (destino no indicado en las bases)" if localidad == "Destino no indicado"
+                  else "Provincia de Sevilla")
     else:
         localidad = r.get("localidad") or "Andalucía"
         ambito = r.get("ambito") or "Andalucía"
@@ -1113,6 +1211,7 @@ def ficha(r, hoy):
                          else ((r.get("orig") or {}).get("organismo_seccion") or "").strip("-") if r["fuente"] == "BOJA" else ""),
         "tipo_organismo": TIPO_ORG.get(cat, "Otros"),
         "localidad": localidad,
+        "lugares_texto": r.get("lugares_texto"),
         "ambito": ambito,
         "grupo": r.get("grupo") or "Sin determinar",
         "plazas": r.get("plazas"),
@@ -1129,6 +1228,7 @@ def ficha(r, hoy):
         "estado": est,
         "fin_plazo": fin,
         "fin_estimado": estimada,
+        "fin_plazo_max": fin_max,
         "plazo_texto": (boe.get("plazo") or r.get("plazo") or {}).get("frase"),
         "requisitos": quita_firmas(r.get("requisitos")),
         "titulacion": r.get("titulacion") if titulacion_valida(r.get("titulacion")) else None,
@@ -1221,9 +1321,25 @@ def genera_salida(registros, hoy, estado):
         "fuentes": estado.get("fuentes", {}),
         "total": len(fichas),
         "convocatorias": fichas,
+        "descartes_lugar": descartes_lugar(hoy),
+        "descartes_bop": sorted(BOP_DESCARTES.values(), key=lambda d: (d["fecha"], d["anunciante"]), reverse=True),
     }
     guarda(F_OUT, salida)
     return salida
+
+
+def descartes_lugar(hoy):
+    """Convocatorias quitadas de la lista porque sus plazas no están en la provincia de Sevilla (últimos 60 días)."""
+    desde = (hoy - timedelta(days=60)).isoformat()
+    xs = []
+    for d in DESCARTES.values():
+        if d.get("tipo") not in ("lugar", "madrid") or not (d["fecha"] >= desde or d.get("visto", "") >= desde):
+            continue
+        t = d["titulo"]
+        xs.append({"id": d["id"], "fecha": d["fecha"], "motivo": d["motivo"], "url": d.get("url"),
+                   "nombre": denominacion_de_titulo(t) or titulo_sin_preambulo(t),
+                   "organismo": organismo_de_titulo(t) or titulo_bonito(d.get("departamento") or "")})
+    return sorted(xs, key=lambda x: x["fecha"], reverse=True)
 
 
 def purga(registros, hoy):
@@ -1254,7 +1370,17 @@ def main():
     estado.setdefault("fuentes", {})
     BG_CACHE.update(estado.get("bases_generales", {}))
     limite = (hoy - timedelta(days=VENTANA_ESTADO)).isoformat()
-    DESCARTES.update({k: v for k, v in estado.get("descartes", {}).items() if v["fecha"] >= limite})
+    hace_30 = (hoy - timedelta(days=DIAS_DESCARTES_BOP)).isoformat()
+    BOP_DESCARTES.update({k: v for k, v in estado.get("bop_descartes", {}).items() if v["fecha"] >= hace_30})
+    if not a.solo_salida and estado.get("bop_descartes_v", 0) < 1:
+        log(f"Se repasan los últimos {DIAS_DESCARTES_BOP} días del BOP para anotar los anuncios descartados")
+        est_bop = estado.setdefault("bop", {"procesados": []})
+        est_bop["procesados"] = [d for d in est_bop.get("procesados", []) if d < hace_30]
+        estado["bop_vistos"] = {k: v for k, v in estado.get("bop_vistos", {}).items() if v < hace_30}
+        estado["bop_descartes_v"] = 1
+    hace_60 = (hoy - timedelta(days=60)).isoformat()
+    DESCARTES.update({k: v for k, v in estado.get("descartes", {}).items()
+                      if v["fecha"] >= limite or v.get("visto", "") >= hace_60})
     if not a.solo_salida and estado.get("boe_scan", 0) < BOE_SCAN_VERSION:
         log(f"Nueva revisión de los días del BOE de los últimos {VENTANA_ESTADO} días (versión {BOE_SCAN_VERSION})")
         estado.setdefault("boe", {"procesados": []})["procesados"] = [d for d in estado["boe"].get("procesados", []) if d < limite]
@@ -1287,6 +1413,7 @@ def main():
         guarda(F_REG, registros)
     estado["bases_generales"] = BG_CACHE
     estado["descartes"] = DESCARTES
+    estado["bop_descartes"] = {k: v for k, v in BOP_DESCARTES.items() if v["fecha"] >= hace_30}
     purga(registros, hoy)
     salida = genera_salida(registros, hoy, estado)
     if not a.solo_salida and "pag" in a.fuentes:

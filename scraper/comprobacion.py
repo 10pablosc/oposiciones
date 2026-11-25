@@ -197,6 +197,13 @@ def por_boletin(item, fichas, descartes):
         f = mejor(item, cands)
         if f:
             return f, None
+        quitadas = [x for x in descartes.values() if x["id"].startswith(f"BOJA-{anio}-{num}-")]
+        if len(quitadas) == 1 and not cands:
+            return None, quitadas[0]
+        tp = _tok(item["denominacion"])
+        quitadas = sorted(quitadas, key=lambda x: len(tp & _tok(x["titulo"])), reverse=True)
+        if quitadas and tp & _tok(quitadas[0]["titulo"]):
+            return None, quitadas[0]
     return None, None
 
 
@@ -251,7 +258,7 @@ def compara(items, fichas, descartes=None):
             coinciden += 1
         elif desc:
             it["motivo"] = lugares_bonitos(desc["motivo"])
-            it["boe"] = desc.get("url") or f"https://www.boe.es/buscar/doc.php?id={desc['id']}"
+            it["boe"] = desc.get("url") or (f"https://www.boe.es/buscar/doc.php?id={desc['id']}" if desc["id"].startswith("BOE") else None)
             excluidas.append(it)
         else:
             omisiones.append(it)
