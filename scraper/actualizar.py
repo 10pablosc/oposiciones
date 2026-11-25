@@ -52,7 +52,7 @@ def sin_tiempo():
 SCAN_VERSION = 5   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
 FESTIVOS_ANDALUCES_EN_ESTADO = False  # False: las convocatorias del Estado se calculan solo con festivos nacionales
 BOE_SCAN_VERSION = 2   # súbelo para volver a recorrer los días recientes del BOE (recupera lo que se perdió por un fallo)
-VERSION = 9   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
+VERSION = 10   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
 
 UA = "Mozilla/5.0 (compatible; oposiciones-sevilla/1.0; +https://github.com/10pablosc/oposiciones)"
 BOP = "https://bopsevilla.dipusevilla.es"

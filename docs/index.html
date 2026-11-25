@@ -57,7 +57,7 @@
   .comprobacion ul { margin: 8px 0 0; padding-left: 18px; }
   .comprobacion li { margin: 6px 0; }
   .comprobacion .det { color: var(--suave); font-size: .85rem; }
-  .pestanas { display: flex; gap: 6px; margin: 0 0 14px; border-bottom: 1px solid var(--linea); }
+  .pestanas { display: flex; gap: 6px; margin: 0 0 14px; border-bottom: 1px solid var(--linea); overflow-x: auto; }
   .pestanas button { border: 1px solid transparent; border-bottom: none; border-radius: 8px 8px 0 0; background: transparent;
     padding: 9px 14px; font-weight: 600; color: var(--suave); margin-bottom: -1px; }
   .pestanas button[aria-selected="true"] { background: var(--tarjeta); border-color: var(--linea); color: var(--texto); }
@@ -69,6 +69,8 @@
   .bloque ul { margin: 8px 0 0; padding-left: 18px; }
   .bloque li { margin: 6px 0; }
   .bloque .det { color: var(--suave); font-size: .85rem; }
+  .ayuda h2 { margin-top: 16px; } .ayuda h2:first-child { margin-top: 0; }
+  .ayuda p { margin: 6px 0; } .ayuda li { margin: 4px 0; }
   .intro { color: var(--suave); font-size: .92rem; margin: 0 0 12px; }
   footer { max-width: 1100px; margin: 10px auto 30px; padding: 0 16px; font-size: .85rem; color: var(--suave); }
   .fuentes span { display: inline-block; margin-right: 12px; }
@@ -76,6 +78,8 @@
   @media (max-width: 640px) {
     h1 { font-size: 1.2rem; }
     #mostrarFiltros { display: inline-block; }
+    .pestanas { gap: 0; } .pestanas button { padding: 8px 4px; font-size: .78rem; white-space: nowrap; flex: 1 1 auto; }
+    .pestanas .num { display: none; }
     .filtros.plegado .fila .extra { display: none; }
   }
 </style>
@@ -90,6 +94,7 @@
   <nav class="pestanas" role="tablist" aria-label="Secciones">
     <button type="button" role="tab" id="tab-lista" aria-controls="vista-lista" aria-selected="true">Convocatorias <span class="num" id="n-lista"></span></button>
     <button type="button" role="tab" id="tab-comp" aria-controls="vista-comp" aria-selected="false">Comprobación<span class="insignia" id="n-comp" hidden></span></button>
+    <button type="button" role="tab" id="tab-ayuda" aria-controls="vista-ayuda" aria-selected="false">Cómo funciona</button>
   </nav>
   <div id="vista-lista" role="tabpanel" aria-labelledby="tab-lista">
   <section class="filtros plegado" id="panel" aria-label="Filtros">
@@ -130,6 +135,64 @@
     <section id="comprobacion"></section>
     <section id="desc-lugar"></section>
     <section id="desc-bop"></section>
+  </div>
+  <div id="vista-ayuda" role="tabpanel" aria-labelledby="tab-ayuda" hidden>
+    <div class="bloque ayuda">
+      <h2>Qué es esta página</h2>
+      <p>Una lista de las convocatorias de empleo público con plazas en la provincia de Sevilla, o que pueden tener destino en ella,
+      cuyo plazo de solicitud está abierto o a punto de abrirse. Están ordenadas de la más reciente a la más antigua.</p>
+
+      <h2>De dónde salen los datos</h2>
+      <ul>
+        <li><strong>BOE</strong> (Boletín Oficial del Estado, sección II.B): convocatorias del Estado, de las universidades y anuncios de los ayuntamientos.</li>
+        <li><strong>BOJA</strong> (Boletín Oficial de la Junta de Andalucía, sección 2.2): Junta de Andalucía, Servicio Andaluz de Salud, agencias, fundaciones públicas y universidades.</li>
+        <li><strong>BOP de Sevilla</strong> (Boletín Oficial de la Provincia): ayuntamientos, Diputación y otros organismos locales.</li>
+      </ul>
+      <p>Cada mañana, normalmente antes de las 10:00, un programa lee los boletines nuevos y actualiza la página solo, sin que nadie tenga que hacer nada.
+      Arriba se indica cuándo fue la última actualización y, al pie de la página, si alguno de los boletines no se pudo leer ese día.</p>
+
+      <h2>Qué convocatorias aparecen</h2>
+      <ul>
+        <li>Las que tienen alguna plaza en un municipio de la provincia de Sevilla. El lugar se lee en las propias bases («Centro de trabajo», «en la localidad de», tablas de destinos, códigos postales…).</li>
+        <li>Las de la Junta de Andalucía y del Estado cuyo destino se elige al aprobar, que pueden tener plazas en Sevilla aunque no lo digan las bases.</li>
+      </ul>
+      <p>No aparecen las que tienen todas las plazas fuera de la provincia, la provisión de puestos (solo para quien ya es funcionario), las ofertas de empleo público
+      (todavía no son convocatorias) ni los anuncios posteriores de un proceso (listas de admitidos, tribunales, resultados, nombramientos…).
+      Todo lo que se deja fuera, y el motivo, se puede consultar en la pestaña <a href="#comprobacion" data-ir="comp">Comprobación</a>.</p>
+
+      <h2>Qué significa cada plazo</h2>
+      <ul>
+        <li><strong>Plazo abierto hasta…</strong>: la fecha se calcula a partir de lo que dice el texto oficial, contando días hábiles (sin sábados, domingos ni festivos nacionales y de Andalucía).
+        Si pone <em>fecha estimada</em> es porque no se conocen los festivos locales. En las del Estado se da la fecha más temprana posible, sin festivos autonómicos, y se indica también la que saldría contándolos.</li>
+        <li><strong>Pendiente de apertura</strong>: las bases ya se han publicado en el BOP o en el BOJA, pero el plazo empieza a contar cuando salga el anuncio en el BOE.</li>
+        <li><strong>Sin determinar</strong>: no se ha podido leer el plazo en el texto (por ejemplo, porque cuenta desde que se publica en una web o porque el PDF es una imagen escaneada). Hay que mirarlo en las bases.</li>
+      </ul>
+
+      <h2>Qué hay en cada convocatoria</h2>
+      <ul>
+        <li>El enlace a las <strong>bases completas</strong> y, si existe, al anuncio en el BOE.</li>
+        <li>Nivel (grupo), número de plazas, sistema de selección, tipo de personal y tipo de proceso.</li>
+        <li>En <strong>Ver requisitos</strong>, el apartado de requisitos copiado tal cual de las bases. Si las bases se remiten a unas bases generales, se añaden también sus requisitos comunes.
+        Cuando el PDF era escaneado se avisa, porque el texto leído puede tener errores.</li>
+      </ul>
+
+      <h2>Cómo buscar</h2>
+      <p>Escribe en «Buscar» cualquier palabra (plaza, organismo, municipio…) y combina los filtros de nivel, lugar, plazo, organismo, tipo de proceso, publicación en el BOE,
+      tipo de personal y sistema de selección. «Quitar filtros» vuelve a mostrar todo.</p>
+
+      <h2>La pestaña Comprobación</h2>
+      <ul>
+        <li>Cada día se compara la lista con el <a href="https://administracion.gob.es/empleopublico/resultados-empleo" target="_blank" rel="noopener">buscador oficial de empleo público del Estado</a> y se avisa si tiene alguna convocatoria que aquí no aparece.</li>
+        <li>Se muestran las convocatorias quitadas por no tener plazas en la provincia y los anuncios del BOP sobre procesos selectivos que no se listan, con el motivo.</li>
+      </ul>
+
+      <h2>Limitaciones</h2>
+      <ul>
+        <li>Todo se lee de forma automática, así que puede haber errores. <strong>Comprueba siempre las bases oficiales antes de presentar la solicitud.</strong></li>
+        <li>No incluye las convocatorias que solo se publican en la web del organismo, sin pasar por ningún boletín.</li>
+        <li>El buscador oficial del Estado apenas recoge ayuntamientos, así que las convocatorias municipales solo se comprueban con el BOP.</li>
+      </ul>
+    </div>
   </div>
 </main>
 
@@ -351,13 +414,15 @@
       }).join("") : '<p class="det">Ninguno.</p>') + "</div>";
   }
 
+  var VISTAS = { lista: ["vista-lista", "tab-lista", ""], comp: ["vista-comp", "tab-comp", "#comprobacion"], ayuda: ["vista-ayuda", "tab-ayuda", "#como-funciona"] };
   function muestra(cual) {
-    var comp = cual === "comp";
-    $("vista-lista").hidden = comp;
-    $("vista-comp").hidden = !comp;
-    $("tab-lista").setAttribute("aria-selected", String(!comp));
-    $("tab-comp").setAttribute("aria-selected", String(comp));
-    try { history.replaceState(null, "", comp ? "#comprobacion" : location.pathname + location.search); } catch (e) { /* sin historial */ }
+    Object.keys(VISTAS).forEach(function (k) {
+      var v = VISTAS[k];
+      $(v[0]).hidden = k !== cual;
+      $(v[1]).setAttribute("aria-selected", String(k === cual));
+    });
+    try { history.replaceState(null, "", VISTAS[cual][2] || location.pathname + location.search); } catch (e) { /* sin historial */ }
+    window.scrollTo(0, 0);
   }
 
   function carga() {
@@ -394,7 +459,12 @@
   });
   $("tab-lista").addEventListener("click", function () { muestra("lista"); });
   $("tab-comp").addEventListener("click", function () { muestra("comp"); });
+  $("tab-ayuda").addEventListener("click", function () { muestra("ayuda"); });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-ir]"), function (a) {
+    a.addEventListener("click", function (ev) { ev.preventDefault(); muestra(a.getAttribute("data-ir")); });
+  });
   if (location.hash === "#comprobacion") muestra("comp");
+  if (location.hash === "#como-funciona") muestra("ayuda");
   carga();
 })();
 </script>
