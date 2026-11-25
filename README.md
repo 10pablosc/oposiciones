@@ -1,4 +1,4 @@
-# Oposiciones con plazas en la provincia de Sevilla
+# Convocatorias de empleo público con plazas en la provincia de Sevilla
 
 Listado diario de convocatorias de empleo público **en plazo o pendientes de abrir plazo** con posibles plazas en la provincia de Sevilla.
 
