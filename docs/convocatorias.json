@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T10:31+00:00",
+ "actualizado": "2026-11-25T11:25+00:00",
  "comprobacion": {
   "coinciden": 20,
   "excluidas": [
@@ -958,7 +958,7 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
    }
   ],
-  "fecha": "2026-11-25T10:31+00:00",
+  "fecha": "2026-11-25T11:25+00:00",
   "ok": true,
   "por_ambito": {
    "Estado (ámbito nacional)": 67,
@@ -1580,6 +1580,38 @@
   },
   {
    "ambito": "Provincia de Sevilla",
+   "denominacion": "Categoría de Monitor de Ocio y Tiempo Libre Juvenil para el proyecto municipal «El Sótano» (Centro Juvenil) y creación de bolsa de trabajo",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "sin_determinar",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-11-19",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "Sin determinar",
+   "id": "BOP-SE-2026-224015",
+   "localidad": "Las Navas de la Concepcion",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de Las Navas de la Concepcion",
+   "personal": "Funcionario",
+   "plazas": null,
+   "plazo_texto": null,
+   "requisitos": "selectivos será necesario reunir antes de que termine el último día de presentación de instancias los siguientes requisitos:\na) Ser español o nacional de algún Estado Miembro de la Unión Europea. Sin perjuicio de lo dispuesto en el artículo 57 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público.\nb) Tener cumplidos dieciséis años de edad y no exceder de la edad máxima de jubilación forzosa.\nc) No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las",
+   "requisitos_generales": null,
+   "sistema": "Oposición",
+   "tipo": "Bolsa o empleo temporal",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": "(No se valorarán aquellos títulos académicos que hubiesen sido",
+   "titulo_oficial": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino por programas en la categoría de Monitor de Ocio y Tiempo Libre Juvenil para el proyecto municipal «El Sótano» (Centro Juvenil) y creación de bolsa de trabajo",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-por-programas-en-la-categoria-de-Monitor-de-Ocio-y-Tiempo-Libre-Juvenil-para-el-proyecto-municipal-El/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1795046442788-final-41fbd68d.pdf"
+  },
+  {
+   "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Auxiliar del Servicio de Ayuda a Domicilio",
    "departamento": "",
    "en_boe": false,
@@ -1673,6 +1705,38 @@
    "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24137",
    "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24137",
    "url_pdf": null
+  },
+  {
+   "ambito": "Provincia de Sevilla",
+   "denominacion": "Categoría de Administrativo",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "sin_determinar",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-11-17",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "Sin determinar",
+   "id": "BOP-SE-2026-222008",
+   "localidad": "El Coronil",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de El Coronil",
+   "personal": "Funcionario",
+   "plazas": null,
+   "plazo_texto": null,
+   "requisitos": null,
+   "requisitos_generales": null,
+   "sistema": "Sin determinar",
+   "tipo": "Bolsa o empleo temporal",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": null,
+   "titulo_oficial": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Administrativo, mediante oferta genérica al SAE",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Administrativo-mediante-oferta-generica-al-SAE-00001/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1794873622481-final-396f4dd0.pdf"
   },
   {
    "ambito": "Toda España (posible destino en Sevilla)",
@@ -1804,6 +1868,38 @@
   },
   {
    "ambito": "Provincia de Sevilla",
+   "denominacion": "Categoría de Arquitecto",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "sin_determinar",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-11-12",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "A1",
+   "id": "BOP-SE-2026-219014",
+   "localidad": "Osuna",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de Osuna",
+   "personal": "Funcionario",
+   "plazas": 1,
+   "plazo_texto": null,
+   "requisitos": "4. REQUISITOS DE LAS PERSONAS ASPIRANTES.\n4.1.- Para poder tomar parte en el proceso selectivo se deberán reunir los siguientes requisitos, referidos al último día del plazo de presentación de instancias, de conformidad con los artículos 56 y 57 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP):\na) Tener la nacionalidad española, sin perjuicio de lo dispuesto en el apartado siguiente. Los nacionales de los Estados miembros de la Unión Europea podrán acceder, como personal funcionario, en igualdad de condiciones que los españoles a los empleos públicos, con excepción de aquellos que directa o indirectamente impliquen una participación en el ejercicio del poder público o en las funciones que tienen por objeto la salvaguardia de los intereses del Estado o de las Administraciones Públicas.\nb) Poseer la capacidad funcional para el desempeño de las tareas.\nc) Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa.\nd) No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de funcionario, o para ejercer funciones similares a las que desempeñaban en el caso del personal laboral, en el que hubiese sido separado o inhabilitado. En el caso de ser nacional de otro Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al empleo público.\ne) Poseer la titulación de Título de Arquitecto Superior o bien el Grado Universitario de Fundamentos de la Arquitectura o similar, más el Máster Universitario en Arquitectura, habilitantes para el ejercicio de la profesión de Arquitecto. En el caso de titulaciones Ayuntamiento de Osuna Plaza Mayor, s/n, Osuna. 41640 (Sevilla). Tfno. 954815851. Fax: 954811853 obtenidas en el extranjero, deberá estarse en posesión de la correspondiente convalidación o credencial que acredite su homologación y se adjuntará al título su traducción.",
+   "requisitos_generales": null,
+   "sistema": "Concurso-oposición",
+   "tipo": "Bolsa o empleo temporal",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": "Título de Arquitecto Superior o bien el Grado Universitario",
+   "titulo_oficial": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Arquitecto",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto-00001/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1794441634370-final-1589bb0d.pdf"
+  },
+  {
+   "ambito": "Provincia de Sevilla",
    "denominacion": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social 2026, incluido en el Plan Provincial de ",
    "departamento": "",
    "en_boe": false,
@@ -1833,6 +1929,38 @@
    "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-contratacion-laboral-temporal-dentro-del-Programa-de-Prevencion-de-la-Exclusion-Social-2026-incluido-en-el-Plan-Provincial-de-Cohesion-Social-e-Igualdad-2024-2027-00018/",
    "url_boe": null,
    "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1794441629632-final-34688f04.pdf"
+  },
+  {
+   "ambito": "Provincia de Sevilla",
+   "denominacion": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social 2026, incluido en el Plan Provincial de ",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "abierto",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-11-11",
+   "fin_estimado": true,
+   "fin_plazo": "2026-11-25",
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "Sin determinar",
+   "id": "BOP-SE-2026-218023",
+   "localidad": "Utrera",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de Utrera",
+   "personal": "Laboral",
+   "plazas": null,
+   "plazo_texto": "plazo de presentación de solicitudes será de 10 días hábiles, contados desde el día siguiente al de la publicación de las presentes bases en el Boletín Oficial de la Provincia de Sevilla.",
+   "requisitos": "3.- REQUISITOS DE LAS PERSONAS DESTINATARIAS Las personas destinatarias deberán cumplir los siguientes requisitos:\n1. Estar empadronadas en el municipio de Utrera, al menos desde el día 1 de enero de 2026.\n2. Acreditar la situación de desempleo.\n3. Pertenecer a una unidad familiar cuyos ingresos se encuentren dentro de los umbrales económicos referidos al Indicador Público de Renta de Efectos Múltiples (IPREM):\na) Unidad familiar de 1 miembro: hasta 1,5 veces el IPREM.\nb) Unidad familiar de 2 miembros: hasta 1,8 veces el IPREM.\nc) Unidad familiar de 3 miembros: hasta 2,1 veces el IPREM.\nd) Unidad familiar de 4 miembros: hasta 2,4 veces el IPREM.\ne) Unidad familiar de 5 miembros: hasta 2,7 veces el IPREM.\nf) Por cada miembro de la unidad familiar a partir del 6º, inclusive: se incrementará en 0,30 veces el IPREM.\nEn este sentido, el IPREM actualmente vigente para el ejercicio 2026 se encuentra fijado en las siguientes cuantías:\nCSV: 07EA0049A5CF00E8T0S6Z3T6H0 DIARIO: 20,00 €.\nMENSUAL: 600,00 €.\nANUAL (12 pagas): 7,200 €.\nANUAL (14 pagas): 8,400 €.\nLa autenticidad de este documento FIRMANTE - FECHA EXPEDIENTE ::\nJUAN BORREGO LOPEZ-SECRETARÍA GENERAL - 06/11/2026 2026032926000066 se puede comprobar con el código CN=SELLO AEAD,2.5.4.97=VATES-Q2802923I,O=MINISTERIO DE TRANSFORMACION DIGITAL Y Fecha: 07/07/2026 07EA0049A5CF00E8T0S6Z3T6H0 FUNCION PUBLICA,L=Madrid,C=ES - 06/11/2026 14:24:42 Hora: 00:00 en https://sede.utrera.org Und. reg: REGISTRO Página 2 de 18 GENERAL Los ingresos a tener en cuenta deben referirse a la media de los 12 meses anteriores a la fecha de inicio del plazo de presentación de solicitudes que servirán de comprobación de los requisitos económicos.\nCUADRO RESUMEN DE INGRESOS MÁXIMOS POR UNIDAD FAMILIAR (12 MESES) Miembros de la unidad familiar Ingresos máximos anuales 1 miembro 10.800,00 € 2 miembros 12.960,00 € 3 miembros 15.120,00 € 4 miembros 17.280,00 € 5 miembros 19.440,00 € Añadir 2.160,00 € por cada 6 o más miembro desde el sexto, inclusive",
+   "requisitos_generales": null,
+   "sistema": "Oposición",
+   "tipo": "Bolsa o empleo temporal",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": null,
+   "titulo_oficial": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social 2026, incluido en el Plan Provincial de Cohesión Social e Igualdad 2024-2027",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-contratacion-laboral-temporal-dentro-del-Programa-de-Prevencion-de-la-Exclusion-Social-2026-incluido-en-el-Plan-Provincial-de-Cohesion-Social-e-Igualdad-2024-2027-00017/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1794355254421-final-7f2e320b.pdf"
   },
   {
    "ambito": "Provincia de Sevilla",
@@ -2025,6 +2153,38 @@
    "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-especificas-de-la-convocatoria-para-la-provision-en-turno-libre-de-una-plaza-de-Arquitecto-vacante-en-la-plantilla-de-personal-funcionario-OEP-2026-y-creacion-de-bolsa-de-trabajo/",
    "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24081",
    "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1794268821960-final-5c30ec7e.pdf"
+  },
+  {
+   "ambito": "Provincia de Sevilla",
+   "denominacion": "Categoría de Arquitecto Técnico",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "sin_determinar",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-11-09",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "A2",
+   "id": "BOP-SE-2026-216022",
+   "localidad": "Osuna",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de Osuna",
+   "personal": "Funcionario",
+   "plazas": 1,
+   "plazo_texto": null,
+   "requisitos": "4. REQUISITOS DE LAS PERSONAS ASPIRANTES.\n4.1.- Para poder tomar parte en el proceso selectivo se deberán reunir los siguientes requisitos, referidos al último día del plazo de presentación de instancias, de conformidad con los artículos 56 y 57 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP):\na) Tener la nacionalidad española, sin perjuicio de lo dispuesto en el apartado siguiente. Los nacionales de los Estados miembros de la Unión Europea podrán acceder, como personal funcionario, en igualdad de condiciones que los españoles a los empleos públicos, con excepción de aquellos que directa o indirectamente impliquen una participación en el ejercicio del poder público o en las funciones que tienen por objeto la salvaguardia de los intereses del Estado o de las Administraciones Públicas.\nb) Poseer la capacidad funcional para el desempeño de las tareas.\nc) Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa.\nd) No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de funcionario, o para ejercer funciones similares a las que desempeñaban en el caso del personal laboral, en el que hubiese sido separado o inhabilitado. En el caso de ser nacional de otro Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al empleo público.\ne) Poseer la titulación de Grado en Edificación, Arquitecto Técnico, Aparejador o equivalente. En el caso de titulaciones obtenidas en el extranjero, deberá estarse en posesión de la correspondiente convalidación o credencial que acredite su homologación y Ayuntamiento de Osuna Plaza Mayor, s/n, Osuna. 41640 (Sevilla). Tfno. 954815851. Fax: 954811853 se adjuntará al título su traducción.",
+   "requisitos_generales": null,
+   "sistema": "Concurso-oposición",
+   "tipo": "Bolsa o empleo temporal",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": "Grado en Edificación, Arquitecto Técnico, Aparejador o",
+   "titulo_oficial": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Arquitecto Técnico",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto-Tecnico-00002/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1794182452299-final-7158d0ef.pdf"
   },
   {
    "ambito": "Provincia de Sevilla",
@@ -2537,6 +2697,80 @@
    "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-provision-por-promocion-interna-de-una-plaza-de-Oficial-de-2-Albanileria-vacante-en-la-plantilla-de-personal-laboral-OEP-2026/",
    "url_boe": null,
    "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1793145674395-final-73e31602.pdf"
+  },
+  {
+   "ambito": "Provincia de Sevilla",
+   "denominacion": "Categoría de Operario Sepulturero",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "sin_determinar",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-10-28",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "A1",
+   "id": "BOP-SE-2026-209022",
+   "localidad": "La Rinconada",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de La Rinconada",
+   "personal": "Funcionario",
+   "plazas": null,
+   "plazo_texto": null,
+   "requisitos": "2. REQUISITOS DE OBLIGADO CUMPLIMIENTO PARA EL DESEMPEÑO DEL PUESTO Titulación/Formación/Nivel de estudios: ESTUDIOS PRIMARIOS, GRADUADO ESCOLAR, ESO O EQUIVALENTE.\nFormación complementaria: NO Carnets /certificados profesionales: CARNET BÁSICO DE APLICADOR FITOSANITARIO Experiencia profesional: NO Otros: No",
+   "requisitos_generales": {
+    "fecha": "2026-04-10",
+    "texto": "CUARTA.- REQUISITOS DE LAS PERSONAS ASPIRANTES La convocatoria de cada proceso partirá de la Solicitud de selección emitida por el Área o Departamento correspondiente. En ella, el Área informará al Departamento de Recursos Humanos de la necesidad de personal, motivando suficientemente la excepcionalidad, urgencia y lo esencial del servicio. Igualmente se indicará en la solicitud los requisitos exigibles al puesto así como los méritos valorables de conformidad con los requisitos y méritos generales establecidos por el Departamento de Recursos Humanos en función a lo existente en el Manual de Puestos, el Catálogo de Puestos, la plantilla de personal y las características básicas de la contratación y/o nombramiento para cada plaza/puesto.\nEl Departamento de Recursos Humanos priorizará las solicitudes recibidas y publicitará la convocatoria en los términos indicados en el apartado anterior, identificando al menos el puesto convocado, las funciones, los requisitos concretos y los méritos a valorar si los hubiera, el Salario Base, Complemento de Destino o de Categoría y Complemento Específico.\nPara ser admitidas a la realización de las pruebas selectivas las personas aspirantes deberán reunir los siguientes requisitos:\n4.1. Requisitos generales\na) Tener la nacionalidad española o cumplir los requisitos establecidos en el artículo 57 del Texto 3 Refundido de la Ley del Estatuto Básico del Empleado Público aprobado por Real Decreto Legislativo 5/2015 de 30 de octubre, en el supuesto de acceso al empleo público de nacionales de otros estados. ES\nb) Tener cumplidos 16 años de edad y no exceder en su caso de la edad máxima de jubilación $ forzosa. E\nc) Poseer la capacidad funcional para el desempeño de las tareas. 5\nd) No haber sido separado/a o despedido/a, mediante expediente disciplinario, del servicio de % cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de 3 las comunidad autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de personal funcionario, o para ejercer funciones similares a las que desempeñaba en el caso de personal laboral, en el que hubiese sido separado/a o inhabilitado/a. En el caso de ser nacional de otra, ya BOLETIN de la provincia de Sevilla le o B e) L E T ÍN Diputación de la provincia de Sevilla Sevilla Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al Empleo público.\ne) Estar en posesión o en condiciones de obtener los títulos exigidos para el ingreso en los grupos que se especifican en los anexos correspondientes. A estos efectos se entenderá por estar en condiciones de obtener los títulos el haber abonado los derechos correspondientes a su expedición.\nf) No incurrir en ninguno de los supuestos de incapacidad establecido en la legislación vigente.\n9) Aquellos que, independientemente de los anteriores se establecieren en las convocatorias correspondientes.\n4.2. Requisitos específicos Los que, unidos a los anteriores, se establezcan cada convocatoria.\n4.3. Las personas aspirantes deberán reunir los requisitos establecidos en estas bases en la fecha de finalización del plazo de presentación de solicitudes y mantenerlos durante todo el proceso selectivo.",
+    "titulo": "Bases generales de las convocatorias de procesos de selección para la contratación laboral temporal o para el nombramiento como funcionario interino",
+    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-generales-de-las-convocatorias-de-procesos-de-seleccion-para-la-contratacion-laboral-temporal-o-para-el-nombramiento-como-funcionario-interino/"
+   },
+   "sistema": "Oposición",
+   "tipo": "Bolsa o empleo temporal",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": null,
+   "titulo_oficial": "Bases de la convocatoria para la creación de una bolsa de trabajo para el nombramiento como funcionario interino en la categoría de Operario Sepulturero",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Operario-Sepulturero/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1793145654526-final-131498c1.pdf"
+  },
+  {
+   "ambito": "Provincia de Sevilla",
+   "denominacion": "Categoría de Arquitecto",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "sin_determinar",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-10-28",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "A1",
+   "id": "BOP-SE-2026-209021",
+   "localidad": "La Rinconada",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de La Rinconada",
+   "personal": "Funcionario",
+   "plazas": null,
+   "plazo_texto": null,
+   "requisitos": "2. REQUISITOS DE OBLIGADO CUMPLIMIENTO PARA EL DESEMPEÑO DEL PUESTO Titulación/Formación/Nivel de estudios: Titulación Universitaria de Educación Superior (MECES Nivel 3 / Licenciatura, Arquitectura o Grado + Máster Habilitante).\nTitulación específica: Título oficial de Arquitecto/a (planes anteriores al RD 1393/2007) o, alternativamente, Grado Universitario en Fundamentos/Estudios de Arquitectura (o equivalente).\nFormación complementaria: Exclusivamente obligatorio para los aspirantes que accedan mediante una titulación de Grado: Máster Universitario en Arquitectura (Habilitante para el ejercicio de la profesión regulada de Arquitecto, según Orden EDU/2075/2010).\nCarnets /certificados profesionales: NO Experiencia profesional: NO Otros: NO",
+   "requisitos_generales": {
+    "fecha": "2026-04-10",
+    "texto": "CUARTA.- REQUISITOS DE LAS PERSONAS ASPIRANTES La convocatoria de cada proceso partirá de la Solicitud de selección emitida por el Área o Departamento correspondiente. En ella, el Área informará al Departamento de Recursos Humanos de la necesidad de personal, motivando suficientemente la excepcionalidad, urgencia y lo esencial del servicio. Igualmente se indicará en la solicitud los requisitos exigibles al puesto así como los méritos valorables de conformidad con los requisitos y méritos generales establecidos por el Departamento de Recursos Humanos en función a lo existente en el Manual de Puestos, el Catálogo de Puestos, la plantilla de personal y las características básicas de la contratación y/o nombramiento para cada plaza/puesto.\nEl Departamento de Recursos Humanos priorizará las solicitudes recibidas y publicitará la convocatoria en los términos indicados en el apartado anterior, identificando al menos el puesto convocado, las funciones, los requisitos concretos y los méritos a valorar si los hubiera, el Salario Base, Complemento de Destino o de Categoría y Complemento Específico.\nPara ser admitidas a la realización de las pruebas selectivas las personas aspirantes deberán reunir los siguientes requisitos:\n4.1. Requisitos generales\na) Tener la nacionalidad española o cumplir los requisitos establecidos en el artículo 57 del Texto 3 Refundido de la Ley del Estatuto Básico del Empleado Público aprobado por Real Decreto Legislativo 5/2015 de 30 de octubre, en el supuesto de acceso al empleo público de nacionales de otros estados. ES\nb) Tener cumplidos 16 años de edad y no exceder en su caso de la edad máxima de jubilación $ forzosa. E\nc) Poseer la capacidad funcional para el desempeño de las tareas. 5\nd) No haber sido separado/a o despedido/a, mediante expediente disciplinario, del servicio de % cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de 3 las comunidad autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de personal funcionario, o para ejercer funciones similares a las que desempeñaba en el caso de personal laboral, en el que hubiese sido separado/a o inhabilitado/a. En el caso de ser nacional de otra, ya BOLETIN de la provincia de Sevilla le o B e) L E T ÍN Diputación de la provincia de Sevilla Sevilla Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al Empleo público.\ne) Estar en posesión o en condiciones de obtener los títulos exigidos para el ingreso en los grupos que se especifican en los anexos correspondientes. A estos efectos se entenderá por estar en condiciones de obtener los títulos el haber abonado los derechos correspondientes a su expedición.\nf) No incurrir en ninguno de los supuestos de incapacidad establecido en la legislación vigente.\n9) Aquellos que, independientemente de los anteriores se establecieren en las convocatorias correspondientes.\n4.2. Requisitos específicos Los que, unidos a los anteriores, se establezcan cada convocatoria.\n4.3. Las personas aspirantes deberán reunir los requisitos establecidos en estas bases en la fecha de finalización del plazo de presentación de solicitudes y mantenerlos durante todo el proceso selectivo.",
+    "titulo": "Bases generales de las convocatorias de procesos de selección para la contratación laboral temporal o para el nombramiento como funcionario interino",
+    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-generales-de-las-convocatorias-de-procesos-de-seleccion-para-la-contratacion-laboral-temporal-o-para-el-nombramiento-como-funcionario-interino/"
+   },
+   "sistema": "Oposición",
+   "tipo": "Bolsa o empleo temporal",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": null,
+   "titulo_oficial": "Bases de la convocatoria para la creación de una bolsa de trabajo para el nombramiento como funcionario interino en la categoría de Arquitecto",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto-00002/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1793145652680-final-7052544.pdf"
   },
   {
    "ambito": "Provincia de Sevilla",
@@ -3813,6 +4047,38 @@
   },
   {
    "ambito": "Provincia de Sevilla",
+   "denominacion": "Asesor Jurídico",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "pendiente",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-02-04",
+   "fin_estimado": false,
+   "fin_plazo": null,
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "A1",
+   "id": "BOP-SE-2026-023015",
+   "localidad": "Mairena del Alcor",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de Mairena del Alcor",
+   "personal": "Funcionario",
+   "plazas": 1,
+   "plazo_texto": "plazo de veinte días hábiles contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
+   "requisitos": "Para poder participar en los procesos selectivos será necesario reunir los siguientes requisitos, de acuerdo con lo establecido en el 106 de la Ley 5/2023, de 7 de junio, de la Función Pública de Andalucía:\na) Tener la nacionalidad española, sin perjuicio de lo dispuesto en el artículo 107 de la Ley 5/2023.\nb) Poseer la capacidad funcional para el desempeño de las tareas.\nc) Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa.\nd) No haber sido separado o separada, mediante procedimiento disciplinario, del",
+   "requisitos_generales": null,
+   "sistema": "Concurso-oposición",
+   "tipo": "Acceso libre",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": "para el Grado en Derecho",
+   "titulo_oficial": "Bases de la convocatoria para la provisión, en turno libre, de una plaza de Asesor Jurídico, vacante en la plantilla de personal funcionario (OEP 2025)",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-provision-en-turno-libre-de-una-plaza-de-Asesor-Juridico-vacante-en-la-plantilla-de-personal-funcionario-OEP-2025/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1770163247706-final-5723ec4e.pdf"
+  },
+  {
+   "ambito": "Provincia de Sevilla",
    "denominacion": "Categoría de Limpiadora-Lavandera en la residencia municipal asistida San Pedro",
    "departamento": "",
    "en_boe": true,
@@ -3944,25 +4210,11 @@
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-personal-eventual-con-funciones-de-confianza-o-asesoramiento-especial-00054/"
   },
   {
-   "anunciante": "Las Navas de la Concepcion",
-   "fecha": "2026-11-19",
-   "motivo": "Nombramiento o contratación de las personas aprobadas",
-   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino por programas en la categoría de Monitor de Ocio y Tiempo Libre Juvenil para el proyecto municipal «El Sótano» (Centro Juvenil) y creación de bolsa de trabajo",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-por-programas-en-la-categoria-de-Monitor-de-Ocio-y-Tiempo-Libre-Juvenil-para-el-proyecto-municipal-El/"
-  },
-  {
    "anunciante": "Osuna",
    "fecha": "2026-11-18",
    "motivo": "Corrección de errores",
    "titulo": "Corrección de errores del anuncio de las bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Arquitecto",
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-las-bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto/"
-  },
-  {
-   "anunciante": "El Coronil",
-   "fecha": "2026-11-17",
-   "motivo": "Nombramiento o contratación de las personas aprobadas",
-   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Administrativo, mediante oferta genérica al SAE",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Administrativo-mediante-oferta-generica-al-SAE-00001/"
   },
   {
    "anunciante": "Utrera",
@@ -4012,13 +4264,6 @@
    "motivo": "Nombramiento o contratación de las personas aprobadas",
    "titulo": "Contratación como personal laboral fijo en la categoría de Director Técnico",
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Contratacion-como-personal-laboral-fijo-en-la-categoria-de-Director-Tecnico/"
-  },
-  {
-   "anunciante": "Osuna",
-   "fecha": "2026-11-12",
-   "motivo": "Nombramiento o contratación de las personas aprobadas",
-   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Arquitecto",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto-00001/"
   },
   {
    "anunciante": "La Roda de Andalucia",
@@ -4084,32 +4329,11 @@
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionaria-de-carrera-en-la-categoria-de-Administrativo-00004/"
   },
   {
-   "anunciante": "Osuna",
-   "fecha": "2026-11-09",
-   "motivo": "Nombramiento o contratación de las personas aprobadas",
-   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Arquitecto Técnico",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto-Tecnico-00002/"
-  },
-  {
    "anunciante": "Los Molares",
    "fecha": "2026-11-09",
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
    "titulo": "Convocatoria para la provisión, en comisión de servicios, de un puesto de Policía Local",
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-para-la-provision-en-comision-de-servicios-de-un-puesto-de-Policia-Local-00007/"
-  },
-  {
-   "anunciante": "La Roda de Andalucia",
-   "fecha": "2026-11-09",
-   "motivo": "Nombramiento o contratación de las personas aprobadas",
-   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Administrativo y creación de bolsa de trabajo",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Administrativo-y-creacion-de-bolsa-de-trabajo-00003/"
-  },
-  {
-   "anunciante": "Aznalcázar",
-   "fecha": "2026-11-09",
-   "motivo": "Nombramiento o contratación de las personas aprobadas",
-   "titulo": "Bases y convocatoria para la creación de una bolsa de trabajo para el nombramiento como funcionario interino o para la contratación laboral temporal en la categoría de Administrativo",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-y-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-el-nombramiento-como-funcionario-interino-o-para-la-contratacion-laboral-temporal-en-la-categoria-de-Administrativo/"
   },
   {
    "anunciante": "Área del Empleado Público",
@@ -4245,20 +4469,6 @@
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Resolucion-de-la-convocatoria-para-la-provision-de-diferentes-puestos-de-trabajo-por-el-procedimiento-de-libre-designacion-ejercicio-2026/"
   },
   {
-   "anunciante": "La Rinconada",
-   "fecha": "2026-10-28",
-   "motivo": "Nombramiento o contratación de las personas aprobadas",
-   "titulo": "Bases de la convocatoria para la creación de una bolsa de trabajo para el nombramiento como funcionario interino en la categoría de Arquitecto",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto-00002/"
-  },
-  {
-   "anunciante": "La Rinconada",
-   "fecha": "2026-10-28",
-   "motivo": "Nombramiento o contratación de las personas aprobadas",
-   "titulo": "Bases de la convocatoria para la creación de una bolsa de trabajo para el nombramiento como funcionario interino en la categoría de Operario Sepulturero",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Operario-Sepulturero/"
-  },
-  {
    "anunciante": "Utrera",
    "fecha": "2026-10-27",
    "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
@@ -4278,13 +4488,6 @@
    "motivo": "Lista de admitidos, excluidos o aprobados",
    "titulo": "Lista definitiva de personas admitidas y excluidas, composición del tribunal y fecha de comienzo de las pruebas de la convocatoria de pruebas selectivas para la creación de una bolsa de empleo extraordinaria en la categoría de Economista",
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Lista-definitiva-de-personas-admitidas-y-excluidas-composicion-del-tribunal-y-fecha-de-comienzo-de-las-pruebas-de-la-convocatoria-de-pruebas-selectivas-para-la-creacion-de-una-bolsa-de-empleo-extraor-00001/"
-  },
-  {
-   "anunciante": "Los Corrales",
-   "fecha": "2026-10-26",
-   "motivo": "Anulación, renuncia o plaza desierta",
-   "titulo": "Dejar sin efecto las bases anteriores y abrir plazo con las nuevas bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Administrativo de Administración General y creación de bolsa de trabajo",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Dejar-sin-efecto-las-bases-anteriores-y-abrir-plazo-con-las-nuevas-bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Administrativo-de/"
   },
   {
    "anunciante": "El Ronquillo",
@@ -4682,23 +4885,23 @@
  "fecha_referencia": "2026-11-25",
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-25T10:15+00:00",
+   "fecha": "2026-11-25T10:36+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 4
+   "segundos": 5
   },
   "BOJA": {
-   "fecha": "2026-11-25T10:17+00:00",
-   "nuevos": 0,
+   "fecha": "2026-11-25T10:43+00:00",
+   "nuevos": 55,
    "ok": true,
-   "segundos": 107
+   "segundos": 439
   },
   "BOP": {
-   "fecha": "2026-11-25T10:17+00:00",
-   "nuevos": 0,
+   "fecha": "2026-11-25T11:25+00:00",
+   "nuevos": 146,
    "ok": true,
-   "segundos": 7
+   "segundos": 2502
   }
  },
- "total": 88
+ "total": 96
 }
