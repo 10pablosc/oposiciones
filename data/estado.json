@@ -397,12 +397,16 @@
    "2026-11-21",
    "2026-11-22",
    "2026-11-23",
-   "2026-11-24"
+   "2026-11-24",
+   "2026-11-25"
   ]
  },
  "boe_scan": 2,
  "boe_vistos": {
-  "BOE-A-2026-24459": "2026-11-21"
+  "BOE-A-2026-24459": "2026-11-21",
+  "BOE-A-2026-24731": "2026-11-25",
+  "BOE-A-2026-24732": "2026-11-25",
+  "BOE-A-2026-24733": "2026-11-25"
  },
  "boja": {
   "inicio_2026_2026-06": 120,
@@ -898,19 +902,838 @@
    "2026-11-25"
   ]
  },
- "bop_vistos": {
-  "BOP-SE-2026-221009": "2026-11-16",
-  "BOP-SE-2026-224011": "2026-11-19",
-  "BOP-SE-2026-225016": "2026-11-20",
-  "BOP-SE-2026-226004": "2026-11-23",
-  "BOP-SE-2026-226007": "2026-11-23",
-  "BOP-SE-2026-226008": "2026-11-23",
-  "BOP-SE-2026-226009": "2026-11-23",
-  "BOP-SE-2026-226010": "2026-11-23",
-  "BOP-SE-2026-226011": "2026-11-23"
+ "bop_descartes": {
+  "BOP-SE-2026-207001": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-10-26",
+   "motivo": "Lista de admitidos, excluidos o aprobados",
+   "titulo": "Lista definitiva de personas admitidas y excluidas, composición del tribunal y fecha de comienzo de las pruebas de la convocatoria de pruebas selectivas para la creación de una bolsa de empleo extraordinaria en la categoría de Economista",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Lista-definitiva-de-personas-admitidas-y-excluidas-composicion-del-tribunal-y-fecha-de-comienzo-de-las-pruebas-de-la-convocatoria-de-pruebas-selectivas-para-la-creacion-de-una-bolsa-de-empleo-extraor-00001/"
+  },
+  "BOP-SE-2026-207002": {
+   "anunciante": "Alcalá del Rio",
+   "fecha": "2026-10-26",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 223490 de las bases del concurso del cartel anunciador de la Semana Santa 2027 (BDNS código 937059)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-223490-de-las-bases-del-concurso-del-cartel-anunciador-de-la-Semana-Santa-2027-BDNS-codigo-937059/"
+  },
+  "BOP-SE-2026-207005": {
+   "anunciante": "Bormujos",
+   "fecha": "2026-10-26",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00037/"
+  },
+  "BOP-SE-2026-207009": {
+   "anunciante": "Los Corrales",
+   "fecha": "2026-10-26",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Dejar sin efecto las bases anteriores y abrir plazo con las nuevas bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Administrativo de Administración General y creación de bolsa de trabajo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Dejar-sin-efecto-las-bases-anteriores-y-abrir-plazo-con-las-nuevas-bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Administrativo-de/"
+  },
+  "BOP-SE-2026-207010": {
+   "anunciante": "Dos Hermanas",
+   "fecha": "2026-10-26",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 223484 de las bases de la convocatoria del VIII Certamen literario «Rectora Rosario Valpuesta» 2027 (BDNS código 937050)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-223484-de-las-bases-de-la-convocatoria-del-VIII-Certamen-literario-Rectora-Rosario-Valpuesta-2027-BDNS-codigo-937050/"
+  },
+  "BOP-SE-2026-207013": {
+   "anunciante": "Gines",
+   "fecha": "2026-10-26",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Convocatoria a los titulares de fincas afectadas por el expediente de expropiación forzosa del proyecto constructivo del nuevo depósito regulador comarcal para el sector oriental del Aljarafe",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-a-los-titulares-de-fincas-afectadas-por-el-expediente-de-expropiacion-forzosa-del-proyecto-constructivo-del-nuevo-deposito-regulador-comarcal-para-el-sector-oriental-del-Aljarafe/"
+  },
+  "BOP-SE-2026-207015": {
+   "anunciante": "Las Navas de la Concepcion",
+   "fecha": "2026-10-26",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social 2026, incluido en el Plan Provincial de Cohesión Social e Igualdad 2024-2027",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-contratacion-laboral-temporal-dentro-del-Programa-de-Prevencion-de-la-Exclusion-Social-2026-incluido-en-el-Plan-Provincial-de-Cohesion-Social-e-Igualdad-2024-2027-00013/"
+  },
+  "BOP-SE-2026-207025": {
+   "anunciante": "Sevilla",
+   "fecha": "2026-10-26",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 223510 de la convocatoria del concurso de postales navideñas infantiles en el Distrito Los Remedios para el año 2026 (BDNS código 937112)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-223510-de-la-convocatoria-del-concurso-de-postales-navidenas-infantiles-en-el-Distrito-Los-Remedios-para-el-ano-2026-BDNS-codigo-937112/"
+  },
+  "BOP-SE-2026-208007": {
+   "anunciante": "Almensilla",
+   "fecha": "2026-10-27",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 223606 de las bases del «V Concurso de fotografía de Almensilla 2026» (BDNS código 937413)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-223606-de-las-bases-del-V-Concurso-de-fotografia-de-Almensilla-2026-BDNS-codigo-937413/"
+  },
+  "BOP-SE-2026-208020": {
+   "anunciante": "Las Navas de la Concepcion",
+   "fecha": "2026-10-27",
+   "motivo": "Corrección de errores",
+   "titulo": "Corrección de errores del anuncio de la oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-la-oferta-de-empleo-publico-2026/"
+  },
+  "BOP-SE-2026-208032": {
+   "anunciante": "Utrera",
+   "fecha": "2026-10-27",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00038/"
+  },
+  "BOP-SE-2026-208038": {
+   "anunciante": "Valencina de la Concepcion",
+   "fecha": "2026-10-27",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases reguladoras de la campaña «Bonos al consumo Navidad 2026»",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-reguladoras-de-la-campana-Bonos-al-consumo-Navidad-2026/"
+  },
+  "BOP-SE-2026-209021": {
+   "anunciante": "La Rinconada",
+   "fecha": "2026-10-28",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Bases de la convocatoria para la creación de una bolsa de trabajo para el nombramiento como funcionario interino en la categoría de Arquitecto",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto-00002/"
+  },
+  "BOP-SE-2026-209022": {
+   "anunciante": "La Rinconada",
+   "fecha": "2026-10-28",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Bases de la convocatoria para la creación de una bolsa de trabajo para el nombramiento como funcionario interino en la categoría de Operario Sepulturero",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Operario-Sepulturero/"
+  },
+  "BOP-SE-2026-209029": {
+   "anunciante": "Servicio de Recursos Humanos",
+   "fecha": "2026-10-28",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Resolución de la convocatoria para la provisión de diferentes puestos de trabajo por el procedimiento de libre designación, ejercicio 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Resolucion-de-la-convocatoria-para-la-provision-de-diferentes-puestos-de-trabajo-por-el-procedimiento-de-libre-designacion-ejercicio-2026/"
+  },
+  "BOP-SE-2026-209047": {
+   "anunciante": "Tribunal Superior de Justicia de Andalucía.— Granada",
+   "fecha": "2026-10-28",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de Juez de Paz titular de El Palmar de Troya",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-Juez-de-Paz-titular-de-El-Palmar-de-Troya/"
+  },
+  "BOP-SE-2026-209048": {
+   "anunciante": "Tribunal Superior de Justicia de Andalucía.— Granada",
+   "fecha": "2026-10-28",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de Juez de Paz sustituta de El Palmar de Troya",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-Juez-de-Paz-sustituta-de-El-Palmar-de-Troya/"
+  },
+  "BOP-SE-2026-210004": {
+   "anunciante": "Alcalá de Guadaira",
+   "fecha": "2026-10-29",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Bases de la convocatoria para la provisión del puesto de trabajo de Jefatura de Sección de Mantenimiento de Edificios",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-provision-del-puesto-de-trabajo-de-Jefatura-de-Seccion-de-Mantenimiento-de-Edificios/"
+  },
+  "BOP-SE-2026-210007": {
+   "anunciante": "Alcolea del Rio",
+   "fecha": "2026-10-29",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Bases de la convocatoria para la provisión, en comisión de servicios, de un puesto de Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-provision-en-comision-de-servicios-de-un-puesto-de-Policia-Local-00002/"
+  },
+  "BOP-SE-2026-210009": {
+   "anunciante": "Cañada Rosal",
+   "fecha": "2026-10-29",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Convocatoria para la obtención del certificado municipal de aptitud para el ejercicio de la actividad de conductor de vehículos de auto-taxi y para la adjudicación de dos licencias de auto-taxi",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-para-la-obtencion-del-certificado-municipal-de-aptitud-para-el-ejercicio-de-la-actividad-de-conductor-de-vehiculos-de-auto-taxi-y-para-la-adjudicacion-de-dos-licencias-de-auto-taxi/"
+  },
+  "BOP-SE-2026-210011": {
+   "anunciante": "Castilleja de la Cuesta",
+   "fecha": "2026-10-29",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social 2026, incluido en el Plan Provincial de Cohesión Social e Igualdad 2024-2027",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-contratacion-laboral-temporal-dentro-del-Programa-de-Prevencion-de-la-Exclusion-Social-2026-incluido-en-el-Plan-Provincial-de-Cohesion-Social-e-Igualdad-2024-2027-00014/"
+  },
+  "BOP-SE-2026-210024": {
+   "anunciante": "Paradas",
+   "fecha": "2026-10-29",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00039/"
+  },
+  "BOP-SE-2026-210025": {
+   "anunciante": "Paradas",
+   "fecha": "2026-10-29",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Contratación como personal laboral fijo de las personas que se citan en la categoría de Auxiliar de Jardín de Infancia",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Contratacion-como-personal-laboral-fijo-de-las-personas-que-se-citan-en-la-categoria-de-Auxiliar-de-Jardin-de-Infancia/"
+  },
+  "BOP-SE-2026-210027": {
+   "anunciante": "El Rubio",
+   "fecha": "2026-10-29",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Aprobación de la licencia municipal de agrupación instrumental y reparcelación urbanística de las parcelas urbanas de la Plaza de la Constitución, 23 y 25",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Aprobacion-de-la-licencia-municipal-de-agrupacion-instrumental-y-reparcelacion-urbanistica-de-las-parcelas-urbanas-de-la-Plaza-de-la-Constitucion-23-y-25/"
+  },
+  "BOP-SE-2026-211007": {
+   "anunciante": "Coria del Rio",
+   "fecha": "2026-10-30",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social 2026, incluido en el Plan Provincial de Cohesión Social e Igualdad 2024-2027",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-contratacion-laboral-temporal-dentro-del-Programa-de-Prevencion-de-la-Exclusion-Social-2026-incluido-en-el-Plan-Provincial-de-Cohesion-Social-e-Igualdad-2024-2027-00015/"
+  },
+  "BOP-SE-2026-211013": {
+   "anunciante": "Mairena del Alcor",
+   "fecha": "2026-10-30",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de representantes del ayuntamiento en diversos órganos colegiados",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-representantes-del-ayuntamiento-en-diversos-organos-colegiados/"
+  },
+  "BOP-SE-2026-212001": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-03",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento del puesto de Jefa de Negociado del Gabinete de Presidencia",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-del-puesto-de-Jefa-de-Negociado-del-Gabinete-de-Presidencia/"
+  },
+  "BOP-SE-2026-212002": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-03",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento del puesto de Jefa de Negociado del Servicio de Protocolo del Área de Presidencia",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-del-puesto-de-Jefa-de-Negociado-del-Servicio-de-Protocolo-del-Area-de-Presidencia/"
+  },
+  "BOP-SE-2026-212004": {
+   "anunciante": "Alcalá de Guadaira",
+   "fecha": "2026-11-03",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Bases de la convocatoria para la provisión, por libre designación en movilidad interadministrativa, del puesto de trabajo de Director de Identidad",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-provision-por-libre-designacion-en-movilidad-interadministrativa-del-puesto-de-trabajo-de-Director-de-Identidad/"
+  },
+  "BOP-SE-2026-212009": {
+   "anunciante": "Castilleja de la Cuesta",
+   "fecha": "2026-11-03",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Expediente de concesión administrativa de uso privativo del bien de dominio público kiosco bar en la plaza de los Pintores",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Expediente-de-concesion-administrativa-de-uso-privativo-del-bien-de-dominio-publico-kiosco-bar-en-la-plaza-de-los-Pintores/"
+  },
+  "BOP-SE-2026-212012": {
+   "anunciante": "Olivares",
+   "fecha": "2026-11-03",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la IV campaña de Navidad, fomento de la economía local «Olivarízate 2026»",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-IV-campana-de-Navidad-fomento-de-la-economia-local-Olivarizate-2026/"
+  },
+  "BOP-SE-2026-212028": {
+   "anunciante": "El Viso del Alcor",
+   "fecha": "2026-11-03",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Bases de la convocatoria para la provisión, por libre designación, del puesto de trabajo de Encargado de Medio Ambiente",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-provision-por-libre-designacion-del-puesto-de-trabajo-de-Encargado-de-Medio-Ambiente/"
+  },
+  "BOP-SE-2026-213002": {
+   "anunciante": "Alcalá de Guadaira",
+   "fecha": "2026-11-04",
+   "motivo": "Corrección de errores",
+   "titulo": "Corrección de errores del anuncio de las bases de la convocatoria para la provisión del puesto de trabajo de Jefatura de Sección de Mantenimiento de Edificios",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-las-bases-de-la-convocatoria-para-la-provision-del-puesto-de-trabajo-de-Jefatura-de-Seccion-de-Mantenimiento-de-Edificios/"
+  },
+  "BOP-SE-2026-213013": {
+   "anunciante": "Gines",
+   "fecha": "2026-11-04",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Convocatoria para la provisión, en comisión de servicios, de dos puestos de Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-para-la-provision-en-comision-de-servicios-de-dos-puestos-de-Policia-Local-00002/"
+  },
+  "BOP-SE-2026-213016": {
+   "anunciante": "Los Molares",
+   "fecha": "2026-11-04",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Convocatoria para la provisión, en comisión de servicios, de un puesto de Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-para-la-provision-en-comision-de-servicios-de-un-puesto-de-Policia-Local-00006/"
+  },
+  "BOP-SE-2026-214012": {
+   "anunciante": "Bormujos",
+   "fecha": "2026-11-05",
+   "motivo": "Fechas o desarrollo de las pruebas",
+   "titulo": "Bases reguladoras del desfile-sorteo «Dame un susto. Halloween 2026»",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-reguladoras-del-desfile-sorteo-Dame-un-susto-Halloween-2026/"
+  },
+  "BOP-SE-2026-214020": {
+   "anunciante": "Mairena del Alcor",
+   "fecha": "2026-11-05",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Aprobación inicial de la modificación del artículo 4 del reglamento del personal funcionario",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Aprobacion-inicial-de-la-modificacion-del-articulo-4-del-reglamento-del-personal-funcionario/"
+  },
+  "BOP-SE-2026-214031": {
+   "anunciante": "Sevilla",
+   "fecha": "2026-11-05",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 224265 de la convocatoria del concurso de belenes 2026 a través del Distrito Triana (BDNS código 939421)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-224265-de-la-convocatoria-del-concurso-de-belenes-2026-a-traves-del-Distrito-Triana-BDNS-codigo-939421/"
+  },
+  "BOP-SE-2026-215001": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-06",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Resolución del concurso de traslados del personal laboral correspondiente al Grupo III",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Resolucion-del-concurso-de-traslados-del-personal-laboral-correspondiente-al-Grupo-III/"
+  },
+  "BOP-SE-2026-215002": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-06",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Resolución del concurso de traslados del personal laboral correspondiente al Grupo III - B",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Resolucion-del-concurso-de-traslados-del-personal-laboral-correspondiente-al-Grupo-III-B/"
+  },
+  "BOP-SE-2026-215005": {
+   "anunciante": "Bollullos de la Mitación",
+   "fecha": "2026-11-06",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Convocatoria para la provisión del puesto de Juez de Paz titular",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-para-la-provision-del-puesto-de-Juez-de-Paz-titular-00028/"
+  },
+  "BOP-SE-2026-215006": {
+   "anunciante": "Las Cabezas de San Juan",
+   "fecha": "2026-11-06",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Contratación como personal laboral fijo en la categoría de Oficial Primera Fontanero",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Contratacion-como-personal-laboral-fijo-en-la-categoria-de-Oficial-Primera-Fontanero/"
+  },
+  "BOP-SE-2026-215007": {
+   "anunciante": "Las Cabezas de San Juan",
+   "fecha": "2026-11-06",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Contratación como personal laboral fijo de las personas que se citan en la categoría de Peón Limpiador",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Contratacion-como-personal-laboral-fijo-de-las-personas-que-se-citan-en-la-categoria-de-Peon-Limpiador/"
+  },
+  "BOP-SE-2026-215016": {
+   "anunciante": "Herrera",
+   "fecha": "2026-11-06",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Aprobación definitiva del establecimiento del sistema de compensación y de las bases y estatutos de la Junta de Compensación del sector de suelo urbano X-2 «Prolongación Cervantes» del PGOU",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Aprobacion-definitiva-del-establecimiento-del-sistema-de-compensacion-y-de-las-bases-y-estatutos-de-la-Junta-de-Compensacion-del-sector-de-suelo-urbano-X-2-Prolongacion-Cervantes-del-PGOU/"
+  },
+  "BOP-SE-2026-215032": {
+   "anunciante": "La Rinconada",
+   "fecha": "2026-11-06",
+   "motivo": "Modificación de las bases o del plazo",
+   "titulo": "Modificación de las bases de la tercera convocatoria del proceso de selección para la contratación laboral temporal en la categoría de Personal de Limpieza de interior de edificios en el marco del programa de empleo social municipal «Impulso La Rinconada 2025-2028­»",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Modificacion-de-las-bases-de-la-tercera-convocatoria-del-proceso-de-seleccion-para-la-contratacion-laboral-temporal-en-la-categoria-de-Personal-de-Limpieza-de-interior-de-edificios-en-el-marco-del-pro/"
+  },
+  "BOP-SE-2026-215033": {
+   "anunciante": "La Rinconada",
+   "fecha": "2026-11-06",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social 2026, incluido en el Plan Provincial de Cohesión Social e Igualdad 2024-2027",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-contratacion-laboral-temporal-dentro-del-Programa-de-Prevencion-de-la-Exclusion-Social-2026-incluido-en-el-Plan-Provincial-de-Cohesion-Social-e-Igualdad-2024-2027-00016/"
+  },
+  "BOP-SE-2026-215035": {
+   "anunciante": "Sevilla",
+   "fecha": "2026-11-06",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 224340 de la convocatoria del concurso de coros y campanilleros 2026 a través del Distrito Triana (BDNS código 939672)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-224340-de-la-convocatoria-del-concurso-de-coros-y-campanilleros-2026-a-traves-del-Distrito-Triana-BDNS-codigo-939672/"
+  },
+  "BOP-SE-2026-215036": {
+   "anunciante": "Servicio de Recursos Humanos",
+   "fecha": "2026-11-06",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Inclusión de los candidatos que se citan en la lista definitiva de personas admitidas y excluidas de la convocatoria para la provisión de cuarenta y seis plazas de Auxiliar Administrativo (OEP 2021, 2022 y 2023)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Inclusion-de-los-candidatos-que-se-citan-en-la-lista-definitiva-de-personas-admitidas-y-excluidas-de-la-convocatoria-para-la-provision-de-cuarenta-y-seis-plazas-de-Auxiliar-Administrativo-OEP-2021-2/"
+  },
+  "BOP-SE-2026-216008": {
+   "anunciante": "Aznalcázar",
+   "fecha": "2026-11-09",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Bases y convocatoria para la creación de una bolsa de trabajo para el nombramiento como funcionario interino o para la contratación laboral temporal en la categoría de Administrativo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-y-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-el-nombramiento-como-funcionario-interino-o-para-la-contratacion-laboral-temporal-en-la-categoria-de-Administrativo/"
+  },
+  "BOP-SE-2026-216014": {
+   "anunciante": "Dos Hermanas",
+   "fecha": "2026-11-09",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 224442 de la novena convocatoria del proceso de selección de participantes en los itinerarios formativos del proyecto «Clave DH» en el marco del Programa de empleo, educación, formación y economía social del Fondo Social Europeo plus (FSE+), período 2021-2027 (BDNS código 939971)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-224442-de-la-novena-convocatoria-del-proceso-de-seleccion-de-participantes-en-los-itinerarios-formativos-del-proyecto-Clave-DH-en-el-marco-del-Programa-de-empleo-educacion-formacion/"
+  },
+  "BOP-SE-2026-216021": {
+   "anunciante": "Los Molares",
+   "fecha": "2026-11-09",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Convocatoria para la provisión, en comisión de servicios, de un puesto de Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-para-la-provision-en-comision-de-servicios-de-un-puesto-de-Policia-Local-00007/"
+  },
+  "BOP-SE-2026-216022": {
+   "anunciante": "Osuna",
+   "fecha": "2026-11-09",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Arquitecto Técnico",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto-Tecnico-00002/"
+  },
+  "BOP-SE-2026-216023": {
+   "anunciante": "La Roda de Andalucia",
+   "fecha": "2026-11-09",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Administrativo y creación de bolsa de trabajo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Administrativo-y-creacion-de-bolsa-de-trabajo-00003/"
+  },
+  "BOP-SE-2026-216025": {
+   "anunciante": "Tocina",
+   "fecha": "2026-11-09",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Aprobación definitiva de la modificación del reglamento de funcionamiento de la mesa general de negociación conjunta del personal funcionario y laboral",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Aprobacion-definitiva-de-la-modificacion-del-reglamento-de-funcionamiento-de-la-mesa-general-de-negociacion-conjunta-del-personal-funcionario-y-laboral/"
+  },
+  "BOP-SE-2026-216029": {
+   "anunciante": "Villamanrique de la Condesa",
+   "fecha": "2026-11-09",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de funcionaria de carrera en la categoría de Administrativo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionaria-de-carrera-en-la-categoria-de-Administrativo-00004/"
+  },
+  "BOP-SE-2026-217001": {
+   "anunciante": "Alcalá de Guadaira",
+   "fecha": "2026-11-10",
+   "motivo": "Corrección de errores",
+   "titulo": "Corrección de errores del anuncio de las bases de la convocatoria para la provisión del puesto de trabajo de Jefatura de Sección de Mantenimiento Urbano",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-las-bases-de-la-convocatoria-para-la-provision-del-puesto-de-trabajo-de-Jefatura-de-Seccion-de-Mantenimiento-Urbano/"
+  },
+  "BOP-SE-2026-217002": {
+   "anunciante": "Alcalá del Rio",
+   "fecha": "2026-11-10",
+   "motivo": "Lista de admitidos, excluidos o aprobados",
+   "titulo": "Lista definitiva de personas admitidas, inadmitidas y excluidas, composición del tribunal y fecha de comienzo de las pruebas de la convocatoria para la creación de una bolsa de trabajo extraordinaria para el nombramiento como funcionario interino o para la contratación laboral temporal en la categor...",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Lista-definitiva-de-personas-admitidas-inadmitidas-y-excluidas-composicion-del-tribunal-y-fecha-de-comienzo-de-las-pruebas-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-extraordinaria/"
+  },
+  "BOP-SE-2026-217009": {
+   "anunciante": "Las Cabezas de San Juan",
+   "fecha": "2026-11-10",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de funcionario de carrera de las personas que se citan en la categoría de Auxiliar Administrativo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-de-carrera-de-las-personas-que-se-citan-en-la-categoria-de-Auxiliar-Administrativo-00007/"
+  },
+  "BOP-SE-2026-217013": {
+   "anunciante": "Los Corrales",
+   "fecha": "2026-11-10",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Apertura del plazo de presentación de solicitudes para la concesión administrativa de uso privativo de los puestos vacantes en la plaza de abastos",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Apertura-del-plazo-de-presentacion-de-solicitudes-para-la-concesion-administrativa-de-uso-privativo-de-los-puestos-vacantes-en-la-plaza-de-abastos/"
+  },
+  "BOP-SE-2026-217014": {
+   "anunciante": "Gines",
+   "fecha": "2026-11-10",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Convocatoria para la provisión del puesto de Juez de Paz sustituto",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-para-la-provision-del-puesto-de-Juez-de-Paz-sustituto-00036/"
+  },
+  "BOP-SE-2026-217022": {
+   "anunciante": "Salteras",
+   "fecha": "2026-11-10",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Contratación como personal laboral fijo en la categoría de Trabajador Social",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Contratacion-como-personal-laboral-fijo-en-la-categoria-de-Trabajador-Social-00001/"
+  },
+  "BOP-SE-2026-217027": {
+   "anunciante": "Villanueva del Rio y Minas",
+   "fecha": "2026-11-10",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00041/"
+  },
+  "BOP-SE-2026-217036": {
+   "anunciante": "Comisión Gestora de la unidad de ejecución núm. 3 del sector SUB-AR2 del PGOU de Alcalá del Río",
+   "fecha": "2026-11-10",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Convocatoria de reunión extraordinaria",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-de-reunion-extraordinaria/"
+  },
+  "BOP-SE-2026-217037": {
+   "anunciante": "Comunidad de Regantes del Bajo Guadalquivir",
+   "fecha": "2026-11-10",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Convocatoria de junta general ordinaria",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-de-junta-general-ordinaria-00057/"
+  },
+  "BOP-SE-2026-218002": {
+   "anunciante": "Alcalá de Guadaira",
+   "fecha": "2026-11-11",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 224704 de la convocatoria del III concurso de canción andaluza (BDNS código 940693)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-224704-de-la-convocatoria-del-III-concurso-de-cancion-andaluza-BDNS-codigo-940693/"
+  },
+  "BOP-SE-2026-218003": {
+   "anunciante": "Bollullos de la Mitación",
+   "fecha": "2026-11-11",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Bases y convocatoria para la provisión, por libre designación, del puesto de Oficial Jefe de la Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-y-convocatoria-para-la-provision-por-libre-designacion-del-puesto-de-Oficial-Jefe-de-la-Policia-Local/"
+  },
+  "BOP-SE-2026-218005": {
+   "anunciante": "Bormujos",
+   "fecha": "2026-11-11",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases del «Concurso de Belenes de Navidad» 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-del-Concurso-de-Belenes-de-Navidad-2026/"
+  },
+  "BOP-SE-2026-218008": {
+   "anunciante": "El Cuervo de Sevilla",
+   "fecha": "2026-11-11",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 224658 de las bases reguladoras del concurso de Escaparates 2026 (BDNS código 940622)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-224658-de-las-bases-reguladoras-del-concurso-de-Escaparates-2026-BDNS-codigo-940622/"
+  },
+  "BOP-SE-2026-218011": {
+   "anunciante": "Huevar del Aljarafe",
+   "fecha": "2026-11-11",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la convocatoria del proceso de selección para la contratación laboral temporal en la categoría de Peón de Cabalgata de Reyes Magos",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-la-contratacion-laboral-temporal-en-la-categoria-de-Peon-de-Cabalgata-de-Reyes-Magos/"
+  },
+  "BOP-SE-2026-219002": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-12",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de funcionaria de carrera en la categoría de Ingeniero Técnico de Obras Públicas",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionaria-de-carrera-en-la-categoria-de-Ingeniero-Tecnico-de-Obras-Publicas/"
+  },
+  "BOP-SE-2026-219003": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-12",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Contratación como personal laboral fijo en la categoría de Director Técnico",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Contratacion-como-personal-laboral-fijo-en-la-categoria-de-Director-Tecnico/"
+  },
+  "BOP-SE-2026-219011": {
+   "anunciante": "Cantillana",
+   "fecha": "2026-11-12",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social 2026, incluido en el Plan Provincial de Cohesión Social e Igualdad 2024-2027",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-contratacion-laboral-temporal-dentro-del-Programa-de-Prevencion-de-la-Exclusion-Social-2026-incluido-en-el-Plan-Provincial-de-Cohesion-Social-e-Igualdad-2024-2027-00018/"
+  },
+  "BOP-SE-2026-219012": {
+   "anunciante": "El Cuervo de Sevilla",
+   "fecha": "2026-11-12",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 224857 de las bases reguladoras del «XXII Concurso del Mosto Cuerveño» (BDNS código 941146)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-224857-de-las-bases-reguladoras-del-XXII-Concurso-del-Mosto-Cuerveno-BDNS-codigo-941146/"
+  },
+  "BOP-SE-2026-219014": {
+   "anunciante": "Osuna",
+   "fecha": "2026-11-12",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Arquitecto",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto-00001/"
+  },
+  "BOP-SE-2026-219015": {
+   "anunciante": "El Pedroso",
+   "fecha": "2026-11-12",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Provisión y nombramiento del puesto de Jefatura de la Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Provision-y-nombramiento-del-puesto-de-Jefatura-de-la-Policia-Local/"
+  },
+  "BOP-SE-2026-219019": {
+   "anunciante": "La Roda de Andalucia",
+   "fecha": "2026-11-12",
+   "motivo": "Corrección de errores",
+   "titulo": "Corrección de errores del anuncio de las bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Administrativo y creación de bolsa de trabajo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-las-bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Administrativo-y-creacion-de-bolsa-de-traba-00001/"
+  },
+  "BOP-SE-2026-219021": {
+   "anunciante": "Sevilla",
+   "fecha": "2026-11-12",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 224819 de la convocatoria del concurso de postales navideñas infantiles en el Distrito Casco Antiguo para el año 2026 (BDNS código 941008)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-224819-de-la-convocatoria-del-concurso-de-postales-navidenas-infantiles-en-el-Distrito-Casco-Antiguo-para-el-ano-2026-BDNS-codigo-941008/"
+  },
+  "BOP-SE-2026-220006": {
+   "anunciante": "Gines",
+   "fecha": "2026-11-13",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00042/"
+  },
+  "BOP-SE-2026-220008": {
+   "anunciante": "Isla Mayor",
+   "fecha": "2026-11-13",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Modificación de la oferta de empleo público 2023",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Modificacion-de-la-oferta-de-empleo-publico-2023-00004/"
+  },
+  "BOP-SE-2026-220011": {
+   "anunciante": "Mairena del Alcor",
+   "fecha": "2026-11-13",
+   "motivo": "Corrección de errores",
+   "titulo": "Corrección de errores del anuncio de la aprobación inicial de la modificación del artículo 4 del reglamento del personal funcionario",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-la-aprobacion-inicial-de-la-modificacion-del-articulo-4-del-reglamento-del-personal-funcionario/"
+  },
+  "BOP-SE-2026-220028": {
+   "anunciante": "Tribunal Superior de Justicia de Andalucía.— Granada",
+   "fecha": "2026-11-13",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento Juez de Paz Titular de Los Palacios y Villafranca",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-Juez-de-Paz-Titular-de-Los-Palacios-y-Villafranca/"
+  },
+  "BOP-SE-2026-220029": {
+   "anunciante": "Tribunal Superior de Justicia de Andalucía.— Granada",
+   "fecha": "2026-11-13",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento Juez de Paz Titular de Montellano",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-Juez-de-Paz-Titular-de-Montellano/"
+  },
+  "BOP-SE-2026-220030": {
+   "anunciante": "Tribunal Superior de Justicia de Andalucía.— Granada",
+   "fecha": "2026-11-13",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Convocatoria para la provisión del puesto de Juez de Paz sustituto de Montellano",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-para-la-provision-del-puesto-de-Juez-de-Paz-sustituto-de-Montellano/"
+  },
+  "BOP-SE-2026-221003": {
+   "anunciante": "Coria del Rio",
+   "fecha": "2026-11-16",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 225005 de la 7.ª convocatoria para la apertura del proceso de recogida de solicitudes de participación en los siguientes itinerarios de inserción laboral del proyecto «Inserta2-Coria del Río» (BDNS código 822544)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-225005-de-la-7-convocatoria-para-la-apertura-del-proceso-de-recogida-de-solicitudes-de-participacion-en-los-siguientes-itinerarios-de-insercion-laboral-del-proyecto-Inserta2-Coria-del/"
+  },
+  "BOP-SE-2026-221004": {
+   "anunciante": "Estepa",
+   "fecha": "2026-11-16",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases del concurso de fotografía del cartel anunciador de la Semana Santa de 2027",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-del-concurso-de-fotografia-del-cartel-anunciador-de-la-Semana-Santa-de-2027/"
+  },
+  "BOP-SE-2026-221007": {
+   "anunciante": "Marchena",
+   "fecha": "2026-11-16",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de funcionario de carrera en la categoría de Inspector del Cuerpo de la Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-de-carrera-en-la-categoria-de-Inspector-del-Cuerpo-de-la-Policia-Local-00002/"
+  },
+  "BOP-SE-2026-221008": {
+   "anunciante": "Marchena",
+   "fecha": "2026-11-16",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de funcionario de carrera en la categoría de Subinspector del Cuerpo de la Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-de-carrera-en-la-categoria-de-Subinspector-del-Cuerpo-de-la-Policia-Local-00002/"
+  },
+  "BOP-SE-2026-221013": {
+   "anunciante": "Sevilla",
+   "fecha": "2026-11-16",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 225013 de la convocatoria del concurso de decoración navideña en el Distrito Norte para el año 2026 (BDNS código 941696)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-225013-de-la-convocatoria-del-concurso-de-decoracion-navidena-en-el-Distrito-Norte-para-el-ano-2026-BDNS-codigo-941696/"
+  },
+  "BOP-SE-2026-221017": {
+   "anunciante": "Utrera",
+   "fecha": "2026-11-16",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Cese y nombramiento de personal eventual con funciones de confianza o asesoramiento especial",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Cese-y-nombramiento-de-personal-eventual-con-funciones-de-confianza-o-asesoramiento-especial-00005/"
+  },
+  "BOP-SE-2026-221030": {
+   "anunciante": "Tribunal Superior de Justicia de Andalucía.— Granada",
+   "fecha": "2026-11-16",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de Juez de Paz sustituta de Los Palacios y Villafranca",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-Juez-de-Paz-sustituta-de-Los-Palacios-y-Villafranca/"
+  },
+  "BOP-SE-2026-222008": {
+   "anunciante": "El Coronil",
+   "fecha": "2026-11-17",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Administrativo, mediante oferta genérica al SAE",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Administrativo-mediante-oferta-generica-al-SAE-00001/"
+  },
+  "BOP-SE-2026-222022": {
+   "anunciante": "El Viso del Alcor",
+   "fecha": "2026-11-17",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases reguladoras de la campaña de fomento al comercio «Tu Navidad, tu gente, tu pueblo», 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-reguladoras-de-la-campana-de-fomento-al-comercio-Tu-Navidad-tu-gente-tu-pueblo-2026/"
+  },
+  "BOP-SE-2026-223001": {
+   "anunciante": "Presidencia",
+   "fecha": "2026-11-18",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Convocatoria extraordinaria del Pleno de la Diputación Provincial de Sevilla el 19 de noviembre de 2026 a las 13.00 horas",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-extraordinaria-del-Pleno-de-la-Diputacion-Provincial-de-Sevilla-el-19-de-noviembre-de-2026-a-las-13-00-horas/"
+  },
+  "BOP-SE-2026-223007": {
+   "anunciante": "El Cuervo de Sevilla",
+   "fecha": "2026-11-18",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 225159 de las bases reguladoras del concurso de Belenes 2026 (BDNS código 942175)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-225159-de-las-bases-reguladoras-del-concurso-de-Belenes-2026-BDNS-codigo-942175/"
+  },
+  "BOP-SE-2026-223009": {
+   "anunciante": "Osuna",
+   "fecha": "2026-11-18",
+   "motivo": "Corrección de errores",
+   "titulo": "Corrección de errores del anuncio de las bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino en la categoría de Arquitecto",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-las-bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Arquitecto/"
+  },
+  "BOP-SE-2026-224004": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-19",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Contratación como personal laboral fijo en la categoría de Especialista de 2.ª Detección de Fugas",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Contratacion-como-personal-laboral-fijo-en-la-categoria-de-Especialista-de-2-Deteccion-de-Fugas/"
+  },
+  "BOP-SE-2026-224005": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-19",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de personal eventual con funciones de confianza o asesoramiento especial",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-personal-eventual-con-funciones-de-confianza-o-asesoramiento-especial-00054/"
+  },
+  "BOP-SE-2026-224015": {
+   "anunciante": "Las Navas de la Concepcion",
+   "fecha": "2026-11-19",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Bases de la convocatoria del proceso de selección para el nombramiento como funcionario interino por programas en la categoría de Monitor de Ocio y Tiempo Libre Juvenil para el proyecto municipal «El Sótano» (Centro Juvenil) y creación de bolsa de trabajo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-por-programas-en-la-categoria-de-Monitor-de-Ocio-y-Tiempo-Libre-Juvenil-para-el-proyecto-municipal-El/"
+  },
+  "BOP-SE-2026-224018": {
+   "anunciante": "Villamanrique de la Condesa",
+   "fecha": "2026-11-19",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 225289 del III Concurso de Belenes 2026 (BDNS código 942589)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-225289-del-III-Concurso-de-Belenes-2026-BDNS-codigo-942589/"
+  },
+  "BOP-SE-2026-225012": {
+   "anunciante": "Cantillana",
+   "fecha": "2026-11-20",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Anulación de las bases de la convocatoria para la provisión, en comisión de servicios, de un puesto de Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Anulacion-de-las-bases-de-la-convocatoria-para-la-provision-en-comision-de-servicios-de-un-puesto-de-Policia-Local/"
+  },
+  "BOP-SE-2026-225015": {
+   "anunciante": "Ecija",
+   "fecha": "2026-11-20",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social, incluido en el Plan Provincial de Cohesión Social e Igualdad 2024-2027",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-contratacion-laboral-temporal-dentro-del-Programa-de-Prevencion-de-la-Exclusion-Social-incluido-en-el-Plan-Provincial-de-Cohesion-Social-e-Igualdad-2024-2027-00003/"
+  },
+  "BOP-SE-2026-225020": {
+   "anunciante": "Huevar del Aljarafe",
+   "fecha": "2026-11-20",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Lista provisional de personas admitidas y excluidas del proceso de selección para la contratación laboral temporal en la categoría de Peón de Cabalgata de Reyes Magos",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Lista-provisional-de-personas-admitidas-y-excluidas-del-proceso-de-seleccion-para-la-contratacion-laboral-temporal-en-la-categoria-de-Peon-de-Cabalgata-de-Reyes-Magos/"
+  },
+  "BOP-SE-2026-225022": {
+   "anunciante": "Mairena del Aljarafe",
+   "fecha": "2026-11-20",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de funcionario de carrera en la categoría de Subinspector de la Policía Local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-de-carrera-en-la-categoria-de-Subinspector-de-la-Policia-Local-00005/"
+  },
+  "BOP-SE-2026-225035": {
+   "anunciante": "Villamanrique de la Condesa",
+   "fecha": "2026-11-20",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 225351 de la convocatoria de la XIII edición «Compra en tu pueblo 2026» (BDNS código 942852)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-225351-de-la-convocatoria-de-la-XIII-edicion-Compra-en-tu-pueblo-2026-BDNS-codigo-942852/"
+  },
+  "BOP-SE-2026-225040": {
+   "anunciante": "Comunidad de Regantes del Valle Inferior del Guadalquivir",
+   "fecha": "2026-11-20",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Convocatoria de junta general ordinaria",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-de-junta-general-ordinaria-00058/"
+  },
+  "BOP-SE-2026-226005": {
+   "anunciante": "Bormujos",
+   "fecha": "2026-11-23",
+   "motivo": "Corrección de errores",
+   "titulo": "Corrección de errores del anuncio de la oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-la-oferta-de-empleo-publico-2026-00001/"
+  },
+  "BOP-SE-2026-226006": {
+   "anunciante": "Burguillos",
+   "fecha": "2026-11-23",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00043/"
+  },
+  "BOP-SE-2026-226016": {
+   "anunciante": "Mairena del Alcor",
+   "fecha": "2026-11-23",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la convocatoria para la contratación laboral temporal dentro del Programa de Prevención de la Exclusión Social 2026, incluido en el Plan Provincial de Cohesión Social e Igualdad 2024-2027",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-contratacion-laboral-temporal-dentro-del-Programa-de-Prevencion-de-la-Exclusion-Social-2026-incluido-en-el-Plan-Provincial-de-Cohesion-Social-e-Igualdad-2024-2027-00019/"
+  },
+  "BOP-SE-2026-227003": {
+   "anunciante": "Castilblanco de los Arroyos",
+   "fecha": "2026-11-24",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Bases de la convocatoria para la cesión de bienes inmuebles de titularidad municipal a asociaciones y entidades sin ánimo de lucro",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-cesion-de-bienes-inmuebles-de-titularidad-municipal-a-asociaciones-y-entidades-sin-animo-de-lucro/"
+  },
+  "BOP-SE-2026-227004": {
+   "anunciante": "Castilblanco de los Arroyos",
+   "fecha": "2026-11-24",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Terminación de la fase de subsanación de solicitudes y emplazamiento a candidatos del proceso de selección para el nombramiento como funcionario interino en la categoría de Técnico Superior de Producción de Audiovisuales y Espectáculos",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Terminacion-de-la-fase-de-subsanacion-de-solicitudes-y-emplazamiento-a-candidatos-del-proceso-de-seleccion-para-el-nombramiento-como-funcionario-interino-en-la-categoria-de-Tecnico-Superior-de-Producc/"
+  },
+  "BOP-SE-2026-227011": {
+   "anunciante": "Coria del Rio",
+   "fecha": "2026-11-24",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de personal eventual con funciones de confianza o asesoramiento especial",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-personal-eventual-con-funciones-de-confianza-o-asesoramiento-especial-00055/"
+  },
+  "BOP-SE-2026-227012": {
+   "anunciante": "Gerena",
+   "fecha": "2026-11-24",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 225596 de las bases reguladoras del Concurso de Disfraces Nochevieja Gerena 2026 (BDNS código 943577)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-225596-de-las-bases-reguladoras-del-Concurso-de-Disfraces-Nochevieja-Gerena-2026-BDNS-codigo-943577/"
+  },
+  "BOP-SE-2026-227024": {
+   "anunciante": "La Puebla de los Infantes",
+   "fecha": "2026-11-24",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00044/"
+  },
+  "BOP-SE-2026-227044": {
+   "anunciante": "Mancomunidad de Servicios La Vega",
+   "fecha": "2026-11-24",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de funcionario de carrera de las personas que se citan en la categoría de Administrativo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-de-carrera-de-las-personas-que-se-citan-en-la-categoria-de-Administrativo-00004/"
+  },
+  "BOP-SE-2026-228008": {
+   "anunciante": "Guillena",
+   "fecha": "2026-11-25",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de funcionaria de carrera en la categoría de Técnico de Administración General",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionaria-de-carrera-en-la-categoria-de-Tecnico-de-Administracion-General-00006/"
+  },
+  "BOP-SE-2026-228016": {
+   "anunciante": "San Juan de Aznalfarache",
+   "fecha": "2026-11-25",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento de personal eventual con funciones de confianza o asesoramiento especial",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-personal-eventual-con-funciones-de-confianza-o-asesoramiento-especial-00056/"
+  },
+  "BOP-SE-2026-228018": {
+   "anunciante": "Servicio de Recursos Humanos",
+   "fecha": "2026-11-25",
+   "motivo": "Nombramiento o adjudicación",
+   "titulo": "Nombramiento en el puesto del órgano directivo de la Dirección General de Innovación Procedimental (DIRGRAL36/10630)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-en-el-puesto-del-organo-directivo-de-la-Direccion-General-de-Innovacion-Procedimental-DIRGRAL36-10630/"
+  },
+  "BOP-SE-2026-228022": {
+   "anunciante": "El Viso del Alcor",
+   "fecha": "2026-11-25",
+   "motivo": "No es una convocatoria con plazo de solicitud",
+   "titulo": "Extracto núm. 225664 de las bases reguladoras de la campaña de fomento al comercio «Tu Navidad, tu gente, tu pueblo», 2026 (BDNS código 942173)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Extracto-num-225664-de-las-bases-reguladoras-de-la-campana-de-fomento-al-comercio-Tu-Navidad-tu-gente-tu-pueblo-2026-BDNS-codigo-942173/"
+  }
  },
+ "bop_descartes_v": 1,
+ "bop_vistos": {},
  "comprobacion": {
-  "coinciden": 22,
+  "coinciden": 20,
   "excluidas": [
    {
     "ambito": "Estado (ámbito nacional)",
@@ -1058,6 +1881,24 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23196",
+    "coincide_con": null,
+    "denominacion": "OFICIAL - Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General. (cocina/comedor)",
+    "fin": "03/12/2026",
+    "motivo": "El organismo solo tiene sede en Madrid",
+    "organo": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23196",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23196"
+    },
+    "ref": "223096",
+    "titulacion": "Graduado en Educación Secundaria, Educación General Básica o Formación Profesional de Técnico o Técnico Auxiliar, o equivalentes",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223096&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
     "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23545",
     "coincide_con": null,
     "denominacion": "INGENIERO SUPERIOR",
@@ -1109,6 +1950,24 @@
     "titulacion": "Bachiller o Formación Profesional de Grado Superior",
     "ubicacion": "NACIONAL",
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223180&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23691",
+    "coincide_con": null,
+    "denominacion": "TITULADO SUPERIOR - Asesor/a en técnicas de evaluación de políticas públicas.",
+    "fin": "11/12/2026",
+    "motivo": "El organismo solo tiene sede en Madrid",
+    "organo": "Ministerio de Hacienda",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23691",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23691"
+    },
+    "ref": "223201",
+    "titulacion": "Asesor/a en técnicas de evaluación de políticas públicas.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223201&selectorServicio=bolsa_empleo"
    },
    {
     "ambito": "Estado (ámbito nacional)",
@@ -1831,7 +2690,7 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
    }
   ],
-  "fecha": "2026-11-25T00:14+00:00",
+  "fecha": "2026-11-25T09:18+00:00",
   "ok": true,
   "por_ambito": {
    "Estado (ámbito nacional)": 67,
@@ -3243,6 +4102,16 @@
    "titulo": "Orden PJC/1074/2026, de 5 de octubre, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación, para el Cuerpo de Letrados de la Administración de Justicia.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21182"
   },
+  "BOE-A-2026-21183": {
+   "departamento": "MINISTERIO DE CULTURA",
+   "fecha": "2026-10-12",
+   "id": "BOE-A-2026-21183",
+   "motivo": "El organismo solo tiene sede en Madrid",
+   "tipo": "madrid",
+   "titulo": "Resolución de 2 de octubre de 2026, de la Subdirección de Gerencia del Museo Nacional Centro de Arte Reina Sofía, por la que se convoca proceso selectivo para ingreso, por el sistema de acceso libre, como personal laboral fijo, fuera de convenio.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21183",
+   "visto": "2026-11-25"
+  },
   "BOE-A-2026-21184": {
    "departamento": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
    "fecha": "2026-10-12",
@@ -3811,6 +4680,16 @@
    "titulo": "Resolución de 22 de octubre de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación, en la Mutualidad General de Funcionarias y Funcionarios Civiles del Estado.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22477"
   },
+  "BOE-A-2026-22478": {
+   "departamento": "",
+   "fecha": "2026-10-27",
+   "id": "BOE-A-2026-22478",
+   "motivo": "El organismo solo tiene sede en Madrid",
+   "tipo": "madrid",
+   "titulo": "Resolución de 21 de octubre de 2026, del Consejo de Seguridad Nuclear, por la que se convoca proceso selectivo para el ingreso, por el sistema general de acceso libre y promoción interna, en la Escala Superior del Cuerpo de Seguridad Nuclear y Protección Radiológica.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22478",
+   "visto": "2026-11-25"
+  },
   "BOE-A-2026-22556": {
    "departamento": "MINISTERIO DE HACIENDA",
    "fecha": "2026-10-28",
@@ -4163,6 +5042,16 @@
    "titulo": "Resolución de 22 de octubre de 2026, de la Comisión Nacional de los Mercados y la Competencia, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23135"
   },
+  "BOE-A-2026-23196": {
+   "departamento": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
+   "fecha": "2026-11-05",
+   "id": "BOE-A-2026-23196",
+   "motivo": "El organismo solo tiene sede en Madrid",
+   "tipo": "madrid",
+   "titulo": "Resolución de 28 de octubre de 2026, de la Dirección de la Agencia Estatal Boletín Oficial del Estado, por la que se convoca proceso selectivo para la provisión, por el sistema general de acceso libre, de plazas de Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23196",
+   "visto": "2026-11-25"
+  },
   "BOE-A-2026-23197": {
    "departamento": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
    "fecha": "2026-11-05",
@@ -4394,6 +5283,16 @@
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
    "titulo": "Resolución de 5 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23690"
+  },
+  "BOE-A-2026-23691": {
+   "departamento": "",
+   "fecha": "2026-11-12",
+   "id": "BOE-A-2026-23691",
+   "motivo": "El organismo solo tiene sede en Madrid",
+   "tipo": "madrid",
+   "titulo": "Resolución de 4 de noviembre de 2026, de la Presidencia de la Autoridad Independiente de Responsabilidad Fiscal, AAI, por la que se convoca proceso selectivo para la provisión de plaza de personal laboral fijo, fuera de convenio, con la categoría de Titulado Superior.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23691",
+   "visto": "2026-11-25"
   },
   "BOE-A-2026-23694": {
    "departamento": "MINISTERIO DE SANIDAD",
@@ -4728,76 +5627,210 @@
    "fecha": "2026-11-23",
    "id": "BOE-A-2026-24529",
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
    "titulo": "Resolución 430/38457/2026, de 13 de noviembre, de la Dirección General de Personal, por la que se convoca vacante en los órganos judiciales de la jurisdicción militar.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24529"
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24529",
+   "visto": "2026-11-25"
   },
   "BOE-A-2026-24532": {
    "departamento": "MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL",
    "fecha": "2026-11-23",
    "id": "BOE-A-2026-24532",
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
    "titulo": "Resolución de 13 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24532"
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24532",
+   "visto": "2026-11-25"
   },
   "BOE-A-2026-24533": {
    "departamento": "MINISTERIO DE INDUSTRIA Y TURISMO",
    "fecha": "2026-11-23",
    "id": "BOE-A-2026-24533",
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
    "titulo": "Resolución de 16 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24533"
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24533",
+   "visto": "2026-11-25"
   },
   "BOE-A-2026-24534": {
    "departamento": "MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN",
    "fecha": "2026-11-23",
    "id": "BOE-A-2026-24534",
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
    "titulo": "Resolución de 13 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24534"
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24534",
+   "visto": "2026-11-25"
   },
   "BOE-A-2026-24536": {
    "departamento": "MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES",
    "fecha": "2026-11-23",
    "id": "BOE-A-2026-24536",
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
    "titulo": "Resolución de 13 de noviembre de 2026, de la Presidencia de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P., por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24536"
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24536",
+   "visto": "2026-11-25"
   },
   "BOE-A-2026-24537": {
    "departamento": "MINISTERIO PARA LA TRANSFORMACIÓN DIGITAL Y DE LA FUNCIÓN PÚBLICA",
    "fecha": "2026-11-23",
    "id": "BOE-A-2026-24537",
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
    "titulo": "Resolución de 16 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24537"
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24537",
+   "visto": "2026-11-25"
   },
   "BOE-A-2026-24633": {
    "departamento": "MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL",
    "fecha": "2026-11-24",
    "id": "BOE-A-2026-24633",
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
    "titulo": "Resolución de 13 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24633"
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24633",
+   "visto": "2026-11-25"
+  },
+  "BOE-A-2026-24730": {
+   "departamento": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
+   "fecha": "2026-11-25",
+   "id": "BOE-A-2026-24730",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
+   "titulo": "Resolución de 18 de noviembre de 2026, de la Secretaría de Estado de Justicia, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24730",
+   "visto": "2026-11-25"
+  },
+  "BOE-A-2026-24731": {
+   "departamento": "MINISTERIO DE DEFENSA",
+   "fecha": "2026-11-25",
+   "id": "BOE-A-2026-24731",
+   "motivo": "Plazas en otras provincias (Cadiz, La Coruna, Las Palmas, Madrid), ninguna en Sevilla",
+   "tipo": "lugar",
+   "titulo": "Resolución 430/38459/2026, de 17 de noviembre, de la Subsecretaría, por la que se convoca proceso selectivo para ingreso, por el sistema general de acceso libre, en el Cuerpo de Ingenieros Técnicos de Arsenales de la Armada.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24731",
+   "visto": "2026-11-25"
+  },
+  "BOE-A-2026-24732": {
+   "departamento": "MINISTERIO DE DEFENSA",
+   "fecha": "2026-11-25",
+   "id": "BOE-A-2026-24732",
+   "motivo": "Plazas en otras provincias (Cadiz, La Coruna, Las Palmas, Madrid), ninguna en Sevilla",
+   "tipo": "lugar",
+   "titulo": "Resolución 430/38460/2026, de 17 de noviembre, de la Subsecretaría, por la que se convoca proceso selectivo para acceso, por promoción interna, al Cuerpo de Ingenieros Técnicos de Arsenales de la Armada.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24732",
+   "visto": "2026-11-25"
+  },
+  "BOE-A-2026-24733": {
+   "departamento": "MINISTERIO DE DEFENSA",
+   "fecha": "2026-11-25",
+   "id": "BOE-A-2026-24733",
+   "motivo": "Plazas en otras provincias (Cadiz, La Coruna, Las Palmas, Madrid), ninguna en Sevilla",
+   "tipo": "lugar",
+   "titulo": "Resolución 430/38458/2026, de 17 de noviembre, de la Subsecretaría, por la que se convoca proceso selectivo para acceso, por el sistema de promoción interna, al Cuerpo de Maestros de Arsenales de la Armada.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24733",
+   "visto": "2026-11-25"
+  },
+  "BOE-A-2026-24734": {
+   "departamento": "MINISTERIO DE DEFENSA",
+   "fecha": "2026-11-25",
+   "id": "BOE-A-2026-24734",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
+   "titulo": "Resolución 430/38461/2026, de 18 de noviembre, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24734",
+   "visto": "2026-11-25"
+  },
+  "BOJA-2026-131-24": {
+   "departamento": "Universidades",
+   "fecha": "2026-07-09",
+   "id": "BOJA-2026-131-24",
+   "motivo": "Plazas en Baeza (Jaén), ninguna en la provincia de Sevilla",
+   "tipo": "lugar",
+   "titulo": "Resolución de 2 de julio de 2026, de la Universidad Internacional de Andalucía, por la que se convoca proceso selectivo para el ingreso en la Escala Auxiliar Administrativa de esta Universidad, por el sistema de acceso libre, en desarrollo de la Oferta de Empleo Público de 2025.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/131/24",
+   "visto": "2026-11-25"
+  },
+  "BOJA-2026-134-42": {
+   "departamento": "Universidades",
+   "fecha": "2026-07-14",
+   "id": "BOJA-2026-134-42",
+   "motivo": "Plazas en Málaga, ninguna en la provincia de Sevilla",
+   "tipo": "lugar",
+   "titulo": "Resolución de 2 de julio de 2026, de la Universidad Internacional de Andalucía, por la que se convoca proceso selectivo para el ingreso en la Escala Auxiliar Administrativa de esta Universidad, por el sistema de acceso libre, en desarrollo de la oferta de empleo público de 2024.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/134/42",
+   "visto": "2026-11-25"
+  },
+  "BOJA-2026-215-15": {
+   "departamento": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública",
+   "fecha": "2026-11-06",
+   "id": "BOJA-2026-215-15",
+   "motivo": "Plazas en Málaga, ninguna en la provincia de Sevilla",
+   "tipo": "lugar",
+   "titulo": "Acuerdo de 30 de octubre de 2026, de la Sociedad Andaluza para el Desarrollo de las Telecomunicaciones, S.A., Medio Propio (SANDETEL), por el que se anuncia convocatoria pública del puesto con carácter indefinido, de Técnico/a en el Departamento de Consultoría.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/215/15",
+   "visto": "2026-11-25"
+  },
+  "BOJA-2026-218-17": {
+   "departamento": "Consejería de Agricultura, Pesca, Agua y Desarrollo Rural",
+   "fecha": "2026-11-11",
+   "id": "BOJA-2026-218-17",
+   "motivo": "Plazas en Granada, ninguna en la provincia de Sevilla",
+   "tipo": "lugar",
+   "titulo": "Resolución de 29 de octubre de 2026, de la Presidencia del Instituto Andaluz de Investigación y Formación Agraria, Pesquera, Alimentaria y de la Producción Ecológica, por la que se efectúa la convocatoria de contratos laborales en el marco de proyectos específicos de I+D+F.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/218/17",
+   "visto": "2026-11-25"
+  },
+  "BOJA-2026-220-23": {
+   "departamento": "Consejería de Agricultura, Pesca, Agua y Desarrollo Rural",
+   "fecha": "2026-11-13",
+   "id": "BOJA-2026-220-23",
+   "motivo": "Plazas en Cartaya (Huelva), ninguna en la provincia de Sevilla",
+   "tipo": "lugar",
+   "titulo": "Resolución de 29 de octubre de 2026, de la Presidencia del Instituto Andaluz de Investigación y Formación Agraria, Pesquera, Alimentaria y de la Producción Ecológica, por la que se efectúa la convocatoria de contratos laborales en el marco de proyectos específicos de I+D+F.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/220/23",
+   "visto": "2026-11-25"
+  },
+  "BOJA-2026-220-24": {
+   "departamento": "Consejería de Agricultura, Pesca, Agua y Desarrollo Rural",
+   "fecha": "2026-11-13",
+   "id": "BOJA-2026-220-24",
+   "motivo": "Plazas en Málaga, ninguna en la provincia de Sevilla",
+   "tipo": "lugar",
+   "titulo": "Resolución de 29 de octubre de 2026, de la Presidencia del Instituto Andaluz de Investigación y Formación Agraria, Pesquera, Alimentaria y de la Producción Ecológica, por la que se efectúa la convocatoria de contratos laborales en el marco de proyectos específicos de I+D+F.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/220/24",
+   "visto": "2026-11-25"
+  },
+  "BOJA-2026-225-24": {
+   "departamento": "Consejería de Servicios Sociales, Familias e Igualdad",
+   "fecha": "2026-11-20",
+   "id": "BOJA-2026-225-24",
+   "motivo": "Plazas en Cartaya (Huelva), ninguna en la provincia de Sevilla",
+   "tipo": "lugar",
+   "titulo": "Resolución de 11 de noviembre de 2026, de la Dirección Gerencia de la Agencia de Servicios Sociales y Dependencia de Andalucía, por la que se anuncia convocatoria externa definitiva para la cobertura de un puesto de Monitora Sociosanitaria o Monitor Sociosanitario para la Comunidad Terapéutica de Cartaya en la Jefatura de Atención Social y Sanitaria de la Agencia de Servicios Sociales y Dependencia de Andalucía.",
+   "url": "https://www.juntadeandalucia.es/boja/2026/225/24",
+   "visto": "2026-11-25"
   }
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-25T00:14+00:00",
+   "fecha": "2026-11-25T09:02+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 3
+   "segundos": 9
   },
   "BOJA": {
-   "fecha": "2026-11-25T00:14+00:00",
+   "fecha": "2026-11-25T09:02+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 7
+   "segundos": 9
   },
   "BOP": {
-   "fecha": "2026-11-25T00:14+00:00",
-   "nuevos": 0,
+   "fecha": "2026-11-25T09:03+00:00",
+   "nuevos": 7,
    "ok": true,
-   "segundos": 6
+   "segundos": 60
   }
  },
  "pag_detalles": {

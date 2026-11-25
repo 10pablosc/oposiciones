@@ -1722,7 +1722,8 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-23691",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23691",
+  "coincide_con": null,
   "denominacion": "TITULADO SUPERIOR - Asesor/a en técnicas de evaluación de políticas públicas.",
   "detalle": {
    "boe": [
@@ -1740,6 +1741,7 @@
    "web": "http://www.airef.es/"
   },
   "fin": "11/12/2026",
+  "motivo": "El organismo solo tiene sede en Madrid",
   "organo": "Ministerio de Hacienda",
   "plazas": "1 plaza",
   "publicada": {
@@ -1852,7 +1854,8 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-23196",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23196",
+  "coincide_con": null,
   "denominacion": "OFICIAL - Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General. (cocina/comedor)",
   "detalle": {
    "boe": [
@@ -1870,6 +1873,7 @@
    "web": "https://administracion.gob.es/empleopublico/ips"
   },
   "fin": "03/12/2026",
+  "motivo": "El organismo solo tiene sede en Madrid",
   "organo": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
   "plazas": "2 plazas",
   "publicada": {
