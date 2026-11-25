@@ -1,17 +1,21 @@
 {
- "actualizado": "2026-11-24T23:40+00:00",
+ "actualizado": "2026-11-25T00:02+00:00",
  "comprobacion": {
-  "coinciden": 25,
+  "coinciden": 22,
   "excluidas": [
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19557",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
     "coincide_con": null,
     "denominacion": "AYUDANTE - Tareas de Apoyo (Grupo T5)",
     "fin": "26/11/2026",
-    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+    "motivo": "Plazas en otras provincias (Barcelona, Caceres, Cantabria, Castellon), ninguna en Sevilla",
     "organo": "Ministerio de Hacienda",
     "plazas": "Convocadas:17 Libres:12 Internas:0 Discapacidad General:5 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-22557",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
+    },
     "ref": "222988",
     "titulacion": "No se exige titulación.",
     "ubicacion": "NACIONAL",
@@ -19,17 +23,75 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19557",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
     "coincide_con": null,
     "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior. Esp. Imagen y sonido(T3)",
     "fin": "26/11/2026",
-    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+    "motivo": "Plazas en otras provincias (Barcelona, Caceres, Cantabria, Castellon), ninguna en Sevilla",
     "organo": "Ministerio de Hacienda",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-22557",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
+    },
     "ref": "222989",
     "titulacion": "Grupo profesional T3: Área Funcional: Técnico/a Profesional: Especialidad/ IMAGEN Y SONIDO. Cualquiera de las cinco titulaciones de Técnico Superior de la familia profesional de Imagen y Sonido. - - - - Técnico Superior en Animaciones 3D, Juegos y Entornos Interactivos Técnico Superior en Iluminación, Captación y Tratamiento de Imagen Técnico Superior en Producción de Audiovisuales y Espectáculos Técnico Superior en Realización de Proyectos Audiovisuales y Espectáculos - Técnico Superior en Sonido para Audiovisuales y Espectáculos",
     "ubicacion": "NACIONAL",
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222989&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22648",
+    "coincide_con": null,
+    "denominacion": "DIETISTA Y NUTRICIONISTA",
+    "fin": "27/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-22648",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22648"
+    },
+    "ref": "222993",
+    "titulacion": "Grado en Nutrición Humana y Dietética o titulación equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222993&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22647",
+    "coincide_con": null,
+    "denominacion": "TITULADO SANITARIO - Titulado Sanitario: Odontólogo/a.",
+    "fin": "27/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-22647",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22647"
+    },
+    "ref": "222991",
+    "titulacion": "Título de Grado en Odontología o Licenciado/a en Odontología o Médico/a Especialista en Estomatología o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222991&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22649",
+    "coincide_con": null,
+    "denominacion": "TRABAJADOR SOCIAL",
+    "fin": "27/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-22649",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22649"
+    },
+    "ref": "222994",
+    "titulacion": "Grado en Trabajo Social, Diplomado en Trabajo Social o equivalente,",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222994&selectorServicio=bolsa_empleo"
    },
    {
     "ambito": "Estado (ámbito nacional)",
@@ -40,10 +102,32 @@
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:41 Libres:36 Internas:0 Discapacidad General:5 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-22741",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22741"
+    },
     "ref": "223002",
     "titulacion": "Certificado de escolaridad o equivalente",
     "ubicacion": "NACIONAL",
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223002&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22742",
+    "coincide_con": null,
+    "denominacion": "LAVANDERA - Lavandero/a - Planchador/a.",
+    "fin": "30/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:6 Libres:6 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-22742",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22742"
+    },
+    "ref": "223003",
+    "titulacion": "Certificado de Escolaridad o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223003&selectorServicio=bolsa_empleo"
    },
    {
     "ambito": "Estado (ámbito nacional)",
@@ -54,52 +138,14 @@
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-22740",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22740"
+    },
     "ref": "223001",
     "titulacion": "Formación Profesional de Técnico Superior en Higiene Bucodental o equivalente",
     "ubicacion": "NACIONAL",
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223001&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20025",
-    "coincide_con": null,
-    "denominacion": "ENFERMERO ESPECIALISTA - Enfermería Obstétrico-Ginecológico (Matrona)",
-    "fin": "03/12/2026",
-    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-    "organo": "Ministerio de Defensa",
-    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "223399",
-    "titulacion": "Diplomado universitario o grado en Enfermería o equivalente junto al título de especialización en Enfermería Obstétrico-Ginecológica (Matrona)",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223399&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20025",
-    "coincide_con": null,
-    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - PEDIATRÍA Y ÁREAS ESPECÍFICAS",
-    "fin": "03/12/2026",
-    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-    "organo": "Ministerio de Defensa",
-    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "223397",
-    "titulacion": "FACULTATIVO ESPECIALISTA EN PEDIATRÍA Y ÁREAS ESPECÍFICAS O EQUIVALENTE",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223397&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22909",
-    "coincide_con": null,
-    "denominacion": "OFICIAL - Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General. (cocina/comedor)",
-    "fin": "03/12/2026",
-    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-    "organo": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
-    "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "223096",
-    "titulacion": "Graduado en Educación Secundaria, Educación General Básica o Formación Profesional de Técnico o Técnico Auxiliar, o equivalentes",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223096&selectorServicio=bolsa_empleo"
    },
    {
     "ambito": "Estado (ámbito nacional)",
@@ -110,6 +156,10 @@
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23545",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23545"
+    },
     "ref": "223179",
     "titulacion": "Título de Ingeniero Industrial",
     "ubicacion": "NACIONAL",
@@ -124,6 +174,10 @@
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:0 Internas:3 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23546",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23546"
+    },
     "ref": "223181",
     "titulacion": "Bachiller o Formación Profesional de Grado Superior",
     "ubicacion": "NACIONAL",
@@ -138,6 +192,10 @@
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23546",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23546"
+    },
     "ref": "223180",
     "titulacion": "Bachiller o Formación Profesional de Grado Superior",
     "ubicacion": "NACIONAL",
@@ -145,17 +203,21 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21477",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23694",
     "coincide_con": null,
-    "denominacion": "TITULADO SUPERIOR - Asesor/a en técnicas de evaluación de políticas públicas.",
+    "denominacion": "TITULADO SUPERIOR - Titulado/a Superior Función Administrativa Administración Sanitaria",
     "fin": "11/12/2026",
-    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-    "organo": "Ministerio de Hacienda",
-    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "223201",
-    "titulacion": "Asesor/a en técnicas de evaluación de políticas públicas.",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23694",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23694"
+    },
+    "ref": "223202",
+    "titulacion": "Grado, Licenciatura universitaria, Ingeniero/a, Arquitecto/a o equivalente",
     "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223201&selectorServicio=bolsa_empleo"
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223202&selectorServicio=bolsa_empleo"
    },
    {
     "ambito": "Estado (ámbito nacional)",
@@ -166,6 +228,10 @@
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23922",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23922"
+    },
     "ref": "223263",
     "titulacion": "Enfermero/a Especialista en Enfermería Obstétrico-Ginecológica, o equivalente.",
     "ubicacion": "NACIONAL",
@@ -173,13 +239,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Alergología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223227",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -187,13 +257,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Anatomía Patológica",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223228",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -201,13 +275,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Anestesiología y Reanimación",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223229",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -215,13 +293,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Aparato Digestivo",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223230",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -229,13 +311,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cardiología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:5 Libres:5 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223231",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -243,13 +329,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cirugía General y del Aparato Digestivo",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223232",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -257,13 +347,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cirugía Ortopédica y Traumatología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223233",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -271,13 +365,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Dermatología Médico-Quirúrgica y Venereología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223235",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -285,13 +383,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Endocrinología y Nutrición",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223236",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -299,13 +401,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21822",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Farmacia Hospitalaria",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223237",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -313,13 +419,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Familiar y Comunitaria",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:13 Libres:12 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223239",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -327,13 +437,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Física y Rehabilitación",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223240",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -341,13 +455,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Interna",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223241",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -355,13 +473,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Preventiva y Salud Pública",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223242",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -369,13 +491,35 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina del Trabajo",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223238",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223238&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Microbiología y Parasitología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223243",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -383,13 +527,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Nefrología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223244",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -397,13 +545,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neumología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223245",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -411,13 +563,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neurofisiología Clínica",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223246",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -425,13 +581,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neurología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223247",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -439,13 +599,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Obstetricia y Ginecología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223248",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -453,13 +617,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Oftalmología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223249",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -467,13 +635,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Oncología Médica",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223250",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -481,13 +653,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Pediatría de Atención Primaria",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:9 Libres:8 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223251",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -495,13 +671,35 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Pediatría y sus Áreas Específicas",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223252",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223252&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Psicología Clínica",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:7 Libres:7 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223253",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -509,13 +707,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Psiquiatría",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:6 Libres:6 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223254",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -523,13 +725,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Radiodiagnóstico",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223255",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -537,13 +743,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Radiofísica Hospitalaria",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:8 Libres:7 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223256",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -551,13 +761,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Reumatología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223257",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -565,13 +779,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Urología",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223258",
     "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
     "ubicacion": "NACIONAL",
@@ -579,13 +797,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO SANITARIO - Médico/a de Admisión y Documentación Clínica",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223260",
     "titulacion": "Título de Licenciado/a en Medicina y Cirugía o Graduado/a en Medicina.",
     "ubicacion": "NACIONAL",
@@ -593,13 +815,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO SANITARIO - Médico/a de Emergencias",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223261",
     "titulacion": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
     "ubicacion": "NACIONAL",
@@ -607,13 +833,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO SANITARIO - Médico/a de Urgencia Hospitalaria",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:7 Libres:7 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223259",
     "titulacion": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
     "ubicacion": "NACIONAL",
@@ -621,13 +851,17 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
     "coincide_con": null,
     "denominacion": "TITULADO SANITARIO - Médico/a de Urgencias Atención Primaria",
     "fin": "15/12/2026",
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:7 Libres:7 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
     "ref": "223262",
     "titulacion": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
     "ubicacion": "NACIONAL",
@@ -642,6 +876,10 @@
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:5 Libres:5 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-24218",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24218"
+    },
     "ref": "223333",
     "titulacion": "Título universitario oficial de Graduado/a o Ingeniero/a Técnico en Informática o Telecomunicación o titulación de contenido equivalente.",
     "ubicacion": "NACIONAL",
@@ -656,6 +894,10 @@
     "motivo": "Plazas en Ceuta y Melilla (INGESA)",
     "organo": "Ministerio de Sanidad",
     "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-24335",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24335"
+    },
     "ref": "223355",
     "titulacion": "Título de Formación Profesional de grado superior en Informática o Telecomunicación o equivalente.",
     "ubicacion": "NACIONAL",
@@ -663,47 +905,62 @@
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21635",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24459",
     "coincide_con": null,
     "denominacion": "OFICIALES DE ARSENALES DE LA ARMADA",
     "fin": "22/12/2026",
-    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+    "motivo": "Plazas en otras provincias (Baleares, Cadiz, Ciudad Real, La Coruna), ninguna en Sevilla",
     "organo": "Ministerio de Defensa",
     "plazas": "Convocadas:116 Libres:102 Internas:0 Discapacidad General:14 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "BOE-A-2026-24459",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24459"
+    },
     "ref": "223390",
     "titulacion": "Graduado en Educación Secundaria Obligatoria",
     "ubicacion": "NACIONAL",
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
+   }
+  ],
+  "fecha": "2026-11-25T00:02+00:00",
+  "ok": true,
+  "por_ambito": {
+   "Estado (ámbito nacional)": 67,
+   "Junta de Andalucía (ámbito autonómico)": 8,
+   "Provincia de Sevilla (ámbito local)": 0
+  },
+  "posibles_omisiones": [
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "coincide_con": null,
+    "denominacion": "ENFERMERO ESPECIALISTA - Enfermería Obstétrico-Ginecológico (Matrona)",
+    "fin": "03/12/2026",
+    "organo": "Ministerio de Defensa",
+    "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+    "publicada": {
+     "texto": "solo en la web del organismo (no en BOE, BOJA ni BOP)",
+     "url": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a2-enfermero-obstetrico-ginecologico-matrona"
+    },
+    "ref": "223399",
+    "titulacion": "Diplomado universitario o grado en Enfermería o equivalente junto al título de especialización en Enfermería Obstétrico-Ginecológica (Matrona)",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223399&selectorServicio=bolsa_empleo"
    },
    {
     "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21477",
     "coincide_con": null,
-    "denominacion": "INFORMACIÓN Y ASISTENCIA (GRUPO PROFESIONAL I1)",
-    "fin": "23/12/2026",
-    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-    "organo": "Ministerio de Hacienda",
-    "plazas": "Convocadas:181 Libres:0 Internas:147 Discapacidad General:34 Discapacidad Intelectual:0",
-    "ref": "223408",
-    "titulacion": "Bachillerato o equivalente",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223408&selectorServicio=bolsa_empleo"
-   }
-  ],
-  "fecha": "2026-11-24T23:40+00:00",
-  "ok": true,
-  "posibles_omisiones": [
-   {
-    "ambito": "Junta de Andalucía (ámbito autonómico)",
-    "coincide_con": null,
-    "denominacion": "PERSONAL CIENTIFICO-TECNICO - Titulado/a Superior de Apoyo a la Investigación.",
-    "fin": "17/12/2026",
-    "organo": "Universidad Pablo de Olavide",
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - PEDIATRÍA Y ÁREAS ESPECÍFICAS",
+    "fin": "03/12/2026",
+    "organo": "Ministerio de Defensa",
     "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
-    "ref": "223415",
-    "titulacion": "Graduado/a en Ciencias Ambientales, o equivalente según el sistema educativo. Certificación Académica Oficial.",
-    "ubicacion": "AUTONÓMICO - ANDALUCÍA",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223415&selectorServicio=bolsa_empleo"
+    "publicada": {
+     "texto": "solo en la web del organismo (no en BOE, BOJA ni BOP)",
+     "url": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a1-ciencias-de-la-salud-pediatria"
+    },
+    "ref": "223397",
+    "titulacion": "FACULTATIVO ESPECIALISTA EN PEDIATRÍA Y ÁREAS ESPECÍFICAS O EQUIVALENTE",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223397&selectorServicio=bolsa_empleo"
    }
   ],
   "total": 75
@@ -714,11 +971,11 @@
    "denominacion": "Un contrato de actividades científico-técnicas",
    "departamento": "",
    "en_boe": false,
-   "estado": "sin_determinar",
+   "estado": "abierto",
    "fecha_boe": null,
    "fecha_publicacion": "2026-11-24",
    "fin_estimado": false,
-   "fin_plazo": null,
+   "fin_plazo": "2026-12-17",
    "fuente": "BOJA",
    "grupo": "Sin determinar",
    "id": "BOJA-2026-227-37",
@@ -727,7 +984,7 @@
    "organismo": "Universidad Pablo de Olavide",
    "personal": "Laboral",
    "plazas": null,
-   "plazo_texto": null,
+   "plazo_texto": "presentar su solicitud en los quince días siguientes a la publicación de la presente convocatoria en el Boletín Oficial de la Junta de Andalucía (BOJA).",
    "requisitos": "Podrán solicitar tomar parte en la presente convocatoria las personas solicitantes que reúnan los siguientes requisitos:\n2.1.\na) Ser de nacionalidad española o nacional de un Estado miembro de la Unión Europea o nacional de aquellos Estados a los que, en virtud de Tratados Internacionales celebrados por la Unión Europea y ratificados por España, sea de aplicación la libre circulación de personas trabajadoras en los términos en que esta se halle definida en el Tratado constitutivo de la Unión Europea.\nb) También podrán participar el/la cónyuge, los/las descendientes del o de la cónyuge, de los/las españoles/las y también de los/las nacionales de otros Estados miembros de la Unión Europea, siempre que no se estén separados/as de derecho, menores de veintiún años o mayores de dicha edad que vivan a sus expensas.\nEste último beneficio será igualmente de aplicación a familiares de nacionales de otros Estados cuando así se prevea en los Tratados Internacionales celebrados por la Comunidad Europea y ratificados por España.\nc) Quienes no estando incluidos/as en los apartados anteriores se encuentren residiendo en España en situación de legalidad, siendo titulares de un documento que les habilite a residir y a poder acceder sin limitaciones al mercado laboral. En consecuencia, podrán participar quienes se encuentren en situación de residencia temporal, quienes se encuentren en situación de residencia permanente y quienes se encuentren en situación de autorización para residir y trabajar, así como los que tengan la condición de personas refugiadas.\nd) Las personas que no se encuentren en situaciones descritas en los apartados a), b) y c), podrán participar en los procesos selectivos, siempre y cuando reúnan y acrediten los requisitos mínimos establecidos en la convocatoria. No obstante, su incorporación efectiva, en el supuesto de ser seleccionadas, sólo se podrá realizar cuando obtengan la correspondiente autorización administrativa que les permita residir y trabajar en España, dentro de los plazos y términos establecidos en la base 4.\n2.2. Tener cumplidos los dieciocho años y no haber cumplido la edad de jubilación. Estas dos circunstancias deberán estar acreditadas durante todo el periodo de contratación.\n2.3. Estar en posesión de las condiciones académicas o de titulación requeridas en el Anexo II de esta resolución. La documentación deberá estar traducida al español. Los títulos conseguidos en el extranjero o en Centros Españoles no estatales, deberán estar homologados o reconocidos. Los títulos de Grado expedidos por universidades en los Estados miembros de la Unión Europea serán equivalentes, a todos los efectos, a aquellos expedidos por universidades españolas.\n2.4. No padecer enfermedad ni estar afectado/a por limitación física o psíquica que sea incompatible con el desempeño de las correspondientes funciones.\n2.5. No haber sido separado/a, mediante expediente disciplinario, del servicio de cualquiera de las Administraciones Públicas, ni hallarse inhabilitado/a para el desempeño de las correspondientes funciones. Las personas aspirantes cuya nacionalidad no sea la española deberán igualmente no estar sometidas a sanción disciplinaria o condena penal que impida, en su Estado, el acceso a la función pública.\n2.6. Las personas aspirantes que no posean la nacionalidad española deberán acreditar un conocimiento adecuado del castellano.\n2.7. Todos los requisitos anteriores deberán poseerse en el día de finalización del plazo de presentación de solicitudes y mantenerse hasta el momento de la adjudicación de los correspondientes contratos.",
    "requisitos_generales": null,
    "sistema": "Concurso",
@@ -757,7 +1014,7 @@
    "organismo": "Agencia de Servicios Sociales y Dependencia de Andalucía",
    "personal": "Sin determinar",
    "plazas": null,
-   "plazo_texto": "solicitudes y la documentación que las acompañen, serán dirigidas a la Dirección Gerencia de la Agencia y se podrán presentar dentro del plazo de diez días hábiles a contar a partir del día siguiente a la publicación de esta convocatoria en el Boletín Oficial de la Junta de Andalucía.",
+   "plazo_texto": "plazo de diez días hábiles a contar a partir del día siguiente a la publicación de esta convocatoria en el Boletín Oficial de la Junta de Andalucía.",
    "requisitos": "2. Requisitos de las personas aspirantes para su participación en este proceso selectivo.\nRNE. Tener la nacionalidad española (DNI vigente o pasaporte en vigor). También podrán participar:\n1. Las personas nacionales de los Estados miembros de la Unión Europea.\n2. El/la cónyuge de las personas con nacionalidad española y de otros Estados miembros de la Unión Europea, cualquiera que sea su nacionalidad, siempre que no estén separadas de derecho.\nAsimismo, con las mismas condiciones, podrán participar sus descendientes y de su cónyuge, que vivan a su cargo menores de veintiún años o mayores de dicha edad dependientes.",
    "requisitos_generales": null,
    "sistema": "Concurso",
@@ -1014,11 +1271,11 @@
    "denominacion": "Contratos formativos",
    "departamento": "",
    "en_boe": false,
-   "estado": "sin_determinar",
+   "estado": "abierto",
    "fecha_boe": null,
    "fecha_publicacion": "2026-11-23",
    "fin_estimado": false,
-   "fin_plazo": null,
+   "fin_plazo": "2026-12-16",
    "fuente": "BOJA",
    "grupo": "Sin determinar",
    "id": "BOJA-2026-226-27",
@@ -1027,7 +1284,7 @@
    "organismo": "Universidad Pablo de Olavide",
    "personal": "Sin determinar",
    "plazas": null,
-   "plazo_texto": null,
+   "plazo_texto": "presentar su solicitud en los quince días siguientes a la publicación de la presente convocatoria en el Boletín Oficial de la Junta de Andalucía (BOJA).",
    "requisitos": "Podrán solicitar tomar parte en la presente convocatoria las personas solicitantes que reúnan los siguientes requisitos:\n2.1.a) Ser de nacionalidad española o nacional de un Estado miembro de la Unión Europea o nacional de aquellos Estados a los que, en virtud de Tratados Internacionales celebrados por la Unión Europea y ratificados por España, sea de aplicación la libre circulación de personas trabajadoras en los términos en que ésta se halle definida en el Tratado constitutivo de la Unión Europea.\nb) También podrán participar el/la cónyuge, los/las descendientes del o de la cónyuge, de los/las españoles/las y también de los/las nacionales de otros Estados miembros de la Unión Europea, siempre que no se estén separados/as de derecho, menores de veintiún años o mayores de dicha edad que vivan a sus expensas.\nc) Este último beneficio será igualmente de aplicación a familiares de nacionales de otros Estados cuando así se prevea en los Tratados Internacionales celebrados por la Comunidad Europea y ratificados por España.\nd) Quienes no estando incluidos/as en los apartados anteriores se encuentren residiendo en España en situación de legalidad, siendo titulares de un documento que les habilite a residir y a poder acceder sin limitaciones al mercado laboral. En consecuencia, podrán participar quienes se encuentren en situación de residencia temporal, quienes se encuentren en situación de residencia permanente y quienes se encuentren en situación de autorización para residir y trabajar, así como los que tengan la condición de personas refugiadas.\ne) Las personas que no se encuentren en situaciones descritas en los apartados a), b) y c), podrán participar en los procesos selectivos, siempre y cuando reúnan y acrediten los requisitos mínimos establecidos en la convocatoria. No obstante, su incorporación efectiva, en el supuesto de ser seleccionadas, sólo se podrá realizar cuando obtengan la correspondiente autorización administrativa que les permita residir y trabajar en España, dentro de los plazos y términos establecidos en la base 4.\n2.2. Tener cumplidos los dieciocho años y no haber cumplido la edad de jubilación. Estas dos circunstancias deberán estar acreditadas durante todo el periodo de contratación.\n2.3. Estar en posesión de las condiciones académicas o de titulación requeridas en el Anexo II de esta resolución. La documentación deberá estar traducida al español. Los títulos conseguidos en el extranjero o en Centros Españoles no estatales, deberán estar homologados o reconocidos. Los títulos de Grado expedidos por universidades en los Estados miembros de la Unión Europea serán equivalentes, a todos los efectos, a aquellos expedidos por universidades españolas.\n2.4. No padecer enfermedad ni estar afectado/a por limitación física o psíquica que sea incompatible con el desempeño de las correspondientes funciones.\n2.5. No haber sido separado/a, mediante expediente disciplinario, del servicio de cualquiera de las Administraciones Públicas, ni hallarse inhabilitado/a para el desempeño de las correspondientes funciones. Las personas aspirantes cuya nacionalidad no sea la española deberán igualmente no estar sometidas a sanción disciplinaria o condena penal que impida, en su Estado, el acceso a la función pública.\n2.6. Las personas aspirantes que no posean la nacionalidad española deberán acreditar un conocimiento adecuado del castellano.\n2.7. Todos los requisitos anteriores deberán poseerse en el día de finalización del plazo de presentación de solicitudes y mantenerse hasta el momento de la adjudicación de los correspondientes contratos.",
    "requisitos_generales": null,
    "sistema": "Concurso",
@@ -1177,7 +1434,7 @@
    "organismo": "Agencia de Servicios Sociales y Dependencia de Andalucía",
    "personal": "Sin determinar",
    "plazas": null,
-   "plazo_texto": "solicitudes y la documentación que las acompañen, serán dirigidas a la Dirección Gerencia de la Agencia y se podrán presentar dentro del plazo de diez días hábiles a contar a partir del día siguiente a la publicación de esta convocatoria en el Boletín Oficial de la Junta de Andalucía.",
+   "plazo_texto": "plazo de diez días hábiles a contar a partir del día siguiente a la publicación de esta convocatoria en el Boletín Oficial de la Junta de Andalucía.",
    "requisitos": "2. Requisitos de las personas aspirantes para su participación en este proceso selectivo.\nRNE. Tener la nacionalidad española. (DNI vigente o pasaporte en vigor). También podrán participar:\n1. Las personas nacionales de los Estados miembros de la Unión Europea.\n2. El/la cónyuge de las personas con nacionalidad española y de otros Estados miembros de la Unión Europea, cualquiera que sea su nacionalidad, siempre que no estén separadas de derecho.\nAsimismo, con las mismas condiciones, podrán participar sus descendientes y de su cónyuge, que vivan a su cargo menores de veintiún años o mayores de dicha edad dependientes.",
    "requisitos_generales": null,
    "sistema": "Concurso",
@@ -1417,7 +1674,7 @@
    "organismo": "Dirección General del Profesorado y Gestión de Recursos Humanos",
    "personal": "Funcionario",
    "plazas": null,
-   "plazo_texto": "solicitudes se presentarán en el plazo de diez días hábiles, contados a partir del día siguiente al de la publicación de esta resolución en el Boletín Oficial de la Junta de Andalucía.",
+   "plazo_texto": "plazo de diez días hábiles, contados a partir del día siguiente al de la publicación de esta resolución en el Boletín Oficial de la Junta de Andalucía.",
    "requisitos": "Segunda. Requisitos.\nEl personal participante en esta convocatoria deberá reunir los requisitos generales, así como los específicos de la especialidad a la que pretende acceder y justificar los méritos alegados, que deberán poseerse en la fecha de finalización del plazo de presentación de solicitudes de esta convocatoria.\n2.1. Requisitos generales.\na) Tener la nacionalidad española o la de alguno de los demás Estados miembros de la Unión Europea o ser nacional de algún Estado al que le sea de aplicación la Directiva 2004/38/CE, del Parlamento Europeo, sobre libre circulación de personas trabajadoras y la norma que se dicte para su incorporación al ordenamiento jurídico español y el Real Decreto 240/2007, de 16 de febrero, sobre entrada, libre circulación y residencia en España de ciudadanos de los Estados miembros de la Unión Europea y de otros Estados parte en el acuerdo sobre el Espacio Económico Europeo, modificado por el Real Decreto 1710/2011, de 18 de noviembre.\nAsimismo, podrán participar los cónyuges de los españoles y españolas así como los cónyuges de nacionales de otros Estados miembros de la Unión Europea, siempre que no estén separados de derecho. También sus descendientes y los de sus cónyuges, si no están separados de derecho, siempre que sean menores de 21 años o mayores de 21 dependientes o a su cargo, de conformidad con lo establecido en el artículo 57.2 del texto refundido de la Ley del Estatuto Básico del Empleado Público, aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre.\nb) Tener cumplidos dieciocho años y no exceder de la edad establecida, con carácter general, para la jubilación forzosa.\nc) No padecer enfermedad ni estar afectado por limitación física o psíquica incompatibles con el ejercicio de las funciones docentes del cuerpo y especialidad correspondientes.\nd) Poseer la capacidad funcional y la competencia profesional, adecuada para el desempeño de las tareas habituales del cuerpo y especialidad a cuya bolsa se pretende acceder.\ne) No estar en situación de separación del servicio, por expediente disciplinario, de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni en situación de inhabilitación para el desempeño de funciones públicas. En el supuesto de no estar en posesión de la nacionalidad española y, de conformidad con lo establecido en el artículo 56 del texto refundido de la Ley del Estatuto Básico del Empleado Público, aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre, se deberá acreditar no estar sometido a sanción disciplinaria o condena penal que impida, en el país de origen, el acceso a la función pública.\nf) No ser personal funcionario de carrera, en prácticas o estar pendiente del correspondiente nombramiento, del mismo cuerpo al que se pretende acceder.\ng) Quienes no posean la nacionalidad española y el idioma oficial del país de origen no sea el español deberán aportar alguno de los siguientes títulos o certificados: Diploma Superior de Español como Lengua Extranjera, Diploma de Español como Lengua Extranjera (DELE) nivel C1 o C2, Certificado de Aptitud o de nivel avanzado en Español para Extranjeros de la Escuela Oficial de Idiomas, Título de la licenciatura o grado correspondiente en Filología Hispánica o Románica o poseer titulación homologada o documentación acreditativa de haber cursado los estudios conducentes a la obtención de un título universitario en España o certificación de haber obtenido la calificación de apto en pruebas de acreditación de conocimiento del español en convocatorias anteriores de alguna Administración educativa española.\nh) No haber sido condenado por sentencia firme por algún delito contra la libertad e indemnidad sexuales tipificados en el Título VIII de la Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal, así como por cualquier delito de trata de seres humanos tipificado en el título VII bis del Código Penal, de conformidad con el artículo […]",
    "requisitos_generales": null,
    "sistema": "Sin determinar",
@@ -1494,11 +1751,11 @@
    "denominacion": "Personal laboral fijo, fuera de convenio, con la categoría de Titulado Superior",
    "departamento": "",
    "en_boe": true,
-   "estado": "sin_determinar",
+   "estado": "abierto",
    "fecha_boe": "2026-11-12",
    "fecha_publicacion": "2026-11-12",
    "fin_estimado": false,
-   "fin_plazo": null,
+   "fin_plazo": "2026-12-14",
    "fuente": "BOE",
    "grupo": "Sin determinar",
    "id": "BOE-A-2026-23691",
@@ -1507,7 +1764,7 @@
    "organismo": "Ministerio de Hacienda",
    "personal": "Laboral",
    "plazas": 1,
-   "plazo_texto": null,
+   "plazo_texto": "plazo de veinte días hábiles contados a partir del día siguiente al de la fecha de publicación de esta convocatoria en el «Boletín Oficial del Estado» y se dirigirán a la Presidenta de la Autoridad Independiente de Responsabilidad Fiscal, AAI.",
    "requisitos": "2. Requisitos de las personas candidatas\n2.1 Para ser admitidas a la realización del proceso selectivo las personas aspirantes deberán poseer en el día de finalización del plazo de presentación de solicitudes y mantener hasta el momento de la formalización del contrato de trabajo los siguientes requisitos de participación:\n2.1.1 Nacionalidad:\na) Tener la nacionalidad española.\nb) Ser nacional de los Estados miembros de la Unión Europea.\nc) Cualquiera que sea su nacionalidad, ser cónyuge de español o española, o de los nacionales de otros Estados miembros de la Unión Europea, siempre que no estén separados de derecho. Asimismo, con las mismas condiciones, podrán participar sus descendientes y los de su cónyuge, que vivan a su cargo menores de veintiún años o mayores de dicha edad dependientes.\nd) Las personas incluidas en el ámbito de aplicación de los Tratados Internacionales celebrados por la Unión Europea y ratificados por España en los que sea de aplicación la libre circulación de trabajadores.\ne) Los extranjeros que no estando incluidos en los párrafos anteriores se encuentren con residencia legal en España.\n2.1.2 Edad. Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa.\n2.1.3 Titulación: Estar en posesión o en condiciones de obtener el título que se señala en el anexo III. Las personas aspirantes con titulaciones obtenidas en el extranjero deberán acreditar que están en posesión de la correspondiente convalidación o de la credencial que acredite, en su caso, la homologación. Este requisito no será de aplicación a las personas aspirantes que hubieran obtenido el reconocimiento de su cualificación profesional, en el ámbito de las profesiones reguladas, al amparo de las disposiciones de Derecho Comunitario (Orden PRE/2061/2009, de 23 de julio).\n2.1.4 Poseer la capacidad funcional para el desempeño de las tareas.\n2.1.5 Habilitación: No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de funcionario, o para ejercer funciones similares a las que desempeñaban en el caso del personal laboral, en el que hubiese sido separado o inhabilitado. En el caso de ser nacional de otro Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al empleo público.",
    "requisitos_generales": null,
    "sistema": "Concurso-oposición",
@@ -1850,6 +2107,36 @@
    "url_pdf": null
   },
   {
+   "ambito": "Toda España (posible destino en Sevilla)",
+   "denominacion": "Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General",
+   "departamento": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+   "en_boe": true,
+   "estado": "abierto",
+   "fecha_boe": "2026-11-05",
+   "fecha_publicacion": "2026-11-05",
+   "fin_estimado": false,
+   "fin_plazo": "2026-12-03",
+   "fuente": "BOE",
+   "grupo": "C2",
+   "id": "BOE-A-2026-23196",
+   "localidad": "Toda España",
+   "ocr": false,
+   "organismo": "Agencia Estatal Boletín Oficial del Estado",
+   "personal": "Laboral",
+   "plazas": 2,
+   "plazo_texto": "plazo de presentación de veinte días hábiles contados a partir del día siguiente al de la fecha de publicación de esta convocatoria en el «Boletín Oficial del Estado», y dirigirán las solicitudes a la Dirección de la Agencia Estatal Boletín Oficial del Estado.",
+   "requisitos": "2. Requisitos de las personas aspirantes\n2.1 Para ser admitidas a la realización del proceso selectivo las personas aspirantes deberán poseer en el día de finalización del plazo de presentación de solicitudes y mantener hasta el momento de la formalización del contrato de trabajo los siguientes requisitos de participación:\n2.1.1 Nacionalidad:\na) Tener la nacionalidad española.\nb) Ser nacional de los Estados miembros de la Unión Europea.\nc) Cualquiera que sea su nacionalidad, el cónyuge de los españoles y de los nacionales de otros Estados miembros de la Unión Europea, siempre que no estén separados de derecho. Asimismo, con las mismas condiciones, podrán participar sus descendientes y los de su cónyuge, que vivan a su cargo, menores de veintiún años o mayores de dicha edad dependientes.\nd) Las personas incluidas en el ámbito de aplicación de los Tratados Internacionales celebrados por la Unión Europea y ratificados por España en los que sea de aplicación la libre circulación de trabajadores.\ne) Los extranjeros que no estando incluidos en los párrafos anteriores se encuentren con residencia legal en España.\n2.1.2 Edad: Tener cumplidos los 16 años.\n2.1.3 Compatibilidad funcional: Poseer la capacidad funcional para el desempeño de las tareas.\n2.1.4 Habilitación: No haber sido separado, mediante expediente disciplinario, del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de funcionario, o para ejercer funciones similares a las que desempeñaban en el caso de personal laboral, en el que hubiese sido separado o inhabilitado, ni pertenecer como personal laboral fijo del organismo al mismo grupo y subgrupo profesional a cuyas pruebas selectivas se presenta.\nEn el caso de ser nacional de otro Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al empleo público.\n2.1.5 Titulación: Estar en posesión, o en condiciones de obtener en la fecha de finalización del plazo de presentación de solicitudes, del título de Graduado en Educación Secundaria, Educación General Básica o Formación Profesional de Técnico o Técnico Auxiliar, o equivalentes.\nLas personas aspirantes con titulaciones obtenidas en el extranjero deberán acreditar que están en posesión de la correspondiente credencial de homologación o, en su caso, del correspondiente certificado de equivalencia. Este requisito no se aplicará a quienes hubieran obtenido el reconocimiento de su cualificación profesional, en el ámbito de las profesiones reguladas, al amparo de las Disposiciones de Derecho Comunitario.\n2.1.6 Capacidad legal: Tener capacidad para contratar la prestación de su trabajo.",
+   "requisitos_generales": null,
+   "sistema": "Oposición",
+   "tipo": "Acceso libre",
+   "tipo_organismo": "Administración del Estado",
+   "titulacion": "Estar en posesión, o en condiciones de obtener en la fecha de finalización del plazo de presentación de solicitudes, del título de Graduado en Educación Secundaria, Educación General Básica o Formación Profesional de Téc",
+   "titulo_oficial": "Resolución de 28 de octubre de 2026, de la Dirección de la Agencia Estatal Boletín Oficial del Estado, por la que se convoca proceso selectivo para la provisión, por el sistema general de acceso libre, de plazas de Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General.",
+   "url_bases": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23196",
+   "url_boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23196",
+   "url_pdf": null
+  },
+  {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Coordinador/a del Área de Compensación Educativa de Sevilla próximo a quedar vacante",
    "departamento": "",
@@ -2034,11 +2321,11 @@
    "denominacion": "Responsable del Servicio Local",
    "departamento": "",
    "en_boe": false,
-   "estado": "pendiente_sin_plazo",
+   "estado": "abierto",
    "fecha_boe": null,
    "fecha_publicacion": "2026-10-30",
-   "fin_estimado": false,
-   "fin_plazo": null,
+   "fin_estimado": true,
+   "fin_plazo": "2026-11-30",
    "fuente": "BOP",
    "grupo": "Sin determinar",
    "id": "BOP-SE-2026-211020",
@@ -2047,7 +2334,7 @@
    "organismo": "Agencia de Régimen Especial «Ciclo Integral Aguas del Retortillo»",
    "personal": "Laboral",
    "plazas": 1,
-   "plazo_texto": null,
+   "plazo_texto": "plazo de 20 días hábiles contados a partir del día siguiente de la publicación de la convocatoria en el Boletín Oficial de la Provincia, debiéndose acompañar la siguiente documentación: a) Impreso de Autobaremación conforme al Anexo IV.",
    "requisitos": "4. REQUISITOS DE LAS PERSONAS ASPIRANTES\n4.1.- Para poder tomar parte en el proceso selectivo se deberán reunir los siguientes requisitos, además de los específicos para cada plaza detallados en el Anexo I:\na) Tener la nacionalidad española, sin perjuicio de lo dispuesto para el acceso al empleo público de las personas nacionales de otros Estados. Las personas extranjeras con residencia legal en España podrán acceder a las Administraciones Públicas, como personal laboral, en igualdad de condiciones que las personas de nacionalidad española.\nb) Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa.\nc) Poseer la capacidad funcional para el desempeño de las tareas.\nd) Estar en posesión del permiso de conducción de la clase B.\ne) No haber objeto de separación del servicio mediante expediente disciplinario en cualquiera de las Administraciones públicas o de los Organismos Constitucionales o Estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación para empleos o cargos públicos por resolución judicial, para ejercer funciones similares a las que desempeñaban en el caso del personal laboral. El haber sido objeto de despido disciplinario comportará la inhabilitación para ser titular de un nuevo contrato de trabajo con funciones similares a las que desempeñaban.\nf) Estar en posesión, o en condiciones de obtenerlo en la fecha en que termine el plazo de presentación de solicitudes, del título académico a que se refiere el Anexo I. En el caso de titulaciones obtenidas en el extranjero se deberá estar en posesión de las credenciales que acrediten su homologación oficial, además se adjuntará al título su traducción jurada. En el supuesto de estar en posesión de un título distinto pero equivalente al exigido en la convocatoria, las personas aspirantes deberán alegar la norma que establezca la equivalencia o de la credencial de homologación a título habilitante en España, o certificado de su equivalencia.\ng) Reunir, en su caso, otros requisitos que puedan exigirse en las correspondientes bases específicas.\nLos requisitos establecidos en estas bases, así como los méritos que se aleguen en la fase del concurso, estarán referidos a la fecha de finalización del plazo de presentación de solicitudes y mantenerlos durante todo el proceso selectivo.",
    "requisitos_generales": null,
    "sistema": "Concurso-oposición",
@@ -2306,36 +2593,6 @@
   },
   {
    "ambito": "Provincia de Sevilla",
-   "denominacion": "Categoría de Monitor de Teatro",
-   "departamento": "",
-   "en_boe": false,
-   "estado": "sin_determinar",
-   "fecha_boe": null,
-   "fecha_publicacion": "2026-10-26",
-   "fin_estimado": false,
-   "fin_plazo": null,
-   "fuente": "BOP",
-   "grupo": "C2",
-   "id": "BOP-SE-2026-207011",
-   "localidad": "Ecija",
-   "ocr": false,
-   "organismo": "Ayuntamiento de Ecija",
-   "personal": "Funcionario",
-   "plazas": null,
-   "plazo_texto": null,
-   "requisitos": "TERCERA.- REQUISITOS DE LOS/AS ASPIRANTES.\nPara ser admitidos/as a la realización de las pruebas selectivas los/las aspirantes deberán reunir los siguientes requisitos:\n1. Ser español/a o nacional de uno de los Estados Miembros de la Unión Europea, en los términos establecidos en el artículo 57 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Estatuto Básico del Empleado Público.\n2. Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación ordinaria.\n3. Poseer la capacidad funcional para el desempeño de las tareas, y no hallarse incurso/a en causas de incapacidad o incompatibilidad específica previstas en la legislación vigente.\n4. No haber sido separado/a mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de funcionario, o para ejercer funciones similares a las que desempeñaban en el caso del personal laboral, en el que hubiese sido separado/a o inhabilitado/a. En el caso de ser nacional de otro Estado, no hallarse inhabilitado/a o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos el acceso al empleo público.\n5. Estar en posesión del Título de Graduado en Educación Secundaria, Graduado Escolar, Formación Profesional de primer grado o equivalente, o en condiciones de obtenerlo antes de la fecha en que concluya el plazo de presentación de instancias.\nSe entenderá que está en condiciones de obtener el título cuando se aporte documento acreditativo de haber abonado los derechos correspondientes a la expedición del mismo.\nEn caso de invocar un título equivalente al exigido, el aspirante deberá presentar el correspondiente certificado de equivalencia expedido por el órgano estatal o autonómico competente en materia de educación. La titulación obtenida en el extranjero deberá justificarse con la documentación que acredite la homologación y convalidación correspondiente.\n6. Los aspirantes afectados por limitaciones físicas, psíquicas o sensoriales, serán admitidos en igualdad de condiciones con los demás aspirantes, sin que puedan ser excluidos por estas causas, siempre que tales limitaciones no sean incompatibles con el desempeño de las tareas o funciones correspondientes.\nDe conformidad con lo dispuesto en el artículo 21 del Decreto 51/2025, de 24 de febrero, por el que se regula la planificación y ordenación del empleo público, y el ingreso, promoción interna y provisión de puestos de trabajo del personal de la Administración General de la Junta de Andalucía, estos/as aspirantes tendrán que alegar de forma expresa, al tiempo de presentar la correspondiente solicitud, qué tipo de discapacidad padecen y qué adaptaciones necesitan para la realización de los ejercicios, y los ajustes razonables necesarios de tiempo y medios para su realización, para asegurar que las personas con discapacidad participan en condiciones de igualdad. Se acompañará con la solicitud de participación, Informe técnico emitido por órgano competente, que permita constatar la relación entre la discapacidad alegada y la adaptación solicitada para la prueba a realizar. Dicho informe incluirá solo los datos estrictamente necesarios para la constatación de la referida relación, sin perjuicio de que se pueda requerir a la persona candidata la información adicional que se estime estrictamente necesaria.\nLa adaptación no se otorgará de forma automática, sino únicamente en aquellos casos en que la discapacidad guarde relación directa con la prueba a realizar.\nLos requisitos establecidos en las Bases anteriores, deberán cumplirse el último día del plazo de presentación de solicitudes.",
-   "requisitos_generales": null,
-   "sistema": "Oposición",
-   "tipo": "Bolsa o empleo temporal",
-   "tipo_organismo": "Ayuntamiento",
-   "titulacion": "Graduado en Educación Secundaria, Graduado Escolar, Formación Profesional de primer grado o equivalente, o en condiciones",
-   "titulo_oficial": "Bases de la convocatoria para la creación de una bolsa de trabajo para la contratación temporal en la categoría de Monitor de Teatro",
-   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-la-contratacion-temporal-en-la-categoria-de-Monitor-de-Teatro/",
-   "url_boe": null,
-   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1792972830033-final-56986c3d.pdf"
-  },
-  {
-   "ambito": "Provincia de Sevilla",
    "denominacion": "Oficial 1.ª de Mantenimiento",
    "departamento": "",
    "en_boe": true,
@@ -2543,36 +2800,6 @@
    "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-del-proceso-de-seleccion-de-un-Orientador-para-la-ejecucion-del-programa-de-empleo-y-formacion-de-atencion-sociosanitaria-a-personas-en-el-domicilio-y-actividades-de-gestiones/",
    "url_boe": null,
    "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1792105225024-final-1c62fc61.pdf"
-  },
-  {
-   "ambito": "Provincia de Sevilla",
-   "denominacion": "Un contrato de actividades científico-técnicas",
-   "departamento": "",
-   "en_boe": false,
-   "estado": "sin_determinar",
-   "fecha_boe": null,
-   "fecha_publicacion": "2026-10-16",
-   "fin_estimado": false,
-   "fin_plazo": null,
-   "fuente": "BOJA",
-   "grupo": "Sin determinar",
-   "id": "BOJA-2026-201-29",
-   "localidad": "Sevilla",
-   "ocr": false,
-   "organismo": "Universidad Pablo de Olavide",
-   "personal": "Laboral",
-   "plazas": null,
-   "plazo_texto": null,
-   "requisitos": "Podrán solicitar tomar parte en la presente convocatoria las personas solicitantes que reúnan los siguientes requisitos:\n2.1. a) Ser de nacionalidad española o nacional de un Estado miembro de la Unión Europea o nacional de aquellos Estados a los que, en virtud de Tratados Internacionales celebrados por la Unión Europea y ratificados por España, sea de aplicación la libre circulación de personas trabajadoras en los términos en que ésta se halle definida en el Tratado constitutivo de la Unión Europea.\nb) También podrán participar el/la cónyuge, los/las descendientes del o de la cónyuge, de los/las españoles/las y también de los/las nacionales de otros Estados miembros de la Unión Europea, siempre que no se estén separados/as de derecho, menores de veintiún años o mayores de dicha edad que vivan a sus expensas.\nEste último beneficio será igualmente de aplicación a familiares de nacionales de otros Estados cuando así se prevea en los Tratados Internacionales celebrados por la Comunidad Europea y ratificados por España.\nc) Quienes no estando incluidos/as en los apartados anteriores se encuentren residiendo en España en situación de legalidad, siendo titulares de un documento que les habilite a residir y a poder acceder sin limitaciones al mercado laboral. En consecuencia, podrán participar quienes se encuentren en situación de residencia temporal, quienes se encuentren en situación de residencia permanente y quienes se encuentren en situación de autorización para residir y trabajar, así como los que tengan la condición de personas refugiadas.\nd) Las personas que no se encuentren en situaciones descritas en los apartados a), b) y c), podrán participar en los procesos selectivos, siempre y cuando reúnan y acrediten los requisitos mínimos establecidos en la convocatoria. No obstante, su incorporación efectiva, en el supuesto de ser seleccionadas, sólo se podrá realizar cuando obtengan la correspondiente autorización administrativa que les permita residir y trabajar en España, dentro de los plazos y términos establecidos en la base 4.\n2.2. Tener cumplidos los dieciocho años y no haber cumplido la edad de jubilación. Estas dos circunstancias deberán estar acreditadas durante todo el periodo de contratación.\n2.3. Estar en posesión de las condiciones académicas o de titulación requeridas en el Anexo II de esta resolución. La documentación deberá estar traducida al español. Los títulos conseguidos en el extranjero o en centros españoles no estatales, deberán estar homologados o reconocidos. Los títulos de Grado expedidos por universidades en los Estados miembros de la Unión Europea serán equivalentes, a todos los efectos, a aquellos expedidos por universidades españolas.\n2.4. No padecer enfermedad ni estar afectado/a por limitación física o psíquica que sea incompatible con el desempeño de las correspondientes funciones.\n2.5. No haber sido separado/a, mediante expediente disciplinario, del servicio de cualquiera de las Administraciones Públicas, ni hallarse inhabilitado/a para el desempeño de las correspondientes funciones. Las personas aspirantes cuya nacionalidad no sea la española deberán igualmente no estar sometidas a sanción disciplinaria o condena penal que impida, en su Estado, el acceso a la función pública.\n2.6. Las personas aspirantes que no posean la nacionalidad española deberán acreditar un conocimiento adecuado del castellano.\n2.7. Todos los requisitos anteriores deberán poseerse en el día de finalización del plazo de presentación de solicitudes y mantenerse hasta el momento de la adjudicación de los correspondientes contratos.",
-   "requisitos_generales": null,
-   "sistema": "Concurso",
-   "tipo": "Acceso libre",
-   "tipo_organismo": "Universidad",
-   "titulacion": null,
-   "titulo_oficial": "Resolución de 8 de octubre de 2026, de la Universidad Pablo de Olavide, por la que se establecen las bases reguladoras para la contratación laboral prevista en la Ley 14/2011, de 1 de junio, de la Ciencia, la Tecnología y la Innovación, y se convoca a concurso público un contrato de actividades científico-técnicas.",
-   "url_bases": "https://www.juntadeandalucia.es/boja/2026/201/29",
-   "url_boe": null,
-   "url_pdf": null
   },
   {
    "ambito": "Provincia de Sevilla",
@@ -2946,36 +3173,6 @@
   },
   {
    "ambito": "Provincia de Sevilla",
-   "denominacion": "Cuerpos docentes universitarios",
-   "departamento": "",
-   "en_boe": false,
-   "estado": "pendiente",
-   "fecha_boe": null,
-   "fecha_publicacion": "2026-07-31",
-   "fin_estimado": false,
-   "fin_plazo": null,
-   "fuente": "BOJA",
-   "grupo": "Sin determinar",
-   "id": "BOJA-2026-147-31",
-   "localidad": "Sevilla",
-   "ocr": false,
-   "organismo": "Universidad de Sevilla",
-   "personal": "Sin determinar",
-   "plazas": null,
-   "plazo_texto": "plazo de presentación de instancias se establece en 15 días hábiles a contar desde el día siguiente al de la publicación de la presente convocatoria en el BOE.",
-   "requisitos": "2. Requisitos de los candidatos.\nPara ser admitido a estas pruebas selectivas deberán reunirse los siguientes requisitos:\n2.1. Requisitos generales.\na) Tener la nacionalidad española, sin perjuicio de lo dispuesto en el artículo 57 del Estatuto Básico del Empleado Público.\nb) Poseer la capacidad funcional para el desempeño de las tareas.\nc) Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa.\nd) No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al cuerpo o escala de funcionarios, o para ejercer funciones similares a las que desempeñaban en el caso del personal laboral, en el que hubiese sido separado o inhabilitado. En el caso de ser nacional de otro Estado, no hallarse inhabilitado o en situación equivalente ni haber sido sometido a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos, el acceso al empleo público. Asimismo, el desempeño de las plazas convocadas quedará sometido a la Ley 53/84, de 26 de diciembre, y demás normas de desarrollo en materia de incompatibilidades.\ne) Los aspirantes que no sean de nacionalidad española deberán poseer un conocimiento del castellano adecuado para el desarrollo de sus funciones.\nf) Los nacionales de Estados distintos a la Unión Europea deberán estar en posesión del permiso de residencia.\n2.2. Requisitos específicos.\nAdemás de los requisitos generales, se deberá poseer el título de doctor y estar acreditado al cuerpo de Profesores Titulares de Universidad.\nLos requisitos establecidos en la presente base deberán cumplirse en el momento de finalizar el plazo de presentación de solicitudes.",
-   "requisitos_generales": null,
-   "sistema": "Concurso",
-   "tipo": "Acceso libre",
-   "tipo_organismo": "Universidad",
-   "titulacion": "doctor y estar acreditado al cuerpo de Profesores Titulares de Universidad",
-   "titulo_oficial": "Resolución de 22 de julio de 2026, de la Universidad de Sevilla, por la que se convoca concurso de acceso para la provisión de plazas vinculadas de cuerpos docentes universitarios.",
-   "url_bases": "https://www.juntadeandalucia.es/boja/2026/147/31",
-   "url_boe": null,
-   "url_pdf": null
-  },
-  {
-   "ambito": "Provincia de Sevilla",
    "denominacion": "Personal de Oficios",
    "departamento": "",
    "en_boe": false,
@@ -3304,12 +3501,7 @@
    "plazas": 1,
    "plazo_texto": null,
    "requisitos": null,
-   "requisitos_generales": {
-    "fecha": "2025-08-01",
-    "texto": "SEGUNDA.- REQUISITOS DE LAS PERSONAS ASPIRANTES.\nLas personas interesadas en participar en las pruebas selectivas por el sistema de acceso libre y de reserva a personas con discapacidad, a los Cuerpos y Escalas, en el caso de personal funcionario, o Categorías Profesionales, para el personal laboral, deberán reunir los siguientes requisitos:\n1. Tener la nacionalidad española, sin perjuicio de la posibilidad de participación de las personas de nacionalidad de otros Estados, de acuerdo con lo establecido en el art. 57 del TREBEP y art. 107 de la LFPTA, con el alcance y efectos en ellos previstos.\n2. Poseer la capacidad funcional para el desempeño de las tareas.\n3. Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación.\nSe podrá exigir la edad mínima de dieciocho años para el acceso a las categorías que impliquen el ejercicio de autoridad o cuyas funciones supongan riesgo para la salud .\n4. No haber sido separadas mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas, o de los órganos constitucionales o estatutarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al Cuerpo o Escala de personal funcionario, o para ejercer funciones similares a las que desempeñaba en el caso del personal laboral, en el que se hubiese sido separado o separada, o inhabilitado o inhabilitada.\nEn caso de ser nacional de otro Estado, no hallarse inhabilitadas o en situación equivalente ni haber sido sometidas a sanción disciplinaria o equivalente que impida, en su Estado, en los mismos términos, el acceso al Empleo Público.\n5. Poseer la titulación exigida para el Cuerpo y Escala, Grupo/Subgrupo, en el caso de personal funcionario, o Grupo de Convenio, en el caso de personal laboral o cumplir los requisitos para su obtención en la fecha de finalización del plazo de presentación de la solicitud de participación.\n En el caso de que, durante el plazo para presentar la solicitud, la persona aspirante no estuviera en posesión del título oficial -por motivo de estar tramitándose su expedición-, no se considerará válido estar en posesión solo del certificado de abono de derecho de expedición de título, sino que es necesario que posea una “Certificación supletoria provisional” del Título Oficial, que será emitida por el Organismo correspondiente de acuerdo con los trámites establecidos por el Centro Educativo correspondiente.\nLa persona aspirante deberá presentar el original del título a la finalización del proceso de selección -durante el plazo establecido en la Base Novena que se otorgue a las personas aspirantes que hayan superado dicho proceso-.\nEn el supuesto de estar en posesión de un título equivalente al exigido o exigidos en la convocatoria, tras la celebración del proceso selectivo -durante el plazo (Base Novena) para presentar la documentación acreditativa del cumplimiento de requisitos- la persona aspirante habrá de alegar la norma que establezca la equivalencia o en su defecto acompañar certificado expedido por el órgano competente del Centro Educativo que acredite la citada equivalencia.\nLas personas aspirantes con titulaciones obtenidas en el extranjero, deberán acreditar que están en posesión de la correspondiente convalidación o de la credencial de homologación a título habilitante español, o certificado de su equivalencia a titulación y a nivel académico universitario oficial.\n6. No poseer la condición de personal funcionario de carrera o personal laboral fijo en la misma categoría profesional convocada por esta Corporación.\n7. En las bases específicas de la convocatoria de los procesos selectivos podrá exigirse el cumplimiento de otros requisitos específicos que guarden relación […]",
-    "titulo": "Bases generales por las que habrán de regirse las convocatorias de turno libre y reserva a personas con discapacidad, para la provisión de plazas vacantes en las plantillas de personal funcionario y laboral (OEP 2023 y 2024)",
-    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-generales-por-las-que-habran-de-regirse-las-convocatorias-de-turno-libre-y-reserva-a-personas-con-discapacidad-para-la-provision-de-plazas-vacantes-en-las-plantillas-de-personal-funcionario-y/"
-   },
+   "requisitos_generales": null,
    "sistema": "Concurso-oposición",
    "tipo": "Acceso libre",
    "tipo_organismo": "Diputación de Sevilla",
@@ -3563,23 +3755,23 @@
  "fecha_referencia": "2026-11-25",
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-24T23:11+00:00",
-   "nuevos": 25,
+   "fecha": "2026-11-24T23:49+00:00",
+   "nuevos": 24,
    "ok": true,
-   "segundos": 131
+   "segundos": 132
   },
   "BOJA": {
-   "fecha": "2026-11-24T23:16+00:00",
-   "nuevos": 91,
+   "fecha": "2026-11-24T23:49+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 275
+   "segundos": 8
   },
   "BOP": {
-   "fecha": "2026-11-24T23:40+00:00",
-   "nuevos": 96,
+   "fecha": "2026-11-24T23:50+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 1436
+   "segundos": 6
   }
  },
- "total": 94
+ "total": 92
 }

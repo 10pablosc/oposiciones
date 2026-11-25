@@ -1,13 +1,30 @@
 [
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21477",
-  "coincide_con": null,
+  "coincide_con": "BOE-A-2026-24530",
   "denominacion": "INFORMACIÓN Y ASISTENCIA (GRUPO PROFESIONAL I1)",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24530"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachillerato o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Hacienda"
+   },
+   "web": null
+  },
   "fin": "23/12/2026",
-  "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
   "organo": "Ministerio de Hacienda",
   "plazas": "Convocadas:181 Libres:0 Internas:147 Discapacidad General:34 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24530",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24530"
+  },
   "ref": "223408",
   "titulacion": "Bachillerato o equivalente",
   "ubicacion": "NACIONAL",
@@ -15,13 +32,28 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20025",
   "coincide_con": null,
   "denominacion": "ENFERMERO ESPECIALISTA - Enfermería Obstétrico-Ginecológico (Matrona)",
+  "detalle": {
+   "boe": [],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Diplomado universitario o grado en Enfermería o equivalente junto al título de especialización en Enfermería Obstétrico-Ginecológica (Matrona)",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a2-enfermero-obstetrico-ginecologico-matrona"
+  },
   "fin": "03/12/2026",
-  "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
   "organo": "Ministerio de Defensa",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "solo en la web del organismo (no en BOE, BOJA ni BOP)",
+   "url": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a2-enfermero-obstetrico-ginecologico-matrona"
+  },
   "ref": "223399",
   "titulacion": "Diplomado universitario o grado en Enfermería o equivalente junto al título de especialización en Enfermería Obstétrico-Ginecológica (Matrona)",
   "ubicacion": "NACIONAL",
@@ -29,13 +61,28 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20025",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - PEDIATRÍA Y ÁREAS ESPECÍFICAS",
+  "detalle": {
+   "boe": [],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "FACULTATIVO ESPECIALISTA EN PEDIATRÍA Y ÁREAS ESPECÍFICAS O EQUIVALENTE",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a1-ciencias-de-la-salud-pediatria"
+  },
   "fin": "03/12/2026",
-  "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
   "organo": "Ministerio de Defensa",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "solo en la web del organismo (no en BOE, BOJA ni BOP)",
+   "url": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a1-ciencias-de-la-salud-pediatria"
+  },
   "ref": "223397",
   "titulacion": "FACULTATIVO ESPECIALISTA EN PEDIATRÍA Y ÁREAS ESPECÍFICAS O EQUIVALENTE",
   "ubicacion": "NACIONAL",
@@ -43,13 +90,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21635",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24459",
   "coincide_con": null,
   "denominacion": "OFICIALES DE ARSENALES DE LA ARMADA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24459"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Graduado en Educación Secundaria Obligatoria",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "https://www.defensa.gob.es/portalservicios/"
+  },
   "fin": "22/12/2026",
-  "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+  "motivo": "Plazas en otras provincias (Baleares, Cadiz, Ciudad Real, La Coruna), ninguna en Sevilla",
   "organo": "Ministerio de Defensa",
   "plazas": "Convocadas:116 Libres:102 Internas:0 Discapacidad General:14 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24459",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24459"
+  },
   "ref": "223390",
   "titulacion": "Graduado en Educación Secundaria Obligatoria",
   "ubicacion": "NACIONAL",
@@ -59,9 +125,30 @@
   "ambito": "Estado (ámbito nacional)",
   "coincide_con": "BOE-A-2026-24535",
   "denominacion": "AUXILIAR DE ARCHIVOS, BIBLIOTECAS Y MUSEOS - Cambio de régimen jurídico",
+  "detalle": {
+   "boe": [
+    "BOE-A-2025-24752",
+    "BOE-A-2026-20320",
+    "BOE-A-2026-24535"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Cultura"
+   },
+   "web": "https://www.cultura.gob.es/portada.html"
+  },
   "fin": "22/12/2026",
   "organo": "Ministerio de Cultura",
   "plazas": "Convocadas:0 Libres:0 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2025-24752",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-24752"
+  },
   "ref": "223388",
   "titulacion": "Bachiller o Técnico",
   "ubicacion": "NACIONAL",
@@ -71,9 +158,28 @@
   "ambito": "Estado (ámbito nacional)",
   "coincide_con": "BOE-A-2026-24535",
   "denominacion": "AUXILIAR DE ARCHIVOS, BIBLIOTECAS Y MUSEOS",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24535"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Cultura"
+   },
+   "web": "https://www.cultura.gob.es/portada.html"
+  },
   "fin": "22/12/2026",
   "organo": "Ministerio de Cultura",
   "plazas": "Convocadas:79 Libres:73 Internas:0 Discapacidad General:6 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24535",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24535"
+  },
   "ref": "223387",
   "titulacion": "Bachiller o Técnico",
   "ubicacion": "NACIONAL",
@@ -83,9 +189,28 @@
   "ambito": "Estado (ámbito nacional)",
   "coincide_con": "BOE-A-2026-24535",
   "denominacion": "AUXILIAR DE ARCHIVOS, BIBLIOTECAS Y MUSEOS",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24535"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Bachiller o Técnico",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Cultura"
+   },
+   "web": "https://www.cultura.gob.es/portada.html"
+  },
   "fin": "22/12/2026",
   "organo": "Ministerio de Cultura",
   "plazas": "Convocadas:68 Libres:63 Internas:0 Discapacidad General:5 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24535",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24535"
+  },
   "ref": "223386",
   "titulacion": "Bachiller o Técnico",
   "ubicacion": "NACIONAL",
@@ -96,10 +221,29 @@
   "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24335",
   "coincide_con": null,
   "denominacion": "TÉCNICO - Técnico/a Especialista de Sistemas y Tecnología de la Información.",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24335"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Formación Profesional de grado superior en Informática o Telecomunicación o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "http://www.sanidad.gob.es/"
+  },
   "fin": "21/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24335",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24335"
+  },
   "ref": "223355",
   "titulacion": "Título de Formación Profesional de grado superior en Informática o Telecomunicación o equivalente.",
   "ubicacion": "NACIONAL",
@@ -109,9 +253,28 @@
   "ambito": "Estado (ámbito nacional)",
   "coincide_con": "BOE-A-2026-24331",
   "denominacion": "SUPERIOR DE ESPECIALISTAS EN TRANSPORTE INFRAESTRUCTURAS Y SEGURIDAD DE LOS OO.AA. Y LAS AG. ESTATALES DEL MITMA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24331"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Licenciado, Ingeniero, Arquitecto o Grado",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes, Movilidad y Agenda Urbana"
+   },
+   "web": "https://www.mitma.gob.es/"
+  },
   "fin": "21/12/2026",
   "organo": "Ministerio de Transportes, Movilidad y Agenda Urbana",
   "plazas": "Convocadas:17 Libres:16 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24331",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24331"
+  },
   "ref": "223350",
   "titulacion": "Licenciado, Ingeniero, Arquitecto o Grado",
   "ubicacion": "NACIONAL",
@@ -121,9 +284,28 @@
   "ambito": "Estado (ámbito nacional)",
   "coincide_con": "BOE-A-2026-24331",
   "denominacion": "SUPERIOR DE ESPECIALISTAS EN TRANSPORTE INFRAESTRUCTURAS Y SEGURIDAD DE LOS OO.AA. Y LAS AG. ESTATALES DEL MITMA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24331"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Licenciado, Ingeniero, Arquitecto o Grado",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes, Movilidad y Agenda Urbana"
+   },
+   "web": "https://www.mitma.gob.es/"
+  },
   "fin": "21/12/2026",
   "organo": "Ministerio de Transportes, Movilidad y Agenda Urbana",
   "plazas": "Convocadas:21 Libres:19 Internas:0 Discapacidad General:2 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24331",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24331"
+  },
   "ref": "223349",
   "titulacion": "Licenciado, Ingeniero, Arquitecto o Grado",
   "ubicacion": "NACIONAL",
@@ -134,10 +316,29 @@
   "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24218",
   "coincide_con": null,
   "denominacion": "PERSONAL TÉCNICO DE GRADO MEDIO - Técnico/a Titulado/a Medio en Informática",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24218"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título universitario oficial de Graduado/a o Ingeniero/a Técnico en Informática o Telecomunicación o titulación de contenido equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://www.sanidad.gob.es/servCiudadanos/oposicionesConcursos/ofertasEmpleo/home.htm"
+  },
   "fin": "18/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:5 Libres:5 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24218",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24218"
+  },
   "ref": "223333",
   "titulacion": "Título universitario oficial de Graduado/a o Ingeniero/a Técnico en Informática o Telecomunicación o titulación de contenido equivalente.",
   "ubicacion": "NACIONAL",
@@ -147,9 +348,28 @@
   "ambito": "Estado (ámbito nacional)",
   "coincide_con": "BOE-A-2026-24217",
   "denominacion": "INGENIEROS TÉCNICOS EN ESPECIALIDADES AGRÍCOLAS",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24217"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Ingeniero Técnico Agrícola o el título equivalente que habilite para el ejercicio de esta profesión regulada",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Agricultura Pesca y Alimentacion"
+   },
+   "web": "https://www.mapa.gob.es/es/ministerio/servicios/empleo-publico/oep"
+  },
   "fin": "18/12/2026",
   "organo": "Ministerio de Agricultura Pesca y Alimentacion",
   "plazas": "Convocadas:23 Libres:19 Internas:0 Discapacidad General:4 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24217",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24217"
+  },
   "ref": "223330",
   "titulacion": "Ingeniero Técnico Agrícola o el título equivalente que habilite para el ejercicio de esta profesión regulada",
   "ubicacion": "NACIONAL",
@@ -157,11 +377,30 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-24217",
+  "coincide_con": "BOE-A-2026-24137",
   "denominacion": "INGENIEROS TÉCNICOS EN TOPOGRAFÍA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24137"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Ingeniero Técnico en Topografía o aquel que habilite para el ejercicio de esta profesión regulada,",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes y Movilidad Sostenible"
+   },
+   "web": "https://www.transportes.gob.es/"
+  },
   "fin": "18/12/2026",
   "organo": "Ministerio de Transportes y Movilidad Sostenible",
   "plazas": "Convocadas:15 Libres:14 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24137",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24137"
+  },
   "ref": "223323",
   "titulacion": "Ingeniero Técnico en Topografía o aquel que habilite para el ejercicio de esta profesión regulada,",
   "ubicacion": "NACIONAL",
@@ -169,11 +408,30 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-24217",
+  "coincide_con": "BOE-A-2026-24137",
   "denominacion": "INGENIEROS TÉCNICOS EN TOPOGRAFÍA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24137"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Ingeniero Técnico en Topografía o aquel que habilite para el ejercicio de esta profesión regulada,",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes y Movilidad Sostenible"
+   },
+   "web": "https://www.transportes.gob.es/"
+  },
   "fin": "18/12/2026",
   "organo": "Ministerio de Transportes y Movilidad Sostenible",
   "plazas": "Convocadas:51 Libres:47 Internas:0 Discapacidad General:4 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24137",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24137"
+  },
   "ref": "223322",
   "titulacion": "Ingeniero Técnico en Topografía o aquel que habilite para el ejercicio de esta profesión regulada,",
   "ubicacion": "NACIONAL",
@@ -181,11 +439,30 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-24137",
+  "coincide_con": "BOE-A-2026-24025",
   "denominacion": "INGENIEROS GEÓGRAFOS - Áreas temáticas: a) Geodesia. b) Geofísica. c) Observación del Territorio, Topografía y Cartografía. d) Geografía y Tecnologías de la Información Geográfica",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24025"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Licenciado, Ingeniero, Arquitecto o Grado.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes y Movilidad Sostenible"
+   },
+   "web": "https://www.transportes.gob.es/informacion-para-el-ciudadano/empleo-publico/procesos-selectivos/convocatorias-2026/personal-funcionario"
+  },
   "fin": "17/12/2026",
   "organo": "Ministerio de Transportes y Movilidad Sostenible",
   "plazas": "Convocadas:50 Libres:46 Internas:0 Discapacidad General:4 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24025",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24025"
+  },
   "ref": "223289",
   "titulacion": "Licenciado, Ingeniero, Arquitecto o Grado.",
   "ubicacion": "NACIONAL",
@@ -193,11 +470,30 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-24137",
+  "coincide_con": "BOE-A-2026-24025",
   "denominacion": "INGENIEROS GEÓGRAFOS - Áreas temáticas: a) Geodesia. b) Geofísica. c) Observación del Territorio, Topografía y Cartografía. d) Geografía y Tecnologías de la Información Geográfica",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24025"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Licenciado, Ingeniero, Arquitecto o Grado.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes y Movilidad Sostenible"
+   },
+   "web": "https://www.transportes.gob.es/informacion-para-el-ciudadano/empleo-publico/procesos-selectivos/convocatorias-2026/personal-funcionario"
+  },
   "fin": "17/12/2026",
   "organo": "Ministerio de Transportes y Movilidad Sostenible",
   "plazas": "Convocadas:34 Libres:31 Internas:0 Discapacidad General:3 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-24025",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24025"
+  },
   "ref": "223288",
   "titulacion": "Licenciado, Ingeniero, Arquitecto o Grado.",
   "ubicacion": "NACIONAL",
@@ -208,10 +504,29 @@
   "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23922",
   "coincide_con": null,
   "denominacion": "ENFERMERIA - Obstétrico-Ginecológico (Matrón/a).",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23922"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Enfermero/a Especialista en Enfermería Obstétrico-Ginecológica, o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23922",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23922"
+  },
   "ref": "223263",
   "titulacion": "Enfermero/a Especialista en Enfermería Obstétrico-Ginecológica, o equivalente.",
   "ubicacion": "NACIONAL",
@@ -219,13 +534,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO SANITARIO - Médico/a de Urgencias Atención Primaria",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:7 Libres:7 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223262",
   "titulacion": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
   "ubicacion": "NACIONAL",
@@ -233,13 +567,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO SANITARIO - Médico/a de Emergencias",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223261",
   "titulacion": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
   "ubicacion": "NACIONAL",
@@ -247,13 +600,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO SANITARIO - Médico/a de Admisión y Documentación Clínica",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Licenciado/a en Medicina y Cirugía o Graduado/a en Medicina.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223260",
   "titulacion": "Título de Licenciado/a en Medicina y Cirugía o Graduado/a en Medicina.",
   "ubicacion": "NACIONAL",
@@ -261,13 +633,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20767",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO SANITARIO - Médico/a de Urgencia Hospitalaria",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:7 Libres:7 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223259",
   "titulacion": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
   "ubicacion": "NACIONAL",
@@ -275,13 +666,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Urología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223258",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -289,13 +699,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Reumatología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223257",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -303,13 +732,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Radiofísica Hospitalaria",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:8 Libres:7 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223256",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -317,13 +765,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Radiodiagnóstico",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223255",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -331,13 +798,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Psiquiatría",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:6 Libres:6 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223254",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -345,13 +831,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Psicología Clínica",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:7 Libres:7 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223253",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -359,11 +864,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOP-SE-2026-217003",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+  "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Pediatría y sus Áreas Específicas",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
+  "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223252",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -371,13 +897,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Pediatría de Atención Primaria",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:9 Libres:8 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223251",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -385,13 +930,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Oncología Médica",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223250",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -399,13 +963,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Oftalmología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223249",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -413,13 +996,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Obstetricia y Ginecología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223248",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -427,13 +1029,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neurología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223247",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -441,13 +1062,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neurofisiología Clínica",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223246",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -455,13 +1095,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neumología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223245",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -469,13 +1128,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Nefrología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223244",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -483,13 +1161,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Microbiología y Parasitología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223243",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -497,13 +1194,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Preventiva y Salud Pública",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223242",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -511,13 +1227,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Interna",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223241",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -525,13 +1260,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Física y Rehabilitación",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223240",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -539,13 +1293,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Familiar y Comunitaria",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:13 Libres:12 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223239",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -553,11 +1326,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOP-SE-2026-218014",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+  "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina del Trabajo",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
+  "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223238",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -565,13 +1359,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21822",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Farmacia Hospitalaria",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223237",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -579,13 +1392,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Endocrinología y Nutrición",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223236",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -593,13 +1425,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Dermatología Médico-Quirúrgica y Venereología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223235",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -607,13 +1458,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cirugía Ortopédica y Traumatología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223233",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -621,13 +1491,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cirugía General y del Aparato Digestivo",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:4 Libres:4 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223232",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -635,13 +1524,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cardiología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:5 Libres:5 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223231",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -649,13 +1557,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Aparato Digestivo",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223230",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -663,13 +1590,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Anestesiología y Reanimación",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223229",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -677,13 +1623,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Anatomía Patológica",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223228",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -691,13 +1656,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20766",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
   "coincide_con": null,
   "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Alergología",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
   "fin": "15/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23921",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+  },
   "ref": "223227",
   "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
   "ubicacion": "NACIONAL",
@@ -705,11 +1689,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOJA-2026-227-31",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23694",
+  "coincide_con": null,
   "denominacion": "TITULADO SUPERIOR - Titulado/a Superior Función Administrativa Administración Sanitaria",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23694"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Grado, Licenciatura universitaria, Ingeniero/a, Arquitecto/a o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es"
+  },
   "fin": "11/12/2026",
+  "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23694",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23694"
+  },
   "ref": "223202",
   "titulacion": "Grado, Licenciatura universitaria, Ingeniero/a, Arquitecto/a o equivalente",
   "ubicacion": "NACIONAL",
@@ -717,13 +1722,30 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21477",
-  "coincide_con": null,
+  "coincide_con": "BOE-A-2026-23691",
   "denominacion": "TITULADO SUPERIOR - Asesor/a en técnicas de evaluación de políticas públicas.",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23691"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Asesor/a en técnicas de evaluación de políticas públicas.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Hacienda"
+   },
+   "web": "http://www.airef.es/"
+  },
   "fin": "11/12/2026",
-  "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
   "organo": "Ministerio de Hacienda",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23691",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23691"
+  },
   "ref": "223201",
   "titulacion": "Asesor/a en técnicas de evaluación de políticas públicas.",
   "ubicacion": "NACIONAL",
@@ -734,10 +1756,29 @@
   "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23546",
   "coincide_con": null,
   "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior Oficios, Jefe/a de Taller y Encargado/a.",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23546"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Formación Profesional de Grado Superior",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA.html"
+  },
   "fin": "09/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:3 Libres:0 Internas:3 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23546",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23546"
+  },
   "ref": "223181",
   "titulacion": "Bachiller o Formación Profesional de Grado Superior",
   "ubicacion": "NACIONAL",
@@ -748,10 +1789,29 @@
   "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23546",
   "coincide_con": null,
   "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior Oficios, Jefe/a de Taller y Encargado/a.",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23546"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Bachiller o Formación Profesional de Grado Superior",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA.html"
+  },
   "fin": "09/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23546",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23546"
+  },
   "ref": "223180",
   "titulacion": "Bachiller o Formación Profesional de Grado Superior",
   "ubicacion": "NACIONAL",
@@ -762,10 +1822,29 @@
   "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23545",
   "coincide_con": null,
   "denominacion": "INGENIERO SUPERIOR",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23545"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Ingeniero Industrial",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA.html"
+  },
   "fin": "09/12/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23545",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23545"
+  },
   "ref": "223179",
   "titulacion": "Título de Ingeniero Industrial",
   "ubicacion": "NACIONAL",
@@ -773,13 +1852,30 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22909",
-  "coincide_con": null,
+  "coincide_con": "BOE-A-2026-23196",
   "denominacion": "OFICIAL - Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General. (cocina/comedor)",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-23196"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN TEMPORAL",
+    "Titulación": "Graduado en Educación Secundaria, Educación General Básica o Formación Profesional de Técnico o Técnico Auxiliar, o equivalentes",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes"
+   },
+   "web": "https://administracion.gob.es/empleopublico/ips"
+  },
   "fin": "03/12/2026",
-  "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
   "organo": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-23196",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23196"
+  },
   "ref": "223096",
   "titulacion": "Graduado en Educación Secundaria, Educación General Básica o Formación Profesional de Técnico o Técnico Auxiliar, o equivalentes",
   "ubicacion": "NACIONAL",
@@ -787,11 +1883,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOP-SE-2025-242007",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22742",
+  "coincide_con": null,
   "denominacion": "LAVANDERA - Lavandero/a - Planchador/a.",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-22742"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Certificado de Escolaridad o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "http://www.sanidad.gob.es/"
+  },
   "fin": "30/11/2026",
+  "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:6 Libres:6 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-22742",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22742"
+  },
   "ref": "223003",
   "titulacion": "Certificado de Escolaridad o equivalente",
   "ubicacion": "NACIONAL",
@@ -802,10 +1919,29 @@
   "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22741",
   "coincide_con": null,
   "denominacion": "CELADOR",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-22741"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Certificado de escolaridad o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/"
+  },
   "fin": "30/11/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:41 Libres:36 Internas:0 Discapacidad General:5 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-22741",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22741"
+  },
   "ref": "223002",
   "titulacion": "Certificado de escolaridad o equivalente",
   "ubicacion": "NACIONAL",
@@ -816,10 +1952,29 @@
   "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22740",
   "coincide_con": null,
   "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior en Higiene Bucodental",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-22740"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Formación Profesional de Técnico Superior en Higiene Bucodental o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/"
+  },
   "fin": "30/11/2026",
   "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-22740",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22740"
+  },
   "ref": "223001",
   "titulacion": "Formación Profesional de Técnico Superior en Higiene Bucodental o equivalente",
   "ubicacion": "NACIONAL",
@@ -827,11 +1982,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-22469",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22649",
+  "coincide_con": null,
   "denominacion": "TRABAJADOR SOCIAL",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-22649"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Grado en Trabajo Social, Diplomado en Trabajo Social o equivalente,",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://www.sanidad.gob.es/home.htm"
+  },
   "fin": "27/11/2026",
+  "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:2 Libres:2 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-22649",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22649"
+  },
   "ref": "222994",
   "titulacion": "Grado en Trabajo Social, Diplomado en Trabajo Social o equivalente,",
   "ubicacion": "NACIONAL",
@@ -839,11 +2015,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-22469",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22648",
+  "coincide_con": null,
   "denominacion": "DIETISTA Y NUTRICIONISTA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-22648"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Grado en Nutrición Humana y Dietética o titulación equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://www.sanidad.gob.es/home.htm"
+  },
   "fin": "27/11/2026",
+  "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-22648",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22648"
+  },
   "ref": "222993",
   "titulacion": "Grado en Nutrición Humana y Dietética o titulación equivalente",
   "ubicacion": "NACIONAL",
@@ -851,11 +2048,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-22469",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22647",
+  "coincide_con": null,
   "denominacion": "TITULADO SANITARIO - Titulado Sanitario: Odontólogo/a.",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-22647"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Grado en Odontología o Licenciado/a en Odontología o Médico/a Especialista en Estomatología o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "http://www.sanidad.gob.es/"
+  },
   "fin": "27/11/2026",
+  "motivo": "Plazas en Ceuta y Melilla (INGESA)",
   "organo": "Ministerio de Sanidad",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-22647",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22647"
+  },
   "ref": "222991",
   "titulacion": "Título de Grado en Odontología o Licenciado/a en Odontología o Médico/a Especialista en Estomatología o equivalente",
   "ubicacion": "NACIONAL",
@@ -863,13 +2081,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19557",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
   "coincide_con": null,
   "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior. Esp. Imagen y sonido(T3)",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-22557"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Grupo profesional T3: Área Funcional: Técnico/a Profesional: Especialidad/ IMAGEN Y SONIDO. Cualquiera de las cinco titulaciones de Técnico Superior de la familia profesional de Imagen y Sonido. - - - - Técnico Superior en Animaciones 3D, Juegos y Entornos Interactivos Técnico Superior en Iluminación, Captación y Tratamiento de Imagen Técnico Superior en Producción de Audiovisuales y Espectáculos Técnico Superior en Realización de Proyectos Audiovisuales y Espectáculos - Técnico Superior en Sonido para Audiovisuales y Espectáculos",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Hacienda"
+   },
+   "web": "https://www3.agenciatributaria.gob.es/static_files/Sede/Tema/Agencia_tributaria/Trabajar_AEAT/NoIx/PLaboral_conveniocolectivo/TL_Grupos_T3_T5_OEP_2026/Informacion_Convocatoria/conv_T3_T5_TL_F.pdf"
+  },
   "fin": "26/11/2026",
-  "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+  "motivo": "Plazas en otras provincias (Barcelona, Caceres, Cantabria, Castellon), ninguna en Sevilla",
   "organo": "Ministerio de Hacienda",
   "plazas": "Convocadas:3 Libres:3 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-22557",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
+  },
   "ref": "222989",
   "titulacion": "Grupo profesional T3: Área Funcional: Técnico/a Profesional: Especialidad/ IMAGEN Y SONIDO. Cualquiera de las cinco titulaciones de Técnico Superior de la familia profesional de Imagen y Sonido. - - - - Técnico Superior en Animaciones 3D, Juegos y Entornos Interactivos Técnico Superior en Iluminación, Captación y Tratamiento de Imagen Técnico Superior en Producción de Audiovisuales y Espectáculos Técnico Superior en Realización de Proyectos Audiovisuales y Espectáculos - Técnico Superior en Sonido para Audiovisuales y Espectáculos",
   "ubicacion": "NACIONAL",
@@ -877,13 +2114,32 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19557",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
   "coincide_con": null,
   "denominacion": "AYUDANTE - Tareas de Apoyo (Grupo T5)",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-22557"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "No se exige titulación.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Hacienda"
+   },
+   "web": "https://www3.agenciatributaria.gob.es/static_files/Sede/Tema/Agencia_tributaria/Trabajar_AEAT/NoIx/PLaboral_conveniocolectivo/TL_Grupos_T3_T5_OEP_2026/Informacion_Convocatoria/conv_T3_T5_TL_F.pdf"
+  },
   "fin": "26/11/2026",
-  "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+  "motivo": "Plazas en otras provincias (Barcelona, Caceres, Cantabria, Castellon), ninguna en Sevilla",
   "organo": "Ministerio de Hacienda",
   "plazas": "Convocadas:17 Libres:12 Internas:0 Discapacidad General:5 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-22557",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
+  },
   "ref": "222988",
   "titulacion": "No se exige titulación.",
   "ubicacion": "NACIONAL",
@@ -893,9 +2149,28 @@
   "ambito": "Estado (ámbito nacional)",
   "coincide_con": "BOE-A-2026-22469",
   "denominacion": "FACULTATIVO DE SANIDAD PENITENCIARIA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-22469"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Licenciado o Grado en Medicina o Licenciado en Medicina y Cirugía y estar en posesión del título de Médico especialista en Medicina Familiar y Comunitaria y Medicina Interna, si optan a las plazas de la especialidad de Medicina Familiar y Comunitaria y Medicina Interna, y estar en posesión del título de Psiquiatría, si optan a las plazas de la especialidad de Psiquiatría",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio del Interior"
+   },
+   "web": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/cuerpos-de-instituciones-penitenciarias/cuerpo-facultativo-de-sanidad-penitenciaria/"
+  },
   "fin": "26/11/2026",
   "organo": "Ministerio del Interior",
   "plazas": "Convocadas:70 Libres:70 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOE-A-2026-22469",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22469"
+  },
   "ref": "222943",
   "titulacion": "Licenciado o Grado en Medicina o Licenciado en Medicina y Cirugía y estar en posesión del título de Médico especialista en Medicina Familiar y Comunitaria y Medicina Interna, si optan a las plazas de la especialidad de Medicina Familiar y Comunitaria y Medicina Interna, y estar en posesión del título de Psiquiatría, si optan a las plazas de la especialidad de Psiquiatría",
   "ubicacion": "NACIONAL",
@@ -903,11 +2178,34 @@
  },
  {
   "ambito": "Junta de Andalucía (ámbito autonómico)",
-  "coincide_con": null,
+  "coincide_con": "BOJA-2026-227-37",
   "denominacion": "PERSONAL CIENTIFICO-TECNICO - Titulado/a Superior de Apoyo a la Investigación.",
+  "detalle": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "227"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN TEMPORAL",
+    "Titulación": "Graduado/a en Ciencias Ambientales, o equivalente según el sistema educativo. Certificación Académica Oficial.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Universidad Pablo de Olavide"
+   },
+   "web": "https://upo.gob.es/teo/"
+  },
   "fin": "17/12/2026",
   "organo": "Universidad Pablo de Olavide",
   "plazas": "Convocadas:1 Libres:1 Internas:0 Discapacidad General:0 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOJA nº 227 de 2026",
+   "url": null
+  },
   "ref": "223415",
   "titulacion": "Graduado/a en Ciencias Ambientales, o equivalente según el sistema educativo. Certificación Académica Oficial.",
   "ubicacion": "AUTONÓMICO - ANDALUCÍA",
@@ -917,9 +2215,32 @@
   "ambito": "Junta de Andalucía (ámbito autonómico)",
   "coincide_con": "BOJA-2026-227-31",
   "denominacion": "MONITOR SOCIOSANITARIO",
+  "detalle": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "227"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Formación Profesional de Grado Superior o Bachiller o titulación equivalente",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inclusión Social, Juventud, Familias e Igualdad"
+   },
+   "web": "https://www.juntadeandalucia.es/agenciadeserviciossocialesydependencia/index.php/m-la-agencia/seleccionpersonal"
+  },
   "fin": "10/12/2026",
   "organo": "Consejería de Inclusión Social, Juventud, Familias e Igualdad",
   "plazas": "Convocadas:9 Libres:7 Internas:0 Discapacidad General:2 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOJA nº 227 de 2026",
+   "url": null
+  },
   "ref": "223414",
   "titulacion": "Formación Profesional de Grado Superior o Bachiller o titulación equivalente",
   "ubicacion": "AUTONÓMICO - ANDALUCÍA",
@@ -927,11 +2248,34 @@
  },
  {
   "ambito": "Junta de Andalucía (ámbito autonómico)",
-  "coincide_con": "BOJA-2026-225-26",
+  "coincide_con": "BOJA-2026-225-24",
   "denominacion": "PERSONAL DE SERVICIOS GENERALES",
+  "detalle": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
   "fin": "04/12/2026",
   "organo": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública",
   "plazas": "Convocadas:762 Libres:695 Internas:0 Discapacidad General:56 Discapacidad Intelectual:11",
+  "publicada": {
+   "texto": "BOJA nº 225 de 2026",
+   "url": null
+  },
   "ref": "223385",
   "titulacion": "Ver la titulación especifica en la convocatoria.",
   "ubicacion": "AUTONÓMICO - ANDALUCÍA",
@@ -941,9 +2285,32 @@
   "ambito": "Junta de Andalucía (ámbito autonómico)",
   "coincide_con": "BOJA-2026-225-26",
   "denominacion": "PERSONAL DE OFICIOS",
+  "detalle": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
   "fin": "04/12/2026",
   "organo": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública",
   "plazas": "Convocadas:72 Libres:65 Internas:0 Discapacidad General:6 Discapacidad Intelectual:1",
+  "publicada": {
+   "texto": "BOJA nº 225 de 2026",
+   "url": null
+  },
   "ref": "223384",
   "titulacion": "Ver la titulación especifica en la convocatoria.",
   "ubicacion": "AUTONÓMICO - ANDALUCÍA",
@@ -953,9 +2320,32 @@
   "ambito": "Junta de Andalucía (ámbito autonómico)",
   "coincide_con": "BOJA-2026-225-26",
   "denominacion": "PERSONAL ASISTENTE RESTAURACIÓN",
+  "detalle": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
   "fin": "04/12/2026",
   "organo": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública",
   "plazas": "Convocadas:142 Libres:130 Internas:0 Discapacidad General:11 Discapacidad Intelectual:1",
+  "publicada": {
+   "texto": "BOJA nº 225 de 2026",
+   "url": null
+  },
   "ref": "223383",
   "titulacion": "Ver la titulación especifica en la convocatoria.",
   "ubicacion": "AUTONÓMICO - ANDALUCÍA",
@@ -965,9 +2355,32 @@
   "ambito": "Junta de Andalucía (ámbito autonómico)",
   "coincide_con": "BOJA-2026-225-26",
   "denominacion": "PERSONAL DE LIMPIEZA Y ALOJAMIENTO",
+  "detalle": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
   "fin": "04/12/2026",
   "organo": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública",
   "plazas": "Convocadas:661 Libres:602 Internas:0 Discapacidad General:49 Discapacidad Intelectual:10",
+  "publicada": {
+   "texto": "BOJA nº 225 de 2026",
+   "url": null
+  },
   "ref": "223382",
   "titulacion": "Ver la titulación especifica en la convocatoria.",
   "ubicacion": "AUTONÓMICO - ANDALUCÍA",
@@ -977,9 +2390,32 @@
   "ambito": "Junta de Andalucía (ámbito autonómico)",
   "coincide_con": "BOJA-2026-225-26",
   "denominacion": "AUXILIAR SANITARIO",
+  "detalle": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
   "fin": "04/12/2026",
   "organo": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública",
   "plazas": "Convocadas:14 Libres:13 Internas:0 Discapacidad General:1 Discapacidad Intelectual:0",
+  "publicada": {
+   "texto": "BOJA nº 225 de 2026",
+   "url": null
+  },
   "ref": "223381",
   "titulacion": "Ver la titulación especifica en la convocatoria.",
   "ubicacion": "AUTONÓMICO - ANDALUCÍA",
@@ -987,11 +2423,34 @@
  },
  {
   "ambito": "Junta de Andalucía (ámbito autonómico)",
-  "coincide_con": "BOP-SE-2026-221009",
+  "coincide_con": "BOJA-2026-220-26",
   "denominacion": "CATEDRÁTICOS DE MÚSICA Y ARTES ESCÉNICAS - Especialidades: Ver en la convocatoria.",
+  "detalle": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "220"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INTERINIDAD",
+    "Titulación": "Poseer la titulación o titulaciones y demás requisitos establecidos para la especialidad del Cuerpo de Catedráticos de Música y Artes Escénicas a la que se pretende acceder.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Desarrollo Educativo y Formación Profesional"
+   },
+   "web": "https://www.juntadeandalucia.es/educacion/portales/profesorado/bolsas-de-trabajo-e-interinidades"
+  },
   "fin": "27/11/2026",
   "organo": "Consejería de Desarrollo Educativo y Formación Profesional",
   "plazas": "Bolsa de Empleo",
+  "publicada": {
+   "texto": "BOJA nº 220 de 2026",
+   "url": null
+  },
   "ref": "223224",
   "titulacion": "Poseer la titulación o titulaciones y demás requisitos establecidos para la especialidad del Cuerpo de Catedráticos de Música y Artes Escénicas a la que se pretende acceder.",
   "ubicacion": "AUTONÓMICO - ANDALUCÍA",
