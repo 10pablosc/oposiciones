@@ -1,6 +1,105 @@
 [
  {
   "ambito": "Estado (ámbito nacional)",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24733",
+  "coincide_con": null,
+  "denominacion": "MAESTROS DE ARSENALES DE LA ARMADA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24733"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "http://defensa.gob.es/portalservicios"
+  },
+  "fin": "28/12/2026",
+  "motivo": "Plazas en otras provincias (Cádiz, A Coruña, Las Palmas, Madrid), ninguna en Sevilla",
+  "organo": "Ministerio de Defensa",
+  "plazas": "24 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24733",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24733"
+  },
+  "ref": "223424",
+  "titulacion": "Bachiller o Técnico",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223424&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24732",
+  "coincide_con": null,
+  "denominacion": "INGENIEROS TÉCNICOS DE ARSENALES DE LA ARMADA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24732"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "http://defensa.gob.es/portalservicios"
+  },
+  "fin": "28/12/2026",
+  "motivo": "Plazas en otras provincias (Cádiz, A Coruña, Las Palmas, Madrid), ninguna en Sevilla",
+  "organo": "Ministerio de Defensa",
+  "plazas": "40 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24732",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24732"
+  },
+  "ref": "223423",
+  "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223423&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24731",
+  "coincide_con": null,
+  "denominacion": "INGENIEROS TÉCNICOS DE ARSENALES DE LA ARMADA",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24731"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "http://defensa.gob.es/portalservicios"
+  },
+  "fin": "28/12/2026",
+  "motivo": "Plazas en otras provincias (Cádiz, A Coruña, Las Palmas, Madrid), ninguna en Sevilla",
+  "organo": "Ministerio de Defensa",
+  "plazas": "79 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24731",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24731"
+  },
+  "ref": "223422",
+  "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223422&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
   "coincide_con": "BOE-A-2026-24530",
   "denominacion": "INFORMACIÓN Y ASISTENCIA (GRUPO PROFESIONAL I1)",
   "detalle": {
@@ -2151,7 +2250,7 @@
  },
  {
   "ambito": "Estado (ámbito nacional)",
-  "coincide_con": "BOE-A-2026-22469",
+  "coincide_con": null,
   "denominacion": "FACULTATIVO DE SANIDAD PENITENCIARIA",
   "detalle": {
    "boe": [

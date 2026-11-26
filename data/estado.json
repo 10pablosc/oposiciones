@@ -39,7 +39,6 @@
  },
  "boe": {
   "procesados": [
-   "2025-11-25",
    "2025-11-26",
    "2025-11-27",
    "2025-11-28",
@@ -404,7 +403,8 @@
    "2026-11-22",
    "2026-11-23",
    "2026-11-24",
-   "2026-11-25"
+   "2026-11-25",
+   "2026-11-26"
   ]
  },
  "boe_scan": 2,
@@ -412,7 +412,8 @@
   "BOE-A-2026-24459": "2026-11-21",
   "BOE-A-2026-24731": "2026-11-25",
   "BOE-A-2026-24732": "2026-11-25",
-  "BOE-A-2026-24733": "2026-11-25"
+  "BOE-A-2026-24733": "2026-11-25",
+  "BOE-A-2026-24839": "2026-11-26"
  },
  "boja": {
   "inicio_2026_2026-06": 120,
@@ -536,11 +537,11 @@
   "https://www.juntadeandalucia.es/boja/2026/227/24": "2026-11-24",
   "https://www.juntadeandalucia.es/boja/2026/227/25": "2026-11-24",
   "https://www.juntadeandalucia.es/boja/2026/227/31": "2026-11-24",
-  "https://www.juntadeandalucia.es/boja/2026/227/37": "2026-11-24"
+  "https://www.juntadeandalucia.es/boja/2026/227/37": "2026-11-24",
+  "https://www.juntadeandalucia.es/boja/2026/229/31": "2026-11-26"
  },
  "bop": {
   "procesados": [
-   "2025-11-25",
    "2025-11-26",
    "2025-11-27",
    "2025-11-28",
@@ -905,31 +906,11 @@
    "2026-11-22",
    "2026-11-23",
    "2026-11-24",
-   "2026-11-25"
+   "2026-11-25",
+   "2026-11-26"
   ]
  },
  "bop_descartes": {
-  "BOP-SE-2026-207001": {
-   "anunciante": "Área del Empleado Público",
-   "fecha": "2026-10-26",
-   "motivo": "Lista de admitidos, excluidos o aprobados",
-   "titulo": "Lista definitiva de personas admitidas y excluidas, composición del tribunal y fecha de comienzo de las pruebas de la convocatoria de pruebas selectivas para la creación de una bolsa de empleo extraordinaria en la categoría de Economista",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Lista-definitiva-de-personas-admitidas-y-excluidas-composicion-del-tribunal-y-fecha-de-comienzo-de-las-pruebas-de-la-convocatoria-de-pruebas-selectivas-para-la-creacion-de-una-bolsa-de-empleo-extraor-00001/"
-  },
-  "BOP-SE-2026-207005": {
-   "anunciante": "Bormujos",
-   "fecha": "2026-10-26",
-   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
-   "titulo": "Oferta de empleo público 2026",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00037/"
-  },
-  "BOP-SE-2026-207019": {
-   "anunciante": "El Ronquillo",
-   "fecha": "2026-10-26",
-   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-   "titulo": "Convocatoria para la provisión de los puestos de Jueces de Paz titular y sustituto",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Convocatoria-para-la-provision-de-los-puestos-de-Jueces-de-Paz-titular-y-sustituto-00025/"
-  },
   "BOP-SE-2026-208020": {
    "anunciante": "Las Navas de la Concepcion",
    "fecha": "2026-10-27",
@@ -1300,15 +1281,45 @@
    "motivo": "Nombramiento o contratación de las personas aprobadas",
    "titulo": "Nombramiento en el puesto del órgano directivo de la Dirección General de Innovación Procedimental (DIRGRAL36/10630)",
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-en-el-puesto-del-organo-directivo-de-la-Direccion-General-de-Innovacion-Procedimental-DIRGRAL36-10630/"
+  },
+  "BOP-SE-2026-229001": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-26",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Anuncio de interposición de recurso contencioso-administrativo núm. 334/2026 contra el levantamiento de la suspensión del concurso para la provisión de puestos de trabajo de la RPT de personal funcionario transferido al Consorcio de Prevención, Extinción de Incendios y Salvamento de la provincia de ...",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Anuncio-de-interposicion-de-recurso-contencioso-administrativo-num-334-2026-contra-el-levantamiento-de-la-suspension-del-concurso-para-la-provision-de-puestos-de-trabajo-de-la-RPT-de-personal-funcion/"
+  },
+  "BOP-SE-2026-229009": {
+   "anunciante": "Ecija",
+   "fecha": "2026-11-26",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00045/"
+  },
+  "BOP-SE-2026-229010": {
+   "anunciante": "Gines",
+   "fecha": "2026-11-26",
+   "motivo": "Nombramiento o contratación de las personas aprobadas",
+   "titulo": "Nombramiento de funcionario interino en la categoría de Técnico de Administración General adscrito al área de secretaría",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-interino-en-la-categoria-de-Tecnico-de-Administracion-General-adscrito-al-area-de-secretaria/"
+  },
+  "BOP-SE-2026-229011": {
+   "anunciante": "Gines",
+   "fecha": "2026-11-26",
+   "motivo": "Nombramiento o contratación de las personas aprobadas",
+   "titulo": "Nombramiento de funcionario interino en la categoría de Técnico de Administración General adscrito al área de secretaría-policía local",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-interino-en-la-categoria-de-Tecnico-de-Administracion-General-adscrito-al-area-de-secretaria-policia-local/"
   }
  },
  "bop_descartes_v": 3,
  "bop_vistos": {
   "BOP-SE-2026-222008": "2026-11-17",
-  "BOP-SE-2026-224015": "2026-11-19"
+  "BOP-SE-2026-224015": "2026-11-19",
+  "BOP-SE-2026-229008": "2026-11-26",
+  "BOP-SE-2026-229023": "2026-11-26"
  },
  "comprobacion": {
-  "coinciden": 20,
+  "coinciden": 19,
   "excluidas": [
    {
     "ambito": "Estado (ámbito nacional)",
@@ -2263,16 +2274,86 @@
     "titulacion": "Graduado en Educación Secundaria Obligatoria",
     "ubicacion": "NACIONAL",
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24732",
+    "coincide_con": null,
+    "denominacion": "INGENIEROS TÉCNICOS DE ARSENALES DE LA ARMADA",
+    "fin": "28/12/2026",
+    "motivo": "Plazas en otras provincias (Cádiz, A Coruña, Las Palmas, Madrid), ninguna en Sevilla",
+    "organo": "Ministerio de Defensa",
+    "plazas": "40 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-24732",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24732"
+    },
+    "ref": "223423",
+    "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223423&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24731",
+    "coincide_con": null,
+    "denominacion": "INGENIEROS TÉCNICOS DE ARSENALES DE LA ARMADA",
+    "fin": "28/12/2026",
+    "motivo": "Plazas en otras provincias (Cádiz, A Coruña, Las Palmas, Madrid), ninguna en Sevilla",
+    "organo": "Ministerio de Defensa",
+    "plazas": "79 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-24731",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24731"
+    },
+    "ref": "223422",
+    "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223422&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24733",
+    "coincide_con": null,
+    "denominacion": "MAESTROS DE ARSENALES DE LA ARMADA",
+    "fin": "28/12/2026",
+    "motivo": "Plazas en otras provincias (Cádiz, A Coruña, Las Palmas, Madrid), ninguna en Sevilla",
+    "organo": "Ministerio de Defensa",
+    "plazas": "24 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-24733",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24733"
+    },
+    "ref": "223424",
+    "titulacion": "Bachiller o Técnico",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223424&selectorServicio=bolsa_empleo"
    }
   ],
-  "fecha": "2026-11-25T18:01+00:00",
+  "fecha": "2026-11-26T16:49+00:00",
   "ok": true,
   "por_ambito": {
-   "Estado (ámbito nacional)": 67,
+   "Estado (ámbito nacional)": 70,
    "Junta de Andalucía (ámbito autonómico)": 8,
    "Provincia de Sevilla (ámbito local)": 0
   },
   "posibles_omisiones": [
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "coincide_con": null,
+    "denominacion": "FACULTATIVO DE SANIDAD PENITENCIARIA",
+    "fin": "26/11/2026",
+    "organo": "Ministerio del Interior",
+    "plazas": "70 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-22469",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22469"
+    },
+    "ref": "222943",
+    "titulacion": "Licenciado o Grado en Medicina o Licenciado en Medicina y Cirugía y estar en posesión del título de Médico especialista en Medicina Familiar y Comunitaria y Medicina Interna, si optan a las plazas de la especialidad de Medicina Familiar y Comunitaria y Medicina Interna, y estar en posesión del título de Psiquiatría, si optan a las plazas de la especialidad de Psiquiatría",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222943&selectorServicio=bolsa_empleo"
+   },
    {
     "ambito": "Estado (ámbito nacional)",
     "coincide_con": null,
@@ -2306,17 +2387,9 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223397&selectorServicio=bolsa_empleo"
    }
   ],
-  "total": 75
+  "total": 78
  },
  "descartes": {
-  "BOE-A-2026-16382": {
-   "departamento": "CONSEJO GENERAL DEL PODER JUDICIAL",
-   "fecha": "2026-07-28",
-   "id": "BOE-A-2026-16382",
-   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-   "titulo": "Acuerdo de 21 de julio de 2026, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se convoca concurso para la provisión de plaza de Letrado/a del Gabinete Técnico al servicio del Tribunal Supremo.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16382"
-  },
   "BOE-A-2026-16477": {
    "departamento": "MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN",
    "fecha": "2026-07-29",
@@ -5205,7 +5278,7 @@
    "tipo": "provision",
    "titulo": "Resolución 430/38457/2026, de 13 de noviembre, de la Dirección General de Personal, por la que se convoca vacante en los órganos judiciales de la jurisdicción militar.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24529",
-   "visto": "2026-11-25"
+   "visto": "2026-11-26"
   },
   "BOE-A-2026-24532": {
    "departamento": "MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL",
@@ -5215,7 +5288,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 13 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24532",
-   "visto": "2026-11-25"
+   "visto": "2026-11-26"
   },
   "BOE-A-2026-24533": {
    "departamento": "MINISTERIO DE INDUSTRIA Y TURISMO",
@@ -5225,7 +5298,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 16 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24533",
-   "visto": "2026-11-25"
+   "visto": "2026-11-26"
   },
   "BOE-A-2026-24534": {
    "departamento": "MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN",
@@ -5235,7 +5308,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 13 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24534",
-   "visto": "2026-11-25"
+   "visto": "2026-11-26"
   },
   "BOE-A-2026-24536": {
    "departamento": "MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES",
@@ -5245,7 +5318,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 13 de noviembre de 2026, de la Presidencia de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P., por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24536",
-   "visto": "2026-11-25"
+   "visto": "2026-11-26"
   },
   "BOE-A-2026-24537": {
    "departamento": "MINISTERIO PARA LA TRANSFORMACIÓN DIGITAL Y DE LA FUNCIÓN PÚBLICA",
@@ -5255,7 +5328,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 16 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24537",
-   "visto": "2026-11-25"
+   "visto": "2026-11-26"
   },
   "BOE-A-2026-24633": {
    "departamento": "MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL",
@@ -5265,7 +5338,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 13 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24633",
-   "visto": "2026-11-25"
+   "visto": "2026-11-26"
   },
   "BOE-A-2026-24730": {
    "departamento": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
@@ -5275,7 +5348,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 18 de noviembre de 2026, de la Secretaría de Estado de Justicia, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24730",
-   "visto": "2026-11-25"
+   "visto": "2026-11-26"
   },
   "BOE-A-2026-24731": {
    "departamento": "MINISTERIO DE DEFENSA",
@@ -5315,7 +5388,17 @@
    "tipo": "provision",
    "titulo": "Resolución 430/38461/2026, de 18 de noviembre, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24734",
-   "visto": "2026-11-25"
+   "visto": "2026-11-26"
+  },
+  "BOE-A-2026-24840": {
+   "departamento": "MINISTERIO DE JUVENTUD E INFANCIA",
+   "fecha": "2026-11-26",
+   "id": "BOE-A-2026-24840",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "tipo": "provision",
+   "titulo": "Resolución de 23 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24840",
+   "visto": "2026-11-26"
   },
   "BOJA-2026-127-27": {
    "departamento": "Consejería de Agricultura, Pesca, Agua y Desarrollo Rural",
@@ -5720,22 +5803,22 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-25T18:00+00:00",
-   "nuevos": 0,
+   "fecha": "2026-11-26T16:48+00:00",
+   "nuevos": 1,
    "ok": true,
-   "segundos": 3
+   "segundos": 8
   },
   "BOJA": {
-   "fecha": "2026-11-25T18:01+00:00",
-   "nuevos": 0,
+   "fecha": "2026-11-26T16:49+00:00",
+   "nuevos": 1,
    "ok": true,
-   "segundos": 102
+   "segundos": 12
   },
   "BOP": {
-   "fecha": "2026-11-25T18:01+00:00",
-   "nuevos": 0,
+   "fecha": "2026-11-26T16:49+00:00",
+   "nuevos": 2,
    "ok": true,
-   "segundos": 5
+   "segundos": 16
   }
  },
  "pag_detalles": {
@@ -6893,6 +6976,51 @@
     "Órgano convocante": "Universidad Pablo de Olavide"
    },
    "web": "https://upo.gob.es/teo/"
+  },
+  "223422": {
+   "boe": [
+    "BOE-A-2026-24731"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "http://defensa.gob.es/portalservicios"
+  },
+  "223423": {
+   "boe": [
+    "BOE-A-2026-24732"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "http://defensa.gob.es/portalservicios"
+  },
+  "223424": {
+   "boe": [
+    "BOE-A-2026-24733"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "http://defensa.gob.es/portalservicios"
   }
  },
  "scan_version": 5
