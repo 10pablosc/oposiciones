@@ -74,6 +74,9 @@
   .comprobacion ul { margin: 8px 0 0; padding-left: 18px; }
   .comprobacion li { margin: 6px 0; }
   .comprobacion .det { color: var(--suave); font-size: .85rem; }
+  [hidden] { display: none !important; }
+  .retraso { display: inline-block; margin: 8px 0 0; padding: 5px 10px; border-radius: 6px; background: var(--ambar-suave); color: var(--ambar);
+    font-size: .88rem; font-weight: 600; }
   .pestanas { display: flex; gap: 6px; margin: 0 0 14px; border-bottom: 1px solid var(--linea); }
   .pestanas button { border: 1px solid transparent; border-bottom: none; border-radius: 8px 8px 0 0; background: transparent;
     padding: 9px 14px; font-weight: 600; color: var(--suave); margin-bottom: -1px; }
@@ -105,6 +108,7 @@
 <header><div class="cont">
   <h1>Convocatorias de empleo público con plazas en la provincia de Sevilla</h1>
   <p id="sub">Cargando convocatorias…</p>
+  <p id="retraso" class="retraso" role="status" hidden></p>
 </div></header>
 
 <main>
@@ -163,7 +167,8 @@
         <li><strong>BOJA</strong> (Boletín Oficial de la Junta de Andalucía, sección 2.2): Junta de Andalucía, Servicio Andaluz de Salud, agencias, fundaciones públicas y universidades.</li>
         <li><strong>BOP de Sevilla</strong> (Boletín Oficial de la Provincia): ayuntamientos, Diputación y otros organismos locales.</li>
       </ul>
-      <p>Cada mañana, normalmente antes de las 10:00, un programa lee los boletines nuevos y actualiza la página solo, sin que nadie tenga que hacer nada.
+      <p>Un programa lee los boletines nuevos y actualiza la página solo, sin que nadie tenga que hacer nada. Lo intenta cuatro veces al día (hacia las 8:40, 12:40, 16:40 y 20:40),
+      porque el servicio que lo ejecuta a veces retrasa o se salta alguna; si los datos tienen más de un día, aparece un aviso debajo del título.
       Arriba se indica cuándo fue la última actualización y, al pie de la página, si alguno de los boletines no se pudo leer ese día.</p>
 
       <h2>Qué convocatorias aparecen</h2>
@@ -508,6 +513,12 @@
       var act = j.actualizado ? new Date(j.actualizado) : null;
       $("sub").textContent = DATOS.length + " convocatorias vigentes · Actualizado el " +
         (act ? act.toLocaleDateString("es-ES") + " a las " + act.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" }) : "—");
+      var retraso = $("retraso");
+      retraso.hidden = !(act && Date.now() - act.getTime() > 24 * 3600 * 1000);
+      if (!retraso.hidden) {
+        retraso.textContent = "Actualización retrasada: los datos son del " + act.toLocaleDateString("es-ES") + " a las " +
+          act.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" }) + ". Pueden faltar convocatorias publicadas después.";
+      }
       var fu = j.fuentes || {};
       $("fuentes").innerHTML = "Estado de las fuentes en la última actualización: " + ["BOE", "BOJA", "BOP"].map(function (k) {
         var f = fu[k];

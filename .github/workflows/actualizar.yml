@@ -2,8 +2,9 @@ name: Actualizar convocatorias
 
 on:
   schedule:
-    # Todos los días a las 07:17 UTC (08:17 en invierno y 09:17 en verano, hora de Madrid)
-    - cron: "17 7 * * *"
+    # Cuatro intentos al día (GitHub a veces retrasa o se salta las tareas programadas; cada intento solo lee lo nuevo):
+    # 07:40, 11:40, 15:40 y 19:40 UTC = 08:40, 12:40, 16:40 y 20:40 en invierno (una hora más en verano), hora de Madrid
+    - cron: "40 7,11,15,19 * * *"
   workflow_dispatch: {}
 
 permissions:
