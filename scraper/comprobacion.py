@@ -96,6 +96,9 @@ def consulta_pag():
             if not items or p * 100 >= total:
                 break
             p += 1
+    if not por_ambito.get(AMBITOS[0][0]):
+        # el Estado siempre tiene convocatorias en plazo: si no sale ninguna, el buscador ha fallado
+        raise RuntimeError("el buscador oficial no ha devuelto resultados")
     return list(todas.values()), por_ambito, op
 
 
@@ -271,7 +274,11 @@ def comprobacion(fichas, descartes=None, cache_detalles=None):
     cache = dict(cache_detalles or {})
     ahora = datetime.now(timezone.utc).isoformat(timespec="minutes")
     try:
-        items, por_ambito, op = consulta_pag()
+        try:
+            items, por_ambito, op = consulta_pag()
+        except Exception:  # noqa: BLE001
+            time.sleep(60)   # a veces falla un momento: se intenta una vez más
+            items, por_ambito, op = consulta_pag()
     except Exception as e:  # noqa: BLE001
         return {"ok": False, "fecha": ahora, "error": str(e)[:300]}, [], cache
     nuevos = 0

@@ -1498,6 +1498,12 @@ def main():
         if revisadas and fechas_oficiales(registros, revisadas, hoy):
             salida = genera_salida(registros, hoy, estado)   # con las fechas que da el organismo
             comp = comprobacion.rehace(comp, revisadas, salida["convocatorias"], DESCARTES)
+        anterior = estado.get("comprobacion") or {}
+        if not comp.get("ok") and anterior.get("ok") and anterior.get("total"):
+            # se mantiene la última comparación buena, avisando de que el intento de hoy ha fallado
+            comp = dict(anterior, fallo_ultimo=comp["fecha"])
+        elif comp.get("ok"):
+            comp.pop("fallo_ultimo", None)
         estado["comprobacion"] = comp
         if revisadas:
             guarda(os.path.join(DATA, "buscador_oficial.json"), revisadas)   # para auditar la comparación
