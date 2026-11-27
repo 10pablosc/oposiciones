@@ -1354,9 +1354,1024 @@
   "BOP-SE-2026-230019": "2026-11-27"
  },
  "comprobacion": {
-  "error": "el buscador oficial no ha devuelto resultados",
-  "fecha": "2026-11-27T11:32+00:00",
-  "ok": false
+  "coinciden": 29,
+  "excluidas": [
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22648",
+    "coincide_con": null,
+    "denominacion": "DIETISTA Y NUTRICIONISTA",
+    "fin": "27/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-22648",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22648"
+    },
+    "ref": "222993",
+    "titulacion": "Grado en Nutrición Humana y Dietética o titulación equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222993&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22647",
+    "coincide_con": null,
+    "denominacion": "TITULADO SANITARIO - Titulado Sanitario: Odontólogo/a.",
+    "fin": "27/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-22647",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22647"
+    },
+    "ref": "222991",
+    "titulacion": "Título de Grado en Odontología o Licenciado/a en Odontología o Médico/a Especialista en Estomatología o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222991&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22649",
+    "coincide_con": null,
+    "denominacion": "TRABAJADOR SOCIAL",
+    "fin": "27/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-22649",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22649"
+    },
+    "ref": "222994",
+    "titulacion": "Grado en Trabajo Social, Diplomado en Trabajo Social o equivalente,",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222994&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22741",
+    "coincide_con": null,
+    "denominacion": "CELADOR",
+    "fin": "30/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "41 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-22741",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22741"
+    },
+    "ref": "223002",
+    "titulacion": "Certificado de escolaridad o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223002&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22742",
+    "coincide_con": null,
+    "denominacion": "LAVANDERA - Lavandero/a - Planchador/a.",
+    "fin": "30/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "6 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-22742",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22742"
+    },
+    "ref": "223003",
+    "titulacion": "Certificado de Escolaridad o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223003&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22740",
+    "coincide_con": null,
+    "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior en Higiene Bucodental",
+    "fin": "30/11/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-22740",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22740"
+    },
+    "ref": "223001",
+    "titulacion": "Formación Profesional de Técnico Superior en Higiene Bucodental o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223001&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23196",
+    "coincide_con": null,
+    "denominacion": "OFICIAL - Oficial/Oficiala Tercera de Oficios Auxiliares en la Secretaría General. (cocina/comedor)",
+    "fin": "03/12/2026",
+    "motivo": "El organismo solo tiene sede en Madrid",
+    "organo": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23196",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23196"
+    },
+    "ref": "223096",
+    "titulacion": "Graduado en Educación Secundaria, Educación General Básica o Formación Profesional de Técnico o Técnico Auxiliar, o equivalentes",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223096&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23545",
+    "coincide_con": null,
+    "denominacion": "INGENIERO SUPERIOR",
+    "fin": "09/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23545",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23545"
+    },
+    "ref": "223179",
+    "titulacion": "Título de Ingeniero Industrial",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223179&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23546",
+    "coincide_con": null,
+    "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior Oficios, Jefe/a de Taller y Encargado/a.",
+    "fin": "09/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "3 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23546",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23546"
+    },
+    "ref": "223181",
+    "titulacion": "Bachiller o Formación Profesional de Grado Superior",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223181&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23546",
+    "coincide_con": null,
+    "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior Oficios, Jefe/a de Taller y Encargado/a.",
+    "fin": "09/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23546",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23546"
+    },
+    "ref": "223180",
+    "titulacion": "Bachiller o Formación Profesional de Grado Superior",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223180&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23691",
+    "coincide_con": null,
+    "denominacion": "TITULADO SUPERIOR - Asesor/a en técnicas de evaluación de políticas públicas.",
+    "fin": "11/12/2026",
+    "motivo": "El organismo solo tiene sede en Madrid",
+    "organo": "Ministerio de Hacienda",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23691",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23691"
+    },
+    "ref": "223201",
+    "titulacion": "Asesor/a en técnicas de evaluación de políticas públicas.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223201&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23694",
+    "coincide_con": null,
+    "denominacion": "TITULADO SUPERIOR - Titulado/a Superior Función Administrativa Administración Sanitaria",
+    "fin": "11/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23694",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23694"
+    },
+    "ref": "223202",
+    "titulacion": "Grado, Licenciatura universitaria, Ingeniero/a, Arquitecto/a o equivalente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223202&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23922",
+    "coincide_con": null,
+    "denominacion": "ENFERMERIA - Obstétrico-Ginecológico (Matrón/a).",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "4 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23922",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23922"
+    },
+    "ref": "223263",
+    "titulacion": "Enfermero/a Especialista en Enfermería Obstétrico-Ginecológica, o equivalente.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223263&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Alergología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223227",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223227&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Anatomía Patológica",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223228",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223228&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Anestesiología y Reanimación",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "3 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223229",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223229&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Aparato Digestivo",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "3 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223230",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223230&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cardiología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "5 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223231",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223231&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cirugía General y del Aparato Digestivo",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "4 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223232",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223232&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Cirugía Ortopédica y Traumatología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "4 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223233",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223233&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Dermatología Médico-Quirúrgica y Venereología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223235",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223235&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Endocrinología y Nutrición",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223236",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223236&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Farmacia Hospitalaria",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223237",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223237&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Familiar y Comunitaria",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "13 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223239",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223239&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Física y Rehabilitación",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "4 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223240",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223240&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Interna",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223241",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223241&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina Preventiva y Salud Pública",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223242",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223242&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Medicina del Trabajo",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223238",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223238&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Microbiología y Parasitología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223243",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223243&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Nefrología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223244",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223244&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neumología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "3 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223245",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223245&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neurofisiología Clínica",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223246",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223246&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Neurología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "3 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223247",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223247&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Obstetricia y Ginecología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223248",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223248&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Oftalmología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223249",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223249&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Oncología Médica",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223250",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223250&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Pediatría de Atención Primaria",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "9 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223251",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223251&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Pediatría y sus Áreas Específicas",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223252",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223252&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Psicología Clínica",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "7 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223253",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223253&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Psiquiatría",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "6 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223254",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223254&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Radiodiagnóstico",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "4 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223255",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223255&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Radiofísica Hospitalaria",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "8 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223256",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223256&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Reumatología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223257",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223257&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - Urología",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "3 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223258",
+    "titulacion": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223258&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO SANITARIO - Médico/a de Admisión y Documentación Clínica",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223260",
+    "titulacion": "Título de Licenciado/a en Medicina y Cirugía o Graduado/a en Medicina.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223260&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO SANITARIO - Médico/a de Emergencias",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "2 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223261",
+    "titulacion": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223261&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO SANITARIO - Médico/a de Urgencia Hospitalaria",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "7 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223259",
+    "titulacion": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223259&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23921",
+    "coincide_con": null,
+    "denominacion": "TITULADO SANITARIO - Médico/a de Urgencias Atención Primaria",
+    "fin": "15/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "7 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-23921",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-23921"
+    },
+    "ref": "223262",
+    "titulacion": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223262&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24218",
+    "coincide_con": null,
+    "denominacion": "PERSONAL TÉCNICO DE GRADO MEDIO - Técnico/a Titulado/a Medio en Informática",
+    "fin": "18/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "5 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-24218",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24218"
+    },
+    "ref": "223333",
+    "titulacion": "Título universitario oficial de Graduado/a o Ingeniero/a Técnico en Informática o Telecomunicación o titulación de contenido equivalente.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223333&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24335",
+    "coincide_con": null,
+    "denominacion": "TÉCNICO - Técnico/a Especialista de Sistemas y Tecnología de la Información.",
+    "fin": "21/12/2026",
+    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
+    "organo": "Ministerio de Sanidad",
+    "plazas": "4 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-24335",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24335"
+    },
+    "ref": "223355",
+    "titulacion": "Título de Formación Profesional de grado superior en Informática o Telecomunicación o equivalente.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223355&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24459",
+    "coincide_con": null,
+    "denominacion": "OFICIALES DE ARSENALES DE LA ARMADA",
+    "fin": "22/12/2026",
+    "motivo": "Plazas en otras provincias (Baleares, Cádiz, Ciudad Real, A Coruña), ninguna en Sevilla",
+    "organo": "Ministerio de Defensa",
+    "plazas": "116 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-24459",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24459"
+    },
+    "ref": "223390",
+    "titulacion": "Graduado en Educación Secundaria Obligatoria",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223390&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24732",
+    "coincide_con": null,
+    "denominacion": "INGENIEROS TÉCNICOS DE ARSENALES DE LA ARMADA",
+    "fin": "28/12/2026",
+    "motivo": "Plazas en otras provincias (Cádiz, A Coruña, Las Palmas, Madrid), ninguna en Sevilla",
+    "organo": "Ministerio de Defensa",
+    "plazas": "40 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-24732",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24732"
+    },
+    "ref": "223423",
+    "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223423&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24731",
+    "coincide_con": null,
+    "denominacion": "INGENIEROS TÉCNICOS DE ARSENALES DE LA ARMADA",
+    "fin": "28/12/2026",
+    "motivo": "Plazas en otras provincias (Cádiz, A Coruña, Las Palmas, Madrid), ninguna en Sevilla",
+    "organo": "Ministerio de Defensa",
+    "plazas": "79 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-24731",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24731"
+    },
+    "ref": "223422",
+    "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223422&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24733",
+    "coincide_con": null,
+    "denominacion": "MAESTROS DE ARSENALES DE LA ARMADA",
+    "fin": "28/12/2026",
+    "motivo": "Plazas en otras provincias (Cádiz, A Coruña, Las Palmas, Madrid), ninguna en Sevilla",
+    "organo": "Ministerio de Defensa",
+    "plazas": "24 plazas",
+    "publicada": {
+     "texto": "BOE-A-2026-24733",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24733"
+    },
+    "ref": "223424",
+    "titulacion": "Bachiller o Técnico",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223424&selectorServicio=bolsa_empleo"
+   }
+  ],
+  "fallo_ultimo": "2026-11-27T11:32+00:00",
+  "fecha": "2026-11-27T02:24+00:00",
+  "ok": true,
+  "por_ambito": {
+   "Estado (ámbito nacional)": 77,
+   "Junta de Andalucía (ámbito autonómico)": 8,
+   "Provincia de Sevilla (ámbito local)": 0
+  },
+  "posibles_omisiones": [
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "coincide_con": null,
+    "denominacion": "ENFERMERO ESPECIALISTA - Enfermería Obstétrico-Ginecológico (Matrona)",
+    "fin": "03/12/2026",
+    "organo": "Ministerio de Defensa",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "solo en la web del organismo (no en BOE, BOJA ni BOP)",
+     "url": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a2-enfermero-obstetrico-ginecologico-matrona"
+    },
+    "ref": "223399",
+    "titulacion": "Diplomado universitario o grado en Enfermería o equivalente junto al título de especialización en Enfermería Obstétrico-Ginecológica (Matrona)",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223399&selectorServicio=bolsa_empleo"
+   },
+   {
+    "ambito": "Estado (ámbito nacional)",
+    "coincide_con": null,
+    "denominacion": "TITULADO ESPECIALISTA CIENCIAS DE LA SALUD - PEDIATRÍA Y ÁREAS ESPECÍFICAS",
+    "fin": "03/12/2026",
+    "organo": "Ministerio de Defensa",
+    "plazas": "1 plaza",
+    "publicada": {
+     "texto": "solo en la web del organismo (no en BOE, BOJA ni BOP)",
+     "url": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a1-ciencias-de-la-salud-pediatria"
+    },
+    "ref": "223397",
+    "titulacion": "FACULTATIVO ESPECIALISTA EN PEDIATRÍA Y ÁREAS ESPECÍFICAS O EQUIVALENTE",
+    "ubicacion": "NACIONAL",
+    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223397&selectorServicio=bolsa_empleo"
+   }
+  ],
+  "total": 85
  },
  "descartes": {
   "BOE-A-2026-16692": {
