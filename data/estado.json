@@ -1354,17 +1354,9 @@
   "BOP-SE-2026-230019": "2026-11-27"
  },
  "comprobacion": {
-  "coinciden": 0,
-  "excluidas": [],
-  "fecha": "2026-11-27T11:27+00:00",
-  "ok": true,
-  "por_ambito": {
-   "Estado (ámbito nacional)": 0,
-   "Junta de Andalucía (ámbito autonómico)": 0,
-   "Provincia de Sevilla (ámbito local)": 0
-  },
-  "posibles_omisiones": [],
-  "total": 0
+  "error": "el buscador oficial no ha devuelto resultados",
+  "fecha": "2026-11-27T11:32+00:00",
+  "ok": false
  },
  "descartes": {
   "BOE-A-2026-16692": {
@@ -4732,22 +4724,22 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-27T11:26+00:00",
+   "fecha": "2026-11-27T11:32+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 6
+   "segundos": 5
   },
   "BOJA": {
-   "fecha": "2026-11-27T11:26+00:00",
+   "fecha": "2026-11-27T11:32+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 12
+   "segundos": 10
   },
   "BOP": {
-   "fecha": "2026-11-27T11:27+00:00",
+   "fecha": "2026-11-27T11:32+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 9
+   "segundos": 8
   }
  },
  "pag_detalles": {},
