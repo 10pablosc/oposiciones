@@ -50,6 +50,7 @@ def sin_tiempo():
 
 
 SCAN_VERSION = 5   # súbelo para volver a recorrer los días del BOP y del BOJA (p. ej. tras corregir filtros)
+DIAS_MARGEN_ESTADO = 15   # días que se guarda una convocatoria del Estado ya cerrada según el cálculo
 FESTIVOS_ANDALUCES_EN_ESTADO = False  # False: las convocatorias del Estado se calculan solo con festivos nacionales
 BOE_SCAN_VERSION = 2   # súbelo para volver a recorrer los días recientes del BOE (recupera lo que se perdió por un fallo)
 VERSION = 10   # súbelo cuando cambie la forma de extraer datos: los registros vigentes se vuelven a leer
@@ -1174,13 +1175,19 @@ def calcula_estado(r, hoy, con_maximo=False):
                 return ("pendiente_sin_plazo", None, False) if edad <= DIAS_PENDIENTE_SIN_PLAZO else ("caducada", None, False)
             if tipo == "Promoción interna":
                 return ("sin_determinar", None, False) if edad <= DIAS_SIN_PLAZO_PI else ("caducada", None, False)
+    # fecha de fin que da el propio organismo en el buscador oficial del Estado (solo convocatorias del Estado)
+    oficial = date.fromisoformat(r["fin_oficial"]) if r.get("fin_oficial") and r["categoria"] == "estado" else None
     if not p:
+        if oficial:
+            res = ("abierto" if oficial >= hoy else "cerrado"), oficial.isoformat(), False
+            return res + (None,) if con_maximo else res
         return ("sin_determinar", None, False) if edad <= DIAS_SIN_PLAZO else ("caducada", None, False)
     andalucia = FESTIVOS_ANDALUCES_EN_ESTADO or r["categoria"] != "estado"
     fin = suma_plazo(inicio, p["n"], p["tipo"], andalucia=andalucia)
     ultimo = fin if andalucia else suma_plazo(inicio, p["n"], p["tipo"], andalucia=True)
     estimada = r["fuente"] == "BOP" or r["categoria"] in ("local", "ayuntamiento", "diputacion", "otros_locales", "estado")
-    res = ("abierto" if ultimo >= hoy else "cerrado"), fin.isoformat(), estimada
+    hasta = max(ultimo, oficial) if oficial else ultimo   # sigue en la lista hasta la fecha más tardía
+    res = ("abierto" if hasta >= hoy else "cerrado"), fin.isoformat(), estimada
     return res + ((ultimo.isoformat() if ultimo != fin else None),) if con_maximo else res
 
 
@@ -1241,6 +1248,8 @@ def ficha(r, hoy):
         "fin_plazo": fin,
         "fin_estimado": estimada,
         "fin_plazo_max": fin_max,
+        "fin_oficial": (r["fin_oficial"] if cat == "estado" and r.get("fin_oficial") and fin
+                        and r["fin_oficial"] > (fin_max or fin) else None),
         "plazo_texto": (boe.get("plazo") or r.get("plazo") or {}).get("frase"),
         "requisitos": quita_firmas(r.get("requisitos")),
         "titulacion": r.get("titulacion") if titulacion_valida(r.get("titulacion")) else None,
@@ -1357,6 +1366,53 @@ def descartes_lugar(hoy):
     return sorted(xs, key=lambda x: x["fecha"], reverse=True)
 
 
+def recupera_boe(boe_id, registros):
+    """Lee una convocatoria del BOE que el buscador oficial da en plazo y que aquí no estaba (p. ej. borrada por
+    haberla dado por cerrada antes de tiempo)."""
+    x = descarga(f"https://www.boe.es/diario_boe/xml.php?id={boe_id}") or ""
+    tit = re.search(r"<titulo>(.*?)</titulo>", x, re.S)
+    dep = re.search(r"<departamento[^>]*>(.*?)</departamento>", x, re.S)
+    f = re.search(r"<fecha_publicacion>(\d{8})</fecha_publicacion>", x)
+    if not (tit and f):
+        return None
+    it = {"id": boe_id, "titulo": html.unescape(tit.group(1)).strip(), "departamento": html.unescape(dep.group(1)).strip() if dep else "",
+          "epigrafe": "", "fecha": f"{f.group(1)[:4]}-{f.group(1)[4:6]}-{f.group(1)[6:]}",
+          "url": f"https://www.boe.es/diario_boe/txt.php?id={boe_id}"}
+    if clasifica_boe(it) != "estado":
+        return None
+    r = registro_boe(it, "estado")
+    if r:
+        registros[boe_id] = r
+        log("  recuperada desde el buscador oficial:", boe_id, it["titulo"][:90])
+    return r
+
+
+def fechas_oficiales(registros, items, hoy):
+    """Apunta en las convocatorias del Estado la fecha de fin que da el organismo en el buscador oficial.
+    Devuelve True si ha cambiado alguna."""
+    cambio = False
+    for it in items:
+        m = re.match(r"(\d{2})/(\d{2})/(\d{4})", it.get("fin") or "")
+        if not m:
+            continue
+        fin = f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
+        ids = ([it["coincide_con"]] if it.get("coincide_con") else []) + (it.get("detalle") or {}).get("boe", [])
+        for b in ids:
+            r = registros.get(b) or next((x for x in registros.values() if b in (x.get("url_boe") or "")), None)
+            if r is None and b.startswith("BOE-A") and b not in DESCARTES and fin >= hoy.isoformat():
+                try:
+                    r = recupera_boe(b, registros)
+                except Exception as e:  # noqa: BLE001
+                    log("  no se pudo recuperar", b, e)
+            if r is None:
+                continue
+            if r.get("categoria") == "estado" and r.get("fin_oficial") != fin:
+                r["fin_oficial"] = fin
+                cambio = True
+            break
+    return cambio
+
+
 def purga(registros, hoy):
     """Borra lo cerrado o fuera de ventana para que los datos no crezcan sin límite."""
     une_bop_boe(registros)
@@ -1368,7 +1424,10 @@ def purga(registros, hoy):
             continue
         if r["fuente"] == "BOE" and r["categoria"] == "local":
             continue  # hacen falta para unirlos con las bases del BOP
-        est, _, _ = calcula_estado(r, hoy)
+        est, fin, _, fmax = (tuple(calcula_estado(r, hoy, con_maximo=True)) + (None,))[:4]
+        if r["categoria"] == "estado" and est == "cerrado" and fin and sigue_valido(r) and \
+                date.fromisoformat(fmax or fin) >= hoy - timedelta(days=DIAS_MARGEN_ESTADO):
+            continue   # se guarda unos días por si el organismo da una fecha de fin posterior
         if est in ("cerrado", "caducada") or not sigue_valido(r):
             del registros[k]
 
@@ -1436,6 +1495,9 @@ def main():
         import comprobacion
         comp, revisadas, estado["pag_detalles"] = comprobacion.comprobacion(
             salida["convocatorias"], DESCARTES, estado.get("pag_detalles"))
+        if revisadas and fechas_oficiales(registros, revisadas, hoy):
+            salida = genera_salida(registros, hoy, estado)   # con las fechas que da el organismo
+            comp = comprobacion.rehace(comp, revisadas, salida["convocatorias"], DESCARTES)
         estado["comprobacion"] = comp
         if revisadas:
             guarda(os.path.join(DATA, "buscador_oficial.json"), revisadas)   # para auditar la comparación

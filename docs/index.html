@@ -183,7 +183,8 @@
       <h2>Qué significa cada plazo</h2>
       <ul>
         <li><strong>Plazo abierto hasta…</strong>: la fecha se calcula a partir de lo que dice el texto oficial, contando días hábiles (sin sábados, domingos ni festivos nacionales y de Andalucía).
-        Si pone <em>fecha estimada</em> es porque no se conocen los festivos locales. En las del Estado se da la fecha más temprana posible, sin festivos autonómicos, y se indica también la que saldría contándolos.</li>
+        Si pone <em>fecha estimada</em> es porque no se conocen los festivos locales. En las del Estado se da la fecha más temprana posible, sin festivos autonómicos, y se indica también la que saldría contándolos;
+        si el propio organismo da en el buscador oficial del Estado una fecha posterior, se indica también y la convocatoria sigue en la lista hasta ese día.</li>
         <li><strong>Pendiente de apertura</strong>: las bases ya se han publicado en el BOP o en el BOJA, pero el plazo empieza a contar cuando salga el anuncio en el BOE.</li>
         <li><strong>Sin determinar</strong>: no se ha podido leer el plazo en el texto (por ejemplo, porque cuenta desde que se publica en una web o porque el PDF es una imagen escaneada). Hay que mirarlo en las bases.</li>
       </ul>
@@ -356,7 +357,7 @@
     if (d) {
       if (c.estado !== "abierto" || !c.fin_plazo) return false;
       var quedan = diasHasta(c.fin_plazo);
-      if (quedan < 0 && c.fin_plazo_max) quedan = diasHasta(c.fin_plazo_max);
+      if (quedan < 0) quedan = Math.max(c.fin_plazo_max ? diasHasta(c.fin_plazo_max) : -1, c.fin_oficial ? diasHasta(c.fin_oficial) : -1);
       if (quedan < 0 || quedan > +d) return false;
     }
     var q = sinTildes(F.texto.value).trim();
@@ -371,12 +372,22 @@
   function bloquePlazo(c) {
     if (c.estado === "abierto" && c.fin_plazo) {
       var d = diasHasta(c.fin_plazo);
+      var tarde = [];
+      if (c.fin_plazo_max) tarde.push("contando los festivos de Andalucía, hasta el " + fecha(c.fin_plazo_max));
+      if (c.fin_oficial) tarde.push("según el organismo, el plazo termina el <strong>" + fecha(c.fin_oficial) + "</strong>");
+      if (d < 0 && c.fin_oficial && diasHasta(c.fin_oficial) >= 0) {
+        var dof = diasHasta(c.fin_oficial);
+        return '<div class="plazo urgente">Según el organismo, el plazo termina el <strong>' + fecha(c.fin_oficial) + "</strong> · " +
+          (dof === 0 ? "termina hoy" : (dof === 1 ? "termina mañana" : "quedan " + dof + " días")) +
+          " (con el calendario nacional saldría el " + fecha(c.fin_plazo) +
+          (c.fin_plazo_max ? " y con los festivos de Andalucía el " + fecha(c.fin_plazo_max) : "") + ").</div>";
+      }
       if (d < 0 && c.fin_plazo_max) {
         return '<div class="plazo urgente">El plazo terminó el <strong>' + fecha(c.fin_plazo) + "</strong> según el calendario nacional; " +
           "contando los festivos de Andalucía llegaría al <strong>" + fecha(c.fin_plazo_max) + "</strong>. Confírmalo en las bases.</div>";
       }
       var cuando = d === 0 ? "termina hoy" : (d === 1 ? "termina mañana" : "quedan " + d + " días");
-      var est = c.fin_estimado ? " (fecha estimada" + (c.fin_plazo_max ? "; contando los festivos de Andalucía, hasta el " + fecha(c.fin_plazo_max) : "") + ")" : "";
+      var est = c.fin_estimado ? " (fecha estimada" + (tarde.length ? "; " + tarde.join("; ") : "") + ")" : (tarde.length ? " (" + tarde.join("; ") + ")" : "");
       return '<div class="plazo ' + (d <= 5 ? "urgente" : "abierto") + '">Plazo abierto hasta el <strong>' + fecha(c.fin_plazo) +
         "</strong>" + est + " · " + cuando + "</div>";
     }

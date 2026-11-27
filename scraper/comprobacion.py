@@ -290,3 +290,13 @@ def comprobacion(fichas, descartes=None, cache_detalles=None):
     ligeras = lambda xs: [{k: v for k, v in x.items() if k != "detalle"} for x in xs]  # noqa: E731
     return ({"ok": True, "fecha": ahora, "total": len(items), "por_ambito": por_ambito, "coinciden": coinciden,
              "posibles_omisiones": ligeras(omisiones), "excluidas": ligeras(excluidas)}, items, cache)
+
+
+def rehace(comp, items, fichas, descartes=None):
+    """Vuelve a emparejar (sin descargar nada) después de cambiar la lista."""
+    for it in items:
+        it.pop("coincide_con", None)
+        it.pop("motivo", None)
+    coinciden, omisiones, excluidas = compara(items, fichas, descartes)
+    ligeras = lambda xs: [{k: v for k, v in x.items() if k != "detalle"} for x in xs]  # noqa: E731
+    return dict(comp, coinciden=coinciden, posibles_omisiones=ligeras(omisiones), excluidas=ligeras(excluidas))
