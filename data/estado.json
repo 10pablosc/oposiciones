@@ -2329,8 +2329,7 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223424&selectorServicio=bolsa_empleo"
    }
   ],
-  "fallo_ultimo": "2026-11-27T11:32+00:00",
-  "fecha": "2026-11-27T02:24+00:00",
+  "fecha": "2026-11-27T17:41+00:00",
   "ok": true,
   "por_ambito": {
    "Estado (ámbito nacional)": 77,
@@ -5739,24 +5738,1330 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-27T11:32+00:00",
+   "fecha": "2026-11-27T17:39+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 5
+   "segundos": 6
   },
   "BOJA": {
-   "fecha": "2026-11-27T11:32+00:00",
+   "fecha": "2026-11-27T17:41+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 10
+   "segundos": 110
   },
   "BOP": {
-   "fecha": "2026-11-27T11:32+00:00",
+   "fecha": "2026-11-27T17:41+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 8
+   "segundos": 9
   }
  },
- "pag_detalles": {},
+ "pag_detalles": {
+  "222991": {
+   "boe": [
+    "BOE-A-2026-22647"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Grado en Odontología o Licenciado/a en Odontología o Médico/a Especialista en Estomatología o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "http://www.sanidad.gob.es/"
+  },
+  "222993": {
+   "boe": [
+    "BOE-A-2026-22648"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Grado en Nutrición Humana y Dietética o titulación equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://www.sanidad.gob.es/home.htm"
+  },
+  "222994": {
+   "boe": [
+    "BOE-A-2026-22649"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Grado en Trabajo Social, Diplomado en Trabajo Social o equivalente,",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://www.sanidad.gob.es/home.htm"
+  },
+  "223001": {
+   "boe": [
+    "BOE-A-2026-22740"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Formación Profesional de Técnico Superior en Higiene Bucodental o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/"
+  },
+  "223002": {
+   "boe": [
+    "BOE-A-2026-22741"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Certificado de escolaridad o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/"
+  },
+  "223003": {
+   "boe": [
+    "BOE-A-2026-22742"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Certificado de Escolaridad o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "http://www.sanidad.gob.es/"
+  },
+  "223096": {
+   "boe": [
+    "BOE-A-2026-23196"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN TEMPORAL",
+    "Titulación": "Graduado en Educación Secundaria, Educación General Básica o Formación Profesional de Técnico o Técnico Auxiliar, o equivalentes",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes"
+   },
+   "web": "https://administracion.gob.es/empleopublico/ips"
+  },
+  "223179": {
+   "boe": [
+    "BOE-A-2026-23545"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Ingeniero Industrial",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA.html"
+  },
+  "223180": {
+   "boe": [
+    "BOE-A-2026-23546"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Bachiller o Formación Profesional de Grado Superior",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA.html"
+  },
+  "223181": {
+   "boe": [
+    "BOE-A-2026-23546"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Formación Profesional de Grado Superior",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA.html"
+  },
+  "223201": {
+   "boe": [
+    "BOE-A-2026-23691"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Asesor/a en técnicas de evaluación de políticas públicas.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Hacienda"
+   },
+   "web": "http://www.airef.es/"
+  },
+  "223202": {
+   "boe": [
+    "BOE-A-2026-23694"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Grado, Licenciatura universitaria, Ingeniero/a, Arquitecto/a o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es"
+  },
+  "223224": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "220"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INTERINIDAD",
+    "Titulación": "Poseer la titulación o titulaciones y demás requisitos establecidos para la especialidad del Cuerpo de Catedráticos de Música y Artes Escénicas a la que se pretende acceder.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Desarrollo Educativo y Formación Profesional"
+   },
+   "web": "https://www.juntadeandalucia.es/educacion/portales/profesorado/bolsas-de-trabajo-e-interinidades"
+  },
+  "223227": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223228": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223229": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223230": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223231": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223232": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223233": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223235": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223236": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223237": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223238": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223239": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223240": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223241": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223242": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223243": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223244": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223245": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223246": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223247": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223248": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223249": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223250": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223251": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223252": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223253": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223254": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223255": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223256": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223257": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223258": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista en la especialidad a la que se presente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223259": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223260": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Licenciado/a en Medicina y Cirugía o Graduado/a en Medicina.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223261": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223262": {
+   "boe": [
+    "BOE-A-2026-23921"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Médico/a Especialista o poseer la certificación habilitadora prevista en el artículo 3 del Real Decreto 853/1993, de 4 de junio.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223263": {
+   "boe": [
+    "BOE-A-2026-23922"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Enfermero/a Especialista en Enfermería Obstétrico-Ginecológica, o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://ingesa.sanidad.gob.es/ingesa/RRHH-y-Empleo-INGESA/OFERTAS-PUBLICAS-DE-EMPLEO--OPE-/OPE-2026.html"
+  },
+  "223288": {
+   "boe": [
+    "BOE-A-2026-24025"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Licenciado, Ingeniero, Arquitecto o Grado.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes y Movilidad Sostenible"
+   },
+   "web": "https://www.transportes.gob.es/informacion-para-el-ciudadano/empleo-publico/procesos-selectivos/convocatorias-2026/personal-funcionario"
+  },
+  "223289": {
+   "boe": [
+    "BOE-A-2026-24025"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Licenciado, Ingeniero, Arquitecto o Grado.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes y Movilidad Sostenible"
+   },
+   "web": "https://www.transportes.gob.es/informacion-para-el-ciudadano/empleo-publico/procesos-selectivos/convocatorias-2026/personal-funcionario"
+  },
+  "223322": {
+   "boe": [
+    "BOE-A-2026-24137"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Ingeniero Técnico en Topografía o aquel que habilite para el ejercicio de esta profesión regulada,",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes y Movilidad Sostenible"
+   },
+   "web": "https://www.transportes.gob.es/"
+  },
+  "223323": {
+   "boe": [
+    "BOE-A-2026-24137"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Ingeniero Técnico en Topografía o aquel que habilite para el ejercicio de esta profesión regulada,",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes y Movilidad Sostenible"
+   },
+   "web": "https://www.transportes.gob.es/"
+  },
+  "223330": {
+   "boe": [
+    "BOE-A-2026-24217"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Ingeniero Técnico Agrícola o el título equivalente que habilite para el ejercicio de esta profesión regulada",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Agricultura Pesca y Alimentacion"
+   },
+   "web": "https://www.mapa.gob.es/es/ministerio/servicios/empleo-publico/oep"
+  },
+  "223333": {
+   "boe": [
+    "BOE-A-2026-24218"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título universitario oficial de Graduado/a o Ingeniero/a Técnico en Informática o Telecomunicación o titulación de contenido equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "https://www.sanidad.gob.es/servCiudadanos/oposicionesConcursos/ofertasEmpleo/home.htm"
+  },
+  "223349": {
+   "boe": [
+    "BOE-A-2026-24331"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Licenciado, Ingeniero, Arquitecto o Grado",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes, Movilidad y Agenda Urbana"
+   },
+   "web": "https://www.mitma.gob.es/"
+  },
+  "223350": {
+   "boe": [
+    "BOE-A-2026-24331"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Licenciado, Ingeniero, Arquitecto o Grado",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Transportes, Movilidad y Agenda Urbana"
+   },
+   "web": "https://www.mitma.gob.es/"
+  },
+  "223355": {
+   "boe": [
+    "BOE-A-2026-24335"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Título de Formación Profesional de grado superior en Informática o Telecomunicación o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Sanidad"
+   },
+   "web": "http://www.sanidad.gob.es/"
+  },
+  "223381": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
+  "223382": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
+  "223383": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
+  "223384": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
+  "223385": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "225"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Ver la titulación especifica en la convocatoria.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inteligencia Artificial, Desarrollo Digital y Administración Pública"
+   },
+   "web": "https://portalempleopublico.juntadeandalucia.es/sede"
+  },
+  "223386": {
+   "boe": [
+    "BOE-A-2026-24535"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Bachiller o Técnico",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Cultura"
+   },
+   "web": "https://www.cultura.gob.es/portada.html"
+  },
+  "223387": {
+   "boe": [
+    "BOE-A-2026-24535"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Cultura"
+   },
+   "web": "https://www.cultura.gob.es/portada.html"
+  },
+  "223388": {
+   "boe": [
+    "BOE-A-2025-24752",
+    "BOE-A-2026-20320",
+    "BOE-A-2026-24535"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Cultura"
+   },
+   "web": "https://www.cultura.gob.es/portada.html"
+  },
+  "223390": {
+   "boe": [
+    "BOE-A-2026-24459"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Graduado en Educación Secundaria Obligatoria",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "https://www.defensa.gob.es/portalservicios/"
+  },
+  "223397": {
+   "boe": [],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "FACULTATIVO ESPECIALISTA EN PEDIATRÍA Y ÁREAS ESPECÍFICAS O EQUIVALENTE",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a1-ciencias-de-la-salud-pediatria"
+  },
+  "223399": {
+   "boe": [],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
+    "Tipo de vía": "ESTATUTARIA",
+    "Titulación": "Diplomado universitario o grado en Enfermería o equivalente junto al título de especialización en Enfermería Obstétrico-Ginecológica (Matrona)",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "https://www.defensa.gob.es/hcd-gomez-ulla/-/comunicacion/noticias/convocatoria-proceso-selectivo-personal-estatutario-temporal-categoria-a2-enfermero-obstetrico-ginecologico-matrona"
+  },
+  "223408": {
+   "boe": [
+    "BOE-A-2026-24530"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachillerato o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Hacienda"
+   },
+   "web": null
+  },
+  "223414": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "227"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN FIJA",
+    "Titulación": "Formación Profesional de Grado Superior o Bachiller o titulación equivalente",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Consejería de Inclusión Social, Juventud, Familias e Igualdad"
+   },
+   "web": "https://www.juntadeandalucia.es/agenciadeserviciossocialesydependencia/index.php/m-la-agencia/seleccionpersonal"
+  },
+  "223415": {
+   "boe": [],
+   "boja": [
+    [
+     "2026",
+     "227"
+    ]
+   ],
+   "bop": false,
+   "campos": {
+    "Comunidad Autónoma": "ANDALUCÍA",
+    "Tipo de personal": "PERSONAL LABORAL",
+    "Tipo de vía": "CONTRATACIÓN TEMPORAL",
+    "Titulación": "Graduado/a en Ciencias Ambientales, o equivalente según el sistema educativo. Certificación Académica Oficial.",
+    "Ámbito geográfico": "AUTONÓMICO",
+    "Órgano convocante": "Universidad Pablo de Olavide"
+   },
+   "web": "https://upo.gob.es/teo/"
+  },
+  "223422": {
+   "boe": [
+    "BOE-A-2026-24731"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "http://defensa.gob.es/portalservicios"
+  },
+  "223423": {
+   "boe": [
+    "BOE-A-2026-24732"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado a la fecha de fin del plazo de presentación de solicitudes.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "http://defensa.gob.es/portalservicios"
+  },
+  "223424": {
+   "boe": [
+    "BOE-A-2026-24733"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio de Defensa"
+   },
+   "web": "http://defensa.gob.es/portalservicios"
+  },
+  "223431": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Graduado en Educación Secundaria o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-auxiliar-de-la-administracion-del-estado"
+  },
+  "223432": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Graduado en Educación Secundaria o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-auxiliar-de-la-administracion-del-estado"
+  },
+  "223433": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Bachiller o Técnico o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-administrativo-de-la-administracion-del-estado"
+  },
+  "223434": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-administrativo-de-la-administracion-del-estado"
+  },
+  "223435": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Bachiller o Técnico o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado"
+  },
+  "223436": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado"
+  },
+  "223437": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-la-administracion-civil-del-estado"
+  },
+  "223438": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-la-administracion-civil-del-estado"
+  },
+  "223439": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-sistemas-e-informatica-de-la-administracion-del-estado"
+  },
+  "223440": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-sistemas-e-informatica-de-la-administracion-del-estado"
+  }
+ },
  "scan_version": 5
 }
