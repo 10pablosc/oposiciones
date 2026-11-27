@@ -450,7 +450,8 @@
   function pintaComprobacion(c) {
     var caja = $("comprobacion");
     if (!c) { caja.innerHTML = ""; return; }
-    var cuando = c.fecha ? new Date(c.fecha).toLocaleDateString("es-ES") : "";
+    var fh = function (x) { var d = new Date(x); return d.toLocaleDateString("es-ES") + " a las " + d.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" }); };
+    var cuando = c.fecha ? fh(c.fecha) : "";
     var fuente = 'el <a href="https://administracion.gob.es/empleopublico/resultados-empleo" target="_blank" rel="noopener">buscador oficial de empleo público del Estado</a>';
     if (!c.ok) {
       caja.innerHTML = '<div class="comprobacion">No se ha podido hacer la comparación con ' + fuente + '. Se volverá a intentar en la próxima actualización.</div>';
@@ -467,7 +468,7 @@
           (url(x.boe) ? ' (<a href="' + url(x.boe) + '" target="_blank" rel="noopener">ver la convocatoria</a>)' : "") + "</div>" : "") +
         "</li>";
     }
-    var html = (c.fallo_ultimo ? '<p class="det">El último intento de comparación (' + new Date(c.fallo_ultimo).toLocaleDateString("es-ES") +
+    var html = (c.fallo_ultimo ? '<p class="det">El último intento de comparación (' + fh(c.fallo_ultimo) +
       ") falló porque el buscador oficial no respondió bien; se muestran los resultados anteriores.</p>" : "") +
       "<strong>Comprobado el " + esc(cuando) + ":</strong> " + fuente + " tiene " + (c.total || 0) +
       " convocatorias en plazo del Estado, la Junta de Andalucía y la provincia de Sevilla. " + (c.coinciden || 0) + " están en esta lista";
