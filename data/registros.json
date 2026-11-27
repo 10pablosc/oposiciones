@@ -11785,5 +11785,81 @@
   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-provision-por-promocion-interna-de-una-plaza-de-Tecnico-de-Gestion-Cultural-y-Museistica-vacante-en-la-plantilla-de-personal-laboral-OEP-2025/",
   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1795651259071-final-603d05b5.pdf",
   "v": 10
+ },
+ "BOP-SE-2026-230005": {
+  "ambito": "Provincia de Sevilla",
+  "bop_num": 230,
+  "categoria": "ayuntamiento",
+  "denominacion": "Categoría de Auxiliar de Ayuda a Domicilio (expte. 2026/TAB_01/000141)",
+  "fecha_publicacion": "2026-11-27",
+  "fuente": "BOP",
+  "grupo": null,
+  "id": "BOP-SE-2026-230005",
+  "localidad": "Alanís",
+  "ocr": false,
+  "organismo": "Ayuntamiento de Alanís",
+  "orig": {
+   "anunciante": "Alanis",
+   "cve": "BOP-SE-2026-230005",
+   "fecha": "2026-11-27",
+   "titulo": "Bases de la convocatoria para la creación de una bolsa de empleo extraordinaria en la categoría de Auxiliar de Ayuda a Domicilio (expte. 2026/TAB_01/000141)",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-empleo-extraordinaria-en-la-categoria-de-Auxiliar-de-Ayuda-a-Domicilio-expte-2026-TAB_01-000141/"
+  },
+  "personal": "Funcionario / Laboral",
+  "plazas": null,
+  "plazo": {
+   "boletin": "BOP",
+   "frase": "plazo de solicitudes Establecer un plazo de diez días hábiles para presentar solicitudes, contado desde el día siguiente al de la publicación del extracto de esta convocatoria en el Boletín Oficial de la Provincia de Sevilla, conforme a la base quinta.",
+   "n": 10,
+   "tipo": "habiles"
+  },
+  "requisitos": null,
+  "requisitos_generales": null,
+  "sin_texto": false,
+  "sistema": null,
+  "tipo": "Bolsa o empleo temporal",
+  "titulacion": null,
+  "titulo_oficial": "Bases de la convocatoria para la creación de una bolsa de empleo extraordinaria en la categoría de Auxiliar de Ayuda a Domicilio (expte. 2026/TAB_01/000141)",
+  "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-empleo-extraordinaria-en-la-categoria-de-Auxiliar-de-Ayuda-a-Domicilio-expte-2026-TAB_01-000141/",
+  "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1795737620675-final-580ead4f.pdf",
+  "v": 10
+ },
+ "BOP-SE-2026-230019": {
+  "ambito": "Provincia de Sevilla",
+  "bop_num": 230,
+  "categoria": "ayuntamiento",
+  "denominacion": "Bolsa de la contratación laboral temporal de servicios de limpieza extraordinarios de Feria",
+  "fecha_publicacion": "2026-11-27",
+  "fuente": "BOP",
+  "grupo": null,
+  "id": "BOP-SE-2026-230019",
+  "localidad": "La Puebla de Cazalla",
+  "ocr": false,
+  "organismo": "Ayuntamiento de La Puebla de Cazalla",
+  "orig": {
+   "anunciante": "La Puebla de Cazalla",
+   "cve": "BOP-SE-2026-230019",
+   "fecha": "2026-11-27",
+   "titulo": "Bases de la convocatoria para la creación de una bolsa de trabajo para la contratación laboral temporal de servicios de limpieza extraordinarios de Feria, Semana Santa, Navidad y otros eventos",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-la-contratacion-laboral-temporal-de-servicios-de-limpieza-extraordinarios-de-Feria-Semana-Santa-Navidad-y-otros-eventos-00001/"
+  },
+  "personal": "Laboral",
+  "plazas": null,
+  "plazo": {
+   "boletin": "BOP",
+   "frase": "plazo de presentación de solicitudes será de 10 días hábiles, contados desde el día siguiente al de la fecha de publicación del anuncio de la convocatoria en el «Boletín Oficial de la Provincia de Sevilla».",
+   "n": 10,
+   "tipo": "habiles"
+  },
+  "requisitos": "SEGUNDA. –REQUISITOS DE LAS PERSONAS ASPIRANTES.\n2.1. Para participar en el procedimiento selectivo, las personas aspirantes deberán reunir los siguientes requisitos:\na) Tener la nacionalidad española o cumplir los requisitos de acceso al empleo público previstos en el artículo 57 del texto refundido de la Ley del Estatuto Básico del Empleado Público.\nb) Poseer la capacidad funcional necesaria para el desempeño de las tareas propias del puesto de trabajo, sin perjuicio de los ajustes razonables que, en su caso, procedan.\nc) Tener cumplidos dieciséis años y no exceder de la edad máxima de jubilación forzosa legalmente establecida.\nd) No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas ni hallarse en situación de inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, en los términos previstos en el artículo 56 del TREBEP.\ne) No estar incurso en causa legal de incompatibilidad, sin perjuicio de los supuestos legalmente previstos.\n2.2. Todos los requisitos deberán reunirse en la fecha de finalización del plazo de presentación de solicitudes y mantenerse durante el procedimiento selectivo y en el momento de la contratación.",
+  "requisitos_generales": null,
+  "sin_texto": false,
+  "sistema": "Oposición",
+  "tipo": "Bolsa o empleo temporal",
+  "titulacion": null,
+  "titulo_oficial": "Bases de la convocatoria para la creación de una bolsa de trabajo para la contratación laboral temporal de servicios de limpieza extraordinarios de Feria, Semana Santa, Navidad y otros eventos",
+  "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-la-contratacion-laboral-temporal-de-servicios-de-limpieza-extraordinarios-de-Feria-Semana-Santa-Navidad-y-otros-eventos-00001/",
+  "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1795737643760-final-57445e23.pdf",
+  "v": 10
  }
 }

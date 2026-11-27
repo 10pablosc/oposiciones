@@ -39,7 +39,6 @@
  },
  "boe": {
   "procesados": [
-   "2025-11-26",
    "2025-11-27",
    "2025-11-28",
    "2025-11-29",
@@ -527,8 +526,6 @@
   }
  },
  "boja_vistos": {
-  "https://www.juntadeandalucia.es/boja/2026/221/25": "2026-11-16",
-  "https://www.juntadeandalucia.es/boja/2026/221/26": "2026-11-16",
   "https://www.juntadeandalucia.es/boja/2026/222/32": "2026-11-17",
   "https://www.juntadeandalucia.es/boja/2026/222/33": "2026-11-17",
   "https://www.juntadeandalucia.es/boja/2026/225/24": "2026-11-20",
@@ -542,7 +539,6 @@
  },
  "bop": {
   "procesados": [
-   "2025-11-26",
    "2025-11-27",
    "2025-11-28",
    "2025-11-29",
@@ -907,24 +903,11 @@
    "2026-11-23",
    "2026-11-24",
    "2026-11-25",
-   "2026-11-26"
+   "2026-11-26",
+   "2026-11-27"
   ]
  },
  "bop_descartes": {
-  "BOP-SE-2026-208020": {
-   "anunciante": "Las Navas de la Concepcion",
-   "fecha": "2026-10-27",
-   "motivo": "Corrección de errores",
-   "titulo": "Corrección de errores del anuncio de la oferta de empleo público 2026",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-la-oferta-de-empleo-publico-2026/"
-  },
-  "BOP-SE-2026-208032": {
-   "anunciante": "Utrera",
-   "fecha": "2026-10-27",
-   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
-   "titulo": "Oferta de empleo público 2026",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00038/"
-  },
   "BOP-SE-2026-209029": {
    "anunciante": "Servicio de Recursos Humanos",
    "fecha": "2026-10-28",
@@ -1309,6 +1292,55 @@
    "motivo": "Nombramiento o contratación de las personas aprobadas",
    "titulo": "Nombramiento de funcionario interino en la categoría de Técnico de Administración General adscrito al área de secretaría-policía local",
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-interino-en-la-categoria-de-Tecnico-de-Administracion-General-adscrito-al-area-de-secretaria-policia-local/"
+  },
+  "BOP-SE-2026-230002": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-27",
+   "motivo": "Lista de admitidos, excluidos o aprobados",
+   "titulo": "Elevando a definitiva la lista provisional de personas adminitidas y excluidas, composición del tribunal y fecha de comienzo de las pruebas, de la convocatoria para la creación de una bolsa de empleo extraordinaria en la categoría de Ingeniero Técnico Industrial",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Elevando-a-definitiva-la-lista-provisional-de-personas-adminitidas-y-excluidas-composicion-del-tribunal-y-fecha-de-comienzo-de-las-pruebas-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-empleo/"
+  },
+  "BOP-SE-2026-230003": {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-27",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Modificación de la composición del órgano de selección del proceso selectivo para la provisión de veintiocho plazas de Auxiliar de Clínica (personal funcionario y laboral) de las OEP de 2021 y 2022",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Modificacion-de-la-composicion-del-organo-de-seleccion-del-proceso-selectivo-para-la-provision-de-veintiocho-plazas-de-Auxiliar-de-Clinica-personal-funcionario-y-laboral-de-las-OEP-de-2021-y-2022/"
+  },
+  "BOP-SE-2026-230015": {
+   "anunciante": "Moron de la Frontera",
+   "fecha": "2026-11-27",
+   "motivo": "Nombramiento o contratación de las personas aprobadas",
+   "titulo": "Nombramiento de funcionario interino en una plaza de Policía Local del año 1991",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-interino-en-una-plaza-de-Policia-Local-del-ano-1991/"
+  },
+  "BOP-SE-2026-230016": {
+   "anunciante": "Moron de la Frontera",
+   "fecha": "2026-11-27",
+   "motivo": "Nombramiento o contratación de las personas aprobadas",
+   "titulo": "Nombramiento de funcionario interino en una plaza de Policía Local del año 1996",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-interino-en-una-plaza-de-Policia-Local-del-ano-1996/"
+  },
+  "BOP-SE-2026-230017": {
+   "anunciante": "Moron de la Frontera",
+   "fecha": "2026-11-27",
+   "motivo": "Nombramiento o contratación de las personas aprobadas",
+   "titulo": "Nombramiento de funcionario de carrera en una plaza de Policía Local del año 2001",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-de-carrera-en-una-plaza-de-Policia-Local-del-ano-2001/"
+  },
+  "BOP-SE-2026-230018": {
+   "anunciante": "Los Palacios y Villafranca",
+   "fecha": "2026-11-27",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00046/"
+  },
+  "BOP-SE-2026-230020": {
+   "anunciante": "La Roda de Andalucia",
+   "fecha": "2026-11-27",
+   "motivo": "Lista de admitidos, excluidos o aprobados",
+   "titulo": "Lista provisional de personas admitidas y excluidas de la convocatoria para la contratación temporal de un Agente de Inserción e Innovación Local (AIL) y creación de bolsa de trabajo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Lista-provisional-de-personas-admitidas-y-excluidas-de-la-convocatoria-para-la-contratacion-temporal-de-un-Agente-de-Insercion-e-Innovacion-Local-AIL-y-creacion-de-bolsa-de-trabajo/"
   }
  },
  "bop_descartes_v": 3,
@@ -1316,47 +1348,13 @@
   "BOP-SE-2026-222008": "2026-11-17",
   "BOP-SE-2026-224015": "2026-11-19",
   "BOP-SE-2026-229008": "2026-11-26",
-  "BOP-SE-2026-229023": "2026-11-26"
+  "BOP-SE-2026-229023": "2026-11-26",
+  "BOP-SE-2026-230005": "2026-11-27",
+  "BOP-SE-2026-230019": "2026-11-27"
  },
  "comprobacion": {
-  "coinciden": 19,
+  "coinciden": 29,
   "excluidas": [
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
-    "coincide_con": null,
-    "denominacion": "AYUDANTE - Tareas de Apoyo (Grupo T5)",
-    "fin": "26/11/2026",
-    "motivo": "Plazas en otras provincias (Barcelona, Cáceres, Cantabria, Castellón), ninguna en Sevilla",
-    "organo": "Ministerio de Hacienda",
-    "plazas": "17 plazas",
-    "publicada": {
-     "texto": "BOE-A-2026-22557",
-     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
-    },
-    "ref": "222988",
-    "titulacion": "No se exige titulación.",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222988&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
-    "coincide_con": null,
-    "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior. Esp. Imagen y sonido(T3)",
-    "fin": "26/11/2026",
-    "motivo": "Plazas en otras provincias (Barcelona, Cáceres, Cantabria, Castellón), ninguna en Sevilla",
-    "organo": "Ministerio de Hacienda",
-    "plazas": "3 plazas",
-    "publicada": {
-     "texto": "BOE-A-2026-22557",
-     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
-    },
-    "ref": "222989",
-    "titulacion": "Grupo profesional T3: Área Funcional: Técnico/a Profesional: Especialidad/ IMAGEN Y SONIDO. Cualquiera de las cinco titulaciones de Técnico Superior de la familia profesional de Imagen y Sonido. - - - - Técnico Superior en Animaciones 3D, Juegos y Entornos Interactivos Técnico Superior en Iluminación, Captación y Tratamiento de Imagen Técnico Superior en Producción de Audiovisuales y Espectáculos Técnico Superior en Realización de Proyectos Audiovisuales y Espectáculos - Técnico Superior en Sonido para Audiovisuales y Espectáculos",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222989&selectorServicio=bolsa_empleo"
-   },
    {
     "ambito": "Estado (ámbito nacional)",
     "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22648",
@@ -2330,30 +2328,14 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223424&selectorServicio=bolsa_empleo"
    }
   ],
-  "fecha": "2026-11-26T16:49+00:00",
+  "fecha": "2026-11-27T02:24+00:00",
   "ok": true,
   "por_ambito": {
-   "Estado (ámbito nacional)": 70,
+   "Estado (ámbito nacional)": 77,
    "Junta de Andalucía (ámbito autonómico)": 8,
    "Provincia de Sevilla (ámbito local)": 0
   },
   "posibles_omisiones": [
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "coincide_con": null,
-    "denominacion": "FACULTATIVO DE SANIDAD PENITENCIARIA",
-    "fin": "26/11/2026",
-    "organo": "Ministerio del Interior",
-    "plazas": "70 plazas",
-    "publicada": {
-     "texto": "BOE-A-2026-22469",
-     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22469"
-    },
-    "ref": "222943",
-    "titulacion": "Licenciado o Grado en Medicina o Licenciado en Medicina y Cirugía y estar en posesión del título de Médico especialista en Medicina Familiar y Comunitaria y Medicina Interna, si optan a las plazas de la especialidad de Medicina Familiar y Comunitaria y Medicina Interna, y estar en posesión del título de Psiquiatría, si optan a las plazas de la especialidad de Psiquiatría",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222943&selectorServicio=bolsa_empleo"
-   },
    {
     "ambito": "Estado (ámbito nacional)",
     "coincide_con": null,
@@ -2387,57 +2369,9 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223397&selectorServicio=bolsa_empleo"
    }
   ],
-  "total": 78
+  "total": 85
  },
  "descartes": {
-  "BOE-A-2026-16477": {
-   "departamento": "MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN",
-   "fecha": "2026-07-29",
-   "id": "BOE-A-2026-16477",
-   "motivo": "Plazas en el extranjero",
-   "titulo": "Resolución de 21 de julio de 2026, de la Dirección de la Agencia Española de Cooperación Internacional para el Desarrollo, por la que se aprueban las bases y se convoca la provisión de plaza de Coordinador/a de la Cooperación Española en Cuba.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16477"
-  },
-  "BOE-A-2026-16478": {
-   "departamento": "MINISTERIO DE TRANSPORTES Y MOVILIDAD SOSTENIBLE",
-   "fecha": "2026-07-29",
-   "id": "BOE-A-2026-16478",
-   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-   "titulo": "Resolución de 22 de julio de 2026, de la Dirección de la Agencia Estatal de Seguridad Ferroviaria, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16478"
-  },
-  "BOE-A-2026-16479": {
-   "departamento": "MINISTERIO PARA LA TRANSFORMACIÓN DIGITAL Y DE LA FUNCIÓN PÚBLICA",
-   "fecha": "2026-07-29",
-   "id": "BOE-A-2026-16479",
-   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-   "titulo": "Resolución de 20 de julio de 2026, de la Dirección General de la Función Pública, por la que se publica la convocatoria para la provisión de puesto de trabajo reservado al personal funcionario de administración local con habilitación de carácter nacional, por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16479"
-  },
-  "BOE-A-2026-16480": {
-   "departamento": "MINISTERIO PARA LA TRANSFORMACIÓN DIGITAL Y DE LA FUNCIÓN PÚBLICA",
-   "fecha": "2026-07-29",
-   "id": "BOE-A-2026-16480",
-   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-   "titulo": "Resolución de 20 de julio de 2026, de la Dirección General de la Función Pública, por la que se publica la convocatoria para la provisión de puesto de trabajo reservado al personal funcionario de administración local con habilitación de carácter nacional, por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16480"
-  },
-  "BOE-A-2026-16481": {
-   "departamento": "MINISTERIO PARA LA TRANSFORMACIÓN DIGITAL Y DE LA FUNCIÓN PÚBLICA",
-   "fecha": "2026-07-29",
-   "id": "BOE-A-2026-16481",
-   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-   "titulo": "Resolución de 20 de julio de 2026, de la Dirección General de la Función Pública, por la que se publica la convocatoria para la provisión de puesto de trabajo reservado al personal funcionario de administración local con habilitación de carácter nacional, por el sistema de libre designación.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16481"
-  },
-  "BOE-A-2026-16482": {
-   "departamento": "MINISTERIO PARA LA TRANSFORMACIÓN DIGITAL Y DE LA FUNCIÓN PÚBLICA",
-   "fecha": "2026-07-29",
-   "id": "BOE-A-2026-16482",
-   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
-   "titulo": "Resolución de 21 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación en la Mutualidad General de Funcionarios Civiles del Estado.",
-   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16482"
-  },
   "BOE-A-2026-16692": {
    "departamento": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
    "fecha": "2026-07-31",
@@ -5338,7 +5272,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 13 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24633",
-   "visto": "2026-11-26"
+   "visto": "2026-11-27"
   },
   "BOE-A-2026-24730": {
    "departamento": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
@@ -5348,7 +5282,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 18 de noviembre de 2026, de la Secretaría de Estado de Justicia, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24730",
-   "visto": "2026-11-26"
+   "visto": "2026-11-27"
   },
   "BOE-A-2026-24731": {
    "departamento": "MINISTERIO DE DEFENSA",
@@ -5388,7 +5322,7 @@
    "tipo": "provision",
    "titulo": "Resolución 430/38461/2026, de 18 de noviembre, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24734",
-   "visto": "2026-11-26"
+   "visto": "2026-11-27"
   },
   "BOE-A-2026-24840": {
    "departamento": "MINISTERIO DE JUVENTUD E INFANCIA",
@@ -5398,7 +5332,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 23 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24840",
-   "visto": "2026-11-26"
+   "visto": "2026-11-27"
   },
   "BOJA-2026-127-27": {
    "departamento": "Consejería de Agricultura, Pesca, Agua y Desarrollo Rural",
@@ -5803,70 +5737,25 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-26T16:48+00:00",
-   "nuevos": 1,
+   "fecha": "2026-11-27T02:24+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 8
+   "segundos": 3
   },
   "BOJA": {
-   "fecha": "2026-11-26T16:49+00:00",
-   "nuevos": 1,
+   "fecha": "2026-11-27T02:24+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 12
+   "segundos": 13
   },
   "BOP": {
-   "fecha": "2026-11-26T16:49+00:00",
+   "fecha": "2026-11-27T02:24+00:00",
    "nuevos": 2,
    "ok": true,
-   "segundos": 16
+   "segundos": 11
   }
  },
  "pag_detalles": {
-  "222943": {
-   "boe": [
-    "BOE-A-2026-22469"
-   ],
-   "boja": [],
-   "bop": false,
-   "campos": {
-    "Tipo de personal": "PERSONAL FUNCIONARIO",
-    "Tipo de vía": "INGRESO LIBRE",
-    "Titulación": "Licenciado o Grado en Medicina o Licenciado en Medicina y Cirugía y estar en posesión del título de Médico especialista en Medicina Familiar y Comunitaria y Medicina Interna, si optan a las plazas de la especialidad de Medicina Familiar y Comunitaria y Medicina Interna, y estar en posesión del título de Psiquiatría, si optan a las plazas de la especialidad de Psiquiatría",
-    "Ámbito geográfico": "NACIONAL",
-    "Órgano convocante": "Ministerio del Interior"
-   },
-   "web": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/cuerpos-de-instituciones-penitenciarias/cuerpo-facultativo-de-sanidad-penitenciaria/"
-  },
-  "222988": {
-   "boe": [
-    "BOE-A-2026-22557"
-   ],
-   "boja": [],
-   "bop": false,
-   "campos": {
-    "Tipo de personal": "PERSONAL LABORAL",
-    "Tipo de vía": "CONTRATACIÓN FIJA",
-    "Titulación": "No se exige titulación.",
-    "Ámbito geográfico": "NACIONAL",
-    "Órgano convocante": "Ministerio de Hacienda"
-   },
-   "web": "https://www3.agenciatributaria.gob.es/static_files/Sede/Tema/Agencia_tributaria/Trabajar_AEAT/NoIx/PLaboral_conveniocolectivo/TL_Grupos_T3_T5_OEP_2026/Informacion_Convocatoria/conv_T3_T5_TL_F.pdf"
-  },
-  "222989": {
-   "boe": [
-    "BOE-A-2026-22557"
-   ],
-   "boja": [],
-   "bop": false,
-   "campos": {
-    "Tipo de personal": "PERSONAL LABORAL",
-    "Tipo de vía": "CONTRATACIÓN FIJA",
-    "Titulación": "Grupo profesional T3: Área Funcional: Técnico/a Profesional: Especialidad/ IMAGEN Y SONIDO. Cualquiera de las cinco titulaciones de Técnico Superior de la familia profesional de Imagen y Sonido. - - - - Técnico Superior en Animaciones 3D, Juegos y Entornos Interactivos Técnico Superior en Iluminación, Captación y Tratamiento de Imagen Técnico Superior en Producción de Audiovisuales y Espectáculos Técnico Superior en Realización de Proyectos Audiovisuales y Espectáculos - Técnico Superior en Sonido para Audiovisuales y Espectáculos",
-    "Ámbito geográfico": "NACIONAL",
-    "Órgano convocante": "Ministerio de Hacienda"
-   },
-   "web": "https://www3.agenciatributaria.gob.es/static_files/Sede/Tema/Agencia_tributaria/Trabajar_AEAT/NoIx/PLaboral_conveniocolectivo/TL_Grupos_T3_T5_OEP_2026/Informacion_Convocatoria/conv_T3_T5_TL_F.pdf"
-  },
   "222991": {
    "boe": [
     "BOE-A-2026-22647"
@@ -7021,6 +6910,156 @@
     "Órgano convocante": "Ministerio de Defensa"
    },
    "web": "http://defensa.gob.es/portalservicios"
+  },
+  "223431": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Graduado en Educación Secundaria o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-auxiliar-de-la-administracion-del-estado"
+  },
+  "223432": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Graduado en Educación Secundaria o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-auxiliar-de-la-administracion-del-estado"
+  },
+  "223433": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Bachiller o Técnico o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-administrativo-de-la-administracion-del-estado"
+  },
+  "223434": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-administrativo-de-la-administracion-del-estado"
+  },
+  "223435": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Bachiller o Técnico o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado"
+  },
+  "223436": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado"
+  },
+  "223437": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-la-administracion-civil-del-estado"
+  },
+  "223438": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-la-administracion-civil-del-estado"
+  },
+  "223439": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-sistemas-e-informatica-de-la-administracion-del-estado"
+  },
+  "223440": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-sistemas-e-informatica-de-la-administracion-del-estado"
   }
  },
  "scan_version": 5

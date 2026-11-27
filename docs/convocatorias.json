@@ -1,44 +1,8 @@
 {
- "actualizado": "2026-11-26T16:49+00:00",
+ "actualizado": "2026-11-27T02:24+00:00",
  "comprobacion": {
-  "coinciden": 19,
+  "coinciden": 29,
   "excluidas": [
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
-    "coincide_con": null,
-    "denominacion": "AYUDANTE - Tareas de Apoyo (Grupo T5)",
-    "fin": "26/11/2026",
-    "motivo": "Plazas en otras provincias (Barcelona, Cáceres, Cantabria, Castellón), ninguna en Sevilla",
-    "organo": "Ministerio de Hacienda",
-    "plazas": "17 plazas",
-    "publicada": {
-     "texto": "BOE-A-2026-22557",
-     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
-    },
-    "ref": "222988",
-    "titulacion": "No se exige titulación.",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222988&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
-    "coincide_con": null,
-    "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior. Esp. Imagen y sonido(T3)",
-    "fin": "26/11/2026",
-    "motivo": "Plazas en otras provincias (Barcelona, Cáceres, Cantabria, Castellón), ninguna en Sevilla",
-    "organo": "Ministerio de Hacienda",
-    "plazas": "3 plazas",
-    "publicada": {
-     "texto": "BOE-A-2026-22557",
-     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
-    },
-    "ref": "222989",
-    "titulacion": "Grupo profesional T3: Área Funcional: Técnico/a Profesional: Especialidad/ IMAGEN Y SONIDO. Cualquiera de las cinco titulaciones de Técnico Superior de la familia profesional de Imagen y Sonido. - - - - Técnico Superior en Animaciones 3D, Juegos y Entornos Interactivos Técnico Superior en Iluminación, Captación y Tratamiento de Imagen Técnico Superior en Producción de Audiovisuales y Espectáculos Técnico Superior en Realización de Proyectos Audiovisuales y Espectáculos - Técnico Superior en Sonido para Audiovisuales y Espectáculos",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222989&selectorServicio=bolsa_empleo"
-   },
    {
     "ambito": "Estado (ámbito nacional)",
     "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22648",
@@ -1012,30 +976,14 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223424&selectorServicio=bolsa_empleo"
    }
   ],
-  "fecha": "2026-11-26T16:49+00:00",
+  "fecha": "2026-11-27T02:24+00:00",
   "ok": true,
   "por_ambito": {
-   "Estado (ámbito nacional)": 70,
+   "Estado (ámbito nacional)": 77,
    "Junta de Andalucía (ámbito autonómico)": 8,
    "Provincia de Sevilla (ámbito local)": 0
   },
   "posibles_omisiones": [
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "coincide_con": null,
-    "denominacion": "FACULTATIVO DE SANIDAD PENITENCIARIA",
-    "fin": "26/11/2026",
-    "organo": "Ministerio del Interior",
-    "plazas": "70 plazas",
-    "publicada": {
-     "texto": "BOE-A-2026-22469",
-     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22469"
-    },
-    "ref": "222943",
-    "titulacion": "Licenciado o Grado en Medicina o Licenciado en Medicina y Cirugía y estar en posesión del título de Médico especialista en Medicina Familiar y Comunitaria y Medicina Interna, si optan a las plazas de la especialidad de Medicina Familiar y Comunitaria y Medicina Interna, y estar en posesión del título de Psiquiatría, si optan a las plazas de la especialidad de Psiquiatría",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222943&selectorServicio=bolsa_empleo"
-   },
    {
     "ambito": "Estado (ámbito nacional)",
     "coincide_con": null,
@@ -1069,9 +1017,73 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223397&selectorServicio=bolsa_empleo"
    }
   ],
-  "total": 78
+  "total": 85
  },
  "convocatorias": [
+  {
+   "ambito": "Provincia de Sevilla",
+   "denominacion": "Bolsa de la contratación laboral temporal de servicios de limpieza extraordinarios de Feria",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "abierto",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-11-27",
+   "fin_estimado": true,
+   "fin_plazo": "2026-12-15",
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "Sin determinar",
+   "id": "BOP-SE-2026-230019",
+   "localidad": "La Puebla de Cazalla",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de La Puebla de Cazalla",
+   "personal": "Laboral",
+   "plazas": null,
+   "plazo_texto": "plazo de presentación de solicitudes será de 10 días hábiles, contados desde el día siguiente al de la fecha de publicación del anuncio de la convocatoria en el «Boletín Oficial de la Provincia de Sevilla».",
+   "requisitos": "SEGUNDA. –REQUISITOS DE LAS PERSONAS ASPIRANTES.\n2.1. Para participar en el procedimiento selectivo, las personas aspirantes deberán reunir los siguientes requisitos:\na) Tener la nacionalidad española o cumplir los requisitos de acceso al empleo público previstos en el artículo 57 del texto refundido de la Ley del Estatuto Básico del Empleado Público.\nb) Poseer la capacidad funcional necesaria para el desempeño de las tareas propias del puesto de trabajo, sin perjuicio de los ajustes razonables que, en su caso, procedan.\nc) Tener cumplidos dieciséis años y no exceder de la edad máxima de jubilación forzosa legalmente establecida.\nd) No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas ni hallarse en situación de inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, en los términos previstos en el artículo 56 del TREBEP.\ne) No estar incurso en causa legal de incompatibilidad, sin perjuicio de los supuestos legalmente previstos.\n2.2. Todos los requisitos deberán reunirse en la fecha de finalización del plazo de presentación de solicitudes y mantenerse durante el procedimiento selectivo y en el momento de la contratación.",
+   "requisitos_generales": null,
+   "sistema": "Oposición",
+   "tipo": "Bolsa o empleo temporal",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": null,
+   "titulo_oficial": "Bases de la convocatoria para la creación de una bolsa de trabajo para la contratación laboral temporal de servicios de limpieza extraordinarios de Feria, Semana Santa, Navidad y otros eventos",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-trabajo-para-la-contratacion-laboral-temporal-de-servicios-de-limpieza-extraordinarios-de-Feria-Semana-Santa-Navidad-y-otros-eventos-00001/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1795737643760-final-57445e23.pdf"
+  },
+  {
+   "ambito": "Provincia de Sevilla",
+   "denominacion": "Categoría de Auxiliar de Ayuda a Domicilio (expte. 2026/TAB_01/000141)",
+   "departamento": "",
+   "en_boe": false,
+   "estado": "abierto",
+   "fecha_boe": null,
+   "fecha_publicacion": "2026-11-27",
+   "fin_estimado": true,
+   "fin_plazo": "2026-12-15",
+   "fin_plazo_max": null,
+   "fuente": "BOP",
+   "grupo": "Sin determinar",
+   "id": "BOP-SE-2026-230005",
+   "localidad": "Alanís",
+   "lugares_texto": null,
+   "ocr": false,
+   "organismo": "Ayuntamiento de Alanís",
+   "personal": "Funcionario / Laboral",
+   "plazas": null,
+   "plazo_texto": "plazo de solicitudes Establecer un plazo de diez días hábiles para presentar solicitudes, contado desde el día siguiente al de la publicación del extracto de esta convocatoria en el Boletín Oficial de la Provincia de Sevilla, conforme a la base quinta.",
+   "requisitos": null,
+   "requisitos_generales": null,
+   "sistema": "Sin determinar",
+   "tipo": "Bolsa o empleo temporal",
+   "tipo_organismo": "Ayuntamiento",
+   "titulacion": null,
+   "titulo_oficial": "Bases de la convocatoria para la creación de una bolsa de empleo extraordinaria en la categoría de Auxiliar de Ayuda a Domicilio (expte. 2026/TAB_01/000141)",
+   "url_bases": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-empleo-extraordinaria-en-la-categoria-de-Auxiliar-de-Ayuda-a-Domicilio-expte-2026-TAB_01-000141/",
+   "url_boe": null,
+   "url_pdf": "https://bopsevilla.dipusevilla.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1795737620675-final-580ead4f.pdf"
+  },
   {
    "ambito": "Provincia de Sevilla",
    "denominacion": "Técnico de Gestión Cultural y Museística",
@@ -3917,6 +3929,55 @@
  "descartes_bop": [
   {
    "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-27",
+   "motivo": "Lista de admitidos, excluidos o aprobados",
+   "titulo": "Elevando a definitiva la lista provisional de personas adminitidas y excluidas, composición del tribunal y fecha de comienzo de las pruebas, de la convocatoria para la creación de una bolsa de empleo extraordinaria en la categoría de Ingeniero Técnico Industrial",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Elevando-a-definitiva-la-lista-provisional-de-personas-adminitidas-y-excluidas-composicion-del-tribunal-y-fecha-de-comienzo-de-las-pruebas-de-la-convocatoria-para-la-creacion-de-una-bolsa-de-empleo/"
+  },
+  {
+   "anunciante": "Área del Empleado Público",
+   "fecha": "2026-11-27",
+   "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
+   "titulo": "Modificación de la composición del órgano de selección del proceso selectivo para la provisión de veintiocho plazas de Auxiliar de Clínica (personal funcionario y laboral) de las OEP de 2021 y 2022",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Modificacion-de-la-composicion-del-organo-de-seleccion-del-proceso-selectivo-para-la-provision-de-veintiocho-plazas-de-Auxiliar-de-Clinica-personal-funcionario-y-laboral-de-las-OEP-de-2021-y-2022/"
+  },
+  {
+   "anunciante": "Moron de la Frontera",
+   "fecha": "2026-11-27",
+   "motivo": "Nombramiento o contratación de las personas aprobadas",
+   "titulo": "Nombramiento de funcionario interino en una plaza de Policía Local del año 1991",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-interino-en-una-plaza-de-Policia-Local-del-ano-1991/"
+  },
+  {
+   "anunciante": "Moron de la Frontera",
+   "fecha": "2026-11-27",
+   "motivo": "Nombramiento o contratación de las personas aprobadas",
+   "titulo": "Nombramiento de funcionario interino en una plaza de Policía Local del año 1996",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-interino-en-una-plaza-de-Policia-Local-del-ano-1996/"
+  },
+  {
+   "anunciante": "Moron de la Frontera",
+   "fecha": "2026-11-27",
+   "motivo": "Nombramiento o contratación de las personas aprobadas",
+   "titulo": "Nombramiento de funcionario de carrera en una plaza de Policía Local del año 2001",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Nombramiento-de-funcionario-de-carrera-en-una-plaza-de-Policia-Local-del-ano-2001/"
+  },
+  {
+   "anunciante": "Los Palacios y Villafranca",
+   "fecha": "2026-11-27",
+   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
+   "titulo": "Oferta de empleo público 2026",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00046/"
+  },
+  {
+   "anunciante": "La Roda de Andalucia",
+   "fecha": "2026-11-27",
+   "motivo": "Lista de admitidos, excluidos o aprobados",
+   "titulo": "Lista provisional de personas admitidas y excluidas de la convocatoria para la contratación temporal de un Agente de Inserción e Innovación Local (AIL) y creación de bolsa de trabajo",
+   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Lista-provisional-de-personas-admitidas-y-excluidas-de-la-convocatoria-para-la-contratacion-temporal-de-un-Agente-de-Insercion-e-Innovacion-Local-AIL-y-creacion-de-bolsa-de-trabajo/"
+  },
+  {
+   "anunciante": "Área del Empleado Público",
    "fecha": "2026-11-26",
    "motivo": "Provisión de puestos (solo para quien ya es funcionario)",
    "titulo": "Anuncio de interposición de recurso contencioso-administrativo núm. 334/2026 contra el levantamiento de la suspensión del concurso para la provisión de puestos de trabajo de la RPT de personal funcionario transferido al Consorcio de Prevención, Extinción de Incendios y Salvamento de la provincia de ...",
@@ -4299,20 +4360,6 @@
    "motivo": "Fechas o desarrollo de las pruebas",
    "titulo": "Resolución de la convocatoria para la provisión de diferentes puestos de trabajo por el procedimiento de libre designación, ejercicio 2026",
    "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Resolucion-de-la-convocatoria-para-la-provision-de-diferentes-puestos-de-trabajo-por-el-procedimiento-de-libre-designacion-ejercicio-2026/"
-  },
-  {
-   "anunciante": "Utrera",
-   "fecha": "2026-10-27",
-   "motivo": "Oferta de empleo público (todavía no es la convocatoria)",
-   "titulo": "Oferta de empleo público 2026",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Oferta-de-empleo-publico-2026-00038/"
-  },
-  {
-   "anunciante": "Las Navas de la Concepcion",
-   "fecha": "2026-10-27",
-   "motivo": "Corrección de errores",
-   "titulo": "Corrección de errores del anuncio de la oferta de empleo público 2026",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Correccion-de-errores-del-anuncio-de-la-oferta-de-empleo-publico-2026/"
   }
  ],
  "descartes_lugar": [
@@ -4693,26 +4740,26 @@
    "url": "https://www.juntadeandalucia.es/boja/2026/127/27"
   }
  ],
- "fecha_referencia": "2026-11-26",
+ "fecha_referencia": "2026-11-27",
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-26T16:48+00:00",
-   "nuevos": 1,
+   "fecha": "2026-11-27T02:24+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 8
+   "segundos": 3
   },
   "BOJA": {
-   "fecha": "2026-11-26T16:49+00:00",
-   "nuevos": 1,
+   "fecha": "2026-11-27T02:24+00:00",
+   "nuevos": 0,
    "ok": true,
-   "segundos": 12
+   "segundos": 13
   },
   "BOP": {
-   "fecha": "2026-11-26T16:49+00:00",
+   "fecha": "2026-11-27T02:24+00:00",
    "nuevos": 2,
    "ok": true,
-   "segundos": 16
+   "segundos": 11
   }
  },
- "total": 88
+ "total": 90
 }

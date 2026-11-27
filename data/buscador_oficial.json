@@ -1,6 +1,316 @@
 [
  {
   "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "GESTIÓN DE SISTEMAS E INFORMÁTICA DE LA ADMINISTRACIÓN DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-sistemas-e-informatica-de-la-administracion-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "390 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223440",
+  "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223440&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "GESTIÓN DE SISTEMAS E INFORMÁTICA DE LA ADMINISTRACIÓN DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-sistemas-e-informatica-de-la-administracion-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "400 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223439",
+  "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223439&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "GESTIÓN DE LA ADMINISTRACIÓN CIVIL DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-la-administracion-civil-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "2200 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223438",
+  "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223438&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "GESTIÓN DE LA ADMINISTRACIÓN CIVIL DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-gestion-de-la-administracion-civil-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "1255 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223437",
+  "titulacion": "Diplomado Universitario, Ingeniero Técnico, Arquitecto Técnico o Grado o equivalente",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223437&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "TÉCNICOS AUXILIARES DE INFORMÁTICA DE LA ADMINISTRACIÓN DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "310 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223436",
+  "titulacion": "Bachiller o Técnico o equivalente",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223436&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "TÉCNICOS AUXILIARES DE INFORMÁTICA DE LA ADMINISTRACIÓN DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Bachiller o Técnico o equivalente",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "1103 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223435",
+  "titulacion": "Bachiller o Técnico o equivalente",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223435&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "GENERAL ADMINISTRATIVO DE LA ADMINISTRACIÓN DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Bachiller o Técnico o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-administrativo-de-la-administracion-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "4490 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223434",
+  "titulacion": "Bachiller o Técnico o equivalente.",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223434&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "GENERAL ADMINISTRATIVO DE LA ADMINISTRACIÓN DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Bachiller o Técnico o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-administrativo-de-la-administracion-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "2300 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223433",
+  "titulacion": "Bachiller o Técnico o equivalente.",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223433&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "GENERAL AUXILIAR DE LA ADMINISTRACIÓN DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "PROMOCIÓN INTERNA",
+    "Titulación": "Graduado en Educación Secundaria o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-auxiliar-de-la-administracion-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "475 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223432",
+  "titulacion": "Graduado en Educación Secundaria o equivalente.",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223432&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
+  "coincide_con": "BOE-A-2026-24839",
+  "denominacion": "GENERAL AUXILIAR DE LA ADMINISTRACIÓN DEL ESTADO",
+  "detalle": {
+   "boe": [
+    "BOE-A-2026-24839"
+   ],
+   "boja": [],
+   "bop": false,
+   "campos": {
+    "Tipo de personal": "PERSONAL FUNCIONARIO",
+    "Tipo de vía": "INGRESO LIBRE",
+    "Titulación": "Graduado en Educación Secundaria o equivalente.",
+    "Ámbito geográfico": "NACIONAL",
+    "Órgano convocante": "Ministerio para la Transformación Digital y de la Función Pública"
+   },
+   "web": "https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-general-auxiliar-de-la-administracion-del-estado"
+  },
+  "fin": "29/12/2026",
+  "organo": "Ministerio para la Transformación Digital y de la Función Pública",
+  "plazas": "1450 plazas",
+  "publicada": {
+   "texto": "BOE-A-2026-24839",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-24839"
+  },
+  "ref": "223431",
+  "titulacion": "Graduado en Educación Secundaria o equivalente.",
+  "ubicacion": "NACIONAL",
+  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223431&selectorServicio=bolsa_empleo"
+ },
+ {
+  "ambito": "Estado (ámbito nacional)",
   "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24733",
   "coincide_con": null,
   "denominacion": "MAESTROS DE ARSENALES DE LA ARMADA",
@@ -2181,103 +2491,6 @@
   "titulacion": "Título de Grado en Odontología o Licenciado/a en Odontología o Médico/a Especialista en Estomatología o equivalente",
   "ubicacion": "NACIONAL",
   "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222991&selectorServicio=bolsa_empleo"
- },
- {
-  "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
-  "coincide_con": null,
-  "denominacion": "TÉCNICO/A SUPERIOR - Técnico/a Superior. Esp. Imagen y sonido(T3)",
-  "detalle": {
-   "boe": [
-    "BOE-A-2026-22557"
-   ],
-   "boja": [],
-   "bop": false,
-   "campos": {
-    "Tipo de personal": "PERSONAL LABORAL",
-    "Tipo de vía": "CONTRATACIÓN FIJA",
-    "Titulación": "Grupo profesional T3: Área Funcional: Técnico/a Profesional: Especialidad/ IMAGEN Y SONIDO. Cualquiera de las cinco titulaciones de Técnico Superior de la familia profesional de Imagen y Sonido. - - - - Técnico Superior en Animaciones 3D, Juegos y Entornos Interactivos Técnico Superior en Iluminación, Captación y Tratamiento de Imagen Técnico Superior en Producción de Audiovisuales y Espectáculos Técnico Superior en Realización de Proyectos Audiovisuales y Espectáculos - Técnico Superior en Sonido para Audiovisuales y Espectáculos",
-    "Ámbito geográfico": "NACIONAL",
-    "Órgano convocante": "Ministerio de Hacienda"
-   },
-   "web": "https://www3.agenciatributaria.gob.es/static_files/Sede/Tema/Agencia_tributaria/Trabajar_AEAT/NoIx/PLaboral_conveniocolectivo/TL_Grupos_T3_T5_OEP_2026/Informacion_Convocatoria/conv_T3_T5_TL_F.pdf"
-  },
-  "fin": "26/11/2026",
-  "motivo": "Plazas en otras provincias (Barcelona, Cáceres, Cantabria, Castellón), ninguna en Sevilla",
-  "organo": "Ministerio de Hacienda",
-  "plazas": "3 plazas",
-  "publicada": {
-   "texto": "BOE-A-2026-22557",
-   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
-  },
-  "ref": "222989",
-  "titulacion": "Grupo profesional T3: Área Funcional: Técnico/a Profesional: Especialidad/ IMAGEN Y SONIDO. Cualquiera de las cinco titulaciones de Técnico Superior de la familia profesional de Imagen y Sonido. - - - - Técnico Superior en Animaciones 3D, Juegos y Entornos Interactivos Técnico Superior en Iluminación, Captación y Tratamiento de Imagen Técnico Superior en Producción de Audiovisuales y Espectáculos Técnico Superior en Realización de Proyectos Audiovisuales y Espectáculos - Técnico Superior en Sonido para Audiovisuales y Espectáculos",
-  "ubicacion": "NACIONAL",
-  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222989&selectorServicio=bolsa_empleo"
- },
- {
-  "ambito": "Estado (ámbito nacional)",
-  "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22557",
-  "coincide_con": null,
-  "denominacion": "AYUDANTE - Tareas de Apoyo (Grupo T5)",
-  "detalle": {
-   "boe": [
-    "BOE-A-2026-22557"
-   ],
-   "boja": [],
-   "bop": false,
-   "campos": {
-    "Tipo de personal": "PERSONAL LABORAL",
-    "Tipo de vía": "CONTRATACIÓN FIJA",
-    "Titulación": "No se exige titulación.",
-    "Ámbito geográfico": "NACIONAL",
-    "Órgano convocante": "Ministerio de Hacienda"
-   },
-   "web": "https://www3.agenciatributaria.gob.es/static_files/Sede/Tema/Agencia_tributaria/Trabajar_AEAT/NoIx/PLaboral_conveniocolectivo/TL_Grupos_T3_T5_OEP_2026/Informacion_Convocatoria/conv_T3_T5_TL_F.pdf"
-  },
-  "fin": "26/11/2026",
-  "motivo": "Plazas en otras provincias (Barcelona, Cáceres, Cantabria, Castellón), ninguna en Sevilla",
-  "organo": "Ministerio de Hacienda",
-  "plazas": "17 plazas",
-  "publicada": {
-   "texto": "BOE-A-2026-22557",
-   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22557"
-  },
-  "ref": "222988",
-  "titulacion": "No se exige titulación.",
-  "ubicacion": "NACIONAL",
-  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222988&selectorServicio=bolsa_empleo"
- },
- {
-  "ambito": "Estado (ámbito nacional)",
-  "coincide_con": null,
-  "denominacion": "FACULTATIVO DE SANIDAD PENITENCIARIA",
-  "detalle": {
-   "boe": [
-    "BOE-A-2026-22469"
-   ],
-   "boja": [],
-   "bop": false,
-   "campos": {
-    "Tipo de personal": "PERSONAL FUNCIONARIO",
-    "Tipo de vía": "INGRESO LIBRE",
-    "Titulación": "Licenciado o Grado en Medicina o Licenciado en Medicina y Cirugía y estar en posesión del título de Médico especialista en Medicina Familiar y Comunitaria y Medicina Interna, si optan a las plazas de la especialidad de Medicina Familiar y Comunitaria y Medicina Interna, y estar en posesión del título de Psiquiatría, si optan a las plazas de la especialidad de Psiquiatría",
-    "Ámbito geográfico": "NACIONAL",
-    "Órgano convocante": "Ministerio del Interior"
-   },
-   "web": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/cuerpos-de-instituciones-penitenciarias/cuerpo-facultativo-de-sanidad-penitenciaria/"
-  },
-  "fin": "26/11/2026",
-  "organo": "Ministerio del Interior",
-  "plazas": "70 plazas",
-  "publicada": {
-   "texto": "BOE-A-2026-22469",
-   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22469"
-  },
-  "ref": "222943",
-  "titulacion": "Licenciado o Grado en Medicina o Licenciado en Medicina y Cirugía y estar en posesión del título de Médico especialista en Medicina Familiar y Comunitaria y Medicina Interna, si optan a las plazas de la especialidad de Medicina Familiar y Comunitaria y Medicina Interna, y estar en posesión del título de Psiquiatría, si optan a las plazas de la especialidad de Psiquiatría",
-  "ubicacion": "NACIONAL",
-  "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222943&selectorServicio=bolsa_empleo"
  },
  {
   "ambito": "Junta de Andalucía (ámbito autonómico)",
