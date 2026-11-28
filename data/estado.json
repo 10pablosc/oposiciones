@@ -39,7 +39,6 @@
  },
  "boe": {
   "procesados": [
-   "2025-11-27",
    "2025-11-28",
    "2025-11-29",
    "2025-11-30",
@@ -417,6 +416,7 @@
  },
  "boja": {
   "inicio_2026_2026-06": 120,
+  "inicio_2026_2026-07": 122,
   "numeros": {
    "2026": [
     120,
@@ -522,13 +522,12 @@
     222,
     223,
     224,
-    225
+    225,
+    226
    ]
   }
  },
  "boja_vistos": {
-  "https://www.juntadeandalucia.es/boja/2026/222/32": "2026-11-17",
-  "https://www.juntadeandalucia.es/boja/2026/222/33": "2026-11-17",
   "https://www.juntadeandalucia.es/boja/2026/225/24": "2026-11-20",
   "https://www.juntadeandalucia.es/boja/2026/225/26": "2026-11-20",
   "https://www.juntadeandalucia.es/boja/2026/226/27": "2026-11-23",
@@ -540,7 +539,6 @@
  },
  "bop": {
   "procesados": [
-   "2025-11-27",
    "2025-11-28",
    "2025-11-29",
    "2025-11-30",
@@ -905,17 +903,11 @@
    "2026-11-24",
    "2026-11-25",
    "2026-11-26",
-   "2026-11-27"
+   "2026-11-27",
+   "2026-11-28"
   ]
  },
  "bop_descartes": {
-  "BOP-SE-2026-209029": {
-   "anunciante": "Servicio de Recursos Humanos",
-   "fecha": "2026-10-28",
-   "motivo": "Fechas o desarrollo de las pruebas",
-   "titulo": "Resolución de la convocatoria para la provisión de diferentes puestos de trabajo por el procedimiento de libre designación, ejercicio 2026",
-   "url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Resolucion-de-la-convocatoria-para-la-provision-de-diferentes-puestos-de-trabajo-por-el-procedimiento-de-libre-designacion-ejercicio-2026/"
-  },
   "BOP-SE-2026-210004": {
    "anunciante": "Alcalá de Guadaira",
    "fecha": "2026-10-29",
@@ -1346,7 +1338,6 @@
  },
  "bop_descartes_v": 3,
  "bop_vistos": {
-  "BOP-SE-2026-222008": "2026-11-17",
   "BOP-SE-2026-224015": "2026-11-19",
   "BOP-SE-2026-229008": "2026-11-26",
   "BOP-SE-2026-229023": "2026-11-26",
@@ -1354,62 +1345,8 @@
   "BOP-SE-2026-230019": "2026-11-27"
  },
  "comprobacion": {
-  "coinciden": 29,
+  "coinciden": 28,
   "excluidas": [
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22648",
-    "coincide_con": null,
-    "denominacion": "DIETISTA Y NUTRICIONISTA",
-    "fin": "27/11/2026",
-    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
-    "organo": "Ministerio de Sanidad",
-    "plazas": "1 plaza",
-    "publicada": {
-     "texto": "BOE-A-2026-22648",
-     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22648"
-    },
-    "ref": "222993",
-    "titulacion": "Grado en Nutrición Humana y Dietética o titulación equivalente",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222993&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22647",
-    "coincide_con": null,
-    "denominacion": "TITULADO SANITARIO - Titulado Sanitario: Odontólogo/a.",
-    "fin": "27/11/2026",
-    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
-    "organo": "Ministerio de Sanidad",
-    "plazas": "1 plaza",
-    "publicada": {
-     "texto": "BOE-A-2026-22647",
-     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22647"
-    },
-    "ref": "222991",
-    "titulacion": "Título de Grado en Odontología o Licenciado/a en Odontología o Médico/a Especialista en Estomatología o equivalente",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222991&selectorServicio=bolsa_empleo"
-   },
-   {
-    "ambito": "Estado (ámbito nacional)",
-    "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22649",
-    "coincide_con": null,
-    "denominacion": "TRABAJADOR SOCIAL",
-    "fin": "27/11/2026",
-    "motivo": "Plazas en Ceuta y Melilla (INGESA)",
-    "organo": "Ministerio de Sanidad",
-    "plazas": "2 plazas",
-    "publicada": {
-     "texto": "BOE-A-2026-22649",
-     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-22649"
-    },
-    "ref": "222994",
-    "titulacion": "Grado en Trabajo Social, Diplomado en Trabajo Social o equivalente,",
-    "ubicacion": "NACIONAL",
-    "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=222994&selectorServicio=bolsa_empleo"
-   },
    {
     "ambito": "Estado (ámbito nacional)",
     "boe": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22741",
@@ -2329,11 +2266,11 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223424&selectorServicio=bolsa_empleo"
    }
   ],
-  "fecha": "2026-11-27T17:41+00:00",
+  "fecha": "2026-11-28T02:09+00:00",
   "ok": true,
   "por_ambito": {
-   "Estado (ámbito nacional)": 77,
-   "Junta de Andalucía (ámbito autonómico)": 8,
+   "Estado (ámbito nacional)": 74,
+   "Junta de Andalucía (ámbito autonómico)": 7,
    "Provincia de Sevilla (ámbito local)": 0
   },
   "posibles_omisiones": [
@@ -2370,7 +2307,7 @@
     "url": "https://administracion.gob.es/empleopublico/resultados-empleo/detalle-empleo?selectorget=223397&selectorServicio=bolsa_empleo"
    }
   ],
-  "total": 85
+  "total": 81
  },
  "descartes": {
   "BOE-A-2026-16692": {
@@ -5283,7 +5220,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 18 de noviembre de 2026, de la Secretaría de Estado de Justicia, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24730",
-   "visto": "2026-11-27"
+   "visto": "2026-11-28"
   },
   "BOE-A-2026-24731": {
    "departamento": "MINISTERIO DE DEFENSA",
@@ -5323,7 +5260,7 @@
    "tipo": "provision",
    "titulo": "Resolución 430/38461/2026, de 18 de noviembre, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24734",
-   "visto": "2026-11-27"
+   "visto": "2026-11-28"
   },
   "BOE-A-2026-24840": {
    "departamento": "MINISTERIO DE JUVENTUD E INFANCIA",
@@ -5333,7 +5270,7 @@
    "tipo": "provision",
    "titulo": "Resolución de 23 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24840",
-   "visto": "2026-11-27"
+   "visto": "2026-11-28"
   },
   "BOJA-2026-127-27": {
    "departamento": "Consejería de Agricultura, Pesca, Agua y Desarrollo Rural",
@@ -5738,70 +5675,25 @@
  },
  "fuentes": {
   "BOE": {
-   "fecha": "2026-11-27T17:39+00:00",
+   "fecha": "2026-11-28T02:09+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 6
+   "segundos": 5
   },
   "BOJA": {
-   "fecha": "2026-11-27T17:41+00:00",
+   "fecha": "2026-11-28T02:09+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 110
+   "segundos": 21
   },
   "BOP": {
-   "fecha": "2026-11-27T17:41+00:00",
+   "fecha": "2026-11-28T02:09+00:00",
    "nuevos": 0,
    "ok": true,
-   "segundos": 9
+   "segundos": 8
   }
  },
  "pag_detalles": {
-  "222991": {
-   "boe": [
-    "BOE-A-2026-22647"
-   ],
-   "boja": [],
-   "bop": false,
-   "campos": {
-    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
-    "Tipo de vía": "ESTATUTARIA",
-    "Titulación": "Título de Grado en Odontología o Licenciado/a en Odontología o Médico/a Especialista en Estomatología o equivalente",
-    "Ámbito geográfico": "NACIONAL",
-    "Órgano convocante": "Ministerio de Sanidad"
-   },
-   "web": "http://www.sanidad.gob.es/"
-  },
-  "222993": {
-   "boe": [
-    "BOE-A-2026-22648"
-   ],
-   "boja": [],
-   "bop": false,
-   "campos": {
-    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
-    "Tipo de vía": "ESTATUTARIA",
-    "Titulación": "Grado en Nutrición Humana y Dietética o titulación equivalente",
-    "Ámbito geográfico": "NACIONAL",
-    "Órgano convocante": "Ministerio de Sanidad"
-   },
-   "web": "https://www.sanidad.gob.es/home.htm"
-  },
-  "222994": {
-   "boe": [
-    "BOE-A-2026-22649"
-   ],
-   "boja": [],
-   "bop": false,
-   "campos": {
-    "Tipo de personal": "PERSONAL ESTATUTARIO, MILITAR, OTRO",
-    "Tipo de vía": "ESTATUTARIA",
-    "Titulación": "Grado en Trabajo Social, Diplomado en Trabajo Social o equivalente,",
-    "Ámbito geográfico": "NACIONAL",
-    "Órgano convocante": "Ministerio de Sanidad"
-   },
-   "web": "https://www.sanidad.gob.es/home.htm"
-  },
   "223001": {
    "boe": [
     "BOE-A-2026-22740"
@@ -5936,25 +5828,6 @@
     "Órgano convocante": "Ministerio de Sanidad"
    },
    "web": "https://ingesa.sanidad.gob.es"
-  },
-  "223224": {
-   "boe": [],
-   "boja": [
-    [
-     "2026",
-     "220"
-    ]
-   ],
-   "bop": false,
-   "campos": {
-    "Comunidad Autónoma": "ANDALUCÍA",
-    "Tipo de personal": "PERSONAL FUNCIONARIO",
-    "Tipo de vía": "INTERINIDAD",
-    "Titulación": "Poseer la titulación o titulaciones y demás requisitos establecidos para la especialidad del Cuerpo de Catedráticos de Música y Artes Escénicas a la que se pretende acceder.",
-    "Ámbito geográfico": "AUTONÓMICO",
-    "Órgano convocante": "Consejería de Desarrollo Educativo y Formación Profesional"
-   },
-   "web": "https://www.juntadeandalucia.es/educacion/portales/profesorado/bolsas-de-trabajo-e-interinidades"
   },
   "223227": {
    "boe": [
